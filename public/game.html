@@ -45,6 +45,7 @@
         let ws;
         let playerId;
         let playerName;
+        let hasAnswered = false;
 
         // Screens
         const joinScreen = document.getElementById('joinScreen');
@@ -125,7 +126,7 @@
                     showQuestion(data);
                     break;
                 case 'answerFeedback':
-                    handleAnswerFeedback(data.correct);
+                    handleAnswerFeedback(data);
                     break;
                 case 'questionResults':
                     showQuestionResults(data);
@@ -165,6 +166,7 @@
             lobbyScreen.style.display = 'none';
             resultsScreen.style.display = 'none';
             gameScreen.style.display = 'block';
+            hasAnswered = false;
 
             questionNumber.textContent = `Question ${data.questionNumber} of ${data.totalQuestions}`;
             questionText.textContent = data.question;
@@ -174,32 +176,51 @@
                 const button = document.createElement('button');
                 button.className = 'option-btn';
                 button.textContent = option;
-                button.addEventListener('click', () => selectAnswer(option, button));
+                button.addEventListener('click', () => {
+                    if (!hasAnswered) {
+                        selectAnswer(option);
+                    }
+                });
                 optionsDiv.appendChild(button);
             });
         }
 
-        function selectAnswer(answer, button) {
+        function selectAnswer(answer) {
+            hasAnswered = true;
+            
             // Disable all buttons
             document.querySelectorAll('.option-btn').forEach(btn => {
                 btn.disabled = true;
             });
-            button.classList.add('selected');
+            
+            // Mark the selected answer
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                if (btn.textContent === answer) {
+                    btn.classList.add('selected');
+                }
+            });
             
             ws.send(JSON.stringify({ type: 'answer', answer }));
         }
 
         function handleAnswerFeedback(data) {
-            // Show all buttons with appropriate styling
+            // Find and highlight the correct answer in green
             document.querySelectorAll('.option-btn').forEach(btn => {
                 if (btn.textContent === data.correctAnswer) {
-                    // Always show correct answer in green
                     btn.classList.add('correct');
-                } else if (btn.textContent === data.selectedAnswer && !data.correct) {
-                    // Show wrong selected answer in red
-                    btn.classList.add('incorrect');
+                    btn.classList.remove('selected'); // Remove selected class if it was correct
                 }
             });
+
+            // If the answer was wrong, highlight the selected wrong answer in red
+            if (!data.correct && data.selectedAnswer !== data.correctAnswer) {
+                document.querySelectorAll('.option-btn').forEach(btn => {
+                    if (btn.textContent === data.selectedAnswer) {
+                        btn.classList.add('incorrect');
+                        btn.classList.remove('selected');
+                    }
+                });
+            }
         }
 
         function showQuestionResults(data) {
@@ -251,8 +272,5 @@
             }
         });
     </script>
-    <footer class="copyright">
-        <p>&copy; Copyright by QLINXX</p>
-    </footer>
 </body>
 </html>
