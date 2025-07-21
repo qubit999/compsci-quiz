@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Wofür steht DNS?",
+    "options": [
+      "Domain Network Service",
+      "Dynamic Network System",
+      "Digital Name Server",
+      "Domain Name System"
+    ],
+    "correct": "Domain Name System"
+  },
+  {
+    "question": "Was ist die Hauptfunktion von DNS?",
+    "options": [
+      "Netzwerksicherheit",
+      "Auflösung von Domainnamen zu IP-Adressen",
+      "Vergabe von IP-Adressen",
+      "Routing von IP-Paketen"
+    ],
+    "correct": "Auflösung von Domainnamen zu IP-Adressen"
+  },
+  {
+    "question": "Warum ist DNS wichtig?",
+    "options": [
+      "Benutzer können Namen statt IP-Adressen verwenden",
+      "Load Balancing",
+      "Komprimierung der Pakete",
+      "Verschlüsselung der Daten"
+    ],
+    "correct": "Benutzer können Namen statt IP-Adressen verwenden"
+  },
+  {
+    "question": "Was passiert, wenn DNS nicht funktioniert?",
+    "options": [
+      "Webseiten sind über Namen nicht erreichbar",
+      "Router fallen aus",
+      "IP-Adressen werden nicht vergeben",
+      "Internet funktioniert gar nicht"
+    ],
+    "correct": "Webseiten sind über Namen nicht erreichbar"
+  },
+  {
+    "question": "Was ist ein DNS-Resolver?",
+    "options": [
+      "Client-seitige DNS-Auflösungskomponente",
+      "Nameserver",
+      "DNS-Cache",
+      "DNS-Server"
+    ],
+    "correct": "Client-seitige DNS-Auflösungskomponente"
+  },
+  {
+    "question": "Was ist ein rekursiver DNS-Server?",
+    "options": [
+      "Server der Adressen vergibt",
+      "Server der vollständige DNS-Abfragen durchführt",
+      "Server der Webseiten hostet",
+      "Server der nur lokale Anfragen beantwortet"
+    ],
+    "correct": "Server der vollständige DNS-Abfragen durchführt"
+  },
+  {
+    "question": "Was ist ein autoritativer DNS-Server?",
+    "options": [
+      "Server der IP-Adressen vergibt",
+      "Server mit Original-DNS-Daten für eine Zone",
+      "Server der DNS-Anfragen weiterleitet",
+      "Server der Webseiten cached"
+    ],
+    "correct": "Server mit Original-DNS-Daten für eine Zone"
+  },
+  {
+    "question": "Was ist eine Root-Zone im DNS?",
+    "options": [
+      "DNS-Cache",
+      "Subdomain",
+      "Lokale DNS-Zone",
+      "Oberste Ebene der DNS-Hierarchie"
+    ],
+    "correct": "Oberste Ebene der DNS-Hierarchie"
+  },
+  {
+    "question": "Was ist ein TLD-Server?",
+    "options": [
+      "Server für E-Mail",
+      "Server für Top-Level-Domains wie .com, .de",
+      "Server für Subdomains",
+      "Server für lokale Domains"
+    ],
+    "correct": "Server für Top-Level-Domains wie .com, .de"
+  },
+  {
+    "question": "Was ist ein A-Record?",
+    "options": [
+      "E-Mail Server",
+      "IPv6-Adresse",
+      "IPv4-Adresse für einen Hostnamen",
+      "Nameserver-Eintrag"
+    ],
+    "correct": "IPv4-Adresse für einen Hostnamen"
+  },
+  {
+    "question": "Was ist ein AAAA-Record?",
+    "options": [
+      "IPv6-Adresse für einen Hostnamen",
+      "IPv4-Adresse",
+      "E-Mail Server",
+      "Canonical Name"
+    ],
+    "correct": "IPv6-Adresse für einen Hostnamen"
+  },
+  {
+    "question": "Was ist ein MX-Record?",
+    "options": [
+      "IPv4-Adresse",
+      "IPv6-Adresse",
+      "Nameserver",
+      "Mail Exchange Server"
+    ],
+    "correct": "Mail Exchange Server"
+  },
+  {
+    "question": "Was ist ein CNAME-Record?",
+    "options": [
+      "Canonical Name Alias",
+      "Name Server",
+      "Mail Server",
+      "IP-Adresse"
+    ],
+    "correct": "Canonical Name Alias"
+  },
+  {
+    "question": "Was ist ein NS-Record?",
+    "options": [
+      "Name Server für eine Domain",
+      "Host Alias",
+      "IP-Adresse",
+      "Mail Server"
+    ],
+    "correct": "Name Server für eine Domain"
+  },
+  {
+    "question": "Was ist ein PTR-Record?",
+    "options": [
+      "Name Server",
+      "Reverse DNS - IP zu Name",
+      "Forward DNS",
+      "Mail Server"
+    ],
+    "correct": "Reverse DNS - IP zu Name"
+  },
+  {
+    "question": "Was ist TTL in DNS?",
+    "options": [
+      "Transfer Time Limit",
+      "Time To Live - Cache-Gültigkeitsdauer",
+      "Total Traffic Load",
+      "Timeout Time Limit"
+    ],
+    "correct": "Time To Live - Cache-Gültigkeitsdauer"
+  },
+  {
+    "question": "Welche Tools nutzt man zur DNS-Analyse unter Windows?",
+    "options": [
+      "ping",
+      "netstat",
+      "tracert",
+      "nslookup oder dig"
+    ],
+    "correct": "nslookup oder dig"
+  },
+  {
+    "question": "Welche Tools nutzt man unter Linux zur DNS-Analyse?",
+    "options": [
+      "route",
+      "dig oder nslookup",
+      "traceroute",
+      "ping"
+    ],
+    "correct": "dig oder nslookup"
+  },
+  {
+    "question": "Was passiert bei der Eingabe von www.google.de im Browser?",
+    "options": [
+      "Proxy-Umleitung",
+      "DNS-Auflösung der IP-Adresse",
+      "Gateway-Routing",
+      "Direkter IP-Zugriff"
+    ],
+    "correct": "DNS-Auflösung der IP-Adresse"
+  },
+  {
+    "question": "Was ist ein DNS-Cache?",
+    "options": [
+      "DNS-Server Datenbank",
+      "Website Cache",
+      "Browser History",
+      "Lokaler Zwischenspeicher für DNS-Einträge"
+    ],
+    "correct": "Lokaler Zwischenspeicher für DNS-Einträge"
+  },
+  {
+    "question": "Wie leert man den DNS-Cache unter Windows?",
+    "options": [
+      "netsh reset",
+      "ipconfig /flushdns",
+      "ping /flush",
+      "ipconfig /release"
+    ],
+    "correct": "ipconfig /flushdns"
+  },
+  {
+    "question": "Was ist ein Forwarder in einem DNS-Server?",
+    "options": [
+      "Server der Adressen vergibt",
+      "Server der Routing macht",
+      "Server der Antworten cached",
+      "Server der Anfragen weiterleitet"
+    ],
+    "correct": "Server der Anfragen weiterleitet"
+  },
+  {
+    "question": "Was ist ein FQDN?",
+    "options": [
+      "Fully Qualified Domain Name",
+      "Fast Query Domain Name",
+      "Forward Query DNS Name",
+      "Full Quality Data Name"
+    ],
+    "correct": "Fully Qualified Domain Name"
+  },
+  {
+    "question": "Was bedeutet 'Zone' im DNS?",
+    "options": [
+      "Administrativer Bereich in DNS-Hierarchie",
+      "Netzwerk-Segment",
+      "Geografisches Gebiet",
+      "IP-Adressbereich"
+    ],
+    "correct": "Administrativer Bereich in DNS-Hierarchie"
+  },
+  {
+    "question": "Was ist ein SPF-Record?",
+    "options": [
+      "Security Policy File",
+      "Server Performance Factor",
+      "Service Port Filter",
+      "Sender Policy Framework für E-Mail"
+    ],
+    "correct": "Sender Policy Framework für E-Mail"
+  },
+  {
+    "question": "Was ist DNSSEC?",
+    "options": [
+      "DNS Service Extension",
+      "DNS Security Extensions",
+      "Domain Name Security Center",
+      "Dynamic Name System Security"
+    ],
+    "correct": "DNS Security Extensions"
+  },
+  {
+    "question": "Warum ist es wichtig, DNS richtig zu konfigurieren?",
+    "options": [
+      "Ohne DNS kein Routing",
+      "Ohne DNS keine IP-Vergabe",
+      "Ohne DNS keine Namensauflösung möglich",
+      "Ohne DNS kein Internet"
+    ],
+    "correct": "Ohne DNS keine Namensauflösung möglich"
+  },
+  {
+    "question": "Wie testet man einen bestimmten DNS-Server?",
+    "options": [
+      "netstat dns-server",
+      "traceroute dns-server",
+      "ping dns-server",
+      "nslookup server ip-adresse"
+    ],
+    "correct": "nslookup server ip-adresse"
+  },
+  {
+    "question": "Was ist ein typisches DNS-Problem?",
+    "options": [
+      "DNS-Server nicht erreichbar oder falsch konfiguriert",
+      "Gateway defekt",
+      "DHCP-Ausfall",
+      "Routing-Problem"
+    ],
+    "correct": "DNS-Server nicht erreichbar oder falsch konfiguriert"
+  },
+  {
+    "question": "Welcher öffentliche DNS-Server wird oft verwendet?",
+    "options": [
+      "8.8.8.8 (Google) oder 1.1.1.1 (Cloudflare)",
+      "127.0.0.1",
+      "192.168.1.1",
+      "10.0.0.1"
+    ],
+    "correct": "8.8.8.8 (Google) oder 1.1.1.1 (Cloudflare)"
+  }
+]

@@ -1,0 +1,302 @@
+[
+    {
+        "question": "Was ist eine statische IP-Adresse?",
+        "options": [
+            "Eine IP-Adresse aus dem Internet.",
+            "Eine temporäre IP-Adresse.",
+            "Eine IP-Adresse, die sich ständig ändert.",
+            "Eine feste, unveränderliche IP-Adresse."
+        ],
+        "correct": "Eine feste, unveränderliche IP-Adresse."
+    },
+    {
+        "question": "Was ist eine dynamische IP-Adresse?",
+        "options": [
+            "Eine feste IP-Adresse.",
+            "Eine IP-Adresse für Server.",
+            "Eine IP-Adresse, die immer gleich bleibt.",
+            "Eine IP-Adresse, die sich ändern kann."
+        ],
+        "correct": "Eine IP-Adresse, die sich ändern kann."
+    },
+    {
+        "question": "Welche Vorteile hat eine statische IP-Adresse?",
+        "options": [
+            "Bessere Sicherheit.",
+            "Automatische Zuweisung.",
+            "Konstante Erreichbarkeit und leichteres Routing.",
+            "Geringere Netzwerklast."
+        ],
+        "correct": "Konstante Erreichbarkeit und leichteres Routing."
+    },
+    {
+        "question": "Welche Vorteile hat eine dynamische IP-Adresse?",
+        "options": [
+            "Manuelle Konfiguration erforderlich.",
+            "Immer gleiche Adresse.",
+            "Feste Zuordnung.",
+            "Einfache Verwaltung und automatische Zuweisung."
+        ],
+        "correct": "Einfache Verwaltung und automatische Zuweisung."
+    },
+    {
+        "question": "Welcher Dienst vergibt dynamische IP-Adressen?",
+        "options": [
+            "DHCP (Dynamic Host Configuration Protocol).",
+            "FTP.",
+            "SMTP.",
+            "DNS."
+        ],
+        "correct": "DHCP (Dynamic Host Configuration Protocol)."
+    },
+    {
+        "question": "Was passiert, wenn zwei Geräte dieselbe statische IP-Adresse haben?",
+        "options": [
+            "IP-Adresskonflikt und Netzwerkausfall.",
+            "Leistungssteigerung des Netzwerks.",
+            "Nichts.",
+            "Beide Geräte funktionieren normal."
+        ],
+        "correct": "IP-Adresskonflikt und Netzwerkausfall."
+    },
+    {
+        "question": "In welchem Szenario ist eine statische IP-Adresse sinnvoll?",
+        "options": [
+            "Für Server oder Geräte, die immer erreichbar sein müssen.",
+            "Für Besucher im Netzwerk.",
+            "Für private Laptops.",
+            "Für Geräte ohne Internetzugang."
+        ],
+        "correct": "Für Server oder Geräte, die immer erreichbar sein müssen."
+    },
+    {
+        "question": "Was ist eine IP-Adressreservierung im DHCP?",
+        "options": [
+            "Eine veraltete IP-Adresse.",
+            "Eine zufällige IP-Adresse.",
+            "Eine IP-Adresse für Gäste.",
+            "Eine feste Zuweisung einer IP-Adresse an ein bestimmtes Gerät."
+        ],
+        "correct": "Eine feste Zuweisung einer IP-Adresse an ein bestimmtes Gerät."
+    },
+    {
+        "question": "Was passiert, wenn ein Gerät im Netzwerk keine IP-Adresse erhält?",
+        "options": [
+            "Es kann nicht mit anderen Geräten kommunizieren.",
+            "Es funktioniert normal.",
+            "Es kann nur lokal kommunizieren.",
+            "Es bekommt automatisch eine statische IP."
+        ],
+        "correct": "Es kann nicht mit anderen Geräten kommunizieren."
+    },
+    {
+        "question": "Was ist der Unterschied zwischen statischer IP und DHCP-Reservierung?",
+        "options": [
+            "Statische IP wird manuell gesetzt, DHCP-Reservierung erfolgt via DHCP-Server.",
+            "Beides sind dynamische IPs.",
+            "Beides sind statische IPs.",
+            "Es gibt keinen Unterschied."
+        ],
+        "correct": "Statische IP wird manuell gesetzt, DHCP-Reservierung erfolgt via DHCP-Server."
+    },
+    {
+        "question": "Warum verwendet man in größeren Netzwerken meist dynamische IP-Adressen?",
+        "options": [
+            "Weil statische IPs billiger sind.",
+            "Weil dynamische IPs immer gleich bleiben.",
+            "Weil statische IPs sicherer sind.",
+            "Bessere Verwaltung und weniger manueller Aufwand."
+        ],
+        "correct": "Bessere Verwaltung und weniger manueller Aufwand."
+    },
+    {
+        "question": "Wo stellt man eine statische IP-Adresse in Windows ein?",
+        "options": [
+            "Im Geräte-Manager.",
+            "Im BIOS.",
+            "Im Task-Manager.",
+            "In den Netzwerkeinstellungen des Adapters."
+        ],
+        "correct": "In den Netzwerkeinstellungen des Adapters."
+    },
+    {
+        "question": "Wie überprüft man, ob ein Gerät eine statische oder dynamische IP nutzt?",
+        "options": [
+            "Indem man ins Internet geht.",
+            "Indem man das Gerät ausschaltet.",
+            "Indem man die IP-Konfiguration prüft.",
+            "Indem man die MAC-Adresse ändert."
+        ],
+        "correct": "Indem man die IP-Konfiguration prüft."
+    },
+    {
+        "question": "Welcher Befehl zeigt unter Linux die aktuelle IP-Konfiguration?",
+        "options": [
+            "ping.",
+            "ls.",
+            "ifconfig oder ip addr.",
+            "ipconfig."
+        ],
+        "correct": "ifconfig oder ip addr."
+    },
+    {
+        "question": "Warum kann eine dynamische IP-Adresse nach einem Neustart anders sein?",
+        "options": [
+            "Weil das Gerät kaputt ist.",
+            "Weil die statische IP geändert wird.",
+            "Weil sich die Internetverbindung ändert.",
+            "Weil DHCP-Server die Adresse neu zuweist."
+        ],
+        "correct": "Weil DHCP-Server die Adresse neu zuweist."
+    },
+    {
+        "question": "Wie lange behält ein Gerät eine dynamische IP-Adresse?",
+        "options": [
+            "Solange der Lease-Zeitraum gültig ist.",
+            "Für eine Sekunde.",
+            "Für immer.",
+            "Für einen Monat."
+        ],
+        "correct": "Solange der Lease-Zeitraum gültig ist."
+    },
+    {
+        "question": "Was bedeutet 'Lease Time' im DHCP-Kontext?",
+        "options": [
+            "Die Zeit, die das Netzwerk aktiv ist.",
+            "Die Zeit, bis ein Gerät startet.",
+            "Die Zeitspanne, die eine IP-Adresse zugewiesen wird.",
+            "Die Zeit, bis ein Gerät ausschaltet."
+        ],
+        "correct": "Die Zeitspanne, die eine IP-Adresse zugewiesen wird."
+    },
+    {
+        "question": "Was passiert, wenn ein DHCP-Lease ausläuft?",
+        "options": [
+            "Das Gerät fordert eine neue IP-Adresse an.",
+            "Es passiert nichts.",
+            "Das Gerät verliert die Verbindung sofort.",
+            "Das Gerät bekommt automatisch eine statische IP."
+        ],
+        "correct": "Das Gerät fordert eine neue IP-Adresse an."
+    },
+    {
+        "question": "Welche Probleme können bei falscher statischer Konfiguration auftreten?",
+        "options": [
+            "IP-Konflikte und Netzwerkprobleme.",
+            "Keine Probleme.",
+            "Verbesserte Geschwindigkeit.",
+            "Bessere Sicherheit."
+        ],
+        "correct": "IP-Konflikte und Netzwerkprobleme."
+    },
+    {
+        "question": "Welche Informationen benötigt man für die manuelle IP-Konfiguration?",
+        "options": [
+            "IP-Adresse, Subnetzmaske, Gateway und DNS-Server.",
+            "Nur den DNS-Server.",
+            "Nur die IP-Adresse.",
+            "Nur das Gateway."
+        ],
+        "correct": "IP-Adresse, Subnetzmaske, Gateway und DNS-Server."
+    },
+    {
+        "question": "Was bedeutet APIPA?",
+        "options": [
+            "Automatischer Port für IP.",
+            "Automatisches Provider-Interface.",
+            "Automatisches Protokoll.",
+            "Automatische private IP-Adresse bei fehlendem DHCP."
+        ],
+        "correct": "Automatische private IP-Adresse bei fehlendem DHCP."
+    },
+    {
+        "question": "Welche IP-Adresse weist Windows automatisch zu, wenn kein DHCP verfügbar ist?",
+        "options": [
+            "192.168.0.1.",
+            "169.254.x.x.",
+            "127.0.0.1.",
+            "10.0.0.1."
+        ],
+        "correct": "169.254.x.x."
+    },
+    {
+        "question": "Wie kann man verhindern, dass Clients falsche IPs verwenden?",
+        "options": [
+            "Durch DHCP-Reservierung und Netzwerkmanagement.",
+            "Indem man Clients ausschaltet.",
+            "Indem man statische IPs abschafft.",
+            "Indem man das Internet trennt."
+        ],
+        "correct": "Durch DHCP-Reservierung und Netzwerkmanagement."
+    },
+    {
+        "question": "Was ist ein DHCP-Server?",
+        "options": [
+            "Ein Server, der IP-Adressen im Netzwerk vergibt.",
+            "Ein E-Mail-Server.",
+            "Ein Webserver.",
+            "Ein Datenbankserver."
+        ],
+        "correct": "Ein Server, der IP-Adressen im Netzwerk vergibt."
+    },
+    {
+        "question": "Welches Protokoll verwendet DHCP?",
+        "options": [
+            "TCP.",
+            "UDP.",
+            "HTTP.",
+            "FTP."
+        ],
+        "correct": "UDP."
+    },
+    {
+        "question": "Was passiert beim DHCP Discover?",
+        "options": [
+            "Der Client beendet die Suche.",
+            "Der Server sucht Clients.",
+            "Das Gerät startet neu.",
+            "Der Client sucht im Netzwerk nach einem DHCP-Server."
+        ],
+        "correct": "Der Client sucht im Netzwerk nach einem DHCP-Server."
+    },
+    {
+        "question": "Was geschieht beim DHCP Offer?",
+        "options": [
+            "Der DHCP-Server bietet dem Client eine IP-Adresse an.",
+            "Der Client sendet eine Nachricht.",
+            "Der Client lehnt ab.",
+            "Der Server fordert IPs an."
+        ],
+        "correct": "Der DHCP-Server bietet dem Client eine IP-Adresse an."
+    },
+    {
+        "question": "Was ist DHCP Request?",
+        "options": [
+            "Der Server weist die IP zu.",
+            "Der Client sucht einen Server.",
+            "Der Client lehnt ab.",
+            "Der Client fordert die angebotene IP-Adresse an."
+        ],
+        "correct": "Der Client fordert die angebotene IP-Adresse an."
+    },
+    {
+        "question": "Was ist DHCP Acknowledgement?",
+        "options": [
+            "Der Client weist eine IP zu.",
+            "Der Client bestätigt.",
+            "Der DHCP-Server bestätigt die IP-Adresszuweisung.",
+            "Der Server lehnt ab."
+        ],
+        "correct": "Der DHCP-Server bestätigt die IP-Adresszuweisung."
+    },
+    {
+        "question": "Können DHCP und statische IPs im selben Netzwerk verwendet werden?",
+        "options": [
+            "Ja, sie können koexistieren.",
+            "Nur DHCP ist erlaubt.",
+            "Nein, das ist nicht möglich.",
+            "Nur statische IPs sind erlaubt."
+        ],
+        "correct": "Ja, sie können koexistieren."
+    }
+]

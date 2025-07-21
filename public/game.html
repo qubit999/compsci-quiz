@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game - Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="joinScreen" class="screen">
+            <h1>Join Quiz Game</h1>
+            <input type="text" id="playerName" placeholder="Enter your name" maxlength="20">
+            <button id="joinBtn" class="btn-primary">Join Game</button>
+        </div>
+
+        <div id="lobbyScreen" class="screen" style="display: none;">
+            <h1>Waiting Room</h1>
+            <p class="topic-display">Topic: <strong id="gameTopic"></strong></p>
+            <div id="playersList" class="players-list"></div>
+            <button id="startBtn" class="btn-primary" style="display: none;">Start Game</button>
+            <p id="waitingMsg">Waiting for host to start the game...</p>
+        </div>
+
+        <div id="gameScreen" class="screen" style="display: none;">
+            <div class="question-header">
+                <span id="questionNumber"></span>
+                <span id="timer"></span>
+            </div>
+            <h2 id="questionText"></h2>
+            <div id="options" class="options-grid"></div>
+        </div>
+
+        <div id="resultsScreen" class="screen" style="display: none;">
+            <h1 id="resultsTitle">Question Results</h1>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameId = urlParams.get('id');
+        const isHost = localStorage.getItem('isHost') === 'true' && localStorage.getItem('gameId') === gameId;
+        
+        let ws;
+        let playerId;
+        let playerName;
+
+        // Screens
+        const joinScreen = document.getElementById('joinScreen');
+        const lobbyScreen = document.getElementById('lobbyScreen');
+        const gameScreen = document.getElementById('gameScreen');
+        const resultsScreen = document.getElementById('resultsScreen');
+
+        // Elements
+        const playerNameInput = document.getElementById('playerName');
+        const joinBtn = document.getElementById('joinBtn');
+        const playersList = document.getElementById('playersList');
+        const startBtn = document.getElementById('startBtn');
+        const waitingMsg = document.getElementById('waitingMsg');
+        const questionNumber = document.getElementById('questionNumber');
+        const questionText = document.getElementById('questionText');
+        const optionsDiv = document.getElementById('options');
+        const resultsTitle = document.getElementById('resultsTitle');
+        const resultsContent = document.getElementById('resultsContent');
+        const gameTopicSpan = document.getElementById('gameTopic');
+
+        joinBtn.addEventListener('click', joinGame);
+        playerNameInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') joinGame();
+        });
+
+        function joinGame() {
+            playerName = playerNameInput.value.trim();
+            if (!playerName) {
+                alert('Please enter your name');
+                return;
+            }
+
+            connectWebSocket();
+        }
+
+        function connectWebSocket() {
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            ws = new WebSocket(`${protocol}//${window.location.host}?gameId=${gameId}`);
+
+            ws.onopen = () => {
+                ws.send(JSON.stringify({ type: 'join', name: playerName }));
+            };
+
+            ws.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                handleMessage(data);
+            };
+
+            ws.onclose = () => {
+                alert('Connection lost. Please refresh the page.');
+            };
+
+            ws.onerror = () => {
+                alert('Failed to connect. The game might not exist.');
+            };
+        }
+
+        function handleMessage(data) {
+            switch (data.type) {
+                case 'joined':
+                    playerId = data.playerId;
+                    showLobby(data.players, data.topic);
+                    if (isHost) {
+                        startBtn.style.display = 'block';
+                        waitingMsg.style.display = 'none';
+                        startBtn.addEventListener('click', () => {
+                            ws.send(JSON.stringify({ type: 'start' }));
+                        });
+                    }
+                    break;
+                case 'playerJoined':
+                    updatePlayersList(data.players);
+                    break;
+                case 'playerLeft':
+                    updatePlayersList(data.players);
+                    break;
+                case 'question':
+                    showQuestion(data);
+                    break;
+                case 'answerFeedback':
+                    handleAnswerFeedback(data.correct);
+                    break;
+                case 'questionResults':
+                    showQuestionResults(data);
+                    break;
+                case 'gameEnd':
+                    showFinalResults(data);
+                    break;
+                case 'error':
+                    alert(data.message);
+                    window.location.href = '/';
+                    break;
+            }
+        }
+
+        function showLobby(players, topic) {
+            joinScreen.style.display = 'none';
+            lobbyScreen.style.display = 'block';
+            gameTopicSpan.textContent = topic;
+            updatePlayersList(players);
+        }
+
+        function updatePlayersList(players) {
+            playersList.innerHTML = '<h3>Players:</h3>';
+            players.forEach(player => {
+                const div = document.createElement('div');
+                div.className = 'player-item';
+                div.textContent = player.name;
+                if (player.id === playerId) {
+                    div.textContent += ' (You)';
+                    div.classList.add('current-player');
+                }
+                playersList.appendChild(div);
+            });
+        }
+
+        function showQuestion(data) {
+            lobbyScreen.style.display = 'none';
+            resultsScreen.style.display = 'none';
+            gameScreen.style.display = 'block';
+
+            questionNumber.textContent = `Question ${data.questionNumber} of ${data.totalQuestions}`;
+            questionText.textContent = data.question;
+            
+            optionsDiv.innerHTML = '';
+            data.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'option-btn';
+                button.textContent = option;
+                button.addEventListener('click', () => selectAnswer(option, button));
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function selectAnswer(answer, button) {
+            // Disable all buttons
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                btn.disabled = true;
+            });
+            button.classList.add('selected');
+            
+            ws.send(JSON.stringify({ type: 'answer', answer }));
+        }
+
+        function handleAnswerFeedback(correct) {
+            const selectedBtn = document.querySelector('.option-btn.selected');
+            if (selectedBtn) {
+                selectedBtn.classList.add(correct ? 'correct' : 'incorrect');
+            }
+        }
+
+        function showQuestionResults(data) {
+            gameScreen.style.display = 'none';
+            resultsScreen.style.display = 'block';
+            resultsTitle.textContent = 'Question Results';
+            
+            resultsContent.innerHTML = `
+                <p>Correct answer: <strong>${data.correct}</strong></p>
+                <h3>Current Scores:</h3>
+                <div class="scores-list">
+                    ${data.scores.map(s => `
+                        <div class="score-item ${s.playerId === playerId ? 'current-player' : ''}">
+                            <span>${s.playerName}</span>
+                            <span>${s.score}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function showFinalResults(data) {
+            gameScreen.style.display = 'none';
+            resultsScreen.style.display = 'block';
+            resultsTitle.textContent = 'Final Results! 🎉';
+            
+            resultsContent.innerHTML = `
+                <div class="final-scores">
+                    ${data.scores.map((s, index) => `
+                        <div class="final-score-item ${s.playerId === playerId ? 'current-player' : ''} rank-${index + 1}">
+                            <span class="rank">#${index + 1}</span>
+                            <span class="name">${s.playerName}</span>
+                            <span class="score">${s.score} points</span>
+                        </div>
+                    `).join('')}
+                </div>
+                <button onclick="window.location.href='/'" class="btn-primary">New Game</button>
+            `;
+        }
+
+        // Clean up on page unload
+        window.addEventListener('beforeunload', () => {
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.send(JSON.stringify({ type: 'disconnect' }));
+            }
+            if (isHost) {
+                localStorage.removeItem('isHost');
+                localStorage.removeItem('gameId');
+            }
+        });
+    </script>
+    <footer class="copyright">
+        <p>&copy; Copyright by QLINXX</p>
+    </footer>
+</body>
+</html>

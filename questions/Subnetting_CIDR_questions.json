@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Was bedeutet Subnetting?",
+    "options": [
+      "Aufteilung eines Netzwerks in kleinere Netzwerke",
+      "Verbinden von Netzwerken",
+      "Sicherheitsprotokoll in Netzwerken",
+      "Ein Protokoll zur Adressierung"
+    ],
+    "correct": "Aufteilung eines Netzwerks in kleinere Netzwerke"
+  },
+  {
+    "question": "Wofür steht die Abkürzung CIDR?",
+    "options": [
+      "Classless Inter-Domain Routing",
+      "Carrier Internet Data Routing",
+      "Classful Internet Domain Routing",
+      "Compact Internet Design Record"
+    ],
+    "correct": "Classless Inter-Domain Routing"
+  },
+  {
+    "question": "Was bedeutet die CIDR-Notation /24?",
+    "options": [
+      "Netz mit 256 Hosts",
+      "Netz mit 24 Hosts",
+      "Netz mit 256 IP-Adressen",
+      "Netz mit 24-bit Netzwerkanteil"
+    ],
+    "correct": "Netz mit 24-bit Netzwerkanteil"
+  },
+  {
+    "question": "Wie viele Hosts sind in einem /30-Subnetz möglich?",
+    "options": [
+      "2 Hosts",
+      "4 Hosts",
+      "6 Hosts",
+      "8 Hosts"
+    ],
+    "correct": "2 Hosts"
+  },
+  {
+    "question": "Welche Subnetzmaske gehört zu /26?",
+    "options": [
+      "255.255.255.192",
+      "255.255.255.128",
+      "255.255.255.64",
+      "255.255.255.224"
+    ],
+    "correct": "255.255.255.192"
+  },
+  {
+    "question": "Wie viele Hosts sind in einem /26-Netz möglich?",
+    "options": [
+      "62 Hosts",
+      "64 Hosts",
+      "30 Hosts",
+      "32 Hosts"
+    ],
+    "correct": "62 Hosts"
+  },
+  {
+    "question": "Was ist die kleinste nutzbare Subnetzmaske für zwei Hosts?",
+    "options": [
+      "/30",
+      "/31",
+      "/29",
+      "/28"
+    ],
+    "correct": "/30"
+  },
+  {
+    "question": "Was ist die Subnetzmaske für ein /29-Netz?",
+    "options": [
+      "255.255.255.240",
+      "255.255.255.248",
+      "255.255.255.252",
+      "255.255.255.224"
+    ],
+    "correct": "255.255.255.248"
+  },
+  {
+    "question": "Wie viele Subnetze kann man aus einem /24 machen, wenn man auf /26 subnettet?",
+    "options": [
+      "4 Subnetze",
+      "8 Subnetze",
+      "6 Subnetze",
+      "16 Subnetze"
+    ],
+    "correct": "4 Subnetze"
+  },
+  {
+    "question": "Was ist die Netzadresse von 192.168.1.0/25?",
+    "options": [
+      "192.168.1.0",
+      "192.168.1.128",
+      "192.168.1.64",
+      "192.168.1.255"
+    ],
+    "correct": "192.168.1.0"
+  },
+  {
+    "question": "Was ist die Broadcast-Adresse von 192.168.1.0/25?",
+    "options": [
+      "192.168.1.127",
+      "192.168.1.255",
+      "192.168.1.128",
+      "192.168.1.64"
+    ],
+    "correct": "192.168.1.127"
+  },
+  {
+    "question": "Wie viele Hosts passen in ein /25-Netz?",
+    "options": [
+      "126 Hosts",
+      "128 Hosts",
+      "254 Hosts",
+      "254 Hosts"
+    ],
+    "correct": "126 Hosts"
+  },
+  {
+    "question": "Wie viele Subnetze entstehen aus einem /16, wenn man /24 verwendet?",
+    "options": [
+      "256 Subnetze",
+      "512 Subnetze",
+      "1024 Subnetze",
+      "65536 Subnetze"
+    ],
+    "correct": "256 Subnetze"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen /24 und /25?",
+    "options": [
+      "/24 hat 256 IPs, /25 hat 128 IPs",
+      "/24 hat 128 IPs, /25 hat 256 IPs",
+      "/24 hat 256 Hosts, /25 hat 128 Hosts",
+      "/24 und /25 haben gleiche Anzahl Hosts"
+    ],
+    "correct": "/24 hat 256 IPs, /25 hat 128 IPs"
+  },
+  {
+    "question": "Was ist die Netzadresse von 192.168.0.64/26?",
+    "options": [
+      "192.168.0.64",
+      "192.168.0.128",
+      "192.168.0.1",
+      "192.168.0.0"
+    ],
+    "correct": "192.168.0.64"
+  },
+  {
+    "question": "Was ist die Broadcast-Adresse von 192.168.0.64/26?",
+    "options": [
+      "192.168.0.127",
+      "192.168.0.191",
+      "192.168.0.255",
+      "192.168.0.63"
+    ],
+    "correct": "192.168.0.127"
+  },
+  {
+    "question": "Wieviele nutzbare Hosts hat ein /27-Subnetz?",
+    "options": [
+      "30 Hosts",
+      "32 Hosts",
+      "28 Hosts",
+      "64 Hosts"
+    ],
+    "correct": "30 Hosts"
+  },
+  {
+    "question": "Welche CIDR-Notation ergibt eine Subnetzmaske von 255.255.255.224?",
+    "options": [
+      "/27",
+      "/25",
+      "/28",
+      "/26"
+    ],
+    "correct": "/27"
+  },
+  {
+    "question": "Wie erkennt man, ob zwei IP-Adressen im gleichen Subnetz sind?",
+    "options": [
+      "Vergleich der Netzanteile beider IPs",
+      "Vergleich der Hostanteile beider IPs",
+      "Vergleich der Subnetzmasken",
+      "Beide IPs in verschiedenen Netzwerken"
+    ],
+    "correct": "Vergleich der Netzanteile beider IPs"
+  },
+  {
+    "question": "Was bedeutet „Variable Length Subnet Masking“ (VLSM)?",
+    "options": [
+      "Flexible Nutzung der Subnetzmaskenlänge",
+      "Fester Subnetzmaskenstandard",
+      "Automatische IP-Zuweisung",
+      "Ein neues IP-Protokoll"
+    ],
+    "correct": "Flexible Nutzung der Subnetzmaskenlänge"
+  },
+  {
+    "question": "Was ist der Vorteil von Subnetting?",
+    "options": [
+      "Effizientere Nutzung von IP-Adressen",
+      "Schnelleres Routing",
+      "Bessere Sicherheit",
+      "Einfachere Netzwerkkonfiguration"
+    ],
+    "correct": "Effizientere Nutzung von IP-Adressen"
+  },
+  {
+    "question": "Was passiert, wenn die Subnetzmaske zu groß gewählt wird?",
+    "options": [
+      "Subnetz ist zu klein für Hosts",
+      "Netzwerk ist ineffizient",
+      "Hosts können nicht kommunizieren",
+      "Erhöhte Broadcast-Domäne"
+    ],
+    "correct": "Subnetz ist zu klein für Hosts"
+  },
+  {
+    "question": "Was passiert, wenn die Subnetzmaske zu klein gewählt wird?",
+    "options": [
+      "Zu viele Hosts im Subnetz",
+      "Netzwerk wird ineffizient",
+      "Kollisionen nehmen zu",
+      "Einfachere Verwaltung"
+    ],
+    "correct": "Zu viele Hosts im Subnetz"
+  },
+  {
+    "question": "Wie wird die Subnetzmaske 255.255.255.0 binär dargestellt?",
+    "options": [
+      "11111111.11111111.11111111.00000000",
+      "11111111.11111111.11000000.00000000",
+      "11111111.11111111.11111111.11111111",
+      "11111111.11111111.11111110.00000000"
+    ],
+    "correct": "11111111.11111111.11111111.00000000"
+  },
+  {
+    "question": "Wie erkennt man die Anzahl der Hosts in einem Subnetz anhand der CIDR?",
+    "options": [
+      "2^(32-x) - 2",
+      "2^x - 2",
+      "32 - x",
+      "x - 2"
+    ],
+    "correct": "2^(32-x) - 2"
+  },
+  {
+    "question": "Was ist der erste Host in einem /24-Netz?",
+    "options": [
+      "192.168.0.1",
+      "192.168.0.0",
+      "192.168.0.255",
+      "192.168.0.254"
+    ],
+    "correct": "192.168.0.1"
+  },
+  {
+    "question": "Was ist der letzte Host in einem /24-Netz?",
+    "options": [
+      "192.168.0.254",
+      "192.168.0.255",
+      "192.168.0.0",
+      "192.168.0.1"
+    ],
+    "correct": "192.168.0.254"
+  },
+  {
+    "question": "Warum werden die Netzadresse und die Broadcast-Adresse nicht als Host-Adressen gezählt?",
+    "options": [
+      "Sie sind reservierte Adressen für spezifische Zwecke",
+      "Sie sind nicht gültig",
+      "Sie können wie normale Hosts genutzt werden",
+      "Sie sind nur für Router"
+    ],
+    "correct": "Sie sind reservierte Adressen für spezifische Zwecke"
+  },
+  {
+    "question": "Was ist das Ergebnis von 192.168.5.130 UND 255.255.255.0?",
+    "options": [
+      "192.168.5.0",
+      "192.168.5.255",
+      "192.168.5.130",
+      "192.168.0.0"
+    ],
+    "correct": "192.168.5.0"
+  },
+  {
+    "question": "Was ist das Ergebnis von 10.10.10.5 UND 255.255.255.192?",
+    "options": [
+      "10.10.10.0",
+      "10.10.10.64",
+      "10.10.10.192",
+      "10.10.10.128"
+    ],
+    "correct": "10.10.10.0"
+  }
+]

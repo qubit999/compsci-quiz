@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Wofür steht VPN?",
+    "options": [
+      "Virtual Private Network",
+      "Very Private Network",
+      "Virtual Public Network",
+      "Variable Private Network"
+    ],
+    "correct": "Virtual Private Network"
+  },
+  {
+    "question": "Was ist ein VPN?",
+    "options": [
+      "Verschlüsselte Verbindung über öffentliche Netze",
+      "Privates physisches Netzwerk",
+      "Virtueller Router",
+      "Backup-System"
+    ],
+    "correct": "Verschlüsselte Verbindung über öffentliche Netze"
+  },
+  {
+    "question": "Wozu wird ein VPN verwendet?",
+    "options": [
+      "Sichere Remote-Verbindung, Datenschutz",
+      "Nur für Geschwindigkeit",
+      "Nur für Gaming",
+      "Nur für Streaming"
+    ],
+    "correct": "Sichere Remote-Verbindung, Datenschutz"
+  },
+  {
+    "question": "Was ist das Hauptmerkmal eines VPNs?",
+    "options": [
+      "Verschlüsselung und Tunneling",
+      "Hohe Geschwindigkeit",
+      "Große Bandbreite",
+      "Viele Server"
+    ],
+    "correct": "Verschlüsselung und Tunneling"
+  },
+  {
+    "question": "Welche zwei Hauptarten von VPNs gibt es?",
+    "options": [
+      "Site-to-Site und Remote Access",
+      "Hardware und Software",
+      "Kostenlos und kostenpflichtig",
+      "Schnell und langsam"
+    ],
+    "correct": "Site-to-Site und Remote Access"
+  },
+  {
+    "question": "Was ist ein Site-to-Site-VPN?",
+    "options": [
+      "Verbindung zwischen zwei Netzwerken",
+      "Verbindung für einen Benutzer",
+      "Verbindung zwischen Servern",
+      "Lokale Verbindung"
+    ],
+    "correct": "Verbindung zwischen zwei Netzwerken"
+  },
+  {
+    "question": "Was ist ein Remote-Access-VPN?",
+    "options": [
+      "Einzelbenutzer verbindet sich mit Firmennetz",
+      "Verbindung zwischen Büros",
+      "Lokale Netzwerk-Verbindung",
+      "Server-zu-Server"
+    ],
+    "correct": "Einzelbenutzer verbindet sich mit Firmennetz"
+  },
+  {
+    "question": "Was bedeutet Tunneling?",
+    "options": [
+      "Kapselung von Datenpaketen in verschlüsselter Verbindung",
+      "Graben von Kabeln",
+      "Schnelle Datenübertragung",
+      "Backup-Funktion"
+    ],
+    "correct": "Kapselung von Datenpaketen in verschlüsselter Verbindung"
+  },
+  {
+    "question": "Welche Protokolle werden oft für VPNs verwendet?",
+    "options": [
+      "IPsec, OpenVPN, WireGuard",
+      "HTTP, FTP, SMTP",
+      "TCP, UDP, IP",
+      "DNS, DHCP, NTP"
+    ],
+    "correct": "IPsec, OpenVPN, WireGuard"
+  },
+  {
+    "question": "Was ist IPsec?",
+    "options": [
+      "Internet Protocol Security",
+      "Internal Protocol Security",
+      "Integrated Protocol Security",
+      "Interactive Protocol Security"
+    ],
+    "correct": "Internet Protocol Security"
+  },
+  {
+    "question": "Was ist OpenVPN?",
+    "options": [
+      "Open-Source VPN-Software",
+      "Kommerzielle VPN-Lösung",
+      "Hardware-VPN",
+      "Browser-Extension"
+    ],
+    "correct": "Open-Source VPN-Software"
+  },
+  {
+    "question": "Was ist WireGuard?",
+    "options": [
+      "Modernes, schnelles VPN-Protokoll",
+      "Firewall-Software",
+      "Antivirus-Programm",
+      "Router-Firmware"
+    ],
+    "correct": "Modernes, schnelles VPN-Protokoll"
+  },
+  {
+    "question": "Wie authentifizieren sich Benutzer bei einem VPN?",
+    "options": [
+      "Passwort, Zertifikat, Zwei-Faktor",
+      "Nur IP-Adresse",
+      "Nur MAC-Adresse",
+      "Automatisch"
+    ],
+    "correct": "Passwort, Zertifikat, Zwei-Faktor"
+  },
+  {
+    "question": "Wie schützt ein VPN vor Man-in-the-Middle-Angriffen?",
+    "options": [
+      "End-to-End-Verschlüsselung",
+      "Schnelle Verbindung",
+      "Viele Server",
+      "Firewall-Regeln"
+    ],
+    "correct": "End-to-End-Verschlüsselung"
+  },
+  {
+    "question": "Warum nutzen Unternehmen VPNs?",
+    "options": [
+      "Sicherer Remote-Zugang für Mitarbeiter",
+      "Nur für Kosteneinsparung",
+      "Nur für Geschwindigkeit",
+      "Nur für Image"
+    ],
+    "correct": "Sicherer Remote-Zugang für Mitarbeiter"
+  },
+  {
+    "question": "Was ist ein VPN-Client?",
+    "options": [
+      "Software auf Benutzergerät für VPN-Verbindung",
+      "VPN-Server",
+      "Hardware-Gerät",
+      "Router-Firmware"
+    ],
+    "correct": "Software auf Benutzergerät für VPN-Verbindung"
+  },
+  {
+    "question": "Was ist ein VPN-Server?",
+    "options": [
+      "Endpunkt, der VPN-Verbindungen akzeptiert",
+      "Client-Software",
+      "Router",
+      "Firewall"
+    ],
+    "correct": "Endpunkt, der VPN-Verbindungen akzeptiert"
+  },
+  {
+    "question": "Was bedeutet \"Split Tunneling\"?",
+    "options": [
+      "Nur bestimmter Verkehr geht über VPN",
+      "Alle Daten über VPN",
+      "Zwei VPN-Verbindungen",
+      "Getrennte Tunnel"
+    ],
+    "correct": "Nur bestimmter Verkehr geht über VPN"
+  },
+  {
+    "question": "Was ist ein Nachteil von Split Tunneling?",
+    "options": [
+      "Potentielle Sicherheitslücke",
+      "Langsamere Verbindung",
+      "Höhere Kosten",
+      "Komplexere Konfiguration"
+    ],
+    "correct": "Potentielle Sicherheitslücke"
+  },
+  {
+    "question": "Was ist ein Kill Switch beim VPN?",
+    "options": [
+      "Internetverbindung wird bei VPN-Ausfall getrennt",
+      "VPN komplett deaktivieren",
+      "Notfall-Server",
+      "Backup-Verbindung"
+    ],
+    "correct": "Internetverbindung wird bei VPN-Ausfall getrennt"
+  },
+  {
+    "question": "Wie kann ein VPN den Standort verschleiern?",
+    "options": [
+      "IP-Adresse des VPN-Servers wird verwendet",
+      "GPS deaktivieren",
+      "WLAN ausschalten",
+      "Browser-Einstellungen"
+    ],
+    "correct": "IP-Adresse des VPN-Servers wird verwendet"
+  },
+  {
+    "question": "Was sind mögliche Risiken bei der VPN-Nutzung?",
+    "options": [
+      "Vertrauensvoller VPN-Anbieter erforderlich",
+      "Keine Risiken",
+      "Nur langsamere Geschwindigkeit",
+      "Nur höhere Kosten"
+    ],
+    "correct": "Vertrauensvoller VPN-Anbieter erforderlich"
+  },
+  {
+    "question": "Was ist ein typisches Beispiel für ein Remote-Access-VPN im Alltag?",
+    "options": [
+      "Homeoffice-Zugang zum Firmennetzwerk",
+      "Filialverbindung",
+      "Server-Backup",
+      "Internet-Gaming"
+    ],
+    "correct": "Homeoffice-Zugang zum Firmennetzwerk"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen VPN und Proxy?",
+    "options": [
+      "VPN verschlüsselt alles, Proxy nur HTTP",
+      "Kein Unterschied",
+      "VPN ist schneller",
+      "Proxy ist sicherer"
+    ],
+    "correct": "VPN verschlüsselt alles, Proxy nur HTTP"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen VPN und SSH-Tunnel?",
+    "options": [
+      "VPN für ganze Netzwerke, SSH für einzelne Verbindungen",
+      "Kein Unterschied",
+      "VPN ist neuer",
+      "SSH ist sicherer"
+    ],
+    "correct": "VPN für ganze Netzwerke, SSH für einzelne Verbindungen"
+  },
+  {
+    "question": "Was bedeutet \"Always-On VPN\"?",
+    "options": [
+      "VPN startet automatisch beim Systemstart",
+      "VPN läuft 24/7",
+      "VPN kann nicht deaktiviert werden",
+      "VPN-Server ist immer verfügbar"
+    ],
+    "correct": "VPN startet automatisch beim Systemstart"
+  },
+  {
+    "question": "Wie erkennt man, ob ein VPN aktiv ist?",
+    "options": [
+      "Client-Software-Status, andere IP-Adresse",
+      "Langsamere Verbindung",
+      "Andere DNS-Server",
+      "Browser-Einstellungen"
+    ],
+    "correct": "Client-Software-Status, andere IP-Adresse"
+  },
+  {
+    "question": "Welche Rolle spielen Zertifikate im VPN?",
+    "options": [
+      "Authentifizierung und Verschlüsselung",
+      "Nur Identifikation",
+      "Nur Geschwindigkeit",
+      "Nur Logging"
+    ],
+    "correct": "Authentifizierung und Verschlüsselung"
+  },
+  {
+    "question": "Was kann passieren, wenn ein VPN falsch konfiguriert ist?",
+    "options": [
+      "Sicherheitslücken oder keine Verbindung",
+      "Nur langsamere Geschwindigkeit",
+      "Nur höhere Kosten",
+      "Nur instabile Verbindung"
+    ],
+    "correct": "Sicherheitslücken oder keine Verbindung"
+  },
+  {
+    "question": "Warum ist VPN-Nutzung in manchen Ländern eingeschränkt oder verboten?",
+    "options": [
+      "Umgehung von Zensur und Überwachung",
+      "Zu hohe Kosten",
+      "Technische Probleme",
+      "Nur aus Unwissen"
+    ],
+    "correct": "Umgehung von Zensur und Überwachung"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Was ist Active Directory?",
+    "options": [
+      "Verzeichnisdienst von Microsoft",
+      "Backup-Software",
+      "Firewall-System",
+      "Antivirus-Programm"
+    ],
+    "correct": "Verzeichnisdienst von Microsoft"
+  },
+  {
+    "question": "Auf welchem Protokoll basiert AD hauptsächlich?",
+    "options": [
+      "LDAP",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "correct": "LDAP"
+  },
+  {
+    "question": "Was ist eine Domäne im AD-Kontext?",
+    "options": [
+      "Verwaltungseinheit mit gemeinsamer Sicherheitsrichtlinie",
+      "Netzwerkadresse",
+      "Computername",
+      "Benutzergruppe"
+    ],
+    "correct": "Verwaltungseinheit mit gemeinsamer Sicherheitsrichtlinie"
+  },
+  {
+    "question": "Was ist ein Domänencontroller?",
+    "options": [
+      "Server, der AD-Dienste bereitstellt",
+      "Router für Domäne",
+      "Firewall-System",
+      "Backup-Server"
+    ],
+    "correct": "Server, der AD-Dienste bereitstellt"
+  },
+  {
+    "question": "Was ist ein Benutzerkonto in AD?",
+    "options": [
+      "Digitale Identität für Authentifizierung",
+      "Computer in Domäne",
+      "Netzwerkverbindung",
+      "Software-Lizenz"
+    ],
+    "correct": "Digitale Identität für Authentifizierung"
+  },
+  {
+    "question": "Was ist eine OU (Organizational Unit)?",
+    "options": [
+      "Container zur Organisation von AD-Objekten",
+      "Benutzergruppe",
+      "Computer-Typ",
+      "Netzwerk-Segment"
+    ],
+    "correct": "Container zur Organisation von AD-Objekten"
+  },
+  {
+    "question": "Was ist eine Gruppenrichtlinie (GPO)?",
+    "options": [
+      "Regelwerk für Computer- und Benutzereinstellungen",
+      "Benutzergruppe",
+      "Firewall-Regel",
+      "Backup-Plan"
+    ],
+    "correct": "Regelwerk für Computer- und Benutzereinstellungen"
+  },
+  {
+    "question": "Was ist ein Forest (Wald)?",
+    "options": [
+      "Sammlung von AD-Domänenbäumen",
+      "Einzelner Server",
+      "Benutzergruppe",
+      "Netzwerksegment"
+    ],
+    "correct": "Sammlung von AD-Domänenbäumen"
+  },
+  {
+    "question": "Was ist ein Tree (Baum)?",
+    "options": [
+      "Hierarchie von Domänen mit gemeinsamer Root",
+      "Einzelne Domäne",
+      "Benutzergruppe",
+      "Computer-Cluster"
+    ],
+    "correct": "Hierarchie von Domänen mit gemeinsamer Root"
+  },
+  {
+    "question": "Was ist eine Vertrauensstellung?",
+    "options": [
+      "Sicherheitsbeziehung zwischen Domänen",
+      "Netzwerkverbindung",
+      "Benutzer-Gruppe",
+      "Server-Verbindung"
+    ],
+    "correct": "Sicherheitsbeziehung zwischen Domänen"
+  },
+  {
+    "question": "Wie fügt man einen PC zur Domäne hinzu?",
+    "options": [
+      "Systemsteuerung > System > Domäne beitreten",
+      "Netzwerkeinstellungen",
+      "Geräte-Manager",
+      "Windows Update"
+    ],
+    "correct": "Systemsteuerung > System > Domäne beitreten"
+  },
+  {
+    "question": "Welche Rolle spielt DNS im Active Directory?",
+    "options": [
+      "Namensauflösung für AD-Services essentiell",
+      "Nur für Internet",
+      "Backup-Funktion",
+      "Sicherheit"
+    ],
+    "correct": "Namensauflösung für AD-Services essentiell"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen lokaler Anmeldung und Domänenanmeldung?",
+    "options": [
+      "Lokal = PC-Account, Domäne = AD-Account",
+      "Kein Unterschied",
+      "Nur Sicherheitsstufe",
+      "Nur Netzwerkzugriff"
+    ],
+    "correct": "Lokal = PC-Account, Domäne = AD-Account"
+  },
+  {
+    "question": "Was ist ein Gruppenmitglied?",
+    "options": [
+      "Benutzer, der einer AD-Gruppe angehört",
+      "Computer in Domäne",
+      "Administrator",
+      "Domain-Controller"
+    ],
+    "correct": "Benutzer, der einer AD-Gruppe angehört"
+  },
+  {
+    "question": "Was ist der Zweck von AD-Gruppen?",
+    "options": [
+      "Vereinfachte Rechtevergabe",
+      "Computer organisieren",
+      "Netzwerk segmentieren",
+      "Backups erstellen"
+    ],
+    "correct": "Vereinfachte Rechtevergabe"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Sicherheitsgruppe und Verteilergruppe?",
+    "options": [
+      "Sicherheit = Berechtigung, Verteiler = Email",
+      "Kein Unterschied",
+      "Nur Namensgebung",
+      "Nur Anzahl Mitglieder"
+    ],
+    "correct": "Sicherheit = Berechtigung, Verteiler = Email"
+  },
+  {
+    "question": "Wie erstellt man ein neues Benutzerkonto?",
+    "options": [
+      "Active Directory Users and Computers",
+      "Systemsteuerung",
+      "Geräte-Manager",
+      "Windows-Einstellungen"
+    ],
+    "correct": "Active Directory Users and Computers"
+  },
+  {
+    "question": "Wie setzt man ein Passwort für ein Benutzerkonto zurück?",
+    "options": [
+      "AD-Verwaltungstools > Benutzer > Passwort zurücksetzen",
+      "Control Panel",
+      "Registry Editor",
+      "Command Prompt"
+    ],
+    "correct": "AD-Verwaltungstools > Benutzer > Passwort zurücksetzen"
+  },
+  {
+    "question": "Was ist der UPN (User Principal Name)?",
+    "options": [
+      "Email-ähnlicher Anmeldename",
+      "Computer-ID",
+      "Passwort",
+      "Gruppe-Nummer"
+    ],
+    "correct": "Email-ähnlicher Anmeldename"
+  },
+  {
+    "question": "Was ist ein SID?",
+    "options": [
+      "Security Identifier - eindeutige ID",
+      "System Information Database",
+      "Server Identity Data",
+      "Security Integration Daemon"
+    ],
+    "correct": "Security Identifier - eindeutige ID"
+  },
+  {
+    "question": "Wie verhindert man, dass ein Benutzer sich anmeldet?",
+    "options": [
+      "Account deaktivieren",
+      "Passwort löschen",
+      "Computer ausschalten",
+      "Gruppe entfernen"
+    ],
+    "correct": "Account deaktivieren"
+  },
+  {
+    "question": "Wie sieht ein typischer Domänenname aus?",
+    "options": [
+      "unternehmen.local oder unternehmen.com",
+      "192.168.1.1",
+      "WORKGROUP",
+      "Computer01"
+    ],
+    "correct": "unternehmen.local oder unternehmen.com"
+  },
+  {
+    "question": "Wie kann man Gruppenrichtlinien verwalten?",
+    "options": [
+      "Group Policy Management Console",
+      "Registry Editor",
+      "Control Panel",
+      "Device Manager"
+    ],
+    "correct": "Group Policy Management Console"
+  },
+  {
+    "question": "Was ist ein Roaming-Profil?",
+    "options": [
+      "Benutzerprofil folgt dem User auf verschiedene PCs",
+      "Lokales Profil",
+      "Administrator-Profil",
+      "Standard-Profil"
+    ],
+    "correct": "Benutzerprofil folgt dem User auf verschiedene PCs"
+  },
+  {
+    "question": "Was ist ein Servergespeichertes Profil?",
+    "options": [
+      "Profil liegt auf Server, nicht lokal",
+      "Lokales Profil",
+      "Backup-Profil",
+      "Default-Profil"
+    ],
+    "correct": "Profil liegt auf Server, nicht lokal"
+  },
+  {
+    "question": "Wie sichert AD Redundanz?",
+    "options": [
+      "Mehrere Domain Controller",
+      "RAID-System",
+      "Backup-Tapes",
+      "Cloud-Speicher"
+    ],
+    "correct": "Mehrere Domain Controller"
+  },
+  {
+    "question": "Was ist die FSMO-Rolle?",
+    "options": [
+      "Flexible Single Master Operation",
+      "File System Master Operation",
+      "Fast Server Management Operation",
+      "Full System Management Operation"
+    ],
+    "correct": "Flexible Single Master Operation"
+  },
+  {
+    "question": "Welche fünf FSMO-Rollen gibt es?",
+    "options": [
+      "Schema, Domain Naming, PDC, RID, Infrastructure",
+      "DNS, DHCP, File, Print, Web",
+      "Admin, User, Computer, Group, Policy",
+      "Read, Write, Execute, Delete, Modify"
+    ],
+    "correct": "Schema, Domain Naming, PDC, RID, Infrastructure"
+  },
+  {
+    "question": "Welche Tools sind typisch für AD-Administration?",
+    "options": [
+      "ADUC, GPMC, DNS-Manager",
+      "Registry Editor, Device Manager",
+      "Control Panel, Settings",
+      "Task Manager, Event Viewer"
+    ],
+    "correct": "ADUC, GPMC, DNS-Manager"
+  },
+  {
+    "question": "Was ist der Zweck von Active Directory in Unternehmen?",
+    "options": [
+      "Zentrale Verwaltung von Benutzern, Computern und Richtlinien",
+      "Backup-Lösung",
+      "Antivirus-System",
+      "Internet-Gateway"
+    ],
+    "correct": "Zentrale Verwaltung von Benutzern, Computern und Richtlinien"
+  }
+]

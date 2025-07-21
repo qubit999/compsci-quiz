@@ -1,0 +1,152 @@
+[
+    {
+        "question": "Was gehört zur physikalischen Netzwerkinfrastruktur?",
+        "options": ["Router, Switch, Server", "Kabel, Switch, Router", "Kabel, Switch, Patchfelder", "Netzwerkprotokolle, Router, Software"],
+        "correct": "Kabel, Switch, Patchfelder"
+    },
+    {
+        "question": "Welches ist das am häufigsten verwendete Netzwerkkabel in LANs?",
+        "options": ["Glasfaserkabel", "Koaxialkabel", "Twisted-Pair-Kabel", "Patchkabel"],
+        "correct": "Twisted-Pair-Kabel"
+    },
+    {
+        "question": "Welche Kategorie von Twisted-Pair-Kabel unterstützt Geschwindigkeiten bis zu 10 Gbit/s?",
+        "options": ["Cat 3", "Cat 5e", "Cat 6a", "Cat 7"],
+        "correct": "Cat 6a"
+    },
+    {
+        "question": "Welche maximal empfohlene Länge hat ein Ethernet-Kabel (Kupfer) für eine stabile Verbindung?",
+        "options": ["100 Meter", "150 Meter", "50 Meter", "200 Meter"],
+        "correct": "100 Meter"
+    },
+    {
+        "question": "Was ist ein Patchkabel?",
+        "options": ["Ein fest verlegtes Kabel", "Ein kurzes Verbindungskabel", "Ein Glasfaserkabel", "Ein Koaxialkabel"],
+        "correct": "Ein kurzes Verbindungskabel"
+    },
+    {
+        "question": "Welche Arten von Kabeln kommen in der Backbone-Verkabelung eines Gebäudes bevorzugt zum Einsatz?",
+        "options": ["Twisted-Pair-Kabel", "Glasfaserkabel", "Koaxialkabel", "Patchkabel"],
+        "correct": "Glasfaserkabel"
+    },
+    {
+        "question": "Warum werden Glasfaserkabel bevorzugt im Backbone eingesetzt?",
+        "options": ["Hohe Störanfälligkeit", "Hohe Bandbreite und Reichweite", "Geringe Kosten", "Einfache Installation"],
+        "correct": "Hohe Bandbreite und Reichweite"
+    },
+    {
+        "question": "Was bedeutet die Abkürzung LWL?",
+        "options": ["Leitungswasserleitung", "Lichtwellenleiter", "LAN Wireless Link", "Linearer Widerstand Leitung"],
+        "correct": "Lichtwellenleiter"
+    },
+    {
+        "question": "Welche Kabelart ist besonders störanfällig gegen elektromagnetische Interferenzen?",
+        "options": ["STP-Kabel", "Koaxialkabel", "Glasfaserkabel", "UTP-Kabel"],
+        "correct": "UTP-Kabel"
+    },
+    {
+        "question": "Was bedeutet die Bezeichnung 'RJ45'?",
+        "options": ["Ein Steckerstandard für Ethernet", "Eine Netzwerkkarte", "Ein Kabeltyp", "Eine Software"],
+        "correct": "Ein Steckerstandard für Ethernet"
+    },
+    {
+        "question": "Was ist ein Patchfeld (Patchpanel)?",
+        "options": ["Ein Verteiler für Netzwerkverbindungen", "Eine Art Kabel", "Ein Server", "Ein Kabelkanal"],
+        "correct": "Ein Verteiler für Netzwerkverbindungen"
+    },
+    {
+        "question": "Wozu dienen Serverschränke im Netzwerk?",
+        "options": ["Zur Kühlung des Raumes", "Zur strukturierten Unterbringung von Netzwerkkomponenten", "Zur Verkabelung", "Zum Schützen gegen Überspannung"],
+        "correct": "Zur strukturierten Unterbringung von Netzwerkkomponenten"
+    },
+    {
+        "question": "Was ist der Unterschied zwischen einem Patchkabel und einem Installationskabel?",
+        "options": ["Patchkabel sind kürzer und flexibel", "Installationskabel sind für die feste Verlegung", "Patchkabel verbinden Endgeräte, Installationskabel sind fest verlegt", "Alle Antworten sind richtig"],
+        "correct": "Alle Antworten sind richtig"
+    },
+    {
+        "question": "Was ist eine strukturiert verkabelte Netzwerkinfrastruktur?",
+        "options": ["Ein Netz ohne Kabel", "Eine standardisierte, modulare Verkabelung", "Nur Glasfaserkabel", "Ein Netzwerk mit Patchkabeln"],
+        "correct": "Eine standardisierte, modulare Verkabelung"
+    },
+    {
+        "question": "Welcher Kabeltyp verwendet Lichtimpulse statt elektrische Signale?",
+        "options": ["Glasfaserkabel", "Twisted-Pair-Kabel", "Koaxialkabel", "Patchkabel"],
+        "correct": "Glasfaserkabel"
+    },
+    {
+        "question": "Welches Werkzeug wird verwendet, um Netzwerkkabel mit einem Patchpanel zu verbinden?",
+        "options": ["Crimpzange", "Schraubendreher", "Lötkolben", "Multimeter"],
+        "correct": "Crimpzange"
+    },
+    {
+        "question": "Welche Art von Netzwerkkabel bietet die höchste Übertragungsrate und die größte Reichweite?",
+        "options": ["Koaxialkabel", "Kupfer-Twisted-Pair", "Glasfaserkabel", "Patchkabel"],
+        "correct": "Glasfaserkabel"
+    },
+    {
+        "question": "Was ist ein Keystone-Modul?",
+        "options": ["Ein Modul für modulare Netzwerkanschlüsse", "Ein spezieller Netzwerkstecker", "Ein Kabeltyp", "Ein Patchkabel"],
+        "correct": "Ein Modul für modulare Netzwerkanschlüsse"
+    },
+    {
+        "question": "Was versteht man unter einer Netzwerkdose?",
+        "options": ["Eine Schnittstelle für Netzwerkkabel", "Ein Router", "Ein Switch", "Ein Netzwerkprotokoll"],
+        "correct": "Eine Schnittstelle für Netzwerkkabel"
+    },
+    {
+        "question": "Welche Kabelfarbe ist typisch für Crossover-Ethernet-Kabel?",
+        "options": ["grün", "blau", "rot", "orange"],
+        "correct": "rot"
+    },
+    {
+        "question": "Was unterscheidet ein Straight-Through- von einem Crossover-Kabel?",
+        "options": ["Belegung der Adernpaare", "Länge", "Farbe der Ummantelung", "Art des Steckers"],
+        "correct": "Belegung der Adernpaare"
+    },
+    {
+        "question": "Wozu dienen Kabelkanäle in Netzwerken?",
+        "options": ["Zum Schutz und zur Führung von Kabeln", "Zur Kühlung", "Zur Stromversorgung", "Zum Testen von Kabeln"],
+        "correct": "Zum Schutz und zur Führung von Kabeln"
+    },
+    {
+        "question": "Was ist ein Medienkonverter?",
+        "options": ["Ein Gerät zum Konvertieren von Medienformaten", "Ein Gerät zum Umwandeln von Kabeltypen im Netzwerk", "Eine Software", "Ein Kabel"],
+        "correct": "Ein Gerät zum Umwandeln von Kabeltypen im Netzwerk"
+    },
+    {
+        "question": "Was bedeutet UTP und STP bei Kabeln?",
+        "options": ["Unshielded Twisted Pair und Shielded Twisted Pair", "Unterbrechungsfreie Twisted Pair und Standard Twisted Pair", "Unterschiedliche Kabeltypen", "Ungeschirmtes und geschirmtes Telefonkabel"],
+        "correct": "Unshielded Twisted Pair und Shielded Twisted Pair"
+    },
+    {
+        "question": "Warum sollten Kabelbündel nicht zu stark gebogen werden?",
+        "options": ["Um Kabelbrüche zu vermeiden", "Für bessere Signalübertragung", "Um Platz zu sparen", "Zur Kühlung"],
+        "correct": "Um Kabelbrüche zu vermeiden"
+    },
+    {
+        "question": "Welcher physikalische Anschluss wird für Ethernet verwendet?",
+        "options": ["RJ45", "USB", "HDMI", "VGA"],
+        "correct": "RJ45"
+    },
+    {
+        "question": "Was bezeichnet man mit der Abkürzung PoE?",
+        "options": ["Power over Ethernet", "Protocol over Ethernet", "Packet over Ethernet", "Port over Ethernet"],
+        "correct": "Power over Ethernet"
+    },
+    {
+        "question": "Welche Netzwerkinfrastrukturkomponente verbindet mehrere Stockwerke miteinander?",
+        "options": ["Patchfeld", "Backbone", "Switch", "Access Point"],
+        "correct": "Backbone"
+    },
+    {
+        "question": "Welche Verkabelungsnormen gelten in Europa als Standard?",
+        "options": ["DIN EN 50173", "ISO/IEC 11801", "Both DIN EN 50173 and ISO/IEC 11801", "NEC"],
+        "correct": "Both DIN EN 50173 and ISO/IEC 11801"
+    },
+    {
+        "question": "Was bedeutet die Kategorie (Cat) bei Netzwerkkabeln?",
+        "options": ["Qualitäts- und Leistungsstandard", "Kabeltyp", "Kabelmaterial", "Kabelfarbe"],
+        "correct": "Qualitäts- und Leistungsstandard"
+    }
+]

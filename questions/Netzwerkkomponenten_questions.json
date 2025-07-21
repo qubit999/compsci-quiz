@@ -1,0 +1,152 @@
+[
+    {
+        "question": "Was ist die Hauptfunktion eines Switches?",
+        "options": ["Verstärkung von Signalen", "Verbindung von Netzwerken", "Weiterleitung von Datenpaketen basierend auf MAC-Adressen", "Automatische IP-Zuweisung"],
+        "correct": "Weiterleitung von Datenpaketen basierend auf MAC-Adressen"
+    },
+    {
+        "question": "Welches Gerät verbindet verschiedene Netzwerke miteinander?",
+        "options": ["Switch", "Router", "Hub", "Repeater"],
+        "correct": "Router"
+    },
+    {
+        "question": "Was ist die primäre Aufgabe eines Routers?",
+        "options": ["Weiterleitung auf Layer 2", "Verbindung und Weiterleitung zwischen verschiedenen Netzwerken", "Signalverstärkung", "Verteilung von IP-Adressen"],
+        "correct": "Verbindung und Weiterleitung zwischen verschiedenen Netzwerken"
+    },
+    {
+        "question": "Welches Gerät verstärkt lediglich elektrische Signale, ohne Intelligenz?",
+        "options": ["Router", "Hub", "Switch", "Firewall"],
+        "correct": "Hub"
+    },
+    {
+        "question": "Warum werden Hubs heute kaum noch verwendet?",
+        "options": ["Zu teuer", "Keine Signalverstärkung", "Keine intelligente Steuerung des Datenverkehrs", "Nur für analoge Signale geeignet"],
+        "correct": "Keine intelligente Steuerung des Datenverkehrs"
+    },
+    {
+        "question": "Was ist eine Netzwerkkarte (NIC)?",
+        "options": ["Ein Gerät zur Signalverstärkung", "Hardwarekomponente für Netzwerkverbindung am Computer", "Router-Komponente", "Firewall-Komponente"],
+        "correct": "Hardwarekomponente für Netzwerkverbindung am Computer"
+    },
+    {
+        "question": "Welches Gerät kontrolliert typischerweise den Zugriff zum Internet oder zwischen Netzwerksegmenten?",
+        "options": ["Switch", "Firewall", "Hub", "Access Point"],
+        "correct": "Firewall"
+    },
+    {
+        "question": "Was versteht man unter einem Access Point (AP)?",
+        "options": ["Ein Gerät zur Verbindung verschiedener Netzwerke", "Verteiler für WLAN-Signale", "Signalverstärker im Ethernet", "Hardware für IP-Vergabe"],
+        "correct": "Verteiler für WLAN-Signale"
+    },
+    {
+        "question": "Was ist ein Modem?",
+        "options": ["Digital-Analog-Wandler für Datenübertragung", "Signalverstärker", "Routerfunktion", "Firewall-Komponente"],
+        "correct": "Digital-Analog-Wandler für Datenübertragung"
+    },
+    {
+        "question": "Wofür steht die Abkürzung PoE?",
+        "options": ["Power over Ethernet", "Protocol over Ethernet", "Performance of Ethernet", "Port of Ethernet"],
+        "correct": "Power over Ethernet"
+    },
+    {
+        "question": "Welches Gerät wird benötigt, um mehrere Netzwerkgeräte über Ethernet miteinander zu verbinden?",
+        "options": ["Router", "Switch", "Modem", "Access Point"],
+        "correct": "Switch"
+    },
+    {
+        "question": "Was macht ein Repeater im Netzwerk?",
+        "options": ["Netzwerke verbinden", "Signal verstärken", "IP-Adressen vergeben", "Datenpakete filtern"],
+        "correct": "Signal verstärken"
+    },
+    {
+        "question": "Welches Gerät arbeitet auf Layer 1 im OSI-Modell?",
+        "options": ["Switch", "Router", "Hub", "Firewall"],
+        "correct": "Hub"
+    },
+    {
+        "question": "Welches Gerät arbeitet auf Layer 2 im OSI-Modell?",
+        "options": ["Router", "Hub", "Switch", "Modem"],
+        "correct": "Switch"
+    },
+    {
+        "question": "Welches Gerät arbeitet auf Layer 3 im OSI-Modell?",
+        "options": ["Hub", "Switch", "Router", "Repeater"],
+        "correct": "Router"
+    },
+    {
+        "question": "Was macht ein Netzwerk-Switch intelligenter als einen Hub?",
+        "options": ["Signalverstärkung", "Datenfilterung auf MAC-Adressen", "Erweiterte IP-Routing", "Automatische IP-Vergabe"],
+        "correct": "Datenfilterung auf MAC-Adressen"
+    },
+    {
+        "question": "Welche Adresse verwendet ein Router, um Netzwerke voneinander zu unterscheiden?",
+        "options": ["MAC-Adresse", "IP-Adresse", "Port-Adresse", "Subnetzmaske"],
+        "correct": "IP-Adresse"
+    },
+    {
+        "question": "Was ist die MAC-Adresse?",
+        "options": ["Physikalische Geräteadresse", "Logische IP-Adresse", "Netzwerkprotokoll", "Signalverstärker"],
+        "correct": "Physikalische Geräteadresse"
+    },
+    {
+        "question": "Was ist die Aufgabe einer Bridge im Netzwerk?",
+        "options": ["Verbindet verschiedene Netzwerke", "Verbindet Netzwerksegmente auf Layer 2", "Signalverstärkung", "IP-Routing"],
+        "correct": "Verbindet Netzwerksegmente auf Layer 2"
+    },
+    {
+        "question": "Warum wird eine Firewall eingesetzt?",
+        "options": ["Zur Signalverstärkung", "Zur Kontrolle und Sicherheit des Netzwerks", "Für IP-Adressenvergabe", "Zur Datenfilterung auf MAC-Ebene"],
+        "correct": "Zur Kontrolle und Sicherheit des Netzwerks"
+    },
+    {
+        "question": "Welches Gerät wird verwendet, um WLAN-Netzwerke zu erstellen und zu verwalten?",
+        "options": ["Access Point", "Router", "Switch", "Firewall"],
+        "correct": "Access Point"
+    },
+    {
+        "question": "Was ist ein Gateway im Netzwerk?",
+        "options": ["Ein Gerät zur Verbindung unterschiedlicher Netzwerke und Protokolle", "Signalverstärker", "Nur ein Switch", "Zur IP-Vergabe"],
+        "correct": "Ein Gerät zur Verbindung unterschiedlicher Netzwerke und Protokolle"
+    },
+    {
+        "question": "Welches Gerät wandelt digitale Daten in analoge Signale zur Datenübertragung um?",
+        "options": ["Router", "Modem", "Switch", "Firewall"],
+        "correct": "Modem"
+    },
+    {
+        "question": "Welcher Netzwerkkomponente wird oft eine zentrale Sicherheitsfunktion zugeschrieben?",
+        "options": ["Router", "Firewall", "Switch", "Modem"],
+        "correct": "Firewall"
+    },
+    {
+        "question": "Welches Gerät teilt eine physische Netzwerkverbindung in mehrere virtuelle Netzwerke auf?",
+        "options": ["Router", "Switch", "Modem", "Firewall"],
+        "correct": "Switch"
+    },
+    {
+        "question": "Welche Komponente ist entscheidend für die physische Netzwerkverbindung eines Computers?",
+        "options": ["Netzwerkkarte (NIC)", "Router", "Switch", "Firewall"],
+        "correct": "Netzwerkkarte (NIC)"
+    },
+    {
+        "question": "Welches Gerät ist dafür verantwortlich, WLAN-Signale zu verteilen und zu empfangen?",
+        "options": ["Modem", "Access Point", "Hub", "Router"],
+        "correct": "Access Point"
+    },
+    {
+        "question": "Was versteht man unter einem Patchpanel?",
+        "options": ["Verteiler für Netzwerkverbindungen", "Signalverstärker", "Firewall-Komponente", "IP-Adressverteiler"],
+        "correct": "Verteiler für Netzwerkverbindungen"
+    },
+    {
+        "question": "Welches Gerät verbindet zwei unterschiedliche Netzwerktechnologien (z. B. Ethernet und WLAN)?",
+        "options": ["Router", "Access Point", "Switch", "Modem"],
+        "correct": "Router"
+    },
+    {
+        "question": "Welches Netzwerkgerät sorgt für die automatische IP-Zuweisung im Netzwerk?",
+        "options": ["Router", "DHCP-Server", "Switch", "Firewall"],
+        "correct": "DHCP-Server"
+    }
+]

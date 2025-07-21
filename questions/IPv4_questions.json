@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Wofür steht ‚IP‘ in IP-Adresse?",
+    "options": [
+      "Internet Provider",
+      "Internet Protokoll",
+      "Internet Paket",
+      "Interner Prozess"
+    ],
+    "correct": "Internet Protokoll"
+  },
+  {
+    "question": "Wie viele Bits hat eine IPv4-Adresse?",
+    "options": [
+      "16 Bits",
+      "32 Bits",
+      "64 Bits",
+      "128 Bits"
+    ],
+    "correct": "32 Bits"
+  },
+  {
+    "question": "Wie viele IPv4-Adressen sind theoretisch möglich?",
+    "options": [
+      "4.294.967.296",
+      "2.147.483.648",
+      "1.073.741.824",
+      "8.589.934.592"
+    ],
+    "correct": "4.294.967.296"
+  },
+  {
+    "question": "Wie wird eine IPv4-Adresse dargestellt?",
+    "options": [
+      "Vier durch Punkte getrennte Dezimalzahlen",
+      "Hexadezimale Zahlen",
+      "Binärzahlen ohne Trennzeichen",
+      "Als Textstring"
+    ],
+    "correct": "Vier durch Punkte getrennte Dezimalzahlen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einer öffentlichen und einer privaten IP-Adresse?",
+    "options": [
+      "Private sind in lokalen Netzwerken gültig, öffentliche sind weltweit eindeutig",
+      "Private sind weltweit eindeutig, öffentliche nur lokal",
+      "Öffentliche IPs sind privat und nicht erreichbar",
+      "Private IPs werden vom Internetprovider vergeben"
+    ],
+    "correct": "Private sind in lokalen Netzwerken gültig, öffentliche sind weltweit eindeutig"
+  },
+  {
+    "question": "Welche IP-Adressbereiche sind für private Netzwerke reserviert?",
+    "options": [
+      "10.0.0.0-10.255.255.255, 172.16.0.0-172.31.255.255, 192.168.0.0-192.168.255.255",
+      "192.0.0.0-192.255.255.255, 169.254.0.0-169.254.255.255, 127.0.0.0-127.255.255.255",
+      "224.0.0.0-239.255.255.255, 240.0.0.0-255.255.255.255, 0.0.0.0-0.255.255.255",
+      "1.0.0.0-9.255.255.255, 11.0.0.0-126.255.255.255"
+    ],
+    "correct": "10.0.0.0-10.255.255.255, 172.16.0.0-172.31.255.255, 192.168.0.0-192.168.255.255"
+  },
+  {
+    "question": "Was ist eine Loopback-Adresse?",
+    "options": [
+      "Adresse, die Daten intern an sich selbst sendet",
+      "Adresse für Broadcasts im Netzwerk",
+      "Adresse eines Standard-Gateways",
+      "Adresse für Multicast-Kommunikation"
+    ],
+    "correct": "Adresse, die Daten intern an sich selbst sendet"
+  },
+  {
+    "question": "Was bezeichnet die IP-Adresse 0.0.0.0?",
+    "options": [
+      "Platzhalteradresse vor Zuweisung, Standardroute",
+      "Broadcast-Adresse",
+      "Loopback-Adresse",
+      "Gateway-Adresse"
+    ],
+    "correct": "Platzhalteradresse vor Zuweisung, Standardroute"
+  },
+  {
+    "question": "Was ist die Broadcast-Adresse eines IPv4-Netzes?",
+    "options": [
+      "Die letzte Adresse im Netzwerkbereich",
+      "Die erste Adresse im Netzwerkbereich",
+      "Die Netzwerkadresse selbst",
+      "Eine zufällige Adresse im Netz"
+    ],
+    "correct": "Die letzte Adresse im Netzwerkbereich"
+  },
+  {
+    "question": "Was ist ein Standard-Gateway?",
+    "options": [
+      "Router-Adresse, an die Pakete gesendet werden, wenn Ziel nicht im lokalen Netz ist",
+      "IP-Adresse eines Servers",
+      "Adresse für Loopback-Kommunikation",
+      "Broadcast-Adresse des Netzes"
+    ],
+    "correct": "Router-Adresse, an die Pakete gesendet werden, wenn Ziel nicht im lokalen Netz ist"
+  },
+  {
+    "question": "Welche Adresse ist typischerweise das Gateway in einem Heimnetz?",
+    "options": [
+      "192.168.1.1",
+      "10.0.0.1",
+      "127.0.0.1",
+      "0.0.0.0"
+    ],
+    "correct": "192.168.1.1"
+  },
+  {
+    "question": "Wozu dient die Subnetzmaske?",
+    "options": [
+      "Um Netzwerk- und Hostanteil einer IP zu trennen",
+      "Zur Verschlüsselung von IP-Adressen",
+      "Zur Umwandlung von IPv4 zu IPv6",
+      "Zur Angabe des Gateways"
+    ],
+    "correct": "Um Netzwerk- und Hostanteil einer IP zu trennen"
+  },
+  {
+    "question": "Was ist die Subnetzmaske von 255.255.255.0 in CIDR-Notation?",
+    "options": [
+      "/24",
+      "/16",
+      "/8",
+      "/32"
+    ],
+    "correct": "/24"
+  },
+  {
+    "question": "Wie erkennt man anhand einer IP-Adresse, ob zwei Hosts im selben Netz sind?",
+    "options": [
+      "Wenn Netzwerkanteil gleich ist",
+      "Wenn Hostanteil gleich ist",
+      "Wenn beide IPs gleich sind",
+      "Wenn Subnetzmaske unterschiedlich ist"
+    ],
+    "correct": "Wenn Netzwerkanteil gleich ist"
+  },
+  {
+    "question": "Was bedeutet ‚CIDR‘?",
+    "options": [
+      "Classless Inter-Domain Routing",
+      "Classful Internet Data Routing",
+      "Class Integrated Domain Routing",
+      "Class Independent Data Range"
+    ],
+    "correct": "Classless Inter-Domain Routing"
+  },
+  {
+    "question": "Was ist ein Hostanteil in einer IP-Adresse?",
+    "options": [
+      "Teil einer IP-Adresse, der Geräte im Netzwerk identifiziert",
+      "Teil, der das gesamte Netzwerk beschreibt",
+      "Teil für Gateways",
+      "Teil für Broadcasts"
+    ],
+    "correct": "Teil einer IP-Adresse, der Geräte im Netzwerk identifiziert"
+  },
+  {
+    "question": "Was ist eine Netzwerkadresse?",
+    "options": [
+      "Adresse, die ein Netzwerk identifiziert",
+      "Adresse eines Geräts",
+      "Gateway-Adresse",
+      "Loopback-Adresse"
+    ],
+    "correct": "Adresse, die ein Netzwerk identifiziert"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Klassen A, B und C (klassisches IPv4)?",
+    "options": [
+      "Unterschiedliche Netz- und Hostanteile bei der IP",
+      "Unterschiedliche IP-Versionen",
+      "Unterschiedliche Übertragungsprotokolle",
+      "Unterschiedliche Anzahl von Bits"
+    ],
+    "correct": "Unterschiedliche Netz- und Hostanteile bei der IP"
+  },
+  {
+    "question": "Was bedeutet ‚statische IP-Adresse‘?",
+    "options": [
+      "Fest zugewiesene IP-Adresse",
+      "IP-Adresse, die sich ändert",
+      "Öffentliche Adresse",
+      "Private Adresse"
+    ],
+    "correct": "Fest zugewiesene IP-Adresse"
+  },
+  {
+    "question": "Was ist eine dynamische IP-Adresse?",
+    "options": [
+      "IP-Adresse, die automatisch zugewiesen wird",
+      "IP-Adresse, die manuell gesetzt wird",
+      "Öffentliche IP-Adresse",
+      "Private IP-Adresse"
+    ],
+    "correct": "IP-Adresse, die automatisch zugewiesen wird"
+  },
+  {
+    "question": "Warum ist NAT notwendig?",
+    "options": [
+      "Um private IPs ins Internet zu übersetzen",
+      "Um IP-Adressen zu verschlüsseln",
+      "Zur Verbesserung der Geschwindigkeit",
+      "Zur Sicherung von IP-Adressen"
+    ],
+    "correct": "Um private IPs ins Internet zu übersetzen"
+  },
+  {
+    "question": "Was passiert, wenn zwei Geräte dieselbe IP-Adresse im Netzwerk haben?",
+    "options": [
+      "IP-Konflikt, Kommunikationsprobleme",
+      "Beide Geräte funktionieren normal",
+      "Erhöhte Geschwindigkeit",
+      "Kein Problem"
+    ],
+    "correct": "IP-Konflikt, Kommunikationsprobleme"
+  },
+  {
+    "question": "Welche Klasse nutzt man typischerweise für kleine Heimnetzwerke?",
+    "options": [
+      "Klasse C",
+      "Klasse A",
+      "Klasse B",
+      "Klasse D"
+    ],
+    "correct": "Klasse C"
+  },
+  {
+    "question": "Was ist die Netzadresse von 192.168.1.0/24?",
+    "options": [
+      "192.168.1.0",
+      "192.168.0.0",
+      "192.168.1.255",
+      "192.168.0.255"
+    ],
+    "correct": "192.168.1.0"
+  },
+  {
+    "question": "Was ist die Broadcast-Adresse von 192.168.1.0/24?",
+    "options": [
+      "192.168.1.255",
+      "192.168.1.0",
+      "192.168.0.255",
+      "192.168.0.0"
+    ],
+    "correct": "192.168.1.255"
+  },
+  {
+    "question": "Wie viele Hosts sind in einem /24-Netz möglich?",
+    "options": [
+      "254",
+      "256",
+      "128",
+      "512"
+    ],
+    "correct": "254"
+  },
+  {
+    "question": "Was ist ein typisches Beispiel für eine APIPA-Adresse?",
+    "options": [
+      "169.254.x.x",
+      "192.168.x.x",
+      "127.0.0.1",
+      "10.x.x.x"
+    ],
+    "correct": "169.254.x.x"
+  },
+  {
+    "question": "Welcher Bereich ist für Multicast reserviert?",
+    "options": [
+      "224.0.0.0 bis 239.255.255.255",
+      "192.168.0.0 bis 192.168.255.255",
+      "10.0.0.0 bis 10.255.255.255",
+      "0.0.0.0 bis 0.255.255.255"
+    ],
+    "correct": "224.0.0.0 bis 239.255.255.255"
+  },
+  {
+    "question": "Welche Adresse hat typischerweise ein DNS-Server in einem Heimnetz?",
+    "options": [
+      "192.168.1.1",
+      "8.8.8.8",
+      "127.0.0.1",
+      "0.0.0.0"
+    ],
+    "correct": "192.168.1.1"
+  },
+  {
+    "question": "Warum wird IPv4 knapp?",
+    "options": [
+      "Weil es zu wenige Adressen für alle Geräte gibt",
+      "Weil IPv4 veraltet ist",
+      "Weil IPv6 schneller ist",
+      "Weil es keine privaten IPs gibt"
+    ],
+    "correct": "Weil es zu wenige Adressen für alle Geräte gibt"
+  }
+]

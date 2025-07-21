@@ -1,0 +1,152 @@
+[
+    {
+        "question": "Wofür steht die Abkürzung OSI?",
+        "options": ["Open System Interconnection", "Operating System Interface", "Open Source Initiative", "Optical Systems Infrastructure"],
+        "correct": "Open System Interconnection"
+    },
+    {
+        "question": "Wie viele Schichten hat das OSI-Modell?",
+        "options": ["5", "6", "7", "8"],
+        "correct": "7"
+    },
+    {
+        "question": "Welche Schicht ist für die physische Verbindung zuständig?",
+        "options": ["Physikalische Schicht", "Netzwerkschicht", "Transportschicht", "Anwendungsschicht"],
+        "correct": "Physikalische Schicht"
+    },
+    {
+        "question": "Welche Schicht im OSI-Modell kümmert sich um die logische Adressierung?",
+        "options": ["Netzwerkschicht", "Sicherungsschicht", "Transportschicht", "Anwendungsschicht"],
+        "correct": "Netzwerkschicht"
+    },
+    {
+        "question": "Auf welcher Schicht arbeiten Switches typischerweise?",
+        "options": ["Sicherungsschicht", "Netzwerkschicht", "Transportschicht", "Physikalische Schicht"],
+        "correct": "Sicherungsschicht"
+    },
+    {
+        "question": "Welche Schicht kümmert sich um die Darstellung von Datenformaten (z. B. ASCII)?",
+        "options": ["Darstellungsschicht", "Sitzungsschicht", "Anwendungsschicht", "Netzwerkschicht"],
+        "correct": "Darstellungsschicht"
+    },
+    {
+        "question": "Welche Schicht übernimmt die Fehlererkennung und Fehlerkorrektur?",
+        "options": ["Sicherungsschicht", "Netzwerkschicht", "Transportschicht", "Physikalische Schicht"],
+        "correct": "Sicherungsschicht"
+    },
+    {
+        "question": "Welche Schicht stellt sicher, dass die Daten in der richtigen Reihenfolge ankommen?",
+        "options": ["Transportschicht", "Netzwerkschicht", "Darstellungsschicht", "Sicherungsschicht"],
+        "correct": "Transportschicht"
+    },
+    {
+        "question": "In welcher Schicht arbeiten Protokolle wie HTTP und FTP?",
+        "options": ["Anwendungsschicht", "Netzwerkschicht", "Transportschicht", "Session Schicht"],
+        "correct": "Anwendungsschicht"
+    },
+    {
+        "question": "Welches Gerät arbeitet hauptsächlich auf der Netzwerkschicht (Layer 3)?",
+        "options": ["Router", "Switch", "Hub", "Repeater"],
+        "correct": "Router"
+    },
+    {
+        "question": "Welche Schicht im OSI-Modell ist für Sitzungen und Verbindungen zwischen Anwendungen zuständig?",
+        "options": ["Sitzungsschicht", "Darstellungsschicht", "Netzwerkschicht", "Transportschicht"],
+        "correct": "Sitzungsschicht"
+    },
+    {
+        "question": "Welche Schicht wandelt Bits in elektrische oder optische Signale um?",
+        "options": ["Physikalische Schicht", "Sicherungsschicht", "Netzwerkschicht", "Anwendungsschicht"],
+        "correct": "Physikalische Schicht"
+    },
+    {
+        "question": "Nenne ein Protokoll, das auf Schicht 4 (Transport Layer) arbeitet.",
+        "options": ["TCP", "IP", "HTTP", "Ethernet"],
+        "correct": "TCP"
+    },
+    {
+        "question": "Welche Schicht wird oft als Herzstück der Kommunikation angesehen, da sie die Paketweiterleitung übernimmt?",
+        "options": ["Netzwerkschicht", "Transportschicht", "Sicherungsschicht", "Darstellungsschicht"],
+        "correct": "Netzwerkschicht"
+    },
+    {
+        "question": "Auf welcher Schicht operiert typischerweise eine Netzwerkkarte (NIC)?",
+        "options": ["Sicherungsschicht", "Physikalische Schicht", "Netzwerkschicht", "Anwendungsschicht"],
+        "correct": "Sicherungsschicht"
+    },
+    {
+        "question": "Welche OSI-Schicht garantiert eine fehlerfreie Kommunikation durch erneutes Senden bei Fehlern?",
+        "options": ["Transportschicht", "Netzwerkschicht", "Sicherungsschicht", "Physikalische Schicht"],
+        "correct": "Transportschicht"
+    },
+    {
+        "question": "Wie heißt die OSI-Schicht, die hauptsächlich Kabel, Stecker und Hardware umfasst?",
+        "options": ["Physikalische Schicht", "Sicherungsschicht", "Darstellungsschicht", "Anwendungsschicht"],
+        "correct": "Physikalische Schicht"
+    },
+    {
+        "question": "Welches OSI-Modell-Gegenstück hat das TCP/IP-Modell zur Anwendungsschicht?",
+        "options": ["Application Layer", "Network Layer", "Transport Layer", "Data Link Layer"],
+        "correct": "Application Layer"
+    },
+    {
+        "question": "Warum verwendet man überhaupt ein Referenzmodell wie das OSI-Modell?",
+        "options": ["Zur Vereinheitlichung der Kommunikationsstandards", "Zur Verbesserung der Hardwareleistung", "Zur Erhöhung der Internetgeschwindigkeit", "Zur Sicherung der Daten"],
+        "correct": "Zur Vereinheitlichung der Kommunikationsstandards"
+    },
+    {
+        "question": "Welche Schichten werden als „Transportorientierte Schichten“ bezeichnet?",
+        "options": ["Transportschicht und Netzwerkschicht", "Anwendungsschicht und Darstellungsschicht", "Sicherungsschicht und Physikalische Schicht", "Darstellungsschicht und Sitzungsschicht"],
+        "correct": "Transportschicht und Netzwerkschicht"
+    },
+    {
+        "question": "Welche Schichten werden als „Anwendungsorientierte Schichten“ bezeichnet?",
+        "options": ["Anwendungsschicht, Darstellungsschicht, Sitzungsschicht", "Transportschicht, Netzwerkschicht", "Physikalische Schicht und Sicherungsschicht", "Netzwerkschicht und Transportschicht"],
+        "correct": "Anwendungsschicht, Darstellungsschicht, Sitzungsschicht"
+    },
+    {
+        "question": "Welches Protokoll arbeitet auf Schicht 3 (Network Layer)?",
+        "options": ["IP", "TCP", "HTTP", "FTP"],
+        "correct": "IP"
+    },
+    {
+        "question": "Auf welcher Schicht arbeitet der Hub?",
+        "options": ["Physikalische Schicht", "Netzwerkschicht", "Sicherungsschicht", "Anwendungsschicht"],
+        "correct": "Physikalische Schicht"
+    },
+    {
+        "question": "Welche Geräte arbeiten auf Schicht 7 (Application Layer)?",
+        "options": ["Webbrowser und Mail-Clients", "Router und Switches", "Hubs und Repeater", "Netzwerkkarten"],
+        "correct": "Webbrowser und Mail-Clients"
+    },
+    {
+        "question": "In welcher Schicht findet die Paketsegmentierung statt?",
+        "options": ["Transportschicht", "Netzwerkschicht", "Sicherungsschicht", "Darstellungsschicht"],
+        "correct": "Transportschicht"
+    },
+    {
+        "question": "Welche Schicht ist verantwortlich für das Multiplexen von Datenströmen?",
+        "options": ["Transportschicht", "Netzwerkschicht", "Sitzungsschicht", "Darstellungsschicht"],
+        "correct": "Transportschicht"
+    },
+    {
+        "question": "Welche Schicht des OSI-Modells ist für Verschlüsselung zuständig?",
+        "options": ["Darstellungsschicht", "Sitzungsschicht", "Anwendungsschicht", "Netzwerkschicht"],
+        "correct": "Darstellungsschicht"
+    },
+    {
+        "question": "Was beschreibt das OSI-Modell konkret?",
+        "options": ["Einen Referenzrahmen für die Kommunikation in Netzwerken", "Eine Programmiersprache für Netzwerkgeräte", "Eine Hardwarekomponente für Router", "Ein Betriebssystem für Netzwerke"],
+        "correct": "Einen Referenzrahmen für die Kommunikation in Netzwerken"
+    },
+    {
+        "question": "Welche Schicht entscheidet über die Wahl des besten Pfades für Datenpakete?",
+        "options": ["Netzwerkschicht", "Transportschicht", "Sicherungsschicht", "Physikalische Schicht"],
+        "correct": "Netzwerkschicht"
+    },
+    {
+        "question": "Welches ist die oberste Schicht im OSI-Modell?",
+        "options": ["Anwendungsschicht", "Darstellungsschicht", "Sitzungsschicht", "Transportschicht"],
+        "correct": "Anwendungsschicht"
+    }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Wofür steht ACL?",
+    "options": [
+      "Access Control List",
+      "Automatic Control Logic",
+      "Advanced Computer Language",
+      "Active Connection Layer"
+    ],
+    "correct": "Access Control List"
+  },
+  {
+    "question": "Was ist eine ACL?",
+    "options": [
+      "Eine Liste von Regeln, die den Netzwerkverkehr filtert",
+      "Ein Netzwerkprotokoll zur Datenübertragung",
+      "Eine Art von Hardware-Firewall",
+      "Ein Konfigurationsbefehl für Router"
+    ],
+    "correct": "Eine Liste von Regeln, die den Netzwerkverkehr filtert"
+  },
+  {
+    "question": "Auf welcher OSI-Schicht arbeitet eine typische IP-basierte ACL?",
+    "options": [
+      "Schicht 3 (Netzwerkschicht) und Schicht 4 (Transportschicht)",
+      "Schicht 2 (Sicherungsschicht)",
+      "Schicht 1 (Bitübertragungsschicht)",
+      "Schicht 7 (Anwendungsschicht)"
+    ],
+    "correct": "Schicht 3 (Netzwerkschicht) und Schicht 4 (Transportschicht)"
+  },
+  {
+    "question": "Wofür werden ACLs im Netzwerk verwendet?",
+    "options": [
+      "Zur Filterung von Datenpaketen basierend auf Regeln",
+      "Zur Beschleunigung der Datenübertragung",
+      "Zur Verschlüsselung des gesamten Netzwerkverkehrs",
+      "Zur Speicherung von Konfigurationsdateien"
+    ],
+    "correct": "Zur Filterung von Datenpaketen basierend auf Regeln"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einer Standard-ACL und einer erweiterten (Extended) ACL?",
+    "options": [
+      "Standard-ACLs filtern nur nach Quell-IP, erweiterte ACLs nach Quell-/Ziel-IP, Protokoll und Port",
+      "Standard-ACLs sind schneller, aber unsicherer",
+      "Erweiterte ACLs können nur auf Routern, Standard-ACLs auch auf Switches verwendet werden",
+      "Es gibt keinen wesentlichen Unterschied"
+    ],
+    "correct": "Standard-ACLs filtern nur nach Quell-IP, erweiterte ACLs nach Quell-/Ziel-IP, Protokoll und Port"
+  },
+  {
+    "question": "Wie lauten typische Nummernbereiche für Standard-ACLs in Cisco IOS?",
+    "options": [
+      "1-99 und 1300-1999",
+      "100-199",
+      "200-299",
+      "Alle Nummern sind für alle Typen erlaubt"
+    ],
+    "correct": "1-99 und 1300-1999"
+  },
+  {
+    "question": "Wie lauten typische Nummernbereiche für Extended-ACLs in Cisco IOS?",
+    "options": [
+      "100-199 und 2000-2699",
+      "1-99",
+      "300-399",
+      "Es gibt keine festen Nummernbereiche"
+    ],
+    "correct": "100-199 und 2000-2699"
+  },
+  {
+    "question": "Was bedeutet der Befehl permit in einer ACL?",
+    "options": [
+      "Erlaubt Pakete, die der Regel entsprechen",
+      "Blockiert Pakete, die der Regel entsprechen",
+      "Protokolliert Pakete, die der Regel entsprechen",
+      "Leitet Pakete um"
+    ],
+    "correct": "Erlaubt Pakete, die der Regel entsprechen"
+  },
+  {
+    "question": "Was bedeutet der Befehl deny in einer ACL?",
+    "options": [
+      "Blockiert Pakete, die der Regel entsprechen",
+      "Erlaubt Pakete, die der Regel entsprechen",
+      "Ignoriert Pakete, die der Regel entsprechen",
+      "Markiert Pakete für spätere Analyse"
+    ],
+    "correct": "Blockiert Pakete, die der Regel entsprechen"
+  },
+  {
+    "question": "Was passiert, wenn ein Paket keiner Regel in der ACL entspricht?",
+    "options": [
+      "Es wird aufgrund einer impliziten 'deny any' Regel am Ende verworfen",
+      "Es wird immer durchgelassen",
+      "Es wird an den Absender zurückgeschickt",
+      "Der Router fragt nach einer Aktion"
+    ],
+    "correct": "Es wird aufgrund einer impliziten 'deny any' Regel am Ende verworfen"
+  },
+  {
+    "question": "Wo sollte eine Standard-ACL möglichst platziert werden?",
+    "options": [
+      "So nah wie möglich am Ziel",
+      "So nah wie möglich an der Quelle",
+      "Auf dem Core-Router",
+      "Die Platzierung ist irrelevant"
+    ],
+    "correct": "So nah wie möglich am Ziel"
+  },
+  {
+    "question": "Wo sollte eine Extended-ACL platziert werden?",
+    "options": [
+      "So nah wie möglich an der Quelle",
+      "So nah wie möglich am Ziel",
+      "Auf einem Switch anstatt einem Router",
+      "Immer in ausgehender Richtung (out)"
+    ],
+    "correct": "So nah wie möglich an der Quelle"
+  },
+  {
+    "question": "Was ist der Zweck der access-group-Anweisung auf Cisco-Geräten?",
+    "options": [
+      "Sie weist eine ACL einer Schnittstelle und einer Richtung (in/out) zu",
+      "Sie erstellt eine neue Benutzergruppe für den Router-Zugriff",
+      "Sie gruppiert mehrere ACLs zu einer einzigen",
+      "Sie aktiviert den Zugriff auf den Router über das Netzwerk"
+    ],
+    "correct": "Sie weist eine ACL einer Schnittstelle und einer Richtung (in/out) zu"
+  },
+  {
+    "question": "Welche Parameter können in einer Extended-ACL angegeben werden?",
+    "options": [
+      "Quell-/Ziel-IP, Protokoll (TCP/UDP/ICMP), Quell-/Ziel-Port",
+      "Nur Quell-IP-Adresse",
+      "Nur MAC-Adresse",
+      "Nur der Hostname des Geräts"
+    ],
+    "correct": "Quell-/Ziel-IP, Protokoll (TCP/UDP/ICMP), Quell-/Ziel-Port"
+  },
+  {
+    "question": "Wie kann man ICMP-Traffic in einer ACL erlauben?",
+    "options": [
+      "Durch eine Regel mit dem Protokoll 'icmp'",
+      "ICMP kann nicht gefiltert werden",
+      "Durch Angabe des Port-Nummer für Ping",
+      "Nur über Standard-ACLs"
+    ],
+    "correct": "Durch eine Regel mit dem Protokoll 'icmp'"
+  },
+  {
+    "question": "Was bewirkt der Befehl access-list 10 permit 192.168.1.0 0.0.0.255?",
+    "options": [
+      "Erlaubt allen Geräten im Subnetz 192.168.1.0/24 den Zugriff",
+      "Blockiert alle Geräte im Subnetz 192.168.1.0/24",
+      "Erlaubt nur dem Gerät mit der IP 192.168.1.0 den Zugriff",
+      "Der Befehl ist syntaktisch falsch"
+    ],
+    "correct": "Erlaubt allen Geräten im Subnetz 192.168.1.0/24 den Zugriff"
+  },
+  {
+    "question": "Was ist eine Wildcard-Maske in ACLs?",
+    "options": [
+      "Eine invertierte Subnetzmaske, die angibt, welche Teile einer IP-Adresse geprüft werden",
+      "Eine Maske zur Verschlüsselung von Passwörtern",
+      "Ein Platzhalter für eine beliebige IP-Adresse",
+      "Eine andere Bezeichnung für die Subnetzmaske"
+    ],
+    "correct": "Eine invertierte Subnetzmaske, die angibt, welche Teile einer IP-Adresse geprüft werden"
+  },
+  {
+    "question": "Wie lautet die Wildcard-Maske für ein /24-Netz?",
+    "options": [
+      "0.0.0.255",
+      "255.255.255.0",
+      "0.0.0.0",
+      "255.255.255.255"
+    ],
+    "correct": "0.0.0.255"
+  },
+  {
+    "question": "Was bedeutet die Wildcard-Maske 0.0.0.0?",
+    "options": [
+      "Sie prüft exakt eine einzelne IP-Adresse (alle Bits müssen übereinstimmen)",
+      "Sie erlaubt jede beliebige IP-Adresse",
+      "Sie ist ungültig",
+      "Sie prüft alle Adressen innerhalb eines /32-Netzes"
+    ],
+    "correct": "Sie prüft exakt eine einzelne IP-Adresse (alle Bits müssen übereinstimmen)"
+  },
+  {
+    "question": "Wie testet man ACL-Regeln?",
+    "options": [
+      "Durch gezieltes Senden von Paketen (z.B. mit Ping, Telnet) und Überprüfung der Zähler ('show access-lists')",
+      "Durch einen Neustart des Routers",
+      "Man kann sie nicht direkt testen, nur im Live-Betrieb beobachten",
+      "Mit dem Befehl 'test access-list'"
+    ],
+    "correct": "Durch gezieltes Senden von Paketen (z.B. mit Ping, Telnet) und Überprüfung der Zähler ('show access-lists')"
+  },
+  {
+    "question": "Können ACLs auch auf VLANs angewendet werden?",
+    "options": [
+      "Ja, auf Switched Virtual Interfaces (SVIs) oder als VLAN ACL (VACL)",
+      "Nein, ACLs funktionieren nur auf physischen Router-Schnittstellen",
+      "Nur Standard-ACLs",
+      "Nur wenn der Switch ein reiner Layer-2-Switch ist"
+    ],
+    "correct": "Ja, auf Switched Virtual Interfaces (SVIs) oder als VLAN ACL (VACL)"
+  },
+  {
+    "question": "Wie listet man ACLs auf einem Cisco-Router auf?",
+    "options": [
+      "Mit dem Befehl 'show access-lists' oder 'show running-config'",
+      "Mit 'display acl'",
+      "Mit 'list acl'",
+      "ACLs sind in der Konfiguration nicht sichtbar"
+    ],
+    "correct": "Mit dem Befehl 'show access-lists' oder 'show running-config'"
+  },
+  {
+    "question": "Was ist eine Named ACL?",
+    "options": [
+      "Eine ACL, die anstelle einer Nummer einen beschreibenden Namen hat",
+      "Eine ACL, die für einen bestimmten Benutzer gilt",
+      "Eine temporäre ACL",
+      "Eine von Cisco vordefinierte ACL"
+    ],
+    "correct": "Eine ACL, die anstelle einer Nummer einen beschreibenden Namen hat"
+  },
+  {
+    "question": "Wie erstellt man eine Named ACL?",
+    "options": [
+      "Mit dem Befehl 'ip access-list [standard|extended] NAME'",
+      "Mit 'named-acl create NAME'",
+      "Man kann sie nicht manuell erstellen, sie werden automatisch benannt",
+      "Mit 'access-list named ...'"
+    ],
+    "correct": "Mit dem Befehl 'ip access-list [standard|extended] NAME'"
+  },
+  {
+    "question": "Wie löscht man eine ACL vollständig?",
+    "options": [
+      "Mit dem Befehl 'no access-list [NUMMER|NAME]'",
+      "Mit 'delete access-list'",
+      "Durch das Entfernen von der Schnittstelle wird sie automatisch gelöscht",
+      "Durch einen Neustart des Geräts"
+    ],
+    "correct": "Mit dem Befehl 'no access-list [NUMMER|NAME]'"
+  },
+  {
+    "question": "Können ACLs auch für eingehenden und ausgehenden Verkehr getrennt konfiguriert werden?",
+    "options": [
+      "Ja, über die Schlüsselwörter 'in' und 'out' bei der Zuweisung zur Schnittstelle",
+      "Nein, eine ACL gilt immer für beide Richtungen",
+      "Nur bei Extended-ACLs",
+      "Nur auf Firewall-Appliances"
+    ],
+    "correct": "Ja, über die Schlüsselwörter 'in' und 'out' bei der Zuweisung zur Schnittstelle"
+  },
+  {
+    "question": "Können ACLs nur auf Routern eingesetzt werden?",
+    "options": [
+      "Nein, auch auf Layer-3-Switches und Firewalls",
+      "Ja, sie sind eine reine Router-Funktion",
+      "Sie können nur auf Switches, nicht auf Routern, eingesetzt werden",
+      "Sie sind Teil des Betriebssystems und nicht der Netzwerk-Hardware"
+    ],
+    "correct": "Nein, auch auf Layer-3-Switches und Firewalls"
+  },
+  {
+    "question": "Wie schützt eine ACL ein Netzwerk?",
+    "options": [
+      "Indem sie unerwünschten Verkehr blockiert und nur erlaubten Verkehr durchlässt",
+      "Indem sie den Datenverkehr verschlüsselt",
+      "Indem sie Viren und Malware erkennt",
+      "Indem sie Backups des Netzwerkzustands erstellt"
+    ],
+    "correct": "Indem sie unerwünschten Verkehr blockiert und nur erlaubten Verkehr durchlässt"
+  },
+  {
+    "question": "Wie erkennt man Probleme durch falsch konfigurierte ACLs?",
+    "options": [
+      "Durch Konnektivitätsprobleme (erwünschter Traffic wird blockiert) und Log-Meldungen",
+      "An einer hohen CPU-Auslastung des Routers",
+      "Der Router startet automatisch neu",
+      "Falsch konfigurierte ACLs verursachen keine erkennbaren Probleme"
+    ],
+    "correct": "Durch Konnektivitätsprobleme (erwünschter Traffic wird blockiert) und Log-Meldungen"
+  },
+  {
+    "question": "Warum ist die Reihenfolge der Regeln in einer ACL wichtig?",
+    "options": [
+      "Weil Pakete mit der ersten passenden Regel abgeglichen und dann nicht weiter geprüft werden",
+      "Die Reihenfolge ist nicht wichtig, alle Regeln werden geprüft",
+      "Nur bei Standard-ACLs ist die Reihenfolge wichtig",
+      "Damit der Router die Regeln schneller verarbeiten kann"
+    ],
+    "correct": "Weil Pakete mit der ersten passenden Regel abgeglichen und dann nicht weiter geprüft werden"
+  }
+]

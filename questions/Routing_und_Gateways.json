@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Was ist Routing?",
+    "options": ["Paketweiterleitung", "Hardwarekonfiguration", "IP-Adressierung", "Netzwerküberwachung"],
+    "correct": "Paketweiterleitung"
+  },
+  {
+    "question": "Welches Gerät übernimmt typischerweise das Routing?",
+    "options": ["Switch", "Modem", "Router", "Hub"],
+    "correct": "Router"
+  },
+  {
+    "question": "Was ist ein Gateway?",
+    "options": ["Ein Router, der Netzwerke verbindet", "Ein Server", "Ein Netzwerkprotokoll", "Ein Kabeltyp"],
+    "correct": "Ein Router, der Netzwerke verbindet"
+  },
+  {
+    "question": "Auf welcher OSI-Schicht arbeitet Routing?",
+    "options": ["Schicht 2 (Datenverbindung)", "Schicht 3 (Vermittlung)", "Schicht 4 (Transport)", "Schicht 7 (Anwendung)"],
+    "correct": "Schicht 3 (Vermittlung)"
+  },
+  {
+    "question": "Was ist eine Routing-Tabelle?",
+    "options": ["Eine Tabelle mit IP-Adressen", "Eine Liste von Routern", "Eine Datenbank mit Routing-Informationen", "Ein Netzwerkgerät"],
+    "correct": "Eine Datenbank mit Routing-Informationen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen statischem und dynamischem Routing?",
+    "options": ["Manuelles vs automatisches Routing", "Schneller vs langsamer", "IP vs MAC-Adressen", "Einfach vs komplex"],
+    "correct": "Manuelles vs automatisches Routing"
+  },
+  {
+    "question": "Was ist die Default Route?",
+    "options": ["Standardroute für unbekannte Ziele", "Primäre IP-Adresse", "Standard-Gateway", "Backup-Route"],
+    "correct": "Standardroute für unbekannte Ziele"
+  },
+  {
+    "question": "Wie wird die Default Route in IPv4 dargestellt?",
+    "options": ["0.0.0.0/0", "255.255.255.0", "127.0.0.1", "192.168.0.1"],
+    "correct": "0.0.0.0/0"
+  },
+  {
+    "question": "Was ist ein Hop im Routing-Kontext?",
+    "options": ["Ein Zwischengerät auf dem Weg", "Ein Paket", "Eine IP-Adresse", "Ein Protokoll"],
+    "correct": "Ein Zwischengerät auf dem Weg"
+  },
+  {
+    "question": "Was ist die Aufgabe des Gateways in einem Heimnetzwerk?",
+    "options": ["Verbindet lokales Netzwerk mit Internet", "Speichert Daten", "Verwaltet WLAN", "Sichert Netzwerk"],
+    "correct": "Verbindet lokales Netzwerk mit Internet"
+  },
+  {
+    "question": "Was ist ein statischer Eintrag in einer Routing-Tabelle?",
+    "options": ["Manuell konfigurierte Route", "Automatisch erkannte Route", "Standard-Gateway", "Firewall-Regel"],
+    "correct": "Manuell konfigurierte Route"
+  },
+  {
+    "question": "Was ist ein dynamischer Eintrag in einer Routing-Tabelle?",
+    "options": ["Automatisch erkannte Route", "Manuell konfigurierte Route", "Standard-Gateway", "Fehlermeldung"],
+    "correct": "Automatisch erkannte Route"
+  },
+  {
+    "question": "Nenne ein bekanntes Routing-Protokoll.",
+    "options": ["OSPF", "HTTP", "FTP", "SMTP"],
+    "correct": "OSPF"
+  },
+  {
+    "question": "Was ist die Metrik bei Routen?",
+    "options": ["Bewertung der Route", "IP-Adresse", "Netzwerkmaske", "Protokoll"],
+    "correct": "Bewertung der Route"
+  },
+  {
+    "question": "Was ist eine direkte Route?",
+    "options": ["Ziel im gleichen Netz", "Route über Gateway", "Externe Route", "Backup-Route"],
+    "correct": "Ziel im gleichen Netz"
+  },
+  {
+    "question": "Wie erkennt ein Gerät, ob das Ziel im gleichen Netz liegt?",
+    "options": ["Vergleich der Netzwerke", "Ping-Test", "MAC-Adressenprüfung", "Subnetzmaske automatisch"],
+    "correct": "Vergleich der Netzwerke"
+  },
+  {
+    "question": "Was passiert, wenn ein Gerät keine Route zum Zielnetz kennt?",
+    "options": ["Sendet an Default Gateway", "Ignoriert das Paket", "Sendet erneut", "Zeigt Fehler an"],
+    "correct": "Sendet an Default Gateway"
+  },
+  {
+    "question": "Wie lautet ein typischer Gateway-Eintrag in einem Heimnetz?",
+    "options": ["192.168.1.1", "8.8.8.8", "255.255.255.0", "10.0.0.1"],
+    "correct": "192.168.1.1"
+  },
+  {
+    "question": "Kann ein Rechner mehrere Gateways haben?",
+    "options": ["Ja", "Nein", "Nur in Servern", "Nur bei VPN"],
+    "correct": "Ja"
+  },
+  {
+    "question": "Was ist Routing by Policy?",
+    "options": ["Routing basierend auf Regeln", "Manuelles Routing", "Automatisches Routing", "Routing basierend auf Geschwindigkeit"],
+    "correct": "Routing basierend auf Regeln"
+  },
+  {
+    "question": "Was ist ein Layer-3-Switch?",
+    "options": ["Switch mit Routing-Funktion", "Ein Router", "Ein Firewall-Gerät", "Ein Modem"],
+    "correct": "Switch mit Routing-Funktion"
+  },
+  {
+    "question": "Was ist ein Routing-Protokoll?",
+    "options": ["Protokoll zur Routenfindung", "Datenübertragungsprotokoll", "Netzwerkverschlüsselung", "Firewall-Regel"],
+    "correct": "Protokoll zur Routenfindung"
+  },
+  {
+    "question": "Was ist eine Route mit der Subnetzmaske /32?",
+    "options": ["Host-Route", "Netzwerk-Route", "Broadcast-Route", "Default-Route"],
+    "correct": "Host-Route"
+  },
+  {
+    "question": "Wie kann man Routing auf einem Windows-PC anzeigen?",
+    "options": ["route print", "ipconfig", "netstat", "ping"],
+    "correct": "route print"
+  },
+  {
+    "question": "Wie zeigt man die Routing-Tabelle unter Linux an?",
+    "options": ["netstat -r", "ifconfig", "ping", "traceroute"],
+    "correct": "netstat -r"
+  },
+  {
+    "question": "Was ist eine Floating Static Route?",
+    "options": ["Backup-Route", "Haupt-Route", "Dynamische Route", "Default-Route"],
+    "correct": "Backup-Route"
+  },
+  {
+    "question": "Welche Rolle spielt das TTL-Feld im IP-Header?",
+    "options": ["Verhindert endlose Pakete", "IP-Adresse", "Portnummer", "Subnetzmaske"],
+    "correct": "Verhindert endlose Pakete"
+  },
+  {
+    "question": "Was passiert, wenn ein Paket eine ungültige Route hat?",
+    "options": ["Paket wird verworfen", "Paket wird umgeleitet", "Paket bleibt hängen", "Paket wird gespeichert"],
+    "correct": "Paket wird verworfen"
+  },
+  {
+    "question": "Was ist das Ziel von Routing-Protokollen?",
+    "options": ["Optimale Routen finden", "Paketfilterung", "Adresszuweisung", "Netzwerksicherheit"],
+    "correct": "Optimale Routen finden"
+  },
+  {
+    "question": "Wie kann man testen, ob Routing korrekt funktioniert?",
+    "options": ["ping", "traceroute", "ipconfig", "route print"],
+    "correct": "ping"
+  }
+]

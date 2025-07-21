@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Wofür steht IPv6?",
+    "options": [
+      "Internet Package version 6",
+      "Internet Provider version 6",
+      "Internet Protocol version 4",
+      "Internet Protocol version 6"
+    ],
+    "correct": "Internet Protocol version 6"
+  },
+  {
+    "question": "Warum wurde IPv6 entwickelt?",
+    "options": [
+      "Kleinere Pakete",
+      "IPv4-Adressraum erschöpft",
+      "Bessere Sicherheit",
+      "Schnellere Übertragung"
+    ],
+    "correct": "IPv4-Adressraum erschöpft"
+  },
+  {
+    "question": "Wie viele Bits hat eine IPv6-Adresse?",
+    "options": [
+      "32 Bits",
+      "256 Bits",
+      "128 Bits",
+      "64 Bits"
+    ],
+    "correct": "128 Bits"
+  },
+  {
+    "question": "Wie viele IPv6-Adressen sind theoretisch möglich?",
+    "options": [
+      "2^256",
+      "2^128 (ca. 3,4 x 10^38)",
+      "2^32",
+      "2^64"
+    ],
+    "correct": "2^128 (ca. 3,4 x 10^38)"
+  },
+  {
+    "question": "Wie wird eine IPv6-Adresse dargestellt?",
+    "options": [
+      "Hexadezimal mit Doppelpunkten",
+      "Oktal mit Kommas",
+      "Dezimal mit Punkten",
+      "Binär mit Strichen"
+    ],
+    "correct": "Hexadezimal mit Doppelpunkten"
+  },
+  {
+    "question": "Beispiel für eine gültige IPv6-Adresse?",
+    "options": [
+      "255.255.255.0",
+      "2001:db8::1",
+      "10.0.0.1/24",
+      "192.168.1.1"
+    ],
+    "correct": "2001:db8::1"
+  },
+  {
+    "question": "Was bedeutet das Kürzen von IPv6-Adressen?",
+    "options": [
+      "Präfix entfernen",
+      "Hexadezimal zu Dezimal",
+      "Adresse auf 64 Bit kürzen",
+      "Nullblöcke mit :: zusammenfassen"
+    ],
+    "correct": "Nullblöcke mit :: zusammenfassen"
+  },
+  {
+    "question": "Ist die Schreibweise 2001:db8::1 korrekt?",
+    "options": [
+      "Ja, korrekte Kurzschreibweise",
+      "Nein, :: verboten",
+      "Nein, falsche Zeichen",
+      "Nein, zu kurz"
+    ],
+    "correct": "Ja, korrekte Kurzschreibweise"
+  },
+  {
+    "question": "Wie oft darf '::' in einer Adresse verwendet werden?",
+    "options": [
+      "Gar nicht",
+      "Maximal zweimal",
+      "Maximal einmal",
+      "Beliebig oft"
+    ],
+    "correct": "Maximal einmal"
+  },
+  {
+    "question": "Was ist eine Link-Local-Adresse?",
+    "options": [
+      "Globale Internet-Adresse",
+      "Broadcast-Adresse",
+      "Multicast-Adresse",
+      "Lokale Adresse nur im Segment gültig"
+    ],
+    "correct": "Lokale Adresse nur im Segment gültig"
+  },
+  {
+    "question": "Was ist eine Global Unicast-Adresse?",
+    "options": [
+      "Lokale Netzwerkadresse",
+      "Global routbare IPv6-Adresse",
+      "Multicast-Adresse",
+      "Loopback-Adresse"
+    ],
+    "correct": "Global routbare IPv6-Adresse"
+  },
+  {
+    "question": "Was ist eine Multicast-Adresse?",
+    "options": [
+      "Einzelzieladresse",
+      "Broadcast-Ersatz",
+      "Adresse für Gruppenversendung",
+      "Gateway-Adresse"
+    ],
+    "correct": "Adresse für Gruppenversendung"
+  },
+  {
+    "question": "Hat IPv6 Broadcasts?",
+    "options": [
+      "Nein, nur Multicast",
+      "Nur für lokale Netze",
+      "Ja, aber erweitert",
+      "Ja, wie IPv4"
+    ],
+    "correct": "Nein, nur Multicast"
+  },
+  {
+    "question": "Welche Adresse ist die Loopback-Adresse in IPv6?",
+    "options": [
+      "2001:db8::1",
+      "fe80::1",
+      "127.0.0.1",
+      "::1"
+    ],
+    "correct": "::1"
+  },
+  {
+    "question": "Was ist ein Interface Identifier?",
+    "options": [
+      "Die MAC-Adresse",
+      "Die oberen 64 Bits",
+      "Die unteren 64 Bits der IPv6-Adresse",
+      "Das gesamte Präfix"
+    ],
+    "correct": "Die unteren 64 Bits der IPv6-Adresse"
+  },
+  {
+    "question": "Wie lautet die Standard-Subnetzmaske für eine Global Unicast-Adresse?",
+    "options": [
+      "/128",
+      "/64",
+      "/16",
+      "/24"
+    ],
+    "correct": "/64"
+  },
+  {
+    "question": "Was bedeutet Stateless Address Autoconfiguration (SLAAC)?",
+    "options": [
+      "DNS-Konfiguration",
+      "Statische IP-Vergabe",
+      "Automatische IPv6-Adresskonfiguration",
+      "DHCP für IPv6"
+    ],
+    "correct": "Automatische IPv6-Adresskonfiguration"
+  },
+  {
+    "question": "Was ist der Vorteil von SLAAC?",
+    "options": [
+      "Kleinere Pakete",
+      "Bessere Sicherheit",
+      "Schnellere Verbindungen",
+      "Keine DHCP-Server erforderlich"
+    ],
+    "correct": "Keine DHCP-Server erforderlich"
+  },
+  {
+    "question": "Was ist ein IPv6-Präfix?",
+    "options": [
+      "Host-Anteil der Adresse",
+      "MAC-Adresse",
+      "Interface Identifier",
+      "Netzwerkanteil der IPv6-Adresse"
+    ],
+    "correct": "Netzwerkanteil der IPv6-Adresse"
+  },
+  {
+    "question": "Was ist eine IPv6-Adresse mit Privacy Extension?",
+    "options": [
+      "Temporäre Adresse für Datenschutz",
+      "VPN-Tunnel Adresse",
+      "Verschlüsselte Adresse",
+      "Anonyme MAC-Adresse"
+    ],
+    "correct": "Temporäre Adresse für Datenschutz"
+  },
+  {
+    "question": "Was ist eine Anycast-Adresse?",
+    "options": [
+      "Multicast-Variante",
+      "Broadcast-Ersatz",
+      "Unicast-Gruppe",
+      "Eine Adresse für mehrere Interfaces"
+    ],
+    "correct": "Eine Adresse für mehrere Interfaces"
+  },
+  {
+    "question": "Wie prüft man IPv6-Konnektivität?",
+    "options": [
+      "nslookup",
+      "ping4",
+      "tracert",
+      "ping6 oder ping -6"
+    ],
+    "correct": "ping6 oder ping -6"
+  },
+  {
+    "question": "Welche Tools zeigen IPv6-Adressen unter Windows?",
+    "options": [
+      "ipconfig /all",
+      "arp",
+      "tracert",
+      "ping"
+    ],
+    "correct": "ipconfig /all"
+  },
+  {
+    "question": "Welche Tools zeigen IPv6-Adressen unter Linux?",
+    "options": [
+      "route",
+      "ping6",
+      "ip addr show oder ifconfig",
+      "traceroute6"
+    ],
+    "correct": "ip addr show oder ifconfig"
+  },
+  {
+    "question": "Welche Rolle spielt der Router Advertisement (RA)?",
+    "options": [
+      "Übermittelt Präfix-Informationen für SLAAC",
+      "Löst DNS auf",
+      "Vergibt IP-Adressen",
+      "Routet Pakete"
+    ],
+    "correct": "Übermittelt Präfix-Informationen für SLAAC"
+  },
+  {
+    "question": "Wie kann man feststellen, ob ein Netzwerk IPv6 unterstützt?",
+    "options": [
+      "DNS-Query starten",
+      "DHCP-Request senden",
+      "ARP-Scan durchführen",
+      "IPv6-Adresse ping oder Router RA prüfen"
+    ],
+    "correct": "IPv6-Adresse ping oder Router RA prüfen"
+  },
+  {
+    "question": "Welche Adresse beginnt mit ::ffff:?",
+    "options": [
+      "IPv4-mapped IPv6-Adresse",
+      "Link-Local Adresse",
+      "Multicast-Adresse",
+      "Loopback-Adresse"
+    ],
+    "correct": "IPv4-mapped IPv6-Adresse"
+  },
+  {
+    "question": "Was ist der Hauptvorteil von IPv6 gegenüber IPv4?",
+    "options": [
+      "Kleinere Header",
+      "Höhere Geschwindigkeit",
+      "Deutlich größerer Adressraum",
+      "Bessere Kompression"
+    ],
+    "correct": "Deutlich größerer Adressraum"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen IPv4 NAT und IPv6?",
+    "options": [
+      "IPv6 benötigt kein NAT",
+      "IPv6 NAT ist schneller",
+      "IPv6 NAT ist sicherer",
+      "IPv6 NAT ist einfacher"
+    ],
+    "correct": "IPv6 benötigt kein NAT"
+  },
+  {
+    "question": "Kann ein Gerät gleichzeitig IPv4 und IPv6 nutzen?",
+    "options": [
+      "Nein, nur eines möglich",
+      "Ja, Dual-Stack Konfiguration",
+      "Nur mit NAT64",
+      "Nur mit Tunneling"
+    ],
+    "correct": "Ja, Dual-Stack Konfiguration"
+  }
+]

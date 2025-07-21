@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Welche drei Hauptkategorien von Netzwerkgrößen kennst du?",
+    "options": ["LAN, MAN, WAN", "CPU, RAM, ROM", "HTTP, FTP, SMTP", "DNS, DHCP, IP"],
+    "correct": "LAN, MAN, WAN"
+  },
+  {
+    "question": "Was bedeutet LAN?",
+    "options": ["Local Area Network", "Large Area Network", "Long Area Network", "Light Area Network"],
+    "correct": "Local Area Network"
+  },
+  {
+    "question": "In welchem Bereich erstreckt sich typischerweise ein LAN?",
+    "options": ["innerhalb eines Gebäudes", "innerhalb einer Stadt", "zwischen verschiedenen Städten", "weltweit"],
+    "correct": "innerhalb eines Gebäudes"
+  },
+  {
+    "question": "Was bedeutet MAN?",
+    "options": ["Metropolitan Area Network", "Multiple Area Network", "Massive Area Network", "Mobile Area Network"],
+    "correct": "Metropolitan Area Network"
+  },
+  {
+    "question": "Welche geographische Ausdehnung hat typischerweise ein MAN?",
+    "options": ["innerhalb einer Stadt", "innerhalb eines Gebäudes", "weltweit", "zwischen verschiedenen Ländern"],
+    "correct": "innerhalb einer Stadt"
+  },
+  {
+    "question": "Was bedeutet WAN?",
+    "options": ["Wide Area Network", "Wireless Area Network", "Wired Area Network", "Worldwide Area Network"],
+    "correct": "Wide Area Network"
+  },
+  {
+    "question": "Nenne ein bekanntes Beispiel für ein WAN.",
+    "options": ["Internet", "LAN", "Bluetooth", "Ethernet"],
+    "correct": "Internet"
+  },
+  {
+    "question": "Was unterscheidet ein LAN primär von einem WAN?",
+    "options": ["Geographische Reichweite", "Übertragungsgeschwindigkeit", "Verbindungstyp", "Geräteanzahl"],
+    "correct": "Geographische Reichweite"
+  },
+  {
+    "question": "Was bedeutet PAN?",
+    "options": ["Personal Area Network", "Public Area Network", "Private Area Network", "Primary Area Network"],
+    "correct": "Personal Area Network"
+  },
+  {
+    "question": "Nenne ein typisches Gerät in einem PAN.",
+    "options": ["Bluetooth-Headset", "Router", "Switch", "Server"],
+    "correct": "Bluetooth-Headset"
+  },
+  {
+    "question": "Was ist ein CAN?",
+    "options": ["Campus Area Network", "Computer Area Network", "Control Area Network", "Cloud Area Network"],
+    "correct": "Campus Area Network"
+  },
+  {
+    "question": "Welche Institution nutzt typischerweise ein CAN?",
+    "options": ["Universität", "Privatperson", "Unternehmen", "Internet Service Provider"],
+    "correct": "Universität"
+  },
+  {
+    "question": "Wozu dient typischerweise ein SAN?",
+    "options": ["Speicher-Netzwerk", "Server-Netzwerk", "Sicherheits-Netzwerk", "Software-Netzwerk"],
+    "correct": "Speicher-Netzwerk"
+  },
+  {
+    "question": "Welche Übertragungstechnologien dominieren in einem LAN?",
+    "options": ["Ethernet und WLAN", "Bluetooth und ZigBee", "DSL und Glasfaser", "5G und LTE"],
+    "correct": "Ethernet und WLAN"
+  },
+  {
+    "question": "Wie nennt man ein Netzwerk, das geografisch global verteilt ist?",
+    "options": ["WAN", "LAN", "MAN", "PAN"],
+    "correct": "WAN"
+  },
+  {
+    "question": "Welche Geschwindigkeiten sind in modernen LANs typisch?",
+    "options": ["1 Gbit/s bis 10 Gbit/s", "10 Mbit/s bis 100 Mbit/s", "100 Gbit/s bis 1 Tbit/s", "56 Kbit/s bis 1 Mbit/s"],
+    "correct": "1 Gbit/s bis 10 Gbit/s"
+  },
+  {
+    "question": "Nenne eine typische Verbindungstechnologie im WAN-Bereich.",
+    "options": ["MPLS", "Ethernet", "WLAN", "Bluetooth"],
+    "correct": "MPLS"
+  },
+  {
+    "question": "Was bezeichnet ein VPN?",
+    "options": ["Virtuelles Privates Netzwerk", "Vernetztes Öffentliches Netzwerk", "Virtuelles Persönliches Netzwerk", "Verteiltes Privates Netzwerk"],
+    "correct": "Virtuelles Privates Netzwerk"
+  },
+  {
+    "question": "Wie groß ist typischerweise der Radius eines PAN?",
+    "options": ["bis zu 10 Meter", "über 100 Meter", "über 1 Kilometer", "bis zu 1 Meter"],
+    "correct": "bis zu 10 Meter"
+  },
+  {
+    "question": "Welches Netzwerk verbindet typischerweise mehrere LANs innerhalb einer Stadt?",
+    "options": ["MAN", "WAN", "PAN", "CAN"],
+    "correct": "MAN"
+  },
+  {
+    "question": "Welches Netzwerk bietet typischerweise die höchste Übertragungsrate?",
+    "options": ["SAN", "LAN", "WAN", "PAN"],
+    "correct": "SAN"
+  },
+  {
+    "question": "Welche Art von Netzwerk verbindet typischerweise internationale Standorte?",
+    "options": ["WAN", "LAN", "MAN", "PAN"],
+    "correct": "WAN"
+  },
+  {
+    "question": "Welche Art von Netzwerk verwendet Bluetooth häufig zur Datenübertragung?",
+    "options": ["PAN", "LAN", "MAN", "WAN"],
+    "correct": "PAN"
+  },
+  {
+    "question": "Welche Netzwerkgröße verbindet typischerweise Bürogebäude innerhalb eines Firmengeländes?",
+    "options": ["CAN", "PAN", "MAN", "WAN"],
+    "correct": "CAN"
+  },
+  {
+    "question": "Wodurch unterscheiden sich WAN-Verbindungen hauptsächlich von LAN-Verbindungen?",
+    "options": ["Geographische Ausdehnung", "Übertragungsgeschwindigkeit", "Verbindungsart", "Sicherheitsmerkmale"],
+    "correct": "Geographische Ausdehnung"
+  },
+  {
+    "question": "Welche Übertragungstechnologie wäre typisch für ein MAN?",
+    "options": ["Glasfaser", "Bluetooth", "DSL", "Ethernet"],
+    "correct": "Glasfaser"
+  },
+  {
+    "question": "Wie heißen Netzwerke, die Geräte im unmittelbaren Umfeld einer Person verbinden?",
+    "options": ["PAN", "LAN", "MAN", "WAN"],
+    "correct": "PAN"
+  },
+  {
+    "question": "Was ist charakteristisch für ein SAN im Vergleich zu anderen Netzwerktypen?",
+    "options": ["Optimiert für Speicherzugriffe", "Optimiert für hohe Netzwerksicherheit", "Optimiert für Mobilgeräte", "Optimiert für drahtlose Kommunikation"],
+    "correct": "Optimiert für Speicherzugriffe"
+  },
+  {
+    "question": "Wodurch wird ein LAN üblicherweise verwaltet?",
+    "options": ["Zentral durch einen Administrator", "Dezentral durch Nutzer", "Automatisch durch KI", "Durch das WAN"],
+    "correct": "Zentral durch einen Administrator"
+  },
+  {
+    "question": "Welche Rolle spielt das Internet im Kontext von Netzwerkgrößen?",
+    "options": ["Globale Vernetzung von WANs", "Lokale Vernetzung von LANs", "Verbindung von PANs", "Verbindung von CANs"],
+    "correct": "Globale Vernetzung von WANs"
+  }
+]

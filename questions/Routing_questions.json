@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Was ist das erste, was du prüfen solltest, wenn ein Gerät keine Verbindung ins Internet hat?",
+    "options": [
+      "Physikalische Verbindung (Kabel, WLAN)",
+      "Firewall deaktivieren",
+      "DNS-Server konfigurieren",
+      "IP-Adresse neu vergeben"
+    ],
+    "correct": "Physikalische Verbindung (Kabel, WLAN)"
+  },
+  {
+    "question": "Welcher Befehl prüft, ob ein Zielgerät erreichbar ist?",
+    "options": [
+      "ping",
+      "ipconfig",
+      "traceroute",
+      "netstat"
+    ],
+    "correct": "ping"
+  },
+  {
+    "question": "Welcher Befehl zeigt die Route zum Ziel?",
+    "options": [
+      "arp",
+      "traceroute/tracert",
+      "netstat",
+      "ping"
+    ],
+    "correct": "traceroute/tracert"
+  },
+  {
+    "question": "Welcher Befehl zeigt die Routing-Tabelle in Windows?",
+    "options": [
+      "arp -a",
+      "ipconfig /all",
+      "route print",
+      "netstat -a"
+    ],
+    "correct": "route print"
+  },
+  {
+    "question": "Welcher Befehl zeigt die Routing-Tabelle unter Linux?",
+    "options": [
+      "ip route oder route -n",
+      "ping",
+      "ifconfig",
+      "netstat -a"
+    ],
+    "correct": "ip route oder route -n"
+  },
+  {
+    "question": "Was bedeutet 'Zielhost nicht erreichbar' beim Ping?",
+    "options": [
+      "Firewall blockiert Ping",
+      "Das Ziel ist nicht im Netzwerk erreichbar",
+      "DNS funktioniert nicht",
+      "DHCP-Problem liegt vor"
+    ],
+    "correct": "Das Ziel ist nicht im Netzwerk erreichbar"
+  },
+  {
+    "question": "Was bedeutet 'Zeitüberschreitung der Anforderung' beim Ping?",
+    "options": [
+      "DNS-Fehler aufgetreten",
+      "Gateway falsch konfiguriert",
+      "Keine Antwort binnen Timeout erhalten",
+      "IP-Konflikt vorhanden"
+    ],
+    "correct": "Keine Antwort binnen Timeout erhalten"
+  },
+  {
+    "question": "Was ist ein 'Routing Loop'?",
+    "options": [
+      "Pakete werden endlos zwischen Routern weitergeleitet",
+      "IP-Adresse doppelt vergeben",
+      "Router ist offline",
+      "DNS funktioniert nicht"
+    ],
+    "correct": "Pakete werden endlos zwischen Routern weitergeleitet"
+  },
+  {
+    "question": "Wie kann man Routing Loops vermeiden?",
+    "options": [
+      "Bessere Hardware einsetzen",
+      "TTL-Feld und Split Horizon verwenden",
+      "Alle statischen Routen löschen",
+      "Mehr Bandbreite bereitstellen"
+    ],
+    "correct": "TTL-Feld und Split Horizon verwenden"
+  },
+  {
+    "question": "Was ist das TTL-Feld in einem IP-Paket?",
+    "options": [
+      "Definiert Verschlüsselungstyp",
+      "Legt Prioritätswert fest",
+      "Time To Live - verhindert Loops",
+      "Bestimmt die Paketgröße"
+    ],
+    "correct": "Time To Live - verhindert Loops"
+  },
+  {
+    "question": "Was zeigt der Befehl ipconfig /all unter Windows?",
+    "options": [
+      "Detaillierte Netzwerkkonfiguration",
+      "Routing-Tabelle",
+      "Aktive Netzwerkverbindungen",
+      "ARP-Cache Inhalt"
+    ],
+    "correct": "Detaillierte Netzwerkkonfiguration"
+  },
+  {
+    "question": "Wie kann man überprüfen, ob das Standard-Gateway korrekt konfiguriert ist?",
+    "options": [
+      "ARP-Cache prüfen",
+      "Gateway anpingen (ping gateway-ip)",
+      "DHCP-Lease erneuern",
+      "DNS-Server testen"
+    ],
+    "correct": "Gateway anpingen (ping gateway-ip)"
+  },
+  {
+    "question": "Was passiert, wenn das Gateway falsch konfiguriert ist?",
+    "options": [
+      "ARP-Tabelle wird geleert",
+      "DHCP vergibt falsche IPs",
+      "Keine Verbindung außerhalb des Subnetzes",
+      "DNS funktioniert nicht"
+    ],
+    "correct": "Keine Verbindung außerhalb des Subnetzes"
+  },
+  {
+    "question": "Was ist, wenn ein Gerät im eigenen Subnetz erreichbar ist, aber nicht außerhalb?",
+    "options": [
+      "DHCP-Server offline",
+      "DNS-Server defekt",
+      "Gateway-Problem oder Routing-Fehler",
+      "Netzwerkkarte defekt"
+    ],
+    "correct": "Gateway-Problem oder Routing-Fehler"
+  },
+  {
+    "question": "Welche Funktion hat ARP im lokalen Netzwerk?",
+    "options": [
+      "Routing zwischen Subnetzen",
+      "DNS-Auflösung",
+      "Auflösung von IP- zu MAC-Adressen",
+      "DHCP-Adressvergabe"
+    ],
+    "correct": "Auflösung von IP- zu MAC-Adressen"
+  },
+  {
+    "question": "Wie überprüft man ARP-Einträge in Windows?",
+    "options": [
+      "ipconfig /all",
+      "netstat -r",
+      "ping -a",
+      "arp -a"
+    ],
+    "correct": "arp -a"
+  },
+  {
+    "question": "Was bedeutet 'No route to host'?",
+    "options": [
+      "Kein Routing-Pfad zum Ziel gefunden",
+      "DNS kann Namen nicht auflösen",
+      "Firewall blockiert Verbindung",
+      "Port ist geschlossen"
+    ],
+    "correct": "Kein Routing-Pfad zum Ziel gefunden"
+  },
+  {
+    "question": "Was zeigt der Befehl netstat -rn?",
+    "options": [
+      "Aktive TCP-Verbindungen",
+      "DNS-Cache Einträge",
+      "Routing-Tabelle numerisch",
+      "Netzwerk-Interfaces"
+    ],
+    "correct": "Routing-Tabelle numerisch"
+  },
+  {
+    "question": "Was ist, wenn nur bestimmte Ziele nicht erreichbar sind?",
+    "options": [
+      "Netzwerkkarte defekt",
+      "Genereller DNS-Ausfall",
+      "DHCP-Problem",
+      "Spezifische Routing-Regel oder Firewall-Block"
+    ],
+    "correct": "Spezifische Routing-Regel oder Firewall-Block"
+  },
+  {
+    "question": "Wie kann ein DNS-Problem ein Routing-Problem vortäuschen?",
+    "options": [
+      "ARP-Cache wird geleert",
+      "Routing-Tabelle wird gelöscht",
+      "Gateway wird falsch gesetzt",
+      "Namen werden nicht aufgelöst, IPs funktionieren"
+    ],
+    "correct": "Namen werden nicht aufgelöst, IPs funktionieren"
+  },
+  {
+    "question": "Wie prüft man DNS-Funktionalität unabhängig vom Routing?",
+    "options": [
+      "netstat prüfen",
+      "ping verwenden",
+      "traceroute starten",
+      "nslookup oder dig verwenden"
+    ],
+    "correct": "nslookup oder dig verwenden"
+  },
+  {
+    "question": "Was prüft der Befehl ping 8.8.8.8?",
+    "options": [
+      "Internet-Konnektivität über IP",
+      "Gateway-Status",
+      "DHCP-Verbindung",
+      "DNS-Funktionalität"
+    ],
+    "correct": "Internet-Konnektivität über IP"
+  },
+  {
+    "question": "Was prüft der Befehl ping www.google.de?",
+    "options": [
+      "Nur Gateway-Verbindung",
+      "Internet-Konnektivität und DNS",
+      "Nur ARP-Funktionalität",
+      "Nur lokale Konnektivität"
+    ],
+    "correct": "Internet-Konnektivität und DNS"
+  },
+  {
+    "question": "Was ist, wenn ping IP geht, aber ping Hostname nicht?",
+    "options": [
+      "Routing-Problem",
+      "Netzwerkkarte defekt",
+      "Gateway defekt",
+      "DNS-Problem liegt vor"
+    ],
+    "correct": "DNS-Problem liegt vor"
+  },
+  {
+    "question": "Was passiert, wenn zwei Gateways mit derselben Metrik konfiguriert sind?",
+    "options": [
+      "Verbindung bricht ab",
+      "Load Balancing oder Round Robin",
+      "Routing Loop entsteht",
+      "DNS funktioniert nicht"
+    ],
+    "correct": "Load Balancing oder Round Robin"
+  },
+  {
+    "question": "Wie überprüft man den Gateway in Linux?",
+    "options": [
+      "netstat -a",
+      "ping localhost",
+      "ifconfig -a",
+      "ip route show default"
+    ],
+    "correct": "ip route show default"
+  },
+  {
+    "question": "Was zeigt traceroute bei einem Routingproblem?",
+    "options": [
+      "Wo Pakete steckenbleiben oder Schleifen bilden",
+      "ARP-Tabellen Inhalt",
+      "Bandbreitenauslastung",
+      "DNS-Auflösungszeit"
+    ],
+    "correct": "Wo Pakete steckenbleiben oder Schleifen bilden"
+  },
+  {
+    "question": "Was ist, wenn traceroute bei einem internen Router endet?",
+    "options": [
+      "Router blockiert oder Drop-Regel aktiv",
+      "ARP-Cache voll",
+      "DNS-Server antwortet nicht",
+      "DHCP-Lease abgelaufen"
+    ],
+    "correct": "Router blockiert oder Drop-Regel aktiv"
+  },
+  {
+    "question": "Wie hilft ein Layer-by-Layer-Vorgehen beim Troubleshooting?",
+    "options": [
+      "Automatische Fehlererkennung",
+      "Schnellere Problemlösung",
+      "Weniger Tools erforderlich",
+      "Systematische Fehlereingrenzung von unten nach oben"
+    ],
+    "correct": "Systematische Fehlereingrenzung von unten nach oben"
+  },
+  {
+    "question": "Wie kann man Routing-Probleme visuell darstellen?",
+    "options": [
+      "Bandbreitenmonitoring",
+      "Logdateien analysieren",
+      "Netzwerkdiagramm und Traceroute-Pfad",
+      "DNS-Cache auswerten"
+    ],
+    "correct": "Netzwerkdiagramm und Traceroute-Pfad"
+  }
+]

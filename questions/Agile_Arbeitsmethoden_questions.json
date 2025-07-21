@@ -1,0 +1,302 @@
+[
+    {
+        "question": "Was bedeutet „Agilität“ im Kontext von Projektmanagement?",
+        "options": [
+            "Ein starrer, sequenzieller Ansatz zur Projektdurchführung",
+            "Eine flexible und iterative Herangehensweise, die auf schnelle Anpassung an Änderungen ausgelegt ist",
+            "Ein Managementstil, der ausschließlich auf Dokumentation basiert",
+            "Eine Methode, bei der das gesamte Projekt im Voraus geplant wird"
+        ],
+        "correct": "Eine flexible und iterative Herangehensweise, die auf schnelle Anpassung an Änderungen ausgelegt ist"
+    },
+    {
+        "question": "Welches Manifest definiert grundlegende agile Werte und Prinzipien?",
+        "options": [
+            "Das Wasserfall-Manifest",
+            "Das Projektmanagement-Manifest",
+            "Das Agile Manifest",
+            "Das Softwareentwicklungs-Manifest"
+        ],
+        "correct": "Das Agile Manifest"
+    },
+    {
+        "question": "In welchem Jahr wurde das Agile Manifest veröffentlicht?",
+        "options": [
+            "1995",
+            "2001",
+            "2005",
+            "2010"
+        ],
+        "correct": "2001"
+    },
+    {
+        "question": "Wie viele Werte umfasst das Agile Manifest?",
+        "options": [
+            "Drei",
+            "Vier",
+            "Fünf",
+            "Zwölf"
+        ],
+        "correct": "Vier"
+    },
+    {
+        "question": "Nenne einen Kernwert des Agilen Manifests.",
+        "options": [
+            "Umfassende Dokumentation über funktionierende Software",
+            "Prozesse und Werkzeuge über Individuen und Interaktionen",
+            "Vertragsverhandlung über Zusammenarbeit mit dem Kunden",
+            "Individuen und Interaktionen über Prozesse und Werkzeuge"
+        ],
+        "correct": "Individuen und Interaktionen über Prozesse und Werkzeuge"
+    },
+    {
+        "question": "Was ist ein Sprint im Scrum-Kontext?",
+        "options": [
+            "Ein langes Meeting zur Projektplanung",
+            "Ein kurzer, zeitlich begrenzter Entwicklungszyklus, in dem ein fertiges Inkrement erstellt wird",
+            "Die gesamte Dauer eines Projekts",
+            "Ein tägliches Status-Update"
+        ],
+        "correct": "Ein kurzer, zeitlich begrenzter Entwicklungszyklus, in dem ein fertiges Inkrement erstellt wird"
+    },
+    {
+        "question": "Welche Rollen gibt es in Scrum?",
+        "options": [
+            "Projektmanager, Teamleiter, Entwickler",
+            "Product Owner, Scrum Master, Entwicklungsteam",
+            "Kunde, Manager, Tester",
+            "Analyst, Designer, Programmierer"
+        ],
+        "correct": "Product Owner, Scrum Master, Entwicklungsteam"
+    },
+    {
+        "question": "Was ist die Aufgabe des Product Owners?",
+        "options": [
+            "Die technischen Aspekte des Projekts zu leiten",
+            "Das Scrum-Team zu coachen und Hindernisse zu beseitigen",
+            "Den Wert des Produkts zu maximieren und das Product Backlog zu verwalten",
+            "Den Projektplan zu erstellen und zu überwachen"
+        ],
+        "correct": "Den Wert des Produkts zu maximieren und das Product Backlog zu verwalten"
+    },
+    {
+        "question": "Welche Rolle hat der Scrum Master?",
+        "options": [
+            "Er ist der Vorgesetzte des Entwicklungsteams",
+            "Er ist für die Priorisierung des Product Backlogs verantwortlich",
+            "Er sorgt dafür, dass Scrum verstanden und umgesetzt wird, und beseitigt Hindernisse",
+            "Er testet die entwickelte Software"
+        ],
+        "correct": "Er sorgt dafür, dass Scrum verstanden und umgesetzt wird, und beseitigt Hindernisse"
+    },
+    {
+        "question": "Was versteht man unter dem Begriff „Product Backlog“?",
+        "options": [
+            "Eine Liste aller Fehler im Produkt",
+            "Ein detaillierter Projektplan",
+            "Eine priorisierte Liste aller Anforderungen und Features für das Produkt",
+            "Die Dokumentation des fertigen Produkts"
+        ],
+        "correct": "Eine priorisierte Liste aller Anforderungen und Features für das Produkt"
+    },
+    {
+        "question": "Was ist eine User Story?",
+        "options": [
+            "Ein technisches Designdokument",
+            "Ein detaillierter Testfall",
+            "Eine formlose Beschreibung einer Funktion aus der Perspektive des Endbenutzers",
+            "Ein Protokoll eines Meetings mit dem Kunden"
+        ],
+        "correct": "Eine formlose Beschreibung einer Funktion aus der Perspektive des Endbenutzers"
+    },
+    {
+        "question": "Wie lautet die typische Struktur einer User Story?",
+        "options": [
+            "Wenn [Aktion], dann [Ergebnis]",
+            "Als [Rolle] möchte ich [Ziel], um [Nutzen] zu erzielen",
+            "Gegeben [Kontext], Wenn [Ereignis], Dann [Resultat]",
+            "Feature: [Name], Beschreibung: [Details]"
+        ],
+        "correct": "Als [Rolle] möchte ich [Ziel], um [Nutzen] zu erzielen"
+    },
+    {
+        "question": "Wofür steht Kanban ursprünglich?",
+        "options": [
+            "Schnelle Lieferung",
+            "Visuelles Board",
+            "Signalkarte oder visuelles Signal",
+            "Kontinuierlicher Fluss"
+        ],
+        "correct": "Signalkarte oder visuelles Signal"
+    },
+    {
+        "question": "Was ist das wichtigste Ziel von Kanban?",
+        "options": [
+            "Die Anzahl der Teammitglieder zu maximieren",
+            "Den Arbeitsfluss zu visualisieren und Engpässe zu identifizieren, um den Durchsatz zu verbessern",
+            "Möglichst viele Aufgaben gleichzeitig zu beginnen",
+            "Feste Iterationen wie Sprints zu verwenden"
+        ],
+        "correct": "Den Arbeitsfluss zu visualisieren und Engpässe zu identifizieren, um den Durchsatz zu verbessern"
+    },
+    {
+        "question": "Was sind typische Spalten auf einem Kanban-Board?",
+        "options": [
+            "Anfang, Mitte, Ende",
+            "Geplant, Gestartet, Abgebrochen",
+            "To Do, In Progress, Done",
+            "Idee, Konzept, Umsetzung"
+        ],
+        "correct": "To Do, In Progress, Done"
+    },
+    {
+        "question": "Was ist ein Daily Scrum (auch Daily Standup genannt)?",
+        "options": [
+            "Ein wöchentliches Planungstreffen",
+            "Ein kurzes, tägliches Meeting zur Synchronisation des Teams und zur Planung der nächsten 24 Stunden",
+            "Ein Meeting zur Demonstration des Produktinkrements",
+            "Eine ausführliche Diskussion über technische Probleme"
+        ],
+        "correct": "Ein kurzes, tägliches Meeting zur Synchronisation des Teams und zur Planung der nächsten 24 Stunden"
+    },
+    {
+        "question": "Wie lange sollte ein Daily Scrum maximal dauern?",
+        "options": [
+            "5 Minuten",
+            "15 Minuten",
+            "30 Minuten",
+            "60 Minuten"
+        ],
+        "correct": "15 Minuten"
+    },
+    {
+        "question": "Was bedeutet „Velocity“ in Scrum?",
+        "options": [
+            "Die Geschwindigkeit, mit der ein einzelner Entwickler Code schreibt",
+            "Die Anzahl der Fehler, die pro Sprint gefunden werden",
+            "Ein Maß dafür, wie viel Arbeit ein Team in einem Sprint typischerweise erledigen kann",
+            "Die Zeit, die für das Daily Scrum benötigt wird"
+        ],
+        "correct": "Ein Maß dafür, wie viel Arbeit ein Team in einem Sprint typischerweise erledigen kann"
+    },
+    {
+        "question": "Was ist eine Retrospektive in Scrum?",
+        "options": [
+            "Ein Meeting, um dem Kunden das neue Produktinkrement zu zeigen",
+            "Ein Meeting am Ende eines Sprints, um die Zusammenarbeit im Team zu reflektieren und zu verbessern",
+            "Die Planung des nächsten Sprints",
+            "Eine technische Überprüfung des geschriebenen Codes"
+        ],
+        "correct": "Ein Meeting am Ende eines Sprints, um die Zusammenarbeit im Team zu reflektieren und zu verbessern"
+    },
+    {
+        "question": "Welche Fragen werden typischerweise im Daily Standup gestellt?",
+        "options": [
+            "Was hast du letzte Woche gemacht? Was machst du nächste Woche? Bist du zufrieden?",
+            "Wer ist für diesen Fehler verantwortlich? Wann wird er behoben sein? Wer hat ihn genehmigt?",
+            "Was habe ich seit dem letzten Mal erledigt? Was werde ich bis zum nächsten Mal tun? Welche Hindernisse habe ich?",
+            "Wie hoch ist das Budget? Halten wir den Zeitplan ein? Sind die Kunden glücklich?"
+        ],
+        "correct": "Was habe ich seit dem letzten Mal erledigt? Was werde ich bis zum nächsten Mal tun? Welche Hindernisse habe ich?"
+    },
+    {
+        "question": "Was versteht man unter Pair Programming?",
+        "options": [
+            "Zwei Entwickler arbeiten an zwei verschiedenen Computern an derselben Aufgabe",
+            "Ein Entwickler programmiert, während ein anderer den Code überprüft",
+            "Zwei Entwickler arbeiten gemeinsam an einem Computer an derselben Aufgabe",
+            "Ein Entwickler schreibt Code und der andere schreibt die Dokumentation"
+        ],
+        "correct": "Zwei Entwickler arbeiten gemeinsam an einem Computer an derselben Aufgabe"
+    },
+    {
+        "question": "Was ist Continuous Integration (CI)?",
+        "options": [
+            "Der Prozess, die Software manuell am Ende jedes Sprints zu integrieren",
+            "Eine Praxis, bei der Entwickler ihre Code-Änderungen regelmäßig in einem zentralen Repository zusammenführen, woraufhin automatisierte Builds und Tests laufen",
+            "Die kontinuierliche Lieferung von Feedback an das Management",
+            "Ein Tool zur Überwachung der Serverleistung"
+        ],
+        "correct": "Eine Praxis, bei der Entwickler ihre Code-Änderungen regelmäßig in einem zentralen Repository zusammenführen, woraufhin automatisierte Builds und Tests laufen"
+    },
+    {
+        "question": "Was ist der Unterschied zwischen Continuous Delivery und Continuous Deployment?",
+        "options": [
+            "Es gibt keinen Unterschied, die Begriffe sind synonym",
+            "Continuous Delivery erfordert manuelle Genehmigung für das Deployment, Continuous Deployment ist vollautomatisch",
+            "Continuous Deployment ist ein Teil von Continuous Integration, aber nicht umgekehrt",
+            "Continuous Delivery bezieht sich auf Hardware, Continuous Deployment auf Software"
+        ],
+        "correct": "Continuous Delivery erfordert manuelle Genehmigung für das Deployment, Continuous Deployment ist vollautomatisch"
+    },
+    {
+        "question": "Was ist die Definition of Done (DoD)?",
+        "options": [
+            "Eine persönliche Checkliste für jeden Entwickler",
+            "Eine vom Scrum Master festgelegte Regel",
+            "Eine gemeinsame Vereinbarung des Teams, welche Kriterien erfüllt sein müssen, damit ein Product Backlog Item als 'fertig' gilt",
+            "Die Liste der Aufgaben, die im nächsten Sprint erledigt werden müssen"
+        ],
+        "correct": "Eine gemeinsame Vereinbarung des Teams, welche Kriterien erfüllt sein müssen, damit ein Product Backlog Item als 'fertig' gilt"
+    },
+    {
+        "question": "Was bedeutet MVP im agilen Kontext?",
+        "options": [
+            "Most Valuable Player (Wertvollster Spieler)",
+            "Maximum Viable Product (Maximal lebensfähiges Produkt)",
+            "Minimum Viable Product (Minimal lebensfähiges Produkt)",
+            "Main Value Proposition (Hauptwertversprechen)"
+        ],
+        "correct": "Minimum Viable Product (Minimal lebensfähiges Produkt)"
+    },
+    {
+        "question": "Welche agile Methode betont besonders kurze Iterationen und kontinuierliche Kundenintegration?",
+        "options": [
+            "Kanban",
+            "Scrum",
+            "Extreme Programming (XP)",
+            "Wasserfall"
+        ],
+        "correct": "Extreme Programming (XP)"
+    },
+    {
+        "question": "Welche agile Methode legt großen Wert auf Visualisierung und begrenzten WiP?",
+        "options": [
+            "Scrum",
+            "Kanban",
+            "Extreme Programming (XP)",
+            "Feature Driven Development (FDD)"
+        ],
+        "correct": "Kanban"
+    },
+    {
+        "question": "Was bedeutet die „Timebox“ im agilen Kontext?",
+        "options": [
+            "Die Gesamtzeit, die für ein Projekt zur Verfügung steht",
+            "Ein fester, maximaler Zeitrahmen für eine Aktivität oder ein Meeting",
+            "Eine Box, in der Vorschläge gesammelt werden",
+            "Die Zeit, die benötigt wird, um einen Fehler zu beheben"
+        ],
+        "correct": "Ein fester, maximaler Zeitrahmen für eine Aktivität oder ein Meeting"
+    },
+    {
+        "question": "Was ist das Ziel des Sprint Reviews?",
+        "options": [
+            "Die Leistung des Teams zu bewerten und zu kritisieren",
+            "Das im Sprint erstellte Inkrement vorzustellen, Feedback zu sammeln und das Product Backlog anzupassen",
+            "Die Zusammenarbeit im Team zu verbessern",
+            "Den nächsten Sprint detailliert zu planen"
+        ],
+        "correct": "Das im Sprint erstellte Inkrement vorzustellen, Feedback zu sammeln und das Product Backlog anzupassen"
+    },
+    {
+        "question": "Warum ist es wichtig, dass agile Teams möglichst cross-funktional besetzt sind?",
+        "options": [
+            "Um sicherzustellen, dass jeder Entwickler jede Aufgabe erledigen kann",
+            "Damit das Team alle notwendigen Fähigkeiten besitzt, um ein Produktinkrement ohne externe Abhängigkeiten zu erstellen",
+            "Um die Kosten für externe Berater zu sparen",
+            "Weil es eine Vorgabe des Managements ist"
+        ],
+        "correct": "Damit das Team alle notwendigen Fähigkeiten besitzt, um ein Produktinkrement ohne externe Abhängigkeiten zu erstellen"
+    }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Was ist ein Proxy?",
+    "options": [
+      "Vermittler zwischen Client und Server",
+      "Backup-System",
+      "Antivirus-Programm",
+      "Router-Funktion"
+    ],
+    "correct": "Vermittler zwischen Client und Server"
+  },
+  {
+    "question": "Wozu wird ein Proxy-Server genutzt?",
+    "options": [
+      "Caching, Sicherheit, Zugriffskontrolle",
+      "Nur für Geschwindigkeit",
+      "Nur für Verschlüsselung",
+      "Nur für Backup"
+    ],
+    "correct": "Caching, Sicherheit, Zugriffskontrolle"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einem Forward Proxy und einem Reverse Proxy?",
+    "options": [
+      "Forward = für Clients, Reverse = für Server",
+      "Kein Unterschied",
+      "Nur Geschwindigkeit",
+      "Nur Protokoll"
+    ],
+    "correct": "Forward = für Clients, Reverse = für Server"
+  },
+  {
+    "question": "Wie schützt ein Proxy die Privatsphäre?",
+    "options": [
+      "Verschleiert Client-IP-Adresse",
+      "Verschlüsselt alle Daten",
+      "Löscht Browser-Verlauf",
+      "Blockt Cookies"
+    ],
+    "correct": "Verschleiert Client-IP-Adresse"
+  },
+  {
+    "question": "Wie hilft ein Proxy beim Bandbreitenmanagement?",
+    "options": [
+      "Caching reduziert wiederholte Downloads",
+      "Komprimiert alle Daten",
+      "Blockt große Dateien",
+      "Begrenzt Benutzeranzahl"
+    ],
+    "correct": "Caching reduziert wiederholte Downloads"
+  },
+  {
+    "question": "Welche Sicherheitsfunktionen kann ein Proxy bieten?",
+    "options": [
+      "Malware-Filterung, URL-Blocking",
+      "Nur Passwort-Schutz",
+      "Nur Verschlüsselung",
+      "Nur Firewall-Ersatz"
+    ],
+    "correct": "Malware-Filterung, URL-Blocking"
+  },
+  {
+    "question": "In welchen Netzwerken kommt ein Proxy häufig zum Einsatz?",
+    "options": [
+      "Unternehmen und Schulen",
+      "Nur Privathaushalte",
+      "Nur Internet-Anbieter",
+      "Nur Regierung"
+    ],
+    "correct": "Unternehmen und Schulen"
+  },
+  {
+    "question": "Was ist Caching im Kontext eines Proxys?",
+    "options": [
+      "Zwischenspeicherung häufig angefragter Inhalte",
+      "Löschen alter Daten",
+      "Komprimierung von Dateien",
+      "Verschlüsselung"
+    ],
+    "correct": "Zwischenspeicherung häufig angefragter Inhalte"
+  },
+  {
+    "question": "Was ist eine Whitelist im Proxy-Kontext?",
+    "options": [
+      "Liste erlaubter Websites",
+      "Liste aller Benutzer",
+      "Liste blockierter IPs",
+      "Konfigurationsdatei"
+    ],
+    "correct": "Liste erlaubter Websites"
+  },
+  {
+    "question": "Was ist eine Blacklist?",
+    "options": [
+      "Liste blockierter Websites",
+      "Liste erlaubter Benutzer",
+      "Liste aller IPs",
+      "Backup-Liste"
+    ],
+    "correct": "Liste blockierter Websites"
+  },
+  {
+    "question": "Was ist ein transparenter Proxy?",
+    "options": [
+      "Proxy ohne Client-Konfiguration",
+      "Unsichtbarer Proxy",
+      "Proxy ohne Authentifizierung",
+      "Schneller Proxy"
+    ],
+    "correct": "Proxy ohne Client-Konfiguration"
+  },
+  {
+    "question": "Warum setzen Schulen oft Proxy-Server ein?",
+    "options": [
+      "Jugendschutz und Bandbreitenmanagement",
+      "Nur für Geschwindigkeit",
+      "Nur für Backup",
+      "Nur für WLAN"
+    ],
+    "correct": "Jugendschutz und Bandbreitenmanagement"
+  },
+  {
+    "question": "Was ist SNI-Filterung?",
+    "options": [
+      "Filtering based on Server Name Indication",
+      "Simple Network Integration",
+      "Secure Network Interface",
+      "System Network Information"
+    ],
+    "correct": "Filtering based on Server Name Indication"
+  },
+  {
+    "question": "Was bedeutet Authentifizierung am Proxy?",
+    "options": [
+      "Benutzer muss sich anmelden",
+      "Proxy prüft Zertifikate",
+      "Automatische Anmeldung",
+      "Keine Anmeldung nötig"
+    ],
+    "correct": "Benutzer muss sich anmelden"
+  },
+  {
+    "question": "Wie beeinflusst ein Proxy die Netzwerksicherheit?",
+    "options": [
+      "Zusätzliche Schutzschicht",
+      "Schwächt Sicherheit",
+      "Keine Auswirkung",
+      "Nur auf Performance"
+    ],
+    "correct": "Zusätzliche Schutzschicht"
+  },
+  {
+    "question": "Was ist ein typischer Port für einen HTTP-Proxy?",
+    "options": [
+      "8080 oder 3128",
+      "80",
+      "443",
+      "21"
+    ],
+    "correct": "8080 oder 3128"
+  },
+  {
+    "question": "Was ist ein typischer Port für einen HTTPS-Proxy?",
+    "options": [
+      "8443 oder 3129",
+      "443",
+      "80",
+      "8080"
+    ],
+    "correct": "8443 oder 3129"
+  },
+  {
+    "question": "Welche Einschränkungen hat ein Proxy?",
+    "options": [
+      "Performance-Overhead, Single Point of Failure",
+      "Nur Geschwindigkeit",
+      "Nur Kosten",
+      "Keine Einschränkungen"
+    ],
+    "correct": "Performance-Overhead, Single Point of Failure"
+  },
+  {
+    "question": "Was bedeutet DNS-Leak bei Proxys?",
+    "options": [
+      "DNS-Anfragen umgehen den Proxy",
+      "DNS ist zu langsam",
+      "DNS ist defekt",
+      "DNS wird blockiert"
+    ],
+    "correct": "DNS-Anfragen umgehen den Proxy"
+  },
+  {
+    "question": "Wie kann ein Proxy zur Einhaltung von Unternehmensrichtlinien beitragen?",
+    "options": [
+      "Überwachung und Filterung des Internetverkehrs",
+      "Nur Zeiterfassung",
+      "Nur Backup",
+      "Nur Performance"
+    ],
+    "correct": "Überwachung und Filterung des Internetverkehrs"
+  },
+  {
+    "question": "Was ist ein Reverse Proxy im Alltagseinsatz?",
+    "options": [
+      "Load Balancer oder CDN",
+      "Normaler Forward Proxy",
+      "Backup-System",
+      "Firewall-Ersatz"
+    ],
+    "correct": "Load Balancer oder CDN"
+  },
+  {
+    "question": "Wie konfiguriert man einen Proxy im Browser?",
+    "options": [
+      "Netzwerk-Einstellungen > Proxy-Server",
+      "Sicherheits-Einstellungen",
+      "Browser-Erweiterung",
+      "Automatisch"
+    ],
+    "correct": "Netzwerk-Einstellungen > Proxy-Server"
+  },
+  {
+    "question": "Was passiert, wenn der Proxy ausfällt?",
+    "options": [
+      "Kein Internetzugang (bei obligatorischem Proxy)",
+      "Automatische Umleitung",
+      "Backup-Proxy startet",
+      "Nichts"
+    ],
+    "correct": "Kein Internetzugang (bei obligatorischem Proxy)"
+  },
+  {
+    "question": "Wie kann ein Proxy in Kombination mit Firewalls verwendet werden?",
+    "options": [
+      "Defense in Depth - mehrschichtige Sicherheit",
+      "Ersetzt Firewall komplett",
+      "Nur als Backup",
+      "Konkurriert mit Firewall"
+    ],
+    "correct": "Defense in Depth - mehrschichtige Sicherheit"
+  },
+  {
+    "question": "Warum ist Logging beim Proxy wichtig?",
+    "options": [
+      "Überwachung, Forensik, Compliance",
+      "Nur für Performance",
+      "Nur für Backup",
+      "Nur für Updates"
+    ],
+    "correct": "Überwachung, Forensik, Compliance"
+  },
+  {
+    "question": "Wie kann ein Proxy beim Datenschutz helfen?",
+    "options": [
+      "IP-Anonymisierung",
+      "Löscht alle Daten",
+      "Verschlüsselt Festplatte",
+      "Blockt alle Cookies"
+    ],
+    "correct": "IP-Anonymisierung"
+  },
+  {
+    "question": "Was ist ein Beispiel für eine Proxy-basierte Kindersicherung?",
+    "options": [
+      "Filterung jugendgefährdender Inhalte",
+      "Zeitbegrenzung",
+      "Geräte-Sperre",
+      "WLAN-Abschaltung"
+    ],
+    "correct": "Filterung jugendgefährdender Inhalte"
+  },
+  {
+    "question": "Was unterscheidet einen Proxy von einem NAT-Router?",
+    "options": [
+      "Proxy arbeitet auf Application Layer",
+      "Kein Unterschied",
+      "Nur die Geschwindigkeit",
+      "Nur die Konfiguration"
+    ],
+    "correct": "Proxy arbeitet auf Application Layer"
+  },
+  {
+    "question": "Warum sollte man keinen öffentlichen Proxy verwenden?",
+    "options": [
+      "Sicherheits- und Datenschutzrisiken",
+      "Ist zu langsam",
+      "Ist zu teuer",
+      "Ist illegal"
+    ],
+    "correct": "Sicherheits- und Datenschutzrisiken"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einem Proxy und einem VPN?",
+    "options": [
+      "Proxy = Application Layer, VPN = Netzwerk Layer",
+      "Kein Unterschied",
+      "Nur die Geschwindigkeit",
+      "Nur die Kosten"
+    ],
+    "correct": "Proxy = Application Layer, VPN = Netzwerk Layer"
+  }
+]

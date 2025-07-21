@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Welcher Dienst ist für die Dateifreigabe unter Windows verantwortlich?",
+    "options": [
+      "Server-Dienst",
+      "Client-Dienst",
+      "File-Dienst",
+      "Share-Dienst"
+    ],
+    "correct": "Server-Dienst"
+  },
+  {
+    "question": "Wie nennt man einen freigegebenen Ordner im Netzwerk?",
+    "options": [
+      "Freigabe/Share",
+      "Network Folder",
+      "Shared Directory",
+      "Public Folder"
+    ],
+    "correct": "Freigabe/Share"
+  },
+  {
+    "question": "Wie aktiviert man die Dateifreigabe unter Windows?",
+    "options": [
+      "Netzwerk- und Freigabecenter",
+      "Systemsteuerung > Dateien",
+      "Windows-Einstellungen > Freigabe",
+      "Geräte-Manager"
+    ],
+    "correct": "Netzwerk- und Freigabecenter"
+  },
+  {
+    "question": "Wie nennt man die Funktion, mit der andere Benutzer auf deinen Computer zugreifen können?",
+    "options": [
+      "Datei- und Druckerfreigabe",
+      "Remote Access",
+      "Network Sharing",
+      "File Transfer"
+    ],
+    "correct": "Datei- und Druckerfreigabe"
+  },
+  {
+    "question": "Wie erstellt man eine Freigabe für einen Ordner?",
+    "options": [
+      "Rechtsklick > Eigenschaften > Freigabe",
+      "Systemsteuerung > Freigaben",
+      "Windows-Einstellungen",
+      "Geräte-Manager"
+    ],
+    "correct": "Rechtsklick > Eigenschaften > Freigabe"
+  },
+  {
+    "question": "Wie erreicht man freigegebene Ordner im Netzwerk?",
+    "options": [
+      "\\\\Computername\\Freigabename",
+      "http://computer/share",
+      "ftp://computer/folder",
+      "/share/folder"
+    ],
+    "correct": "\\\\Computername\\Freigabename"
+  },
+  {
+    "question": "Was ist ein UNC-Pfad?",
+    "options": [
+      "Universal Naming Convention",
+      "Unified Network Connection",
+      "Universal Network Code",
+      "Unique Name Convention"
+    ],
+    "correct": "Universal Naming Convention"
+  },
+  {
+    "question": "Wie nennt man die Standardfreigabe für das Laufwerk C:?",
+    "options": [
+      "C$",
+      "C_DRIVE",
+      "CDRIVE",
+      "C-Share"
+    ],
+    "correct": "C$"
+  },
+  {
+    "question": "Was sind administrative Freigaben?",
+    "options": [
+      "Versteckte Freigaben mit $-Symbol",
+      "Öffentliche Freigaben",
+      "Benutzerfreigaben",
+      "Temporäre Freigaben"
+    ],
+    "correct": "Versteckte Freigaben mit $-Symbol"
+  },
+  {
+    "question": "Wie vergibt man Benutzerrechte auf eine Freigabe?",
+    "options": [
+      "Freigabe-Eigenschaften > Berechtigung",
+      "Benutzerkonten > Rechte",
+      "Systemsteuerung > Sicherheit",
+      "Windows-Einstellungen > Benutzer"
+    ],
+    "correct": "Freigabe-Eigenschaften > Berechtigung"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Freigabeberechtigung und NTFS-Berechtigung?",
+    "options": [
+      "Freigabe = Netzwerkzugriff, NTFS = lokale Dateiberechtigungen",
+      "Beide sind identisch",
+      "NTFS nur für Server",
+      "Freigabe nur für lokale Benutzer"
+    ],
+    "correct": "Freigabe = Netzwerkzugriff, NTFS = lokale Dateiberechtigungen"
+  },
+  {
+    "question": "Welche Einstellung wirkt restriktiver, wenn beide gesetzt sind?",
+    "options": [
+      "Die restriktivere der beiden",
+      "Immer NTFS",
+      "Immer Freigabe",
+      "Die zuletzt gesetzte"
+    ],
+    "correct": "Die restriktivere der beiden"
+  },
+  {
+    "question": "Was bedeutet \"Jeder\" in den Freigaberechten?",
+    "options": [
+      "Alle authentifizierten Benutzer",
+      "Nur Administratoren",
+      "Nur lokale Benutzer",
+      "Nur Netzwerkbenutzer"
+    ],
+    "correct": "Alle authentifizierten Benutzer"
+  },
+  {
+    "question": "Wie greift man über die Eingabeaufforderung auf eine Freigabe zu?",
+    "options": [
+      "net use",
+      "share connect",
+      "map drive",
+      "access share"
+    ],
+    "correct": "net use"
+  },
+  {
+    "question": "Wie mappt man ein Netzlaufwerk?",
+    "options": [
+      "Explorer > Dieser PC > Netzlaufwerk verbinden",
+      "Systemsteuerung > Laufwerke",
+      "Geräte-Manager > Laufwerke",
+      "Windows-Einstellungen > Storage"
+    ],
+    "correct": "Explorer > Dieser PC > Netzlaufwerk verbinden"
+  },
+  {
+    "question": "Was ist eine versteckte Freigabe?",
+    "options": [
+      "Freigabe mit $ am Ende",
+      "Freigabe ohne Berechtigung",
+      "Verschlüsselte Freigabe",
+      "Temporäre Freigabe"
+    ],
+    "correct": "Freigabe mit $ am Ende"
+  },
+  {
+    "question": "Wie zeigt man alle Freigaben eines PCs an?",
+    "options": [
+      "net share",
+      "show shares",
+      "list shares",
+      "dir shares"
+    ],
+    "correct": "net share"
+  },
+  {
+    "question": "Was bedeutet \"Netzwerkerkennung\"?",
+    "options": [
+      "PC ist im Netzwerk sichtbar",
+      "PC kann Internet erreichen",
+      "PC hat IP-Adresse",
+      "PC ist an Domäne angebunden"
+    ],
+    "correct": "PC ist im Netzwerk sichtbar"
+  },
+  {
+    "question": "Wie aktiviert man die Netzwerkerkennung?",
+    "options": [
+      "Netzwerk- und Freigabecenter",
+      "Geräte-Manager",
+      "Systemsteuerung > Netzwerk",
+      "Windows-Einstellungen > Netzwerk"
+    ],
+    "correct": "Netzwerk- und Freigabecenter"
+  },
+  {
+    "question": "Was bedeutet \"Passwortgeschütztes Freigeben\"?",
+    "options": [
+      "Authentifizierung für Zugriff erforderlich",
+      "Freigabe ist verschlüsselt",
+      "Passwort für Freigabe setzen",
+      "Automatische Anmeldung"
+    ],
+    "correct": "Authentifizierung für Zugriff erforderlich"
+  },
+  {
+    "question": "Wo konfiguriert man \"Passwortgeschütztes Freigeben\"?",
+    "options": [
+      "Netzwerk- und Freigabecenter",
+      "Benutzerkonten",
+      "Systemsteuerung > Sicherheit",
+      "Windows-Einstellungen > Datenschutz"
+    ],
+    "correct": "Netzwerk- und Freigabecenter"
+  },
+  {
+    "question": "Welche Rolle spielt die Benutzerkontensteuerung (UAC) bei Netzwerkfreigaben?",
+    "options": [
+      "Kann Zugriff auf administrative Freigaben blockieren",
+      "Verhindert alle Freigaben",
+      "Nur für lokale Zugriffe",
+      "Keine Auswirkung"
+    ],
+    "correct": "Kann Zugriff auf administrative Freigaben blockieren"
+  },
+  {
+    "question": "Wie kann man temporär auf eine Freigabe zugreifen?",
+    "options": [
+      "Explorer > Netzwerkadresse eingeben",
+      "Dauerhaft mappen",
+      "Registry editieren",
+      "Dienst neu starten"
+    ],
+    "correct": "Explorer > Netzwerkadresse eingeben"
+  },
+  {
+    "question": "Wie kann man eine Freigabe wieder aufheben?",
+    "options": [
+      "Freigabe-Eigenschaften > Erweiterte Freigabe deaktivieren",
+      "Ordner löschen",
+      "Berechtigung entfernen",
+      "Dienst stoppen"
+    ],
+    "correct": "Freigabe-Eigenschaften > Erweiterte Freigabe deaktivieren"
+  },
+  {
+    "question": "Wie kann man Freigaben per Kommandozeile einrichten?",
+    "options": [
+      "net share",
+      "share create",
+      "mkshare",
+      "add share"
+    ],
+    "correct": "net share"
+  },
+  {
+    "question": "Wie überprüft man den Zugriff auf eine Freigabe von einem anderen Gerät?",
+    "options": [
+      "\\\\IP-Adresse\\Freigabename aufrufen",
+      "ping Freigabe",
+      "telnet Freigabe",
+      "nslookup Freigabe"
+    ],
+    "correct": "\\\\IP-Adresse\\Freigabename aufrufen"
+  },
+  {
+    "question": "Wie nennt man die Freigabe eines Druckers im Netzwerk?",
+    "options": [
+      "Druckerfreigabe",
+      "Print-Share",
+      "Printer-Network",
+      "Print-Service"
+    ],
+    "correct": "Druckerfreigabe"
+  },
+  {
+    "question": "Kann man Dateifreigaben auf Windows Home Edition nutzen?",
+    "options": [
+      "Ja, aber eingeschränkt",
+      "Nein, nur Professional",
+      "Nur für lokale Benutzer",
+      "Nur mit zusätzlicher Software"
+    ],
+    "correct": "Ja, aber eingeschränkt"
+  },
+  {
+    "question": "Wie kann man Zugriffsprobleme diagnostizieren?",
+    "options": [
+      "Ereignisanzeige und Netzwerkdiagnose",
+      "Nur Neustart",
+      "Firewall deaktivieren",
+      "Antivirus prüfen"
+    ],
+    "correct": "Ereignisanzeige und Netzwerkdiagnose"
+  },
+  {
+    "question": "Was ist die Voraussetzung, damit zwei PCs sich über Freigaben sehen können?",
+    "options": [
+      "Gleiches Netzwerk und Netzwerkerkennung aktiviert",
+      "Gleiche IP-Adresse",
+      "Gleiche Arbeitsgruppe",
+      "Administrator-Rechte"
+    ],
+    "correct": "Gleiches Netzwerk und Netzwerkerkennung aktiviert"
+  }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "question": "Wofür steht VLAN?",
+        "options": ["Virtual Local Area Network", "Very Large Area Network", "Virtual Long-range Area Network", "Verified Local Area Network"],
+        "correct": "Virtual Local Area Network"
+    },
+    {
+        "question": "Was ist der Hauptzweck eines VLANs?",
+        "options": ["Die Geschwindigkeit des Internets zu erhöhen", "Ein physisches Netzwerk in mehrere logische Netzwerke zu unterteilen", "Die Anzahl der anschließbaren Geräte zu erhöhen", "Die physische Reichweite eines Netzwerks zu vergrößern"],
+        "correct": "Ein physisches Netzwerk in mehrere logische Netzwerke zu unterteilen"
+    },
+    {
+        "question": "Auf welchem OSI-Layer arbeiten VLANs?",
+        "options": ["Layer 1 (Bitübertragungsschicht)", "Layer 2 (Sicherungsschicht)", "Layer 3 (Vermittlungsschicht)", "Layer 4 (Transportschicht)"],
+        "correct": "Layer 2 (Sicherungsschicht)"
+    },
+    {
+        "question": "Welches Protokoll wird verwendet, um VLAN-Informationen über Switch-Ports zu übertragen?",
+        "options": ["Spanning Tree Protocol (STP)", "IEEE 802.1Q", "Link Aggregation Control Protocol (LACP)", "Open Shortest Path First (OSPF)"],
+        "correct": "IEEE 802.1Q"
+    },
+    {
+        "question": "Was ist ein „Tagged“-Port?",
+        "options": ["Ein Port, der nur einem einzigen VLAN zugeordnet ist", "Ein Port, der Datenverkehr für mehrere VLANs transportieren kann, indem er Frames mit VLAN-IDs markiert", "Ein Port, der für den Anschluss von Endgeräten vorgesehen ist", "Ein Port, der alle VLAN-Markierungen von Frames entfernt"],
+        "correct": "Ein Port, der Datenverkehr für mehrere VLANs transportieren kann, indem er Frames mit VLAN-IDs markiert"
+    },
+    {
+        "question": "Was ist ein „Untagged“-Port?",
+        "options": ["Ein Port, der Datenverkehr für mehrere VLANs bündelt", "Ein Port, der einem einzelnen VLAN zugeordnet ist und keine VLAN-Tags zu den Frames hinzufügt", "Ein Port, der ausschließlich für die Verbindung zwischen Switches verwendet wird", "Ein Port, der den Netzwerkverkehr verschlüsselt"],
+        "correct": "Ein Port, der einem einzelnen VLAN zugeordnet ist und keine VLAN-Tags zu den Frames hinzufügt"
+    },
+    {
+        "question": "Was ist ein Trunk-Port?",
+        "options": ["Ein Port, der nur für den Zugriff durch ein einziges Endgerät konfiguriert ist", "Ein Port, der den Datenverkehr mehrerer VLANs zwischen Netzwerkgeräten wie Switches bündelt", "Ein Port, der standardmäßig deaktiviert ist", "Ein Port, der die Bandbreite eines Netzwerks halbiert"],
+        "correct": "Ein Port, der den Datenverkehr mehrerer VLANs zwischen Netzwerkgeräten wie Switches bündelt"
+    },
+    {
+        "question": "Was ist ein Access-Port?",
+        "options": ["Ein Port, der für die Verbindung mit anderen Switches über mehrere VLANs hinweg dient", "Ein Port, der einem einzelnen VLAN zugeordnet ist und typischerweise für den Anschluss von Endgeräten verwendet wird", "Ein Port, der den gesamten Netzwerkverkehr spiegelt", "Ein Port, der für das Management des Switches reserviert ist"],
+        "correct": "Ein Port, der einem einzelnen VLAN zugeordnet ist und typischerweise für den Anschluss von Endgeräten verwendet wird"
+    },
+    {
+        "question": "Warum werden VLANs verwendet?",
+        "options": ["Um die physische Verkabelung zu vereinfachen", "Um die Netzwerksicherheit und -leistung durch die Segmentierung von Broadcast-Domänen zu verbessern", "Um die Notwendigkeit von Routern zu eliminieren", "Um die Anzahl der verfügbaren IP-Adressen zu erhöhen"],
+        "correct": "Um die Netzwerksicherheit und -leistung durch die Segmentierung von Broadcast-Domänen zu verbessern"
+    },
+    {
+        "question": "Wie wird ein VLAN identifiziert?",
+        "options": ["Durch die MAC-Adresse des Switches", "Durch eine eindeutige VLAN-ID (VID) zwischen 1 und 4094", "Durch den physischen Port des Switches", "Durch die IP-Adresse des Netzwerks"],
+        "correct": "Durch eine eindeutige VLAN-ID (VID) zwischen 1 und 4094"
+    },
+    {
+        "question": "Was ist das Standard-VLAN auf einem Switch?",
+        "options": ["VLAN 0", "VLAN 100", "Es gibt kein Standard-VLAN", "VLAN 1"],
+        "correct": "VLAN 1"
+    },
+    {
+        "question": "Welche VLAN-ID ist für das „native VLAN“ standardmäßig eingestellt?",
+        "options": ["VLAN 1", "VLAN 4095", "VLAN 10", "VLAN 99"],
+        "correct": "VLAN 1"
+    },
+    {
+        "question": "Was ist ein natives VLAN?",
+        "options": ["Ein VLAN, das nur für den Management-Zugriff verwendet wird", "Das VLAN, dem auf einem Trunk-Port unmarkierter (untagged) Datenverkehr zugeordnet wird", "Das erste VLAN, das auf einem Switch erstellt wird", "Ein VLAN, das keine Datenübertragung zulässt"],
+        "correct": "Das VLAN, dem auf einem Trunk-Port unmarkierter (untagged) Datenverkehr zugeordnet wird"
+    },
+    {
+        "question": "Kann ein Access-Port mehreren VLANs gleichzeitig angehören?",
+        "options": ["Ja, bis zu zwei VLANs", "Nur wenn es sich um ein Voice-VLAN handelt", "Nein, ein Access-Port kann nur Mitglied eines einzigen VLANs sein", "Ja, unbegrenzt viele"],
+        "correct": "Nein, ein Access-Port kann nur Mitglied eines einzigen VLANs sein"
+    },
+    {
+        "question": "Was passiert, wenn zwei Geräte in unterschiedlichen VLANs sind?",
+        "options": ["Sie können direkt miteinander kommunizieren", "Sie können nur über ein Layer-3-Gerät (Router) miteinander kommunizieren", "Ihre Kommunikation wird verlangsamt", "Sie verursachen einen Broadcast-Sturm"],
+        "correct": "Sie können nur über ein Layer-3-Gerät (Router) miteinander kommunizieren"
+    },
+    {
+        "question": "Wie kann man Kommunikation zwischen VLANs ermöglichen?",
+        "options": ["Durch die Verwendung eines Hubs", "Durch Inter-VLAN-Routing mit einem Router oder Layer-3-Switch", "Durch die Verbindung der VLANs mit einem Crossover-Kabel", "Durch die Deaktivierung aller Firewalls"],
+        "correct": "Durch Inter-VLAN-Routing mit einem Router oder Layer-3-Switch"
+    },
+    {
+        "question": "Was ist Inter-VLAN-Routing?",
+        "options": ["Das Blockieren der Kommunikation zwischen VLANs", "Der Prozess der Weiterleitung von Netzwerkverkehr von einem VLAN zu einem anderen", "Das Zusammenführen von zwei VLANs zu einem", "Das Senden von Broadcasts an alle VLANs"],
+        "correct": "Der Prozess der Weiterleitung von Netzwerkverkehr von einem VLAN zu einem anderen"
+    },
+    {
+        "question": "Wie nennt man das Routing zwischen VLANs durch einen Router?",
+        "options": ["Intra-VLAN-Routing", "VLAN-Switching", "Inter-VLAN-Routing", "VLAN-Trunking"],
+        "correct": "Inter-VLAN-Routing"
+    },
+    {
+        "question": "Warum sind VLANs sicherer als ein gemeinsames LAN?",
+        "options": ["Weil sie den Datenverkehr verschlüsseln", "Weil sie Broadcast-Domänen isolieren und so den Zugriff auf Daten einschränken", "Weil sie die Verwendung von Passwörtern erzwingen", "Weil sie immun gegen Viren sind"],
+        "correct": "Weil sie Broadcast-Domänen isolieren und so den Zugriff auf Daten einschränken"
+    },
+    {
+        "question": "Wie richtet man VLANs auf einem Switch ein?",
+        "options": ["Durch die Installation zusätzlicher Hardware-Module", "Manuell durch Umstecken der Kabel", "Durch Konfiguration auf dem Switch, Zuweisung von VLAN-IDs und Zuordnung der Ports", "Die Einrichtung erfolgt automatisch"],
+        "correct": "Durch Konfiguration auf dem Switch, Zuweisung von VLAN-IDs und Zuordnung der Ports"
+    },
+    {
+        "question": "Können VLANs über mehrere Switches hinweg existieren?",
+        "options": ["Nein, VLANs sind auf einen einzelnen Switch beschränkt", "Ja, durch die Konfiguration von Trunk-Ports zwischen den Switches", "Nur wenn die Switches vom selben Hersteller sind", "Nur mit speziellen Glasfaserkabeln"],
+        "correct": "Ja, durch die Konfiguration von Trunk-Ports zwischen den Switches"
+    },
+    {
+        "question": "Welche Rolle spielt das Tagging bei VLANs?",
+        "options": ["Es verlangsamt den Netzwerkverkehr zur besseren Kontrolle", "Es markiert Datenpakete mit einer VLAN-ID, um ihre Zugehörigkeit auf Trunk-Verbindungen zu kennzeichnen", "Es komprimiert die Datenpakete", "Es fügt jedem Paket eine Absenderadresse hinzu"],
+        "correct": "Es markiert Datenpakete mit einer VLAN-ID, um ihre Zugehörigkeit auf Trunk-Verbindungen zu kennzeichnen"
+    },
+    {
+        "question": "Welche VLAN-ID ist reserviert und darf nicht verwendet werden?",
+        "options": ["VLAN 10", "VLAN 255", "VLAN 4095", "VLAN 1000"],
+        "correct": "VLAN 4095"
+    },
+    {
+        "question": "Wie viele VLANs können maximal konfiguriert werden?",
+        "options": ["16", "256", "1024", "4094"],
+        "correct": "4094"
+    },
+    {
+        "question": "Was ist ein Management-VLAN?",
+        "options": ["Ein VLAN, das den gesamten öffentlichen Datenverkehr verwaltet", "Ein separates VLAN, das ausschließlich für den administrativen Zugriff auf Netzwerkgeräte verwendet wird", "Ein VLAN ohne Sicherheitsfunktionen", "Das Standard-VLAN eines Switches"],
+        "correct": "Ein separates VLAN, das ausschließlich für den administrativen Zugriff auf Netzwerkgeräte verwendet wird"
+    },
+    {
+        "question": "Was passiert, wenn ein Frame ohne VLAN-Tag über einen Trunk-Port läuft?",
+        "options": ["Er wird verworfen", "Er wird dem nativen VLAN zugeordnet", "Er wird an alle VLANs gesendet", "Der Switch stürzt ab"],
+        "correct": "Er wird dem nativen VLAN zugeordnet"
+    },
+    {
+        "question": "Was ist VLAN-Hopping?",
+        "options": ["Das schnelle Wechseln zwischen WLAN-Netzen", "Eine Angriffsmethode, um unberechtigt auf ein anderes VLAN zuzugreifen", "Das Bündeln mehrerer VLANs", "Ein Protokoll zur Optimierung der VLAN-Performance"],
+        "correct": "Eine Angriffsmethode, um unberechtigt auf ein anderes VLAN zuzugreifen"
+    },
+    {
+        "question": "Wie kann man VLAN-Hopping verhindern?",
+        "options": ["Indem man alle Ports als Trunk-Ports konfiguriert", "Durch korrekte Konfiguration der Ports, z.B. ungenutzte Ports einem 'toten' VLAN zuweisen und DTP deaktivieren", "Indem man nur einen Switch verwendet", "Durch die Verwendung von Hubs anstelle von Switches"],
+        "correct": "Durch korrekte Konfiguration der Ports, z.B. ungenutzte Ports einem 'toten' VLAN zuweisen und DTP deaktivieren"
+    },
+    {
+        "question": "Wie wirkt sich ein falsch konfiguriertes VLAN auf den Netzwerkverkehr aus?",
+        "options": ["Es verbessert die Sicherheit", "Es hat keine Auswirkungen", "Es kann zu Konnektivitätsproblemen und Sicherheitslücken führen", "Es erhöht die Geschwindigkeit des Netzwerks"],
+        "correct": "Es kann zu Konnektivitätsproblemen und Sicherheitslücken führen"
+    },
+    {
+        "question": "Können VLANs Broadcast-Domänen trennen?",
+        "options": ["Nein, dafür sind Router zuständig", "Nur in Verbindung mit einer Firewall", "Ja, das ist einer der Hauptvorteile von VLANs", "Nur wenn der Switch voll ausgelastet ist"],
+        "correct": "Ja, das ist einer der Hauptvorteile von VLANs"
+    }
+]

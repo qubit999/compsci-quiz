@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Wofür steht OSI?",
+    "options": [
+      "Open Systems Interconnection",
+      "Operating System Interface",
+      "Open Standard Interface",
+      "Optical System Interconnect"
+    ],
+    "correct": "Open Systems Interconnection"
+  },
+  {
+    "question": "Wie viele Schichten hat das OSI-Modell?",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": "7"
+  },
+  {
+    "question": "Warum eignet sich das OSI-Modell für das Troubleshooting?",
+    "options": [
+      "Systematische Fehlersuche von unten nach oben",
+      "Schnellere Reparatur",
+      "Weniger Schritte",
+      "Automatische Diagnose"
+    ],
+    "correct": "Systematische Fehlersuche von unten nach oben"
+  },
+  {
+    "question": "Was prüfst du in Schicht 1 (Physical Layer)?",
+    "options": [
+      "Kabel, Verbindungen, Hardware-Status",
+      "IP-Adressen",
+      "Anwendungen",
+      "Routing-Tabellen"
+    ],
+    "correct": "Kabel, Verbindungen, Hardware-Status"
+  },
+  {
+    "question": "Was prüfst du in Schicht 2 (Data Link Layer)?",
+    "options": [
+      "MAC-Adressen, Switches, VLANs",
+      "IP-Routing",
+      "TCP-Ports",
+      "DNS-Auflösung"
+    ],
+    "correct": "MAC-Adressen, Switches, VLANs"
+  },
+  {
+    "question": "Was prüfst du in Schicht 3 (Network Layer)?",
+    "options": [
+      "IP-Adressen, Routing, Gateways",
+      "MAC-Adressen",
+      "Anwendungsdaten",
+      "Verschlüsselung"
+    ],
+    "correct": "IP-Adressen, Routing, Gateways"
+  },
+  {
+    "question": "Was prüfst du in Schicht 4 (Transport Layer)?",
+    "options": [
+      "TCP/UDP-Ports, Verbindungen",
+      "IP-Adressen",
+      "Dateiformate",
+      "Hardware"
+    ],
+    "correct": "TCP/UDP-Ports, Verbindungen"
+  },
+  {
+    "question": "Was prüfst du in Schicht 5 (Session Layer)?",
+    "options": [
+      "Sitzungen, Verbindungsaufbau",
+      "Dateiformate",
+      "Hardware-Status",
+      "Routing"
+    ],
+    "correct": "Sitzungen, Verbindungsaufbau"
+  },
+  {
+    "question": "Was prüfst du in Schicht 6 (Presentation Layer)?",
+    "options": [
+      "Verschlüsselung, Kompression, Datenformate",
+      "Hardware",
+      "Routing",
+      "Ports"
+    ],
+    "correct": "Verschlüsselung, Kompression, Datenformate"
+  },
+  {
+    "question": "Was prüfst du in Schicht 7 (Application Layer)?",
+    "options": [
+      "Anwendungen, Services, Protokolle",
+      "Hardware",
+      "IP-Adressen",
+      "Kabel"
+    ],
+    "correct": "Anwendungen, Services, Protokolle"
+  },
+  {
+    "question": "Was ist ein typisches Problem auf Schicht 1?",
+    "options": [
+      "Defektes Kabel oder lose Verbindung",
+      "Falsches Gateway",
+      "DNS-Ausfall",
+      "Firewall-Regel"
+    ],
+    "correct": "Defektes Kabel oder lose Verbindung"
+  },
+  {
+    "question": "Was ist ein typisches Problem auf Schicht 2?",
+    "options": [
+      "Falsche VLAN-Konfiguration",
+      "Falsche IP-Adresse",
+      "DNS-Problem",
+      "Port blockiert"
+    ],
+    "correct": "Falsche VLAN-Konfiguration"
+  },
+  {
+    "question": "Was ist ein typisches Problem auf Schicht 3?",
+    "options": [
+      "Falsche IP-Konfiguration oder Routing",
+      "Defektes Kabel",
+      "SSL-Fehler",
+      "Port geschlossen"
+    ],
+    "correct": "Falsche IP-Konfiguration oder Routing"
+  },
+  {
+    "question": "Wie testet man ein Problem auf Schicht 3?",
+    "options": [
+      "ping und traceroute",
+      "Kabel prüfen",
+      "Browser testen",
+      "Antivirus scannen"
+    ],
+    "correct": "ping und traceroute"
+  },
+  {
+    "question": "Was ist ein typisches Problem auf Schicht 4?",
+    "options": [
+      "Port blockiert oder Service nicht verfügbar",
+      "Kabel defekt",
+      "DNS-Ausfall",
+      "VLAN falsch"
+    ],
+    "correct": "Port blockiert oder Service nicht verfügbar"
+  },
+  {
+    "question": "Wie erkennt man ein Schicht-4-Problem?",
+    "options": [
+      "telnet Port-Test oder netstat",
+      "ping Test",
+      "Kabel prüfen",
+      "Browser öffnen"
+    ],
+    "correct": "telnet Port-Test oder netstat"
+  },
+  {
+    "question": "Was ist ein typisches Problem auf Schicht 5?",
+    "options": [
+      "Session-Timeout oder Verbindungsabbruch",
+      "Hardware defekt",
+      "DNS-Fehler",
+      "Kabel lose"
+    ],
+    "correct": "Session-Timeout oder Verbindungsabbruch"
+  },
+  {
+    "question": "Wie erkenne ich ein Problem auf Schicht 6?",
+    "options": [
+      "Verschlüsselungsfehler oder falsche Kodierung",
+      "Keine Netzwerkverbindung",
+      "Port geschlossen",
+      "DNS-Ausfall"
+    ],
+    "correct": "Verschlüsselungsfehler oder falsche Kodierung"
+  },
+  {
+    "question": "Was ist ein typisches Schicht-7-Problem?",
+    "options": [
+      "Anwendungsfehler oder Service nicht gestartet",
+      "Kabel defekt",
+      "IP falsch",
+      "Port blockiert"
+    ],
+    "correct": "Anwendungsfehler oder Service nicht gestartet"
+  },
+  {
+    "question": "Wie kann man die Schichten einzeln prüfen?",
+    "options": [
+      "Von Schicht 1 bis 7 systematisch durchgehen",
+      "Alle gleichzeitig",
+      "Nur obere Schichten",
+      "Zufällige Reihenfolge"
+    ],
+    "correct": "Von Schicht 1 bis 7 systematisch durchgehen"
+  },
+  {
+    "question": "Welches Tool hilft bei Analyse auf Schicht 2?",
+    "options": [
+      "Wireshark oder tcpdump",
+      "ping",
+      "Browser",
+      "Windows Explorer"
+    ],
+    "correct": "Wireshark oder tcpdump"
+  },
+  {
+    "question": "Welches Tool hilft bei Schicht-3-Fehlersuche?",
+    "options": [
+      "ping und traceroute",
+      "telnet",
+      "Browser",
+      "Wireshark"
+    ],
+    "correct": "ping und traceroute"
+  },
+  {
+    "question": "Welches Tool hilft bei Schicht-4-Analyse?",
+    "options": [
+      "netstat und telnet",
+      "ping",
+      "ipconfig",
+      "Browser"
+    ],
+    "correct": "netstat und telnet"
+  },
+  {
+    "question": "Welches Tool hilft bei Schicht-7-Problemen?",
+    "options": [
+      "Browser und Anwendungstools",
+      "ping",
+      "traceroute",
+      "ipconfig"
+    ],
+    "correct": "Browser und Anwendungstools"
+  },
+  {
+    "question": "Welcher OSI-Layer ist bei DNS-Problemen betroffen?",
+    "options": [
+      "Layer 7 (Application)",
+      "Layer 3 (Network)",
+      "Layer 1 (Physical)",
+      "Layer 4 (Transport)"
+    ],
+    "correct": "Layer 7 (Application)"
+  },
+  {
+    "question": "Welcher OSI-Layer ist bei IP-Konflikten betroffen?",
+    "options": [
+      "Layer 3 (Network)",
+      "Layer 1 (Physical)",
+      "Layer 7 (Application)",
+      "Layer 2 (Data Link)"
+    ],
+    "correct": "Layer 3 (Network)"
+  },
+  {
+    "question": "Welcher Layer betrifft einen defekten Switch?",
+    "options": [
+      "Layer 2 (Data Link)",
+      "Layer 3 (Network)",
+      "Layer 7 (Application)",
+      "Layer 1 (Physical)"
+    ],
+    "correct": "Layer 2 (Data Link)"
+  },
+  {
+    "question": "Welcher Layer ist betroffen, wenn kein Netzwerkkabel steckt?",
+    "options": [
+      "Layer 1 (Physical)",
+      "Layer 3 (Network)",
+      "Layer 7 (Application)",
+      "Layer 4 (Transport)"
+    ],
+    "correct": "Layer 1 (Physical)"
+  },
+  {
+    "question": "Was ist der Vorteil beim Einsatz des OSI-Modells beim Troubleshooting?",
+    "options": [
+      "Strukturierte, systematische Fehlersuche",
+      "Schnellere Reparatur",
+      "Weniger Tools nötig",
+      "Automatische Lösung"
+    ],
+    "correct": "Strukturierte, systematische Fehlersuche"
+  },
+  {
+    "question": "Warum sollte man mit der untersten Schicht beginnen?",
+    "options": [
+      "Probleme in unteren Schichten beeinflussen alle darüberliegenden",
+      "Ist am einfachsten",
+      "Dauert am wenigsten",
+      "Hat die meisten Tools"
+    ],
+    "correct": "Probleme in unteren Schichten beeinflussen alle darüberliegenden"
+  }
+]

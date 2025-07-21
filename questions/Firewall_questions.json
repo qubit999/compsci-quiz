@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Was ist eine Firewall?",
+    "options": [
+      "Sicherheitssystem zur Netzwerkverkehrskontrolle",
+      "Antivirus-Programm",
+      "Backup-System",
+      "Netzwerk-Router"
+    ],
+    "correct": "Sicherheitssystem zur Netzwerkverkehrskontrolle"
+  },
+  {
+    "question": "Auf welcher OSI-Schicht arbeitet eine klassische Paketfilter-Firewall?",
+    "options": [
+      "Schicht 3 und 4",
+      "Nur Schicht 1",
+      "Nur Schicht 7",
+      "Schicht 2 und 3"
+    ],
+    "correct": "Schicht 3 und 4"
+  },
+  {
+    "question": "Was ist das Ziel einer Firewall?",
+    "options": [
+      "Unerwünschten Netzwerkverkehr blockieren",
+      "Internet beschleunigen",
+      "Daten komprimieren",
+      "Energie sparen"
+    ],
+    "correct": "Unerwünschten Netzwerkverkehr blockieren"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einer Hardware- und einer Software-Firewall?",
+    "options": [
+      "Hardware = eigenständiges Gerät, Software = Programm",
+      "Kein Unterschied",
+      "Hardware ist billiger",
+      "Software ist schneller"
+    ],
+    "correct": "Hardware = eigenständiges Gerät, Software = Programm"
+  },
+  {
+    "question": "Was bedeutet \"Stateful Inspection\"?",
+    "options": [
+      "Verfolgung von Verbindungszuständen",
+      "Paket-Inspektion",
+      "Hardware-Überwachung",
+      "Software-Analyse"
+    ],
+    "correct": "Verfolgung von Verbindungszuständen"
+  },
+  {
+    "question": "Was ist eine Portfreigabe?",
+    "options": [
+      "Erlaubnis für Verkehr über bestimmten Port",
+      "Öffnung in Hardware",
+      "Software-Lizenz",
+      "Netzwerk-Segment"
+    ],
+    "correct": "Erlaubnis für Verkehr über bestimmten Port"
+  },
+  {
+    "question": "Was ist ein Beispiel für einen typischen offenen Port?",
+    "options": [
+      "Port 80 (HTTP)",
+      "Port 12345",
+      "Port 99999",
+      "Port 1"
+    ],
+    "correct": "Port 80 (HTTP)"
+  },
+  {
+    "question": "Was bedeutet \"Default Deny\"-Strategie?",
+    "options": [
+      "Alles blockiert, außer explizit erlaubt",
+      "Alles erlaubt",
+      "Nur HTTP blockiert",
+      "Nur Viren blockiert"
+    ],
+    "correct": "Alles blockiert, außer explizit erlaubt"
+  },
+  {
+    "question": "Was bedeutet \"Default Allow\"-Strategie?",
+    "options": [
+      "Alles erlaubt, außer explizit blockiert",
+      "Alles blockiert",
+      "Nur sicher Verkehr",
+      "Nur lokaler Verkehr"
+    ],
+    "correct": "Alles erlaubt, außer explizit blockiert"
+  },
+  {
+    "question": "Welche Firewall ist in Windows integriert?",
+    "options": [
+      "Windows Defender Firewall",
+      "Norton Firewall",
+      "McAfee Firewall",
+      "Kaspersky Firewall"
+    ],
+    "correct": "Windows Defender Firewall"
+  },
+  {
+    "question": "Wie öffnet man die Windows-Firewall-Konfiguration?",
+    "options": [
+      "wf.msc oder Systemsteuerung",
+      "firewall.exe",
+      "netfw.cpl",
+      "security.msc"
+    ],
+    "correct": "wf.msc oder Systemsteuerung"
+  },
+  {
+    "question": "Wie nennt man eine Regel, die eine Verbindung erlaubt?",
+    "options": [
+      "Allow-Regel",
+      "Block-Regel",
+      "Deny-Regel",
+      "Stop-Regel"
+    ],
+    "correct": "Allow-Regel"
+  },
+  {
+    "question": "Wie nennt man eine Regel, die eine Verbindung blockiert?",
+    "options": [
+      "Block/Deny-Regel",
+      "Allow-Regel",
+      "Open-Regel",
+      "Pass-Regel"
+    ],
+    "correct": "Block/Deny-Regel"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen eingehendem und ausgehendem Verkehr?",
+    "options": [
+      "Inbound = zu PC, Outbound = von PC",
+      "Kein Unterschied",
+      "Nur Geschwindigkeit",
+      "Nur Protokoll"
+    ],
+    "correct": "Inbound = zu PC, Outbound = von PC"
+  },
+  {
+    "question": "Was bedeutet NAT in Verbindung mit Firewalls?",
+    "options": [
+      "Network Address Translation",
+      "Network Access Translation",
+      "New Address Technology",
+      "Network Authentication Token"
+    ],
+    "correct": "Network Address Translation"
+  },
+  {
+    "question": "Welche Art von Firewall bietet tiefergehende Analyse bis Schicht 7?",
+    "options": [
+      "Application Layer Firewall",
+      "Packet Filter",
+      "Circuit Gateway",
+      "Basic Firewall"
+    ],
+    "correct": "Application Layer Firewall"
+  },
+  {
+    "question": "Was ist DPI (Deep Packet Inspection)?",
+    "options": [
+      "Tiefe Paket-Inspektion bis zum Inhalt",
+      "Doppelte Paket-Inspektion",
+      "Direkte Port-Inspektion",
+      "Digitale Paket-Information"
+    ],
+    "correct": "Tiefe Paket-Inspektion bis zum Inhalt"
+  },
+  {
+    "question": "Wie kann man prüfen, ob ein Port durch die Firewall blockiert wird?",
+    "options": [
+      "Telnet-Test oder Port-Scanner",
+      "Ping-Test",
+      "DNS-Lookup",
+      "Browser-Test"
+    ],
+    "correct": "Telnet-Test oder Port-Scanner"
+  },
+  {
+    "question": "Was ist eine DMZ in Verbindung mit Firewalls?",
+    "options": [
+      "Demilitarisierte Zone zwischen Netzwerken",
+      "Direct Memory Zone",
+      "Data Management Zone",
+      "Disk Memory Zone"
+    ],
+    "correct": "Demilitarisierte Zone zwischen Netzwerken"
+  },
+  {
+    "question": "Warum sollte man unnötige Ports schließen?",
+    "options": [
+      "Angriffsfläche reduzieren",
+      "Geschwindigkeit erhöhen",
+      "Speicher sparen",
+      "Strom sparen"
+    ],
+    "correct": "Angriffsfläche reduzieren"
+  },
+  {
+    "question": "Was ist der Zweck einer Zonen-Firewall?",
+    "options": [
+      "Netzwerk in Sicherheitszonen unterteilen",
+      "Zeitzonen verwalten",
+      "Zonale Backups",
+      "Regionale Einstellungen"
+    ],
+    "correct": "Netzwerk in Sicherheitszonen unterteilen"
+  },
+  {
+    "question": "Wie kann man Firewalls in Unternehmen zentral verwalten?",
+    "options": [
+      "Management-Software und Policies",
+      "Manuell jede einzeln",
+      "Automatisch",
+      "Gar nicht"
+    ],
+    "correct": "Management-Software und Policies"
+  },
+  {
+    "question": "Welche Risiken entstehen durch falsch konfigurierte Firewalls?",
+    "options": [
+      "Sicherheitslücken oder blockierte Services",
+      "Nur langsames Internet",
+      "Nur hoher Stromverbrauch",
+      "Keine Risiken"
+    ],
+    "correct": "Sicherheitslücken oder blockierte Services"
+  },
+  {
+    "question": "Was ist der Vorteil einer Application Layer Firewall?",
+    "options": [
+      "Kann Anwendungsinhalte analysieren",
+      "Ist billiger",
+      "Ist schneller",
+      "Braucht weniger Strom"
+    ],
+    "correct": "Kann Anwendungsinhalte analysieren"
+  },
+  {
+    "question": "Was ist ein typisches Beispiel für eine Hardware-Firewall?",
+    "options": [
+      "Router mit Firewall-Funktion",
+      "Antivirus-Software",
+      "Windows Firewall",
+      "Browser-Sicherheit"
+    ],
+    "correct": "Router mit Firewall-Funktion"
+  },
+  {
+    "question": "Was bedeutet \"Whitelist\" in der Firewall?",
+    "options": [
+      "Liste erlaubter Verbindungen",
+      "Liste blockierter IPs",
+      "Liste aller IPs",
+      "Konfigurationsdatei"
+    ],
+    "correct": "Liste erlaubter Verbindungen"
+  },
+  {
+    "question": "Was bedeutet \"Blacklist\" in der Firewall?",
+    "options": [
+      "Liste blockierter Verbindungen",
+      "Liste erlaubter IPs",
+      "Liste aller Ports",
+      "Backup-Liste"
+    ],
+    "correct": "Liste blockierter Verbindungen"
+  },
+  {
+    "question": "Was ist ein Regelwerk (Rule Set)?",
+    "options": [
+      "Sammlung aller Firewall-Regeln",
+      "Hardware-Konfiguration",
+      "Software-Installation",
+      "Benutzerhandbuch"
+    ],
+    "correct": "Sammlung aller Firewall-Regeln"
+  },
+  {
+    "question": "Was passiert bei widersprüchlichen Regeln?",
+    "options": [
+      "Erste/spezifischere Regel gewinnt",
+      "Letzte Regel gewinnt",
+      "Zufällige Auswahl",
+      "Beide werden ignoriert"
+    ],
+    "correct": "Erste/spezifischere Regel gewinnt"
+  },
+  {
+    "question": "Warum ist regelmäßiges Überprüfen der Firewallregeln wichtig?",
+    "options": [
+      "Sicherheit aktuell halten und tote Regeln entfernen",
+      "Performance verbessern",
+      "Speicher sparen",
+      "Automatische Updates"
+    ],
+    "correct": "Sicherheit aktuell halten und tote Regeln entfernen"
+  }
+]

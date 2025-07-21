@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Game</h1>
+        <div class="home-content">
+            <div id="topicSelection" class="topic-selection">
+                <label for="topicSelect">Choose a topic:</label>
+                <select id="topicSelect" class="topic-select">
+                    <option value="">Loading topics...</option>
+                </select>
+                <button id="createGame" class="btn-primary" disabled>Create New Game</button>
+            </div>
+            
+            <div id="inviteLink" class="invite-section" style="display: none;">
+                <p>Topic: <strong id="selectedTopic"></strong></p>
+                <p>Share this link with your friends:</p>
+                <input type="text" id="linkInput" readonly>
+                <button id="copyLink" class="btn-secondary">Copy Link</button>
+                <button id="startGame" class="btn-primary">Go to Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const topicSelect = document.getElementById('topicSelect');
+        const createBtn = document.getElementById('createGame');
+        const inviteSection = document.getElementById('inviteLink');
+        const linkInput = document.getElementById('linkInput');
+        const copyBtn = document.getElementById('copyLink');
+        const startBtn = document.getElementById('startGame');
+        const selectedTopicSpan = document.getElementById('selectedTopic');
+
+        // Load topics on page load
+        loadTopics();
+
+        async function loadTopics() {
+            try {
+                const response = await fetch('/topics');
+                const topics = await response.json();
+                
+                topicSelect.innerHTML = '<option value="">Select a topic...</option>';
+                topics.forEach(topic => {
+                    const option = document.createElement('option');
+                    option.value = topic.id;
+                    option.textContent = `${topic.name} (${topic.questionCount} questions)`;
+                    topicSelect.appendChild(option);
+                });
+                
+                createBtn.disabled = false;
+            } catch (error) {
+                console.error('Failed to load topics:', error);
+                topicSelect.innerHTML = '<option value="">Failed to load topics</option>';
+            }
+        }
+
+        topicSelect.addEventListener('change', () => {
+            createBtn.disabled = !topicSelect.value;
+        });
+
+        createBtn.addEventListener('click', async () => {
+            const selectedTopic = topicSelect.value;
+            if (!selectedTopic) {
+                alert('Please select a topic');
+                return;
+            }
+
+            try {
+                const response = await fetch('/create-game', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ topic: selectedTopic })
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+                
+                linkInput.value = data.inviteLink;
+                selectedTopicSpan.textContent = data.topicName;
+                inviteSection.style.display = 'block';
+                topicSelect.disabled = true;
+                createBtn.disabled = true;
+                
+                localStorage.setItem('gameId', data.gameId);
+                localStorage.setItem('isHost', 'true');
+            } catch (error) {
+                console.error('Failed to create game:', error);
+                alert('Failed to create game. Please try again.');
+            }
+        });
+
+        copyBtn.addEventListener('click', () => {
+            linkInput.select();
+            document.execCommand('copy');
+            copyBtn.textContent = 'Copied!';
+            setTimeout(() => {
+                copyBtn.textContent = 'Copy Link';
+            }, 2000);
+        });
+
+        startBtn.addEventListener('click', () => {
+            window.location.href = linkInput.value;
+        });
+    </script>
+    <footer class="copyright">
+        <p>&copy; Copyright by QLINXX</p>
+    </footer>
+</body>
+</html>

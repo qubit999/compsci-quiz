@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Welche Informationen brauchst du, um einen DHCP zu konfigurieren?",
+    "options": [
+      "IP-Bereich, Subnet-Maske, Gateway, DNS",
+      "Nur die IP-Adresse",
+      "Nur das Gateway",
+      "Nur der DNS-Server"
+    ],
+    "correct": "IP-Bereich, Subnet-Maske, Gateway, DNS"
+  },
+  {
+    "question": "Wie änderst du eine IP-Adresse in Windows?",
+    "options": [
+      "Systemsteuerung > Netzwerk > Adaptereinstellungen",
+      "Eingabeaufforderung > ipconfig",
+      "Geräte-Manager > Netzwerk",
+      "Windows-Einstellungen > System"
+    ],
+    "correct": "Systemsteuerung > Netzwerk > Adaptereinstellungen"
+  },
+  {
+    "question": "Welcher Befehl zeigt unter Windows die aktuelle IP-Konfiguration?",
+    "options": [
+      "ipconfig",
+      "netstat",
+      "ping",
+      "tracert"
+    ],
+    "correct": "ipconfig"
+  },
+  {
+    "question": "Welcher Befehl aktualisiert die IP-Adresse über DHCP in Windows?",
+    "options": [
+      "ipconfig /renew",
+      "ipconfig /refresh",
+      "ipconfig /update",
+      "ipconfig /dhcp"
+    ],
+    "correct": "ipconfig /renew"
+  },
+  {
+    "question": "Wie prüfst du die IP-Adresse unter Linux?",
+    "options": [
+      "ip addr show",
+      "ipconfig",
+      "netstat",
+      "route"
+    ],
+    "correct": "ip addr show"
+  },
+  {
+    "question": "Mit welchem Befehl kannst du unter Linux eine IP-Adresse setzen?",
+    "options": [
+      "ip addr add",
+      "ifconfig set",
+      "netconf",
+      "ipset"
+    ],
+    "correct": "ip addr add"
+  },
+  {
+    "question": "Wie aktivierst du ein Netzwerkinterface unter Linux?",
+    "options": [
+      "ip link set up",
+      "ifconfig enable",
+      "netdev start",
+      "interface on"
+    ],
+    "correct": "ip link set up"
+  },
+  {
+    "question": "Wie kannst du unter Windows die DNS-Auflösung testen?",
+    "options": [
+      "nslookup",
+      "dnstest",
+      "resolve",
+      "lookup"
+    ],
+    "correct": "nslookup"
+  },
+  {
+    "question": "Wie prüfst du die Erreichbarkeit des Gateways?",
+    "options": [
+      "ping gateway-ip",
+      "tracert gateway",
+      "netstat gateway",
+      "route test"
+    ],
+    "correct": "ping gateway-ip"
+  },
+  {
+    "question": "Wie kannst du Netzwerkprobleme eingrenzen?",
+    "options": [
+      "Layer-by-Layer-Analyse",
+      "Nur Gateway prüfen",
+      "DNS testen",
+      "Firewall deaktivieren"
+    ],
+    "correct": "Layer-by-Layer-Analyse"
+  },
+  {
+    "question": "Was ist das Ergebnis von ping 127.0.0.1?",
+    "options": [
+      "Lokale Netzwerkkarte funktioniert",
+      "Internet ist erreichbar",
+      "DNS funktioniert",
+      "Gateway ist aktiv"
+    ],
+    "correct": "Lokale Netzwerkkarte funktioniert"
+  },
+  {
+    "question": "Was bedeutet ein erfolgreiches Ping auf 8.8.8.8, aber kein Aufruf von Webseiten?",
+    "options": [
+      "DNS-Problem",
+      "Gateway-Problem",
+      "Netzwerkkarte defekt",
+      "Kein Internet"
+    ],
+    "correct": "DNS-Problem"
+  },
+  {
+    "question": "Was zeigt tracert bzw. traceroute?",
+    "options": [
+      "Weg zum Ziel über Router",
+      "DNS-Auflösung",
+      "Bandbreite",
+      "Firewall-Status"
+    ],
+    "correct": "Weg zum Ziel über Router"
+  },
+  {
+    "question": "Wie kannst du sehen, ob eine Netzwerkkarte aktiv ist?",
+    "options": [
+      "ipconfig /all oder ip link show",
+      "ping localhost",
+      "netstat",
+      "route print"
+    ],
+    "correct": "ipconfig /all oder ip link show"
+  },
+  {
+    "question": "Wie testest du, ob der DNS-Server erreichbar ist?",
+    "options": [
+      "ping dns-server-ip",
+      "nslookup test",
+      "dns ping",
+      "resolve test"
+    ],
+    "correct": "ping dns-server-ip"
+  },
+  {
+    "question": "Wie prüfst du, ob zwei Geräte im selben Netz sind?",
+    "options": [
+      "IP-Adresse und Subnetzmaske vergleichen",
+      "Ping testen",
+      "Gateway prüfen",
+      "DNS abfragen"
+    ],
+    "correct": "IP-Adresse und Subnetzmaske vergleichen"
+  },
+  {
+    "question": "Welches Kommando zeigt unter Linux die Routing-Tabelle?",
+    "options": [
+      "ip route show",
+      "netstat -r",
+      "route",
+      "Alle genannten"
+    ],
+    "correct": "Alle genannten"
+  },
+  {
+    "question": "Wie kannst du erkennen, ob ein DHCP-Server antwortet?",
+    "options": [
+      "ipconfig /release und /renew",
+      "dhcp test",
+      "ping dhcp",
+      "netstat dhcp"
+    ],
+    "correct": "ipconfig /release und /renew"
+  },
+  {
+    "question": "Wie kannst du sehen, welche IP-Adresse ein Client erhalten hat?",
+    "options": [
+      "ipconfig oder ip addr",
+      "dhcp show",
+      "client info",
+      "net display"
+    ],
+    "correct": "ipconfig oder ip addr"
+  },
+  {
+    "question": "Wie setzt du eine feste IP-Adresse unter Windows?",
+    "options": [
+      "Netzwerkadapter-Eigenschaften > TCP/IPv4",
+      "ipconfig /static",
+      "netsh interface",
+      "Systemsteuerung > IP"
+    ],
+    "correct": "Netzwerkadapter-Eigenschaften > TCP/IPv4"
+  },
+  {
+    "question": "Welche Dienste müssen auf einem DHCP-Client laufen, damit er funktioniert?",
+    "options": [
+      "DHCP-Client-Dienst",
+      "DNS-Client",
+      "WINS-Client",
+      "Alle Netzwerkdienste"
+    ],
+    "correct": "DHCP-Client-Dienst"
+  },
+  {
+    "question": "Was ist zu tun, wenn ein Gerät eine 169.254.x.x-Adresse hat?",
+    "options": [
+      "DHCP-Server prüfen, da APIPA aktiv ist",
+      "IP manuell setzen",
+      "Neustart",
+      "Firewall prüfen"
+    ],
+    "correct": "DHCP-Server prüfen, da APIPA aktiv ist"
+  },
+  {
+    "question": "Wie testest du die Verbindung zu einem Server auf einem bestimmten Port?",
+    "options": [
+      "telnet server port",
+      "ping server:port",
+      "netstat server",
+      "trace server"
+    ],
+    "correct": "telnet server port"
+  },
+  {
+    "question": "Was ist eine \"Default Route\"?",
+    "options": [
+      "Route für alle nicht-lokalen Ziele",
+      "Route zum Gateway",
+      "Route zum DNS",
+      "Route zum DHCP"
+    ],
+    "correct": "Route für alle nicht-lokalen Ziele"
+  },
+  {
+    "question": "Welche Datei unter Linux speichert statische IP-Konfigurationen?",
+    "options": [
+      "/etc/network/interfaces oder /etc/netplan/",
+      "/etc/ip.conf",
+      "/etc/static-ip",
+      "/etc/network.conf"
+    ],
+    "correct": "/etc/network/interfaces oder /etc/netplan/"
+  },
+  {
+    "question": "Welche Datei unter Windows speichert DNS-Überschreibungen lokal?",
+    "options": [
+      "C:\\Windows\\System32\\drivers\\etc\\hosts",
+      "C:\\Windows\\dns.conf",
+      "C:\\dns\\hosts",
+      "C:\\System\\dns.txt"
+    ],
+    "correct": "C:\\Windows\\System32\\drivers\\etc\\hosts"
+  },
+  {
+    "question": "Wie findest du die MAC-Adresse deiner Netzwerkkarte unter Windows heraus?",
+    "options": [
+      "ipconfig /all",
+      "getmac",
+      "Beide Antworten sind richtig",
+      "netstat -m"
+    ],
+    "correct": "Beide Antworten sind richtig"
+  },
+  {
+    "question": "Wie findest du unter Linux die MAC-Adresse?",
+    "options": [
+      "ip link show",
+      "ifconfig",
+      "Beide Antworten sind richtig",
+      "mac show"
+    ],
+    "correct": "Beide Antworten sind richtig"
+  },
+  {
+    "question": "Was ist ein sinnvoller erster Schritt bei Verbindungsproblemen?",
+    "options": [
+      "Physical Layer prüfen (Kabel, Status)",
+      "DNS testen",
+      "Firewall deaktivieren",
+      "Neustart"
+    ],
+    "correct": "Physical Layer prüfen (Kabel, Status)"
+  },
+  {
+    "question": "Wie kann man mehrere Netzwerkkarten auf einem Linux-Client konfigurieren?",
+    "options": [
+      "Für jede Karte separate Konfiguration",
+      "Eine Datei für alle",
+      "Automatisch durch DHCP",
+      "Nicht möglich"
+    ],
+    "correct": "Für jede Karte separate Konfiguration"
+  }
+]

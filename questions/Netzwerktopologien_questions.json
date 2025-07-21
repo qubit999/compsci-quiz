@@ -1,0 +1,302 @@
+[
+    {
+        "question": "Was versteht man unter einer Netzwerktopologie?",
+        "options": [
+            "Ein physikalisches Netzwerk",
+            "Die Anordnung von Netzwerkknoten",
+            "Eine Art von Kabel",
+            "Ein Netzwerkprotokoll"
+        ],
+        "correct": "Die Anordnung von Netzwerkknoten"
+    },
+    {
+        "question": "Nenne drei klassische Netzwerktopologien.",
+        "options": [
+            "Bus, Stern, Ring",
+            "Stern, Mesh, Baum",
+            "Bus, Mesh, Token",
+            "Ring, Stern, Baum"
+        ],
+        "correct": "Bus, Stern, Ring"
+    },
+    {
+        "question": "Welche Topologie ist heute am weitesten verbreitet?",
+        "options": [
+            "Bustopologie",
+            "Sterntopologie",
+            "Ringtopologie",
+            "Vermaschte Topologie"
+        ],
+        "correct": "Sterntopologie"
+    },
+    {
+        "question": "Was ist ein Nachteil der Bustopologie?",
+        "options": [
+            "Hoher Verkabelungsaufwand",
+            "Single Point of Failure",
+            "Signalreflexionen",
+            "Einfache Erweiterbarkeit"
+        ],
+        "correct": "Signalreflexionen"
+    },
+    {
+        "question": "Was ist der zentrale Punkt in einer Sterntopologie?",
+        "options": [
+            "Das Switch",
+            "Der Server",
+            "Der zentrale Knoten",
+            "Ein Router"
+        ],
+        "correct": "Der zentrale Knoten"
+    },
+    {
+        "question": "Welche Topologie hat eine Punkt-zu-Punkt-Verbindung zwischen allen Geräten?",
+        "options": [
+            "Ring",
+            "Stern",
+            "Vermascht",
+            "Bus"
+        ],
+        "correct": "Vermascht"
+    },
+    {
+        "question": "Was ist ein Vorteil der vermaschten Topologie?",
+        "options": [
+            "Niedrige Kosten",
+            "Hohe Ausfallsicherheit",
+            "Einfache Installation",
+            "Geringe Kabelanzahl"
+        ],
+        "correct": "Hohe Ausfallsicherheit"
+    },
+    {
+        "question": "Welche Topologie wurde früher häufig mit Koaxialkabeln verwendet?",
+        "options": [
+            "Bus",
+            "Ring",
+            "Stern",
+            "Baum"
+        ],
+        "correct": "Bus"
+    },
+    {
+        "question": "Was ist ein Nachteil der Ringtopologie?",
+        "options": [
+            "Erfordert viel Verkabelung",
+            "Single Point of Failure bei einem Kabelbruch",
+            "Benötigt viele Switches",
+            "Schlechte Signalqualität"
+        ],
+        "correct": "Single Point of Failure bei einem Kabelbruch"
+    },
+    {
+        "question": "Was ist eine hybride Topologie?",
+        "options": [
+            "Ein Netzwerk mit mehreren Sternen",
+            "Eine Mischung verschiedener Topologien",
+            "Ein Netzwerk mit Ring und Stern",
+            "Ein Fortsetzungsnetzwerk"
+        ],
+        "correct": "Eine Mischung verschiedener Topologien"
+    },
+    {
+        "question": "Wie viele Kabelverbindungen sind bei einem vollständig vermaschten Netzwerk mit 5 Geräten nötig?",
+        "options": [
+            "5",
+            "10",
+            "20",
+            "15"
+        ],
+        "correct": "10"
+    },
+    {
+        "question": "Welche Topologie erfordert die meisten Kabelverbindungen?",
+        "options": [
+            "Stern",
+            "Bus",
+            "Vermascht",
+            "Ring"
+        ],
+        "correct": "Vermascht"
+    },
+    {
+        "question": "Welcher Netzwerkfehler wirkt sich in einer Sterntopologie am stärksten aus?",
+        "options": [
+            "Netzwerkausfall",
+            "Kabelbruch",
+            "Defekter Switch",
+            "Ausfall des zentralen Knotens"
+        ],
+        "correct": "Ausfall des zentralen Knotens"
+    },
+    {
+        "question": "Wie sieht eine logische Bustopologie aus, die über einen Switch betrieben wird?",
+        "options": [
+            "Logischer Bus",
+            "Physikalischer Bus",
+            "Logischer Ring",
+            "Physikalischer Stern"
+        ],
+        "correct": "Logischer Bus"
+    },
+    {
+        "question": "Welche Topologie wird im Token-Ring-Netzwerk verwendet?",
+        "options": [
+            "Bus",
+            "Ring",
+            "Stern",
+            "Vermascht"
+        ],
+        "correct": "Ring"
+    },
+    {
+        "question": "Welche Topologie ist besonders wartungsfreundlich?",
+        "options": [
+            "Baumtopologie",
+            "Sterntopologie",
+            "Bustopologie",
+            "Vermaschte Topologie"
+        ],
+        "correct": "Sterntopologie"
+    },
+    {
+        "question": "In welcher Topologie werden Signale an alle Teilnehmer gleichzeitig gesendet?",
+        "options": [
+            "Bus",
+            "Ring",
+            "Vermascht",
+            "Sterntopologie"
+        ],
+        "correct": "Bus"
+    },
+    {
+        "question": "Welche Topologie eignet sich am besten für große, redundante Netzwerke?",
+        "options": [
+            "Ringtopologie",
+            "Sterntopologie",
+            "Vermaschte Topologie",
+            "Hybride Topologie"
+        ],
+        "correct": "Vermaschte Topologie"
+    },
+    {
+        "question": "Warum ist die Sterntopologie besonders beliebt im modernen Ethernet?",
+        "options": [
+            "Einfache Verkabelung",
+            "Ausfallsicherheit",
+            "Geringe Kosten",
+            "Hohe Geschwindigkeit"
+        ],
+        "correct": "Ausfallsicherheit"
+    },
+    {
+        "question": "Was ist eine logische Topologie?",
+        "options": [
+            "Anordnung der Geräte",
+            "Verhalten der Datenübertragung",
+            "Physikalische Kabelverlegung",
+            "Netzwerkprotokoll"
+        ],
+        "correct": "Verhalten der Datenübertragung"
+    },
+    {
+        "question": "Was ist eine physikalische Topologie?",
+        "options": [
+            "Physikalische Anordnung der Geräte",
+            "Anordnung der Protokolle",
+            "Logische Verbindung der Geräte",
+            "Netzwerksoftware"
+        ],
+        "correct": "Physikalische Anordnung der Geräte"
+    },
+    {
+        "question": "Was passiert bei einem Kabelbruch in einer Ringtopologie ohne Redundanz?",
+        "options": [
+            "Netzwerkausfall",
+            "Signalstörung",
+            "Kommunikationsabbruch",
+            "Kabelbruch führt zu Netzausfall"
+        ],
+        "correct": "Kabelbruch führt zu Netzausfall"
+    },
+    {
+        "question": "Wie kann ein Ring redundant gemacht werden?",
+        "options": [
+            "Durch zusätzliche Kabelverbindungen",
+            "Durch Backup-Switches",
+            "Durch zusätzliche Switches",
+            "Durch Softwarelösungen"
+        ],
+        "correct": "Durch zusätzliche Kabelverbindungen"
+    },
+    {
+        "question": "Welche Topologie erlaubt eine einfache Erweiterung des Netzwerks?",
+        "options": [
+            "Sterntopologie",
+            "Bustopologie",
+            "Ringtopologie",
+            "Vermaschte Topologie"
+        ],
+        "correct": "Sterntopologie"
+    },
+    {
+        "question": "Welche Topologie ist in Peer-to-Peer-Netzwerken üblich?",
+        "options": [
+            "Bus",
+            "Stern",
+            "Ring",
+            "Vermascht"
+        ],
+        "correct": "Ring"
+    },
+    {
+        "question": "Was ist ein Backbone im Zusammenhang mit Topologien?",
+        "options": [
+            "Ein Hauptleitungskabel",
+            "Ein zentrales Backbone-Switch",
+            "Ein Netzwerkknoten",
+            "Eine Router-Verbindung"
+        ],
+        "correct": "Ein Hauptleitungskabel"
+    },
+    {
+        "question": "In welcher Topologie wirkt sich ein defektes Endgerät meist nicht auf andere aus?",
+        "options": [
+            "Sterntopologie",
+            "Bustopologie",
+            "Ringtopologie",
+            "Baumtopologie"
+        ],
+        "correct": "Sterntopologie"
+    },
+    {
+        "question": "Wie nennt man eine logische Ringstruktur, die physikalisch als Stern aufgebaut ist?",
+        "options": [
+            "Logischer Stern",
+            "Physikalischer Bus",
+            "Logischer Ring",
+            "Physikalischer Stern"
+        ],
+        "correct": "Logischer Ring"
+    },
+    {
+        "question": "Warum wird die Bustopologie in neuen Netzwerken nicht mehr verwendet?",
+        "options": [
+            "Signalstörungen",
+            "Hohe Kosten",
+            "Schwierige Erweiterung",
+            "Nicht skalierbar"
+        ],
+        "correct": "Signalstörungen"
+    },
+    {
+        "question": "Welche Topologie nutzt WLAN logisch?",
+        "options": [
+            "Stern",
+            "Bus",
+            "Ring",
+            "Logischer Stern"
+        ],
+        "correct": "Logischer Stern"
+    }
+]

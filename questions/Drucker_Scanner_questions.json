@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Was bedeutet es, einen Drucker im Netzwerk freizugeben?",
+    "options": [
+      "Andere können über Netzwerk drucken",
+      "Drucker bekommt IP-Adresse",
+      "Drucker wird drahtlos",
+      "Drucker wird verschlüsselt"
+    ],
+    "correct": "Andere können über Netzwerk drucken"
+  },
+  {
+    "question": "Wie gibt man unter Windows einen Drucker frei?",
+    "options": [
+      "Drucker-Eigenschaften > Freigabe",
+      "Systemsteuerung > Drucker freigeben",
+      "Geräte-Manager > Freigabe",
+      "Netzwerk-Einstellungen"
+    ],
+    "correct": "Drucker-Eigenschaften > Freigabe"
+  },
+  {
+    "question": "Welches Protokoll wird typischerweise zur Netzwerkdruckerfreigabe verwendet?",
+    "options": [
+      "SMB/CIFS",
+      "FTP",
+      "HTTP",
+      "SSH"
+    ],
+    "correct": "SMB/CIFS"
+  },
+  {
+    "question": "Was ist IPP?",
+    "options": [
+      "Internet Printing Protocol",
+      "Internal Print Protocol",
+      "IP Printer Protocol",
+      "Internet Print Process"
+    ],
+    "correct": "Internet Printing Protocol"
+  },
+  {
+    "question": "Wie erkennt man, ob ein Drucker im Netzwerk freigegeben ist?",
+    "options": [
+      "Drucker erscheint in Netzwerkumgebung",
+      "Drucker hat blaue LED",
+      "Drucker zeigt IP-Adresse",
+      "Drucker macht Geräusche"
+    ],
+    "correct": "Drucker erscheint in Netzwerkumgebung"
+  },
+  {
+    "question": "Wie installiert man einen Netzwerkdrucker unter Windows?",
+    "options": [
+      "Drucker hinzufügen > Netzwerkdrucker",
+      "Geräte-Manager > Drucker",
+      "Systemsteuerung > Hardware",
+      "Windows Update"
+    ],
+    "correct": "Drucker hinzufügen > Netzwerkdrucker"
+  },
+  {
+    "question": "Wie greift man direkt auf einen freigegebenen Drucker zu?",
+    "options": [
+      "\\\\Computername\\Druckername",
+      "http://computer/printer",
+      "printer://computer/name",
+      "tcp://computer:port"
+    ],
+    "correct": "\\\\Computername\\Druckername"
+  },
+  {
+    "question": "Was ist eine Druckerfreigabe mit statischer IP?",
+    "options": [
+      "Drucker hat feste IP-Adresse",
+      "Drucker wechselt IP nicht",
+      "Beide Antworten sind richtig",
+      "Drucker ist immer erreichbar"
+    ],
+    "correct": "Beide Antworten sind richtig"
+  },
+  {
+    "question": "Wie kann man einen Drucker im Windows-Netzwerk sichtbar machen?",
+    "options": [
+      "Drucker freigeben und Netzwerkerkennung aktivieren",
+      "IP-Adresse zuweisen",
+      "Treiber installieren",
+      "Drucker neu starten"
+    ],
+    "correct": "Drucker freigeben und Netzwerkerkennung aktivieren"
+  },
+  {
+    "question": "Welche Rolle spielt der Druckspooler?",
+    "options": [
+      "Verwaltet Druckaufträge in der Warteschlange",
+      "Konvertiert Dateiformate",
+      "Stellt Netzwerkverbindung her",
+      "Überwacht Tintenstände"
+    ],
+    "correct": "Verwaltet Druckaufträge in der Warteschlange"
+  },
+  {
+    "question": "Wie überprüft man, ob der Druckspooler läuft?",
+    "options": [
+      "services.msc > Print Spooler",
+      "Taskmanager > Dienste",
+      "Beide Antworten sind richtig",
+      "Ereignisanzeige"
+    ],
+    "correct": "Beide Antworten sind richtig"
+  },
+  {
+    "question": "Wie fügt man einen Netzwerkdrucker in Linux hinzu?",
+    "options": [
+      "CUPS-Interface oder Systemeinstellungen",
+      "Geräte-Manager",
+      "Network-Manager",
+      "Drucker-Daemon"
+    ],
+    "correct": "CUPS-Interface oder Systemeinstellungen"
+  },
+  {
+    "question": "Was ist CUPS?",
+    "options": [
+      "Common Unix Printing System",
+      "Central Unix Print Service",
+      "Computer Unix Print System",
+      "Common Unix Print Server"
+    ],
+    "correct": "Common Unix Printing System"
+  },
+  {
+    "question": "Wie ruft man das CUPS-Interface auf?",
+    "options": [
+      "http://localhost:631",
+      "cups://localhost",
+      "print://localhost",
+      "http://localhost:8080"
+    ],
+    "correct": "http://localhost:631"
+  },
+  {
+    "question": "Was ist ein universeller Druckertreiber?",
+    "options": [
+      "Treiber für viele Druckermodelle",
+      "Treiber für alle Betriebssysteme",
+      "Netzwerk-Druckertreiber",
+      "Standard-Windows-Treiber"
+    ],
+    "correct": "Treiber für viele Druckermodelle"
+  },
+  {
+    "question": "Wie kann man einen Scanner im Netzwerk freigeben?",
+    "options": [
+      "Scanner-Software mit Netzwerk-Option",
+      "Über USB-Hub",
+      "Scanner-Server-Software",
+      "Windows-Freigabe"
+    ],
+    "correct": "Scanner-Software mit Netzwerk-Option"
+  },
+  {
+    "question": "Welche Protokolle unterstützen Netzwerkscanner?",
+    "options": [
+      "WSD, eSCL, proprietäre",
+      "Nur HTTP",
+      "Nur FTP",
+      "SMB/CIFS"
+    ],
+    "correct": "WSD, eSCL, proprietäre"
+  },
+  {
+    "question": "Was ist WSD?",
+    "options": [
+      "Web Services for Devices",
+      "Windows Scan Device",
+      "Web Scan Discovery",
+      "Wireless Scan Device"
+    ],
+    "correct": "Web Services for Devices"
+  },
+  {
+    "question": "Kann jeder Drucker netzwerkfähig gemacht werden?",
+    "options": [
+      "Mit Printserver oder USB-über-Netzwerk",
+      "Ja, alle automatisch",
+      "Nein, nur Netzwerkdrucker",
+      "Nur mit spezieller Hardware"
+    ],
+    "correct": "Mit Printserver oder USB-über-Netzwerk"
+  },
+  {
+    "question": "Was ist ein Printserver?",
+    "options": [
+      "Gerät, das USB-Drucker netzwerkfähig macht",
+      "Spezieller Druckertyp",
+      "Software für Drucker",
+      "Drucker mit Festplatte"
+    ],
+    "correct": "Gerät, das USB-Drucker netzwerkfähig macht"
+  },
+  {
+    "question": "Welche IP sollte man einem Netzwerkdrucker zuweisen?",
+    "options": [
+      "Statische IP außerhalb DHCP-Bereich",
+      "Dynamische IP",
+      "Beliebige IP",
+      "IP des Routers"
+    ],
+    "correct": "Statische IP außerhalb DHCP-Bereich"
+  },
+  {
+    "question": "Warum ist eine statische IP für Drucker sinnvoll?",
+    "options": [
+      "Drucker bleibt immer unter derselben Adresse erreichbar",
+      "Drucker wird schneller",
+      "Weniger Netzwerkverkehr",
+      "Höhere Druckqualität"
+    ],
+    "correct": "Drucker bleibt immer unter derselben Adresse erreichbar"
+  },
+  {
+    "question": "Wie kann man prüfen, ob ein Drucker erreichbar ist?",
+    "options": [
+      "ping drucker-ip",
+      "telnet drucker 9100",
+      "Beide Antworten sind richtig",
+      "http://drucker-ip"
+    ],
+    "correct": "Beide Antworten sind richtig"
+  },
+  {
+    "question": "Was ist ein AirPrint-Drucker?",
+    "options": [
+      "iOS/macOS-kompatibler Netzwerkdrucker",
+      "Drahtloser Drucker",
+      "Apple-Drucker",
+      "Bluetooth-Drucker"
+    ],
+    "correct": "iOS/macOS-kompatibler Netzwerkdrucker"
+  },
+  {
+    "question": "Wie kann man einen Netzwerkdrucker unter macOS hinzufügen?",
+    "options": [
+      "Systemeinstellungen > Drucker & Scanner",
+      "Network-Manager",
+      "Print Center",
+      "Apple-Konfiguration"
+    ],
+    "correct": "Systemeinstellungen > Drucker & Scanner"
+  },
+  {
+    "question": "Warum erkennt ein Gerät den freigegebenen Drucker manchmal nicht?",
+    "options": [
+      "Firewall, Netzwerkerkennung oder Treiberproblem",
+      "Drucker ist defekt",
+      "Falsches Kabel",
+      "Tinte leer"
+    ],
+    "correct": "Firewall, Netzwerkerkennung oder Treiberproblem"
+  },
+  {
+    "question": "Welche Windows-Einstellung verhindert Druckerfreigaben?",
+    "options": [
+      "Deaktivierte Datei- und Druckerfreigabe",
+      "UAC",
+      "Windows Defender",
+      "Benutzerkonten"
+    ],
+    "correct": "Deaktivierte Datei- und Druckerfreigabe"
+  },
+  {
+    "question": "Wie kann man Scans automatisch an einen Ordner senden?",
+    "options": [
+      "Scanner-Software konfigurieren",
+      "Ordner am Scanner erstellen",
+      "Windows-Freigabe nutzen",
+      "Email-Weiterleitung"
+    ],
+    "correct": "Scanner-Software konfigurieren"
+  },
+  {
+    "question": "Warum ist ein Benutzerkonto für Netzwerkscans oft erforderlich?",
+    "options": [
+      "Für Zugriff auf Zielordner",
+      "Scanner-Authentifizierung",
+      "Beide Antworten sind richtig",
+      "Lizenz-Kontrolle"
+    ],
+    "correct": "Beide Antworten sind richtig"
+  },
+  {
+    "question": "Was ist bei der Sicherheit von Netzwerkdruckern zu beachten?",
+    "options": [
+      "Standard-Passwörter ändern, Verschlüsselung aktivieren",
+      "Drucker verstecken",
+      "Nur lokale Nutzung",
+      "Drucker offline verwenden"
+    ],
+    "correct": "Standard-Passwörter ändern, Verschlüsselung aktivieren"
+  }
+]
