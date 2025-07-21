@@ -189,11 +189,17 @@
             ws.send(JSON.stringify({ type: 'answer', answer }));
         }
 
-        function handleAnswerFeedback(correct) {
-            const selectedBtn = document.querySelector('.option-btn.selected');
-            if (selectedBtn) {
-                selectedBtn.classList.add(correct ? 'correct' : 'incorrect');
-            }
+        function handleAnswerFeedback(data) {
+            // Show all buttons with appropriate styling
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                if (btn.textContent === data.correctAnswer) {
+                    // Always show correct answer in green
+                    btn.classList.add('correct');
+                } else if (btn.textContent === data.selectedAnswer && !data.correct) {
+                    // Show wrong selected answer in red
+                    btn.classList.add('incorrect');
+                }
+            });
         }
 
         function showQuestionResults(data) {

@@ -175,12 +175,14 @@ function handleAnswer(game, playerId, answer) {
         game.scores.set(playerId, game.scores.get(playerId) + 1);
     }
 
-    // Send answer feedback to player
+    // Send answer feedback to player with both selected answer and correct answer
     const player = game.players.get(playerId);
     if (player && player.ws) {
         player.ws.send(JSON.stringify({
             type: 'answerFeedback',
-            correct: answer === currentQuestion.correct
+            correct: answer === currentQuestion.correct,
+            selectedAnswer: answer,
+            correctAnswer: currentQuestion.correct
         }));
     }
 
