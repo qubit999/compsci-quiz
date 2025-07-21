@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Welcher Dienst wird unter Linux typischerweise für die Dateifreigabe in Netzwerken mit Windows-Clients verwendet?",
+    "options": [
+      "NFS",
+      "FTP",
+      "Samba",
+      "SSH"
+    ],
+    "correct": "Samba"
+  },
+  {
+    "question": "Welches Protokoll verwendet Samba zur Dateifreigabe?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "NFS",
+      "SMB/CIFS"
+    ],
+    "correct": "SMB/CIFS"
+  },
+  {
+    "question": "Wie heißt die zentrale Konfigurationsdatei von Samba?",
+    "options": [
+      "samba.conf",
+      "smb.conf",
+      "smb.cfg",
+      "config.smb"
+    ],
+    "correct": "smb.conf"
+  },
+  {
+    "question": "Mit welchem Befehl installiert man das Samba-Server-Paket unter Debian/Ubuntu?",
+    "options": [
+      "sudo yum install samba",
+      "sudo apt install samba",
+      "sudo pacman -S samba",
+      "sudo apt-get install smb-server"
+    ],
+    "correct": "sudo apt install samba"
+  },
+  {
+    "question": "Welcher Befehl zeigt aktive Samba-Freigaben und Verbindungen an?",
+    "options": [
+      "smbcheck",
+      "sambalist",
+      "smbstatus",
+      "netstat -samba"
+    ],
+    "correct": "smbstatus"
+  },
+  {
+    "question": "Wie startet man den Samba-Dienst (smbd) mit systemd neu?",
+    "options": [
+      "sudo systemctl restart smbd",
+      "sudo service samba start",
+      "sudo samba --restart",
+      "sudo smbd reload"
+    ],
+    "correct": "sudo systemctl restart smbd"
+  },
+  {
+    "question": "Welche Art von Benutzern muss zusätzlich zu den Systembenutzern für den passwortgeschützten Zugriff auf Samba-Freigaben angelegt werden?",
+    "options": [
+      "Nur System-Benutzer",
+      "Samba-Benutzer",
+      "Gast-Benutzer",
+      "Netzwerk-Benutzer"
+    ],
+    "correct": "Samba-Benutzer"
+  },
+  {
+    "question": "Wie erstellt man ein Passwort für einen neuen Samba-Benutzer (z.B. für den Benutzer 'user')?",
+    "options": [
+      "sudo passwd user",
+      "sudo smbadduser user",
+      "sudo smbpasswd -a user",
+      "sudo smbpasswd new user"
+    ],
+    "correct": "sudo smbpasswd -a user"
+  },
+  {
+    "question": "Wie sieht eine einfache, schreibbare Freigabe namens '[public]' in der smb.conf aus?",
+    "options": [
+      "[public]\npath = /srv/samba/public\nwritable = yes",
+      "{public: path=/srv/samba/public}",
+      "share 'public' at /srv/samba/public",
+      "public: /srv/samba/public (rw)"
+    ],
+    "correct": "[public]\npath = /srv/samba/public\nwritable = yes"
+  },
+  {
+    "question": "Was bedeutet die Option 'guest ok = yes' in einer Samba-Freigabe?",
+    "options": [
+      "Die Freigabe ist deaktiviert",
+      "Nur der Benutzer 'guest' hat Zugriff",
+      "Erlaubt den Zugriff ohne Passwort",
+      "Es wird ein spezielles Gast-Passwort benötigt"
+    ],
+    "correct": "Erlaubt den Zugriff ohne Passwort"
+  },
+  {
+    "question": "Wie kann man auf eine Samba-Freigabe von einem Windows-PC aus zugreifen (z.B. Server-IP 192.168.1.10)?",
+    "options": [
+      "Im Browser 'http://192.168.1.10' eingeben",
+      "Im Explorer '\\\\192.168.1.10' eingeben",
+      "Mit 'ping 192.168.1.10' in der Kommandozeile",
+      "Im Explorer 'smb://192.168.1.10' eingeben"
+    ],
+    "correct": "Im Explorer '\\\\192.168.1.10' eingeben"
+  },
+  {
+    "question": "Wie kann man auf Samba-Freigaben unter Linux (z.B. im Dateimanager) zugreifen?",
+    "options": [
+      "\\\\server-ip\\freigabe",
+      "cifs://server-ip/freigabe",
+      "smb://server-ip/freigabe",
+      "nfs://server-ip/freigabe"
+    ],
+    "correct": "smb://server-ip/freigabe"
+  },
+  {
+    "question": "Welcher Befehl im Terminal listet die verfügbaren Freigaben eines Samba-Servers auf (z.B. mit der IP 192.168.1.10)?",
+    "options": [
+      "smbclient -S 192.168.1.10",
+      "smblist 192.168.1.10",
+      "nmap -p 445 192.168.1.10",
+      "smbclient -L //192.168.1.10"
+    ],
+    "correct": "smbclient -L //192.168.1.10"
+  },
+  {
+    "question": "Wie verbindet man sich mit dem smbclient-Tool interaktiv mit einer Freigabe namens 'data' auf dem Server '192.168.1.10'?",
+    "options": [
+      "smbclient -C //192.168.1.10/data",
+      "smbclient -L //192.168.1.10/data",
+      "smbclient connect 192.168.1.10 data",
+      "smbclient //192.168.1.10/data"
+    ],
+    "correct": "smbclient //192.168.1.10/data"
+  },
+  {
+    "question": "Was ist CIFS (Common Internet File System)?",
+    "options": [
+      "Ein Linux-Dateisystem",
+      "Ein älterer Dialekt des SMB-Protokolls",
+      "Ein Konfigurationstool für Samba",
+      "Ein Verschlüsselungsalgorithmus für SMB"
+    ],
+    "correct": "Ein älterer Dialekt des SMB-Protokolls"
+  },
+  {
+    "question": "Welcher Befehl wird verwendet, um eine CIFS-Freigabe in das Linux-Dateisystem einzuhängen (mounting)?",
+    "options": [
+      "smb-mount",
+      "mount -t cifs",
+      "attach-cifs",
+      "cifs-link"
+    ],
+    "correct": "mount -t cifs"
+  },
+  {
+    "question": "Welches ist ein korrektes Beispiel für einen CIFS-Mount-Befehl?",
+    "options": [
+      "sudo cifs-mount //server/share /mnt/share",
+      "sudo mount -t cifs //server/share /mnt/share -o user=myuser",
+      "sudo mount smb://server/share /mnt/share",
+      "sudo smbclient mount //server/share /mnt/share"
+    ],
+    "correct": "sudo mount -t cifs //server/share /mnt/share -o user=myuser"
+  },
+  {
+    "question": "In welcher Datei trägt man eine CIFS-Freigabe ein, damit sie beim Systemstart automatisch eingehängt wird?",
+    "options": [
+      "/etc/smb.conf",
+      "/etc/fstab",
+      "/etc/mount.conf",
+      "/etc/cifs.conf"
+    ],
+    "correct": "/etc/fstab"
+  },
+  {
+    "question": "Welche Rechte benötigt der für die Freigabe verwendete Ordner auf dem Linux-Dateisystem?",
+    "options": [
+      "Immer '777' (rwxrwxrwx)",
+      "Nur Root-Zugriff",
+      "Keine speziellen Berechtigungen sind nötig",
+      "Passende Lese-/Schreib-/Ausführungsrechte für die zugreifenden Benutzer"
+    ],
+    "correct": "Passende Lese-/Schreib-/Ausführungsrechte für die zugreifenden Benutzer"
+  },
+  {
+    "question": "Was ist eine der häufigsten Ursachen für Probleme beim Zugriff auf Samba-Freigaben?",
+    "options": [
+      "Zu wenig Arbeitsspeicher auf dem Server",
+      "Falsch eingestellte Systemzeit",
+      "Falsche Dateisystemberechtigungen oder Firewall-Regeln",
+      "Der Servername enthält keine Zahl"
+    ],
+    "correct": "Falsche Dateisystemberechtigungen oder Firewall-Regeln"
+  },
+  {
+    "question": "Mit welchem Befehl kann man die Linux-Dateisystemberechtigungen für einen Ordner (z.B. '/srv/data') prüfen?",
+    "options": [
+      "checkperm /srv/data",
+      "ls -ld /srv/data",
+      "smb-perms /srv/data",
+      "cat /srv/data/permissions"
+    ],
+    "correct": "ls -ld /srv/data"
+  },
+  {
+    "question": "Welche TCP-Ports werden hauptsächlich von Samba (SMB) für die Kommunikation verwendet?",
+    "options": [
+      "80 und 443",
+      "21 und 22",
+      "139 und 445",
+      "25 und 110"
+    ],
+    "correct": "139 und 445"
+  },
+  {
+    "question": "Mit welcher Einstellung in der smb.conf wird der Gastzugriff explizit verboten?",
+    "options": [
+      "guest access = deny",
+      "allow guest = false",
+      "disable guest login",
+      "guest ok = no"
+    ],
+    "correct": "guest ok = no"
+  },
+  {
+    "question": "Welches Kommandozeilen-Tool wird verwendet, um die Syntax der smb.conf-Datei zu überprüfen?",
+    "options": [
+      "smbcheck",
+      "smbvalidate",
+      "testparm",
+      "configtest"
+    ],
+    "correct": "testparm"
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen den beiden Samba-Diensten 'smbd' und 'nmbd'?",
+    "options": [
+      "smbd ist für den Lesezugriff, nmbd für den Schreibzugriff",
+      "smbd ist der eigentliche Datei- und Druckdienst, nmbd ist für die NetBIOS-Namensauflösung zuständig",
+      "smbd ist für Linux-Clients, nmbd für Windows-Clients",
+      "smbd ist veraltet, nmbd ist der moderne Dienst"
+    ],
+    "correct": "smbd ist der eigentliche Datei- und Druckdienst, nmbd ist für die NetBIOS-Namensauflösung zuständig"
+  },
+  {
+    "question": "Welche Funktion hat der 'winbind'-Dienst im Samba-Umfeld?",
+    "options": [
+      "Er optimiert die Übertragungsgeschwindigkeit von Freigaben",
+      "Er integriert das Linux-System in eine Windows-Domäne zur Authentifizierung",
+      "Er erstellt automatische Backups von Freigaben",
+      "Er verwaltet und rotiert die Samba-Logdateien"
+    ],
+    "correct": "Er integriert das Linux-System in eine Windows-Domäne zur Authentifizierung"
+  },
+  {
+    "question": "Mit welcher Option in der smb.conf kann man den Zugriff auf eine Freigabe auf bestimmte Benutzer beschränken?",
+    "options": [
+      "allowed users = user1, @gruppe1",
+      "access list = user1, @gruppe1",
+      "valid users = user1, @gruppe1",
+      "users = user1, @gruppe1"
+    ],
+    "correct": "valid users = user1, @gruppe1"
+  },
+  {
+    "question": "Mit welcher Einstellung wird eine Freigabe explizit nur zum Lesen (read-only) konfiguriert?",
+    "options": [
+      "writable = no",
+      "write access = deny",
+      "allow write = false",
+      "mode = readonly"
+    ],
+    "correct": "writable = no"
+  },
+  {
+    "question": "Wo befinden sich typischerweise die Logdateien für Samba unter Linux?",
+    "options": [
+      "/etc/samba/logs",
+      "/tmp/samba.log",
+      "/var/log/samba/",
+      "/home/samba/logs"
+    ],
+    "correct": "/var/log/samba/"
+  },
+  {
+    "question": "Mit welchem Befehl wird ein Benutzer (z.B. 'user') aus der Samba-Benutzerdatenbank entfernt?",
+    "options": [
+      "sudo smbpasswd -d user",
+      "sudo smbuserdel user",
+      "sudo userdel --samba user",
+      "sudo smbpasswd -x user"
+    ],
+    "correct": "sudo smbpasswd -x user"
+  }
+]
