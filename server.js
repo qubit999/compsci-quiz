@@ -188,28 +188,37 @@ function handleAnswer(game, playerId, answer) {
 
     // Check if all players have answered
     if (questionAnswers.size === game.players.size) {
-        // Show results
+        // Send feedback to all players about correct answer (for those who might have joined late)
         broadcastToGame(game, {
-            type: 'questionResults',
-            correct: currentQuestion.correct,
-            scores: Array.from(game.scores.entries()).map(([id, score]) => ({
-                playerId: id,
-                playerName: game.players.get(id).name,
-                score
-            }))
+            type: 'showCorrectAnswer',
+            correctAnswer: currentQuestion.correct
         });
 
-        // Move to next question after delay
+        // Wait 3 seconds before showing results
         setTimeout(() => {
-            game.currentQuestion++;
-            game.answers.delete(game.currentQuestion - 1);
+            // Show results
+            broadcastToGame(game, {
+                type: 'questionResults',
+                correct: currentQuestion.correct,
+                scores: Array.from(game.scores.entries()).map(([id, score]) => ({
+                    playerId: id,
+                    playerName: game.players.get(id).name,
+                    score
+                }))
+            });
 
-            if (game.currentQuestion < game.questions.length) {
-                sendQuestion(game);
-            } else {
-                endGame(game);
-            }
-        }, 3000);
+            // Move to next question after another delay
+            setTimeout(() => {
+                game.currentQuestion++;
+                game.answers.delete(game.currentQuestion - 1);
+
+                if (game.currentQuestion < game.questions.length) {
+                    sendQuestion(game);
+                } else {
+                    endGame(game);
+                }
+            }, 3000);
+        }, 3000); // 3 second delay to show correct/incorrect answers
     }
 }
 

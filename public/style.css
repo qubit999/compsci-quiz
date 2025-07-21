@@ -220,16 +220,20 @@ input[type="text"]:focus {
     border-color: #667eea;
 }
 
-.option-btn.correct {
-    background: #48bb78;
-    border-color: #48bb78;
-    color: white;
+/* Correct answer - higher specificity and !important to override selected */
+.option-btn.correct,
+.option-btn.selected.correct {
+    background: #48bb78 !important;
+    border-color: #48bb78 !important;
+    color: white !important;
 }
 
-.option-btn.incorrect {
-    background: #f56565;
-    border-color: #f56565;
-    color: white;
+/* Incorrect answer - higher specificity and !important to override selected */
+.option-btn.incorrect,
+.option-btn.selected.incorrect {
+    background: #f56565 !important;
+    border-color: #f56565 !important;
+    color: white !important;
 }
 
 .scores-list, .final-scores {

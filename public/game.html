@@ -103,6 +103,7 @@
             };
         }
 
+        
         function handleMessage(data) {
             switch (data.type) {
                 case 'joined':
@@ -127,6 +128,10 @@
                     break;
                 case 'answerFeedback':
                     handleAnswerFeedback(data);
+                    break;
+                case 'showCorrectAnswer':
+                    // This ensures all players see the correct answer highlighted
+                    showCorrectAnswer(data.correctAnswer);
                     break;
                 case 'questionResults':
                     showQuestionResults(data);
@@ -221,6 +226,15 @@
                     }
                 });
             }
+        }
+
+        function showCorrectAnswer(correctAnswer) {
+                // Ensure correct answer is highlighted for all players
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                if (btn.textContent === correctAnswer && !btn.classList.contains('correct')) {
+                    btn.classList.add('correct');
+                }
+            });
         }
 
         function showQuestionResults(data) {
