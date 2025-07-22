@@ -63,11 +63,8 @@ app.post('/create-game', express.json(), (req, res) => {
     
     // Shuffle the options for each question
     shuffledQuestions.forEach(question => {
-        // Store the correct answer before shuffling
         const correctAnswer = question.correct;
-        // Shuffle the options
         question.options = shuffleArray(question.options);
-        // Make sure the correct answer reference is still valid
         question.correct = correctAnswer;
     });
     
@@ -94,66 +91,208 @@ const server = app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
 
-// WebSocket server
-const wss = new WebSocket.Server({ server });
+// WebSocket server with heartbeat
+const wss = new WebSocket.Server({ 
+    server,
+    clientTracking: true,
+    perMessageDeflate: false
+});
+
+// Heartbeat interval
+const HEARTBEAT_INTERVAL = 30000; // 30 seconds
+
+// Function to send heartbeat
+function heartbeat() {
+    this.isAlive = true;
+}
+
+// Check all connections every 30 seconds
+const interval = setInterval(() => {
+    wss.clients.forEach((ws) => {
+        if (ws.isAlive === false) {
+            return ws.terminate();
+        }
+        ws.isAlive = false;
+        ws.ping();
+    });
+}, HEARTBEAT_INTERVAL);
+
+wss.on('close', () => {
+    clearInterval(interval);
+});
 
 wss.on('connection', (ws, req) => {
     const urlParams = new URLSearchParams(req.url.split('?')[1]);
     const gameId = urlParams.get('gameId');
-    const playerId = uuidv4();
+    let playerId = urlParams.get('playerId') || uuidv4();
+    
+    // Setup heartbeat
+    ws.isAlive = true;
+    ws.on('pong', heartbeat);
 
     ws.on('message', (message) => {
-        const data = JSON.parse(message);
-        const game = games.get(gameId);
+        try {
+            const data = JSON.parse(message);
+            const game = games.get(gameId);
 
-        if (!game) {
-            ws.send(JSON.stringify({ type: 'error', message: 'Game not found' }));
-            return;
-        }
+            // Handle ping from client
+            if (data.type === 'ping') {
+                ws.send(JSON.stringify({ type: 'pong' }));
+                return;
+            }
 
-        switch (data.type) {
-            case 'join':
-                handleJoin(game, playerId, data.name, ws);
-                break;
-            case 'start':
-                handleStart(game);
-                break;
-            case 'answer':
-                handleAnswer(game, playerId, data.answer);
-                break;
-            case 'disconnect':
-                handleDisconnect(game, playerId);
-                break;
+            if (!game) {
+                ws.send(JSON.stringify({ type: 'error', message: 'Game not found' }));
+                return;
+            }
+
+            switch (data.type) {
+                case 'join':
+                    handleJoin(game, playerId, data.name, ws);
+                    break;
+                case 'rejoin':
+                    handleRejoin(game, data.playerId, data.name, ws);
+                    playerId = data.playerId;
+                    break;
+                case 'start':
+                    handleStart(game);
+                    break;
+                case 'answer':
+                    handleAnswer(game, playerId, data.answer);
+                    break;
+                case 'disconnect':
+                    handleDisconnect(game, playerId);
+                    break;
+            }
+        } catch (error) {
+            console.error('Error handling message:', error);
+            ws.send(JSON.stringify({ type: 'error', message: 'Invalid message format' }));
         }
     });
 
     ws.on('close', () => {
         const game = games.get(gameId);
-        if (game) {
-            handleDisconnect(game, playerId);
+        if (game && playerId) {
+            // Mark player as disconnected but don't remove them immediately
+            const player = game.players.get(playerId);
+            if (player) {
+                player.connected = false;
+                broadcastToGame(game, {
+                    type: 'playerDisconnected',
+                    playerId,
+                    playerName: player.name
+                });
+            }
         }
+    });
+
+    ws.on('error', (error) => {
+        console.error('WebSocket error:', error);
     });
 });
 
 function handleJoin(game, playerId, playerName, ws) {
-    game.players.set(playerId, { id: playerId, name: playerName, ws });
+    game.players.set(playerId, { 
+        id: playerId, 
+        name: playerName, 
+        ws,
+        connected: true 
+    });
     game.scores.set(playerId, 0);
     
     // Send game state to new player
     ws.send(JSON.stringify({
         type: 'joined',
         playerId,
-        players: Array.from(game.players.values()).map(p => ({ id: p.id, name: p.name })),
+        players: Array.from(game.players.values()).map(p => ({ 
+            id: p.id, 
+            name: p.name,
+            connected: p.connected 
+        })),
         started: game.started,
-        topic: topics[game.topic].displayName
+        topic: topics[game.topic].displayName,
+        currentQuestion: game.currentQuestion,
+        totalQuestions: game.questions.length
     }));
+
+    // If game is in progress, send current question
+    if (game.started && game.currentQuestion < game.questions.length) {
+        const question = game.questions[game.currentQuestion];
+        ws.send(JSON.stringify({
+            type: 'question',
+            questionNumber: game.currentQuestion + 1,
+            totalQuestions: game.questions.length,
+            question: question.question,
+            options: question.options
+        }));
+    }
 
     // Notify all players
     broadcastToGame(game, {
         type: 'playerJoined',
-        player: { id: playerId, name: playerName },
-        players: Array.from(game.players.values()).map(p => ({ id: p.id, name: p.name }))
+        player: { id: playerId, name: playerName, connected: true },
+        players: Array.from(game.players.values()).map(p => ({ 
+            id: p.id, 
+            name: p.name,
+            connected: p.connected 
+        }))
     });
+}
+
+function handleRejoin(game, playerId, playerName, ws) {
+    const existingPlayer = game.players.get(playerId);
+    if (existingPlayer) {
+        existingPlayer.ws = ws;
+        existingPlayer.connected = true;
+        
+        // Send current game state
+        ws.send(JSON.stringify({
+            type: 'rejoined',
+            playerId,
+            players: Array.from(game.players.values()).map(p => ({ 
+                id: p.id, 
+                name: p.name,
+                connected: p.connected 
+            })),
+            started: game.started,
+            topic: topics[game.topic].displayName,
+            currentQuestion: game.currentQuestion,
+            scores: Array.from(game.scores.entries()).map(([id, score]) => ({
+                playerId: id,
+                playerName: game.players.get(id).name,
+                score
+            }))
+        }));
+
+        // If game is in progress, send current question
+        if (game.started && game.currentQuestion < game.questions.length) {
+            const question = game.questions[game.currentQuestion];
+            ws.send(JSON.stringify({
+                type: 'question',
+                questionNumber: game.currentQuestion + 1,
+                totalQuestions: game.questions.length,
+                question: question.question,
+                options: question.options,
+                alreadyAnswered: game.answers.has(game.currentQuestion) && 
+                                game.answers.get(game.currentQuestion).has(playerId)
+            }));
+        }
+
+        // Notify all players
+        broadcastToGame(game, {
+            type: 'playerReconnected',
+            playerId,
+            playerName,
+            players: Array.from(game.players.values()).map(p => ({ 
+                id: p.id, 
+                name: p.name,
+                connected: p.connected 
+            }))
+        });
+    } else {
+        // If player doesn't exist, treat as new join
+        handleJoin(game, playerId, playerName, ws);
+    }
 }
 
 function handleStart(game) {
@@ -167,6 +306,12 @@ function handleAnswer(game, playerId, answer) {
     }
     
     const questionAnswers = game.answers.get(game.currentQuestion);
+    
+    // Prevent duplicate answers
+    if (questionAnswers.has(playerId)) {
+        return;
+    }
+    
     questionAnswers.set(playerId, answer);
 
     // Check if answer is correct
@@ -175,9 +320,9 @@ function handleAnswer(game, playerId, answer) {
         game.scores.set(playerId, game.scores.get(playerId) + 1);
     }
 
-    // Send answer feedback to player with both selected answer and correct answer
+    // Send answer feedback to player
     const player = game.players.get(playerId);
-    if (player && player.ws) {
+    if (player && player.ws && player.ws.readyState === WebSocket.OPEN) {
         player.ws.send(JSON.stringify({
             type: 'answerFeedback',
             correct: answer === currentQuestion.correct,
@@ -186,9 +331,12 @@ function handleAnswer(game, playerId, answer) {
         }));
     }
 
-    // Check if all players have answered
-    if (questionAnswers.size === game.players.size) {
-        // Send feedback to all players about correct answer (for those who might have joined late)
+    // Count only connected players
+    const connectedPlayers = Array.from(game.players.values()).filter(p => p.connected);
+    
+    // Check if all connected players have answered
+    if (questionAnswers.size >= connectedPlayers.length) {
+        // Send feedback to all players about correct answer
         broadcastToGame(game, {
             type: 'showCorrectAnswer',
             correctAnswer: currentQuestion.correct
@@ -218,7 +366,7 @@ function handleAnswer(game, playerId, answer) {
                     endGame(game);
                 }
             }, 3000);
-        }, 3000); // 3 second delay to show correct/incorrect answers
+        }, 3000);
     }
 }
 
@@ -260,7 +408,11 @@ function handleDisconnect(game, playerId) {
     broadcastToGame(game, {
         type: 'playerLeft',
         playerId,
-        players: Array.from(game.players.values()).map(p => ({ id: p.id, name: p.name }))
+        players: Array.from(game.players.values()).map(p => ({ 
+            id: p.id, 
+            name: p.name,
+            connected: p.connected 
+        }))
     });
 
     // If no players left, delete the game
@@ -271,8 +423,12 @@ function handleDisconnect(game, playerId) {
 
 function broadcastToGame(game, message) {
     game.players.forEach(player => {
-        if (player.ws.readyState === WebSocket.OPEN) {
-            player.ws.send(JSON.stringify(message));
+        if (player.ws && player.ws.readyState === WebSocket.OPEN) {
+            try {
+                player.ws.send(JSON.stringify(message));
+            } catch (error) {
+                console.error('Error broadcasting to player:', player.id, error);
+            }
         }
     });
 }

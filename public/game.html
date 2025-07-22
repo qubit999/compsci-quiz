@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="container">
+        <div id="connectionStatus" class="connection-status"></div>
+        
         <div id="joinScreen" class="screen">
             <h1>Join Quiz Game</h1>
             <input type="text" id="playerName" placeholder="Enter your name" maxlength="20">
@@ -43,15 +45,21 @@
         const isHost = localStorage.getItem('isHost') === 'true' && localStorage.getItem('gameId') === gameId;
         
         let ws;
-        let playerId;
-        let playerName;
+        let playerId = localStorage.getItem(`playerId_${gameId}`);
+        let playerName = localStorage.getItem(`playerName_${gameId}`);
         let hasAnswered = false;
+        let reconnectAttempts = 0;
+        let maxReconnectAttempts = 5;
+        let reconnectInterval;
+        let pingInterval;
+        let connectionTimeout;
 
         // Screens
         const joinScreen = document.getElementById('joinScreen');
         const lobbyScreen = document.getElementById('lobbyScreen');
         const gameScreen = document.getElementById('gameScreen');
         const resultsScreen = document.getElementById('resultsScreen');
+        const connectionStatus = document.getElementById('connectionStatus');
 
         // Elements
         const playerNameInput = document.getElementById('playerName');
@@ -66,48 +74,162 @@
         const resultsContent = document.getElementById('resultsContent');
         const gameTopicSpan = document.getElementById('gameTopic');
 
+        // Restore player name if exists
+        if (playerName && !playerId) {
+            playerNameInput.value = playerName;
+        }
+
+        // Auto-rejoin if we have player data
+        if (playerId && playerName) {
+            showConnectionStatus('Reconnecting...', 'warning');
+            connectWebSocket(true);
+        }
+
         joinBtn.addEventListener('click', joinGame);
         playerNameInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') joinGame();
         });
 
         function joinGame() {
-            playerName = playerNameInput.value.trim();
-            if (!playerName) {
+            const name = playerNameInput.value.trim();
+            if (!name) {
                 alert('Please enter your name');
                 return;
             }
-
-            connectWebSocket();
+            playerName = name;
+            localStorage.setItem(`playerName_${gameId}`, playerName);
+            connectWebSocket(false);
         }
 
-        function connectWebSocket() {
+        function showConnectionStatus(message, type = 'info') {
+            connectionStatus.textContent = message;
+            connectionStatus.className = `connection-status ${type}`;
+            connectionStatus.style.display = 'block';
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    connectionStatus.style.display = 'none';
+                }, 3000);
+            }
+        }
+
+        function connectWebSocket(isRejoining = false) {
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.close();
+            }
+
             const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-            ws = new WebSocket(`${protocol}//${window.location.host}?gameId=${gameId}`);
+            const url = `${protocol}//${window.location.host}?gameId=${gameId}${playerId ? `&playerId=${playerId}` : ''}`;
+            
+            try {
+                ws = new WebSocket(url);
+                setupWebSocketHandlers(isRejoining);
+            } catch (error) {
+                console.error('WebSocket connection error:', error);
+                handleConnectionError();
+            }
+        }
+
+        function setupWebSocketHandlers(isRejoining) {
+            // Clear any existing connection timeout
+            clearTimeout(connectionTimeout);
+            
+            // Set connection timeout
+            connectionTimeout = setTimeout(() => {
+                if (ws.readyState !== WebSocket.OPEN) {
+                    ws.close();
+                    handleConnectionError();
+                }
+            }, 10000); // 10 second timeout
 
             ws.onopen = () => {
-                ws.send(JSON.stringify({ type: 'join', name: playerName }));
+                clearTimeout(connectionTimeout);
+                reconnectAttempts = 0;
+                showConnectionStatus('Connected', 'success');
+                
+                // Clear any existing reconnect interval
+                if (reconnectInterval) {
+                    clearInterval(reconnectInterval);
+                    reconnectInterval = null;
+                }
+
+                // Setup ping interval
+                if (pingInterval) {
+                    clearInterval(pingInterval);
+                }
+                pingInterval = setInterval(() => {
+                    if (ws.readyState === WebSocket.OPEN) {
+                        ws.send(JSON.stringify({ type: 'ping' }));
+                    }
+                }, 25000); // Ping every 25 seconds
+
+                // Send join or rejoin message
+                if (isRejoining && playerId) {
+                    ws.send(JSON.stringify({ type: 'rejoin', playerId, name: playerName }));
+                } else {
+                    ws.send(JSON.stringify({ type: 'join', name: playerName }));
+                }
             };
 
             ws.onmessage = (event) => {
-                const data = JSON.parse(event.data);
-                handleMessage(data);
+                try {
+                    const data = JSON.parse(event.data);
+                    handleMessage(data);
+                } catch (error) {
+                    console.error('Error parsing message:', error);
+                }
             };
 
-            ws.onclose = () => {
-                alert('Connection lost. Please refresh the page.');
+            ws.onclose = (event) => {
+                clearInterval(pingInterval);
+                console.log('WebSocket closed:', event.code, event.reason);
+                
+                if (!event.wasClean && playerId && reconnectAttempts < maxReconnectAttempts) {
+                    handleReconnect();
+                } else if (reconnectAttempts >= maxReconnectAttempts) {
+                    showConnectionStatus('Connection lost. Please refresh the page.', 'error');
+                }
             };
 
-            ws.onerror = () => {
-                alert('Failed to connect. The game might not exist.');
+            ws.onerror = (error) => {
+                console.error('WebSocket error:', error);
+                clearTimeout(connectionTimeout);
             };
         }
 
-        
+        function handleConnectionError() {
+            showConnectionStatus('Connection failed. Retrying...', 'error');
+            if (playerId && reconnectAttempts < maxReconnectAttempts) {
+                handleReconnect();
+            } else {
+                showConnectionStatus('Unable to connect. Please check your connection and refresh.', 'error');
+            }
+        }
+
+        function handleReconnect() {
+            if (reconnectInterval) return; // Already reconnecting
+            
+            reconnectAttempts++;
+            const delay = Math.min(1000 * Math.pow(2, reconnectAttempts - 1), 10000); // Exponential backoff, max 10s
+            
+            showConnectionStatus(`Reconnecting... (Attempt ${reconnectAttempts}/${maxReconnectAttempts})`, 'warning');
+            
+            reconnectInterval = setTimeout(() => {
+                reconnectInterval = null;
+                connectWebSocket(true);
+            }, delay);
+        }
+
         function handleMessage(data) {
             switch (data.type) {
+                case 'pong':
+                    // Server is alive, do nothing
+                    break;
                 case 'joined':
-                    playerId = data.playerId;
+                    if (!playerId) {
+                        playerId = data.playerId;
+                        localStorage.setItem(`playerId_${gameId}`, playerId);
+                    }
                     showLobby(data.players, data.topic);
                     if (isHost) {
                         startBtn.style.display = 'block';
@@ -117,10 +239,26 @@
                         });
                     }
                     break;
-                case 'playerJoined':
-                    updatePlayersList(data.players);
+                case 'rejoined':
+                    playerId = data.playerId;
+                    showConnectionStatus('Reconnected successfully', 'success');
+                    if (data.started) {
+                        // Restore game state
+                        joinScreen.style.display = 'none';
+                        lobbyScreen.style.display = 'none';
+                        gameTopicSpan.textContent = data.topic;
+                    } else {
+                        showLobby(data.players, data.topic);
+                    }
+                    if (isHost && !data.started) {
+                        startBtn.style.display = 'block';
+                        waitingMsg.style.display = 'none';
+                    }
                     break;
+                case 'playerJoined':
                 case 'playerLeft':
+                case 'playerDisconnected':
+                case 'playerReconnected':
                     updatePlayersList(data.players);
                     break;
                 case 'question':
@@ -130,7 +268,6 @@
                     handleAnswerFeedback(data);
                     break;
                 case 'showCorrectAnswer':
-                    // This ensures all players see the correct answer highlighted
                     showCorrectAnswer(data.correctAnswer);
                     break;
                 case 'questionResults':
@@ -158,9 +295,10 @@
             players.forEach(player => {
                 const div = document.createElement('div');
                 div.className = 'player-item';
-                div.textContent = player.name;
+                let statusIcon = player.connected ? '🟢' : '🔴';
+                div.innerHTML = `${statusIcon} ${player.name}`;
                 if (player.id === playerId) {
-                    div.textContent += ' (You)';
+                    div.innerHTML += ' (You)';
                     div.classList.add('current-player');
                 }
                 playersList.appendChild(div);
@@ -171,7 +309,7 @@
             lobbyScreen.style.display = 'none';
             resultsScreen.style.display = 'none';
             gameScreen.style.display = 'block';
-            hasAnswered = false;
+            hasAnswered = data.alreadyAnswered || false;
 
             questionNumber.textContent = `Question ${data.questionNumber} of ${data.totalQuestions}`;
             questionText.textContent = data.question;
@@ -181,16 +319,25 @@
                 const button = document.createElement('button');
                 button.className = 'option-btn';
                 button.textContent = option;
-                button.addEventListener('click', () => {
-                    if (!hasAnswered) {
-                        selectAnswer(option);
-                    }
-                });
+                button.disabled = hasAnswered;
+                if (!hasAnswered) {
+                    button.addEventListener('click', () => {
+                        if (!hasAnswered) {
+                            selectAnswer(option);
+                        }
+                    });
+                }
                 optionsDiv.appendChild(button);
             });
+
+            if (hasAnswered) {
+                optionsDiv.innerHTML += '<p style="text-align: center; margin-top: 20px; color: #718096;">You have already answered this question</p>';
+            }
         }
 
         function selectAnswer(answer) {
+            if (hasAnswered || !ws || ws.readyState !== WebSocket.OPEN) return;
+            
             hasAnswered = true;
             
             // Disable all buttons
@@ -213,7 +360,7 @@
             document.querySelectorAll('.option-btn').forEach(btn => {
                 if (btn.textContent === data.correctAnswer) {
                     btn.classList.add('correct');
-                    btn.classList.remove('selected'); // Remove selected class if it was correct
+                    btn.classList.remove('selected');
                 }
             });
 
@@ -229,7 +376,7 @@
         }
 
         function showCorrectAnswer(correctAnswer) {
-                // Ensure correct answer is highlighted for all players
+            // Ensure correct answer is highlighted for all players
             document.querySelectorAll('.option-btn').forEach(btn => {
                 if (btn.textContent === correctAnswer && !btn.classList.contains('correct')) {
                     btn.classList.add('correct');
@@ -254,6 +401,7 @@
                     `).join('')}
                 </div>
             `;
+            hasAnswered = false;
         }
 
         function showFinalResults(data) {
@@ -273,6 +421,10 @@
                 </div>
                 <button onclick="window.location.href='/'" class="btn-primary">New Game</button>
             `;
+
+            // Clean up stored data for this game
+            localStorage.removeItem(`playerId_${gameId}`);
+            localStorage.removeItem(`playerName_${gameId}`);
         }
 
         // Clean up on page unload
@@ -284,7 +436,26 @@
                 localStorage.removeItem('isHost');
                 localStorage.removeItem('gameId');
             }
+            clearInterval(pingInterval);
+            clearInterval(reconnectInterval);
+        });
+
+        // Handle page visibility changes
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // Page is hidden, might lose connection
+                clearInterval(pingInterval);
+            } else {
+                // Page is visible again, check connection
+                if (ws && ws.readyState !== WebSocket.OPEN && playerId) {
+                    showConnectionStatus('Checking connection...', 'warning');
+                    connectWebSocket(true);
+                }
+            }
         });
     </script>
+    <footer class="copyright">
+        <p>&copy; Copyright by QLINXX</p>
+    </footer>
 </body>
 </html>

@@ -324,3 +324,45 @@ input[type="text"]:focus {
     color: #718096;
     font-weight: 500;
 }
+
+.connection-status {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    z-index: 1000;
+    display: none;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateX(-50%) translateY(-100%);
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.connection-status.success {
+    background: #48bb78;
+    color: white;
+}
+
+.connection-status.warning {
+    background: #ed8936;
+    color: white;
+}
+
+.connection-status.error {
+    background: #f56565;
+    color: white;
+}
+
+.connection-status.info {
+    background: #4299e1;
+    color: white;
+}
