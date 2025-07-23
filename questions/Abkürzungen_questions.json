@@ -1,0 +1,671 @@
+[
+  {
+    "question": "Welche der folgenden Aussagen treffen auf AAA zu?",
+    "options": [
+      "AAA ist ein Framework, das aus den Komponenten Authentifizierung, Autorisierung und Accounting besteht.",
+      "Es dient primär der Beschleunigung von Webinhalten über ein verteiltes Netzwerk.",
+      "Die Hauptaufgabe ist die Bereitstellung eines sicheren Frameworks zur Benutzerkontrolle und Zugriffsprotokollierung.",
+      "Die Abkürzung steht für \"Advanced Authentication Algorithm\"."
+    ],
+    "correct": "AAA ist ein Framework, das aus den Komponenten Authentifizierung, Autorisierung und Accounting besteht."
+  },
+  {
+    "question": "Was ist eine ACL (Access Control List)?",
+    "options": [
+      "Eine Liste, die festlegt, welcher Datenverkehr basierend auf Regeln (z.B. IP-Adressen, Ports) weitergeleitet oder blockiert wird.",
+      "Ein Protokoll zur automatischen Zuweisung von IP-Adressen im Bereich 169.254.x.x.",
+      "Ein Regelwerk zur Steuerung des ein- und ausgehenden Datenverkehrs auf einem Netzwerkgerät.",
+      "Sie wird verwendet, um physikalische MAC-Adressen zu ermitteln."
+    ],
+    "correct": "Eine Liste, die festlegt, welcher Datenverkehr basierend auf Regeln (z.B. IP-Adressen, Ports) weitergeleitet oder blockiert wird."
+  },
+  {
+    "question": "Was charakterisiert APIPA (Automatic Private IP Addressing)?",
+    "options": [
+      "Es weist Geräten eine IP-Adresse aus dem Bereich 169.254.x.x zu.",
+      "Es kommt zum Einsatz, wenn ein Gerät konfiguriert ist, eine IP-Adresse per DHCP zu beziehen, aber kein DHCP-Server antwortet.",
+      "Adressen, die durch APIPA zugewiesen werden, sind im gesamten Internet routbar.",
+      "Es ermöglicht eine grundlegende Kommunikation innerhalb des lokalen Netzwerks, auch ohne DHCP-Server."
+    ],
+    "correct": "Es weist Geräten eine IP-Adresse aus dem Bereich 169.254.x.x zu."
+  },
+  {
+    "question": "Wofür wird das ARP (Address Resolution Protocol) benötigt?",
+    "options": [
+      "Um in einem lokalen Netzwerk die Hardware-Adresse (MAC) zu einer bekannten IP-Adresse zu finden.",
+      "Um eine sichere, verschlüsselte Verbindung zu einem Server aufzubauen.",
+      "Es ist für die Umwandlung von Domainnamen (z.B. google.com) in IP-Adressen zuständig.",
+      "Es ist ein grundlegendes Protokoll für die Kommunikation auf der Sicherungsschicht (Layer 2) in Ethernet-Netzwerken."
+    ],
+    "correct": "Um in einem lokalen Netzwerk die Hardware-Adresse (MAC) zu einer bekannten IP-Adresse zu finden."
+  },
+  {
+    "question": "Welche Beschreibung trifft auf BGP (Border Gateway Protocol) zu?",
+    "options": [
+      "Es ist das zentrale Routing-Protokoll, das das Internet zusammenhält, indem es Routen zwischen autonomen Systemen (z.B. von großen ISPs) austauscht.",
+      "Es wird hauptsächlich innerhalb kleinerer Unternehmensnetzwerke zur internen Routenverteilung verwendet.",
+      "Es ist ein \"Path-Vector-Protokoll\", das Entscheidungen basierend auf Pfaden, Netzwerkrichtlinien und Regeln trifft.",
+      "Seine Hauptaufgabe ist die Synchronisation der Uhrzeit auf Routern."
+    ],
+    "correct": "Es ist das zentrale Routing-Protokoll, das das Internet zusammenhält, indem es Routen zwischen autonomen Systemen (z.B. von großen ISPs) austauscht."
+  },
+  {
+    "question": "Welche Funktion hat eine CA (Certificate Authority)?",
+    "options": [
+      "Sie stellt digitale Zertifikate für Entitäten wie Webserver aus.",
+      "Sie ist eine vertrauenswürdige Drittinstanz, die die Identität des Zertifikatsinhabers bestätigt.",
+      "Sie ist Teil einer Public Key Infrastructure (PKI).",
+      "Sie analysiert Netzwerkverkehr auf verdächtige Muster."
+    ],
+    "correct": "Sie stellt digitale Zertifikate für Entitäten wie Webserver aus."
+  },
+  {
+    "question": "Was ist ein CDN (Content Delivery Network)?",
+    "options": [
+      "Ein einzelner, zentraler Server, der alle Website-Inhalte speichert, um die Sicherheit zu erhöhen.",
+      "Ein geografisch verteiltes Netzwerk von Servern, das Inhalte näher am Endbenutzer zwischenspeichert.",
+      "Das Hauptziel ist es, die Ladezeiten von Webseiten zu verkürzen und die Last auf dem Ursprungsserver zu reduzieren.",
+      "Eine Methode zur Verschlüsselung der Datenübertragung."
+    ],
+    "correct": "Ein geografisch verteiltes Netzwerk von Servern, das Inhalte näher am Endbenutzer zwischenspeichert."
+  },
+  {
+    "question": "Wofür steht CIDR (Classless Inter-Domain Routing)?",
+    "options": [
+      "Für eine Methode zur effizienten Zuweisung von IP-Adressblöcken, die die alten Adressklassen (A, B, C) ersetzt hat.",
+      "Es ist ein Protokoll zur sicheren Dateiübertragung über SSH.",
+      "Es verwendet eine Präfixlänge (z.B. /24), um die Größe eines Subnetzes flexibel zu definieren.",
+      "Es steht für \"Centralized Internet Domain Registry\"."
+    ],
+    "correct": "Für eine Methode zur effizienten Zuweisung von IP-Adressblöcken, die die alten Adressklassen (A, B, C) ersetzt hat."
+  },
+  {
+    "question": "Was beschreibt einen DDoS-Angriff (Distributed Denial of Service)?",
+    "options": [
+      "Ein Überlastungsangriff, der von einer Vielzahl von Quellen gleichzeitig ausgeht, um einen Dienst unerreichbar zu machen.",
+      "Eine Methode, um Daten während der Übertragung abzufangen und zu manipulieren.",
+      "Der Angriff zielt darauf ab, die Ressourcen eines Systems (z.B. Bandbreite, CPU) zu erschöpfen.",
+      "Ein Angriff, der von einem einzelnen Computer ausgeht."
+    ],
+    "correct": "Ein Überlastungsangriff, der von einer Vielzahl von Quellen gleichzeitig ausgeht, um einen Dienst unerreichbar zu machen."
+  },
+  {
+    "question": "Welche Aufgaben erfüllt das DHCP (Dynamic Host Configuration Protocol)?",
+    "options": [
+      "Es weist Clients im Netzwerk automatisch Netzwerkkonfigurationsparameter wie IP-Adresse, Subnetzmaske und DNS-Server zu.",
+      "Es dient zur Verschlüsselung von WLAN-Verkehr.",
+      "Es übersetzt Domainnamen in IP-Adressen.",
+      "Es zentralisiert und vereinfacht die Verwaltung von IP-Adressen in einem Netzwerk."
+    ],
+    "correct": "Es weist Clients im Netzwerk automatisch Netzwerkkonfigurationsparameter wie IP-Adresse, Subnetzmaske und DNS-Server zu."
+  },
+  {
+    "question": "Was ist eine DMZ (Demilitarized Zone)?",
+    "options": [
+      "Ein Netzwerksegment, das zwischen einem internen, privaten Netzwerk und einem externen Netzwerk (wie dem Internet) liegt.",
+      "Hier werden typischerweise öffentlich zugängliche Server (z.B. Webserver, Mailserver) platziert, um das interne Netz zu schützen.",
+      "Ein Bereich innerhalb eines Netzwerks, in dem keine Sicherheitsregeln gelten.",
+      "Ein anderes Wort für eine Public Cloud Umgebung."
+    ],
+    "correct": "Ein Netzwerksegment, das zwischen einem internen, privaten Netzwerk und einem externen Netzwerk (wie dem Internet) liegt."
+  },
+  {
+    "question": "Welche Funktion hat das DNS (Domain Name System)?",
+    "options": [
+      "Es ist verantwortlich für die Umwandlung von für Menschen lesbaren Domainnamen in maschinenlesbare IP-Adressen.",
+      "Es sichert die Datenübertragung mittels TLS.",
+      "Es funktioniert wie ein globales Telefonbuch für das Internet.",
+      "Es priorisiert den Netzwerkverkehr, um die Dienstqualität (QoS) zu verbessern."
+    ],
+    "correct": "Es ist verantwortlich für die Umwandlung von für Menschen lesbaren Domainnamen in maschinenlesbare IP-Adressen."
+  },
+  {
+    "question": "Was ist ein DoS (Denial of Service) Angriff?",
+    "options": [
+      "Ein Angriff, bei dem versucht wird, einen Dienst oder Server für legitime Benutzer durch Überlastung unerreichbar zu machen.",
+      "Im Gegensatz zu einem DDoS-Angriff stammt der Angriff typischerweise von einer einzigen Quelle.",
+      "Ein Angriff, bei dem vertrauliche Daten gestohlen werden.",
+      "Ein anderer Name für einen Man-in-the-Middle-Angriff."
+    ],
+    "correct": "Ein Angriff, bei dem versucht wird, einen Dienst oder Server für legitime Benutzer durch Überlastung unerreichbar zu machen."
+  },
+  {
+    "question": "Was ist EUI-64?",
+    "options": [
+      "Ein Verfahren, das bei IPv6 verwendet wird, um aus der 48-Bit-MAC-Adresse eines Geräts eine 64-Bit-Interface-ID zu erstellen.",
+      "Ein Verschlüsselungsstandard für Wi-Fi-Netzwerke.",
+      "Es vereinfacht die automatische Adresskonfiguration (SLAAC) für IPv6-fähige Geräte.",
+      "Es steht für \"European Unique Identifier\"."
+    ],
+    "correct": "Ein Verfahren, das bei IPv6 verwendet wird, um aus der 48-Bit-MAC-Adresse eines Geräts eine 64-Bit-Interface-ID zu erstellen."
+  },
+  {
+    "question": "Welche Eigenschaft hat das FTP (File Transfer Protocol)?",
+    "options": [
+      "Es ist ein Protokoll zur Übertragung von Dateien, bei dem Zugangsdaten und Daten standardmäßig unverschlüsselt gesendet werden.",
+      "Es ist die sicherste Methode, um vertrauliche Dateien auszutauschen.",
+      "Es wurde entwickelt, um Dateien zwischen einem Client und einem Server auszutauschen.",
+      "Es nutzt immer eine TLS-Verschlüsselung."
+    ],
+    "correct": "Es ist ein Protokoll zur Übertragung von Dateien, bei dem Zugangsdaten und Daten standardmäßig unverschlüsselt gesendet werden."
+  },
+  {
+    "question": "Was ist GRE (Generic Routing Encapsulation)?",
+    "options": [
+      "Ein Tunneling-Protokoll, das es erlaubt, Pakete eines Protokolls innerhalb von Paketen eines anderen Protokolls zu transportieren.",
+      "Es sorgt standardmäßig für eine starke Verschlüsselung der getunnelten Daten.",
+      "Es wird oft verwendet, um nicht-IP- oder private IP-Netzwerke über ein öffentliches IP-Netzwerk zu verbinden.",
+      "Es steht für \"Global Router Encryption\"."
+    ],
+    "correct": "Ein Tunneling-Protokoll, das es erlaubt, Pakete eines Protokolls innerhalb von Paketen eines anderen Protokolls zu transportieren."
+  },
+  {
+    "question": "Welchen Zweck erfüllt HSRP (Hot Standby Router Protocol)?",
+    "options": [
+      "Es ist ein Cisco-eigenes Protokoll zur Bereitstellung von Netzwerk-Redundanz auf der Router-Ebene.",
+      "Es ermöglicht einem Standby-Router, die Aufgaben eines ausgefallenen aktiven Routers automatisch zu übernehmen (Failover).",
+      "Es verteilt den Netzwerkverkehr aktiv auf mehrere Router gleichzeitig (Load Balancing).",
+      "Es dient der Überwachung von Netzwerkgeräten via SNMP."
+    ],
+    "correct": "Es ist ein Cisco-eigenes Protokoll zur Bereitstellung von Netzwerk-Redundanz auf der Router-Ebene."
+  },
+  {
+    "question": "Wofür steht HTTP (Hypertext Transfer Protocol)?",
+    "options": [
+      "Es ist das grundlegende Protokoll für die Übertragung von Daten im World Wide Web, z.B. von HTML-Seiten.",
+      "Die Kommunikation über HTTP ist standardmäßig verschlüsselt und sicher.",
+      "Es dient zur Auflösung von Domainnamen."
+    ],
+    "correct": "Es ist das grundlegende Protokoll für die Übertragung von Daten im World Wide Web, z.B. von HTML-Seiten."
+  },
+  {
+    "question": "Was charakterisiert HTTPS (HTTP Secure)?",
+    "options": [
+      "Es ist die sichere Version von HTTP, die TLS/SSL zur Verschlüsselung der Kommunikation verwendet.",
+      "Es schützt vor Man-in-the-Middle-Angriffen, indem es die Daten vertraulich und integer hält.",
+      "Es nutzt den gleichen Standardport wie HTTP (Port 80).",
+      "Eine mit HTTPS gesicherte Verbindung wird im Browser oft durch ein Schlosssymbol angezeigt."
+    ],
+    "correct": "Es ist die sichere Version von HTTP, die TLS/SSL zur Verschlüsselung der Kommunikation verwendet."
+  },
+  {
+    "question": "Was ist IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Ein Cloud-Computing-Modell, bei dem ein Anbieter virtualisierte Computerressourcen über das Internet bereitstellt.",
+      "Der Kunde mietet grundlegende IT-Infrastruktur wie virtuelle Maschinen, Speicher und Netzwerke.",
+      "Der Anbieter ist für die Verwaltung des Betriebssystems und der Anwendungen verantwortlich.",
+      "Es ist die oberste Schicht des Cloud-Modells, bei der fertige Software bereitgestellt wird."
+    ],
+    "correct": "Ein Cloud-Computing-Modell, bei dem ein Anbieter virtualisierte Computerressourcen über das Internet bereitstellt."
+  },
+  {
+    "question": "Welche Rolle spielt ICMP (Internet Control Message Protocol)?",
+    "options": [
+      "Es wird zur Übertragung von Nutzdaten wie Webseiten und E-Mails verwendet.",
+      "Es dient zur Diagnose von Netzwerkproblemen; das bekannte ping-Tool basiert darauf.",
+      "Es wird verwendet, um Fehlermeldungen über den Zustand des Netzwerks zu senden, z.B. \"Host nicht erreichbar\" oder \"Time to Live exceeded\".",
+      "Es ist ein Protokoll zur sicheren Authentifizierung von Benutzern in einem WLAN."
+    ],
+    "correct": "Es dient zur Diagnose von Netzwerkproblemen; das bekannte ping-Tool basiert darauf."
+  },
+  {
+    "question": "Was ist die Funktion eines IDS (Intrusion Detection System)?",
+    "options": [
+      "Ein IDS blockiert aktiv erkannte Angriffe und verwirft bösartige Pakete.",
+      "Seine Hauptaufgabe ist die Überwachung des Netzwerkverkehrs oder eines Systems, um potenzielle Angriffe und bösartige Aktivitäten zu erkennen.",
+      "Es ist synonym mit einer Firewall und regelt den Zugriff auf das Netzwerk.",
+      "Es alarmiert Administratoren bei verdächtigen Vorkommnissen."
+    ],
+    "correct": "Seine Hauptaufgabe ist die Überwachung des Netzwerkverkehrs oder eines Systems, um potenzielle Angriffe und bösartige Aktivitäten zu erkennen."
+  },
+  {
+    "question": "Welche Merkmale hat IMAP (Internet Message Access Protocol)?",
+    "options": [
+      "Es ist ein E-Mail-Protokoll, das Nachrichten auf dem Server speichert und synchronisiert.",
+      "Es ermöglicht den Zugriff auf E-Mails von mehreren Geräten, wobei der Status (gelesen/ungelesen/gelöscht) auf allen Geräten gleich gehalten wird.",
+      "Im Gegensatz zu POP3 werden E-Mails nicht standardmäßig nach dem Herunterladen vom Server gelöscht.",
+      "Es dient primär dem Versand von E-Mails von einem Client zu einem Server."
+    ],
+    "correct": "Es ist ein E-Mail-Protokoll, das Nachrichten auf dem Server speichert und synchronisiert."
+  },
+  {
+    "question": "Welche Kernaufgaben hat das IP (Internet Protocol)?",
+    "options": [
+      "Es ist verantwortlich für die eindeutige Adressierung von Geräten in einem Netzwerk.",
+      "Es garantiert die zuverlässige und reihenfolgenrichtige Zustellung von Datenpaketen.",
+      "Eine seiner Hauptaufgaben ist das Routing von Datenpaketen über Netzwerkgrenzen hinweg.",
+      "Es dient der Verschlüsselung der Datenübertragung auf der Transportschicht."
+    ],
+    "correct": "Es ist verantwortlich für die eindeutige Adressierung von Geräten in einem Netzwerk."
+  },
+  {
+    "question": "Wie agiert ein IPS (Intrusion Prevention System)?",
+    "options": [
+      "Im Gegensatz zu einem IDS kann ein IPS erkannte Angriffe aktiv unterbinden, indem es zum Beispiel den Datenverkehr blockiert.",
+      "Es wird \"inline\" (direkt im Datenpfad) im Netzwerk platziert, um den Verkehr filtern zu können.",
+      "Seine einzige Funktion ist die Protokollierung von Sicherheitsereignissen zur späteren Analyse.",
+      "Es ist ein Protokoll zur Vergabe von IP-Adressen."
+    ],
+    "correct": "Im Gegensatz zu einem IDS kann ein IPS erkannte Angriffe aktiv unterbinden, indem es zum Beispiel den Datenverkehr blockiert."
+  },
+  {
+    "question": "Wofür wird IPsec (Internet Protocol Security) eingesetzt?",
+    "options": [
+      "Um IP-Datenpakete zu authentifizieren und zu verschlüsseln.",
+      "Zur Beschleunigung von Webinhalten durch Caching.",
+      "Es bildet eine wesentliche Grundlage für viele sichere VPN-Verbindungen.",
+      "Es arbeitet auf der Vermittlungsschicht (Layer 3) und sichert so die gesamte darüberliegende Kommunikation ab."
+    ],
+    "correct": "Um IP-Datenpakete zu authentifizieren und zu verschlüsseln."
+  },
+  {
+    "question": "Was sind die wichtigsten Merkmale von IPv6 (Internet Protocol Version 6)?",
+    "options": [
+      "Es bietet einen praktisch unerschöpflichen Adressraum durch die Verwendung von 128-Bit-Adressen.",
+      "Es macht NAT (Network Address Translation) in den meisten Fällen überflüssig.",
+      "Es ist vollständig abwärtskompatibel, sodass IPv4- und IPv6-Geräte ohne spezielle Gateways direkt kommunizieren können.",
+      "Es vereinfacht die Adress-Autokonfiguration durch Mechanismen wie SLAAC."
+    ],
+    "correct": "Es bietet einen praktisch unerschöpflichen Adressraum durch die Verwendung von 128-Bit-Adressen."
+  },
+  {
+    "question": "Was ist ein ISP (Internet Service Provider)?",
+    "options": [
+      "Ein Unternehmen, das seinen Kunden den Zugang zum Internet bereitstellt.",
+      "Ein anderes Wort für ein lokales Netzwerk (LAN).",
+      "Ein Anbieter von Internetdiensten.",
+      "Ein Protokoll zur Erkennung von Netzwerkeinbrüchen."
+    ],
+    "correct": "Ein Unternehmen, das seinen Kunden den Zugang zum Internet bereitstellt."
+  },
+  {
+    "question": "Was kennzeichnet ein LAN (Local Area Network)?",
+    "options": [
+      "Es ist ein Netzwerk, das sich über einen geografisch begrenzten Raum erstreckt, wie ein einzelnes Gebäude.",
+      "Es verbindet Computer und Geräte, um die gemeinsame Nutzung von Ressourcen zu ermöglichen.",
+      "Es bindet immer mehrere Kontinente zusammen.",
+      "Die Datenübertragungsraten in einem LAN sind typischerweise sehr hoch."
+    ],
+    "correct": "Es ist ein Netzwerk, das sich über einen geografisch begrenzten Raum erstreckt, wie ein einzelnes Gebäude."
+  },
+  {
+    "question": "Was ist eine MAC-Adresse (Media Access Control)?",
+    "options": [
+      "Eine logische, softwarebasierte Adresse, die von einem DHCP-Server zugewiesen wird.",
+      "Die weltweit eindeutige, in die Hardware eines Netzwerkadapters eingebrannte physikalische Adresse.",
+      "Sie wird auf der Sicherungsschicht (Layer 2) für die Adressierung von Geräten im selben lokalen Netzwerksegment verwendet.",
+      "Sie wird auch als IP-Adresse bezeichnet."
+    ],
+    "correct": "Die weltweit eindeutige, in die Hardware eines Netzwerkadapters eingebrannte physikalische Adresse."
+  },
+  {
+    "question": "Was passiert bei einem MITM-Angriff (Man-in-the-Middle)?",
+    "options": [
+      "Ein Angreifer positioniert sich unbemerkt zwischen zwei Kommunikationspartnern.",
+      "Der Angriff zielt ausschließlich darauf ab, einen Server durch massenhafte Anfragen lahmzulegen.",
+      "Der Angreifer kann die Kommunikation abhören, aufzeichnen und sogar manipulieren.",
+      "HTTPS mit gültigen Zertifikaten ist ein wirksamer Schutz gegen diese Art von Angriff."
+    ],
+    "correct": "Ein Angreifer positioniert sich unbemerkt zwischen zwei Kommunikationspartnern."
+  },
+  {
+    "question": "Wozu dient MIMO (Multiple Input Multiple Output)?",
+    "options": [
+      "Es ist eine Technik in der Funkkommunikation (z.B. WLAN, 5G), die mehrere Sende- und Empfangsantennen nutzt.",
+      "Das Hauptziel ist es, die Datenübertragungsrate zu erhöhen und die Verbindungsstabilität zu verbessern.",
+      "Es ist ein Protokoll für die sichere Dateiübertragung.",
+      "Es ist ein Standard zur Verschlüsselung von E-Mails."
+    ],
+    "correct": "Es ist eine Technik in der Funkkommunikation (z.B. WLAN, 5G), die mehrere Sende- und Empfangsantennen nutzt."
+  },
+  {
+    "question": "Was ist der Hauptzweck von MPLS (Multiprotocol Label Switching)?",
+    "options": [
+      "Es ist ein Mechanismus in Hochleistungsnetzwerken (typischerweise bei Providern), der den Datenverkehr auf Basis von kurzen \"Labels\" statt langer Netzwerkadressen weiterleitet.",
+      "Es dient primär der Endgeräte-Authentifizierung in einem WLAN.",
+      "Es verbessert die Geschwindigkeit und Effizienz des Routings und ermöglicht die einfache Implementierung von Diensten wie VPNs oder Quality of Service (QoS).",
+      "Es ist ein veraltetes Protokoll, das durch Ethernet ersetzt wurde."
+    ],
+    "correct": "Es ist ein Mechanismus in Hochleistungsnetzwerken (typischerweise bei Providern), der den Datenverkehr auf Basis von kurzen \"Labels\" statt langer Netzwerkadressen weiterleitet."
+  },
+  {
+    "question": "Was gibt die MTU (Maximum Transmission Unit) an?",
+    "options": [
+      "Die maximale Anzahl von Geräten, die sich mit einem WLAN verbinden können.",
+      "Die maximale Größe eines Datenpakets, das in einem Netzwerk übertragen werden kann, ohne in kleinere Stücke (Fragmente) zerlegt zu werden.",
+      "Sie ist für jedes Netzwerksegment spezifisch und muss entlang eines Pfades berücksichtigt werden.",
+      "Eine zu hohe MTU-Einstellung ist niemals ein Problem."
+    ],
+    "correct": "Die maximale Größe eines Datenpakets, das in einem Netzwerk übertragen werden kann, ohne in kleinere Stücke (Fragmente) zerlegt zu werden."
+  },
+  {
+    "question": "Welche Funktion hat NAT (Network Address Translation)?",
+    "options": [
+      "Es ermöglicht mehreren Geräten in einem privaten Netzwerk, über eine einzige öffentliche IP-Adresse auf das Internet zuzugreifen.",
+      "Es übersetzt private IP-Adressen in öffentliche und umgekehrt.",
+      "Es ist ein wesentlicher Bestandteil von IPv6.",
+      "Es dient der Vergabe von IP-Adressen an Clients."
+    ],
+    "correct": "Es ermöglicht mehreren Geräten in einem privaten Netzwerk, über eine einzige öffentliche IP-Adresse auf das Internet zuzugreifen."
+  },
+  {
+    "question": "Was ist die Rolle von ND (Neighbor Discovery) in IPv6?",
+    "options": [
+      "Es ist das Nachfolgeprotokoll für ARP (Address Resolution Protocol) in IPv6-Netzwerken.",
+      "Es wird verwendet, um die Adressen von benachbarten Geräten im selben Netzwerk zu ermitteln.",
+      "Es hilft bei der automatischen Adresskonfiguration (SLAAC) und der Router-Erkennung.",
+      "Es ist ein Protokoll zur sicheren Übertragung von Dateien."
+    ],
+    "correct": "Es ist das Nachfolgeprotokoll für ARP (Address Resolution Protocol) in IPv6-Netzwerken."
+  },
+  {
+    "question": "Wofür wird NTP (Network Time Protocol) verwendet?",
+    "options": [
+      "Zur Synchronisation der Systemuhren von Computern und Netzwerkgeräten mit einer hochgenauen Zeitquelle.",
+      "Eine genaue Zeit ist für viele sicherheitsrelevante Prozesse wie die Zertifikatsprüfung und die Log-Korrelation unerlässlich.",
+      "Es ist ein Protokoll zum Aushandeln von Verschlüsselungsparametern.",
+      "Es dient der Überwachung der Netzwerkauslastung."
+    ],
+    "correct": "Zur Synchronisation der Systemuhren von Computern und Netzwerkgeräten mit einer hochgenauen Zeitquelle."
+  },
+  {
+    "question": "Welche Eigenschaften hat OSPF (Open Shortest Path First)?",
+    "options": [
+      "Es ist ein modernes Link-State-Routing-Protokoll, das häufig in großen Unternehmensnetzwerken eingesetzt wird.",
+      "Es wählt den besten Pfad basierend auf der geringsten Anzahl von Hops (Router-Sprüngen).",
+      "Jeder Router mit OSPF erstellt eine vollständige \"Karte\" der Netzwerktopologie, um die kürzesten Wege zu berechnen.",
+      "Es konvergiert schnell bei Netzwerkänderungen."
+    ],
+    "correct": "Es ist ein modernes Link-State-Routing-Protokoll, das häufig in großen Unternehmensnetzwerken eingesetzt wird."
+  },
+  {
+    "question": "Was ist PaaS (Platform as a Service)?",
+    "options": [
+      "Ein Cloud-Modell, bei dem der Nutzer nur die grundlegende Infrastruktur (virtuelle Server) mietet.",
+      "Es bietet Entwicklern eine vollständige Plattform (inkl. Betriebssystem, Datenbanken, Webserver), auf der sie Anwendungen erstellen und ausführen können, ohne die darunterliegende Infrastruktur verwalten zu müssen.",
+      "Ein typisches Beispiel ist eine Umgebung zur App-Entwicklung und zum App-Hosting.",
+      "Es ist synonym mit Software, die man lokal auf seinem Rechner installiert."
+    ],
+    "correct": "Es bietet Entwicklern eine vollständige Plattform (inkl. Betriebssystem, Datenbanken, Webserver), auf der sie Anwendungen erstellen und ausführen können, ohne die darunterliegende Infrastruktur verwalten zu müssen."
+  },
+  {
+    "question": "Was umfasst eine PKI (Public Key Infrastructure)?",
+    "options": [
+      "Ein einzelnes Verschlüsselungsprogramm.",
+      "Ein umfassendes System aus Hardware, Software, Richtlinien und Verfahren zur Verwaltung digitaler Zertifikate und öffentlicher Schlüssel.",
+      "Eine zentrale Komponente einer PKI ist die Certificate Authority (CA), die Zertifikate ausstellt und deren Gültigkeit bestätigt.",
+      "Sie schafft eine Vertrauensbasis für sichere elektronische Transaktionen."
+    ],
+    "correct": "Ein umfassendes System aus Hardware, Software, Richtlinien und Verfahren zur Verwaltung digitaler Zertifikate und öffentlicher Schlüssel."
+  },
+  {
+    "question": "Was ist das Ziel von QoS (Quality of Service)?",
+    "options": [
+      "Allen Datenpaketen im Netzwerk die gleiche Priorität zu geben.",
+      "Bestimmtem, zeitkritischem Datenverkehr (wie VoIP oder Videostreaming) Vorrang vor weniger wichtigem Verkehr (wie E-Mail oder Datei-Downloads) zu geben.",
+      "Die Sicherstellung einer bestimmten Dienstgüte (z.B. geringe Latenz, garantierte Bandbreite) für priorisierte Anwendungen.",
+      "Es dient ausschließlich der Abwehr von DDoS-Angriffen."
+    ],
+    "correct": "Bestimmtem, zeitkritischem Datenverkehr (wie VoIP oder Videostreaming) Vorrang vor weniger wichtigem Verkehr (wie E-Mail oder Datei-Downloads) zu geben."
+  },
+  {
+    "question": "Wofür wird RADIUS (Remote Authentication Dial-In User Service) genutzt?",
+    "options": [
+      "Es ist ein zentralisiertes Client-Server-Protokoll, das Authentifizierung, Autorisierung und Accounting (AAA) für Netzwerknutzer übernimmt.",
+      "Es wird häufig zur Absicherung von WLANs (WPA2-Enterprise), VPN-Zugängen und Switch-Ports (802.1X) eingesetzt.",
+      "Es verschlüsselt den gesamten Datenverkehr im Netzwerk.",
+      "Es ist ein Routing-Protokoll."
+    ],
+    "correct": "Es ist ein zentralisiertes Client-Server-Protokoll, das Authentifizierung, Autorisierung und Accounting (AAA) für Netzwerknutzer übernimmt."
+  },
+  {
+    "question": "Was war die Aufgabe von RARP (Reverse Address Resolution Protocol)?",
+    "options": [
+      "Es ermöglichte einem Gerät, das nur seine eigene MAC-Adresse kannte, seine IP-Adresse von einem Server zu erfragen.",
+      "Es ist der moderne Nachfolger von DHCP.",
+      "Es gilt heute als veraltet und wurde durch Protokolle wie BOOTP und DHCP abgelöst.",
+      "Es löst Domainnamen in MAC-Adressen auf."
+    ],
+    "correct": "Es ermöglichte einem Gerät, das nur seine eigene MAC-Adresse kannte, seine IP-Adresse von einem Server zu erfragen."
+  },
+  {
+    "question": "Was beschreibt das RIP (Routing Information Protocol)?",
+    "options": [
+      "Ein modernes Link-State-Protokoll für sehr große Netzwerke.",
+      "Ein älteres Distanzvektor-Routing-Protokoll, das die Anzahl der Hops (Router) als Metrik für den besten Weg verwendet.",
+      "Aufgrund seiner Einfachheit und langsamen Konvergenz ist es für moderne, komplexe Netzwerke weniger geeignet.",
+      "Es dient der sicheren Übertragung von Routing-Updates."
+    ],
+    "correct": "Ein älteres Distanzvektor-Routing-Protokoll, das die Anzahl der Hops (Router) als Metrik für den besten Weg verwendet."
+  },
+  {
+    "question": "Was ist SaaS (Software as a Service)?",
+    "options": [
+      "Das Cloud-Modell, bei dem der Kunde für das Betriebssystem und die Installation der Software selbst verantwortlich ist.",
+      "Ein Software-Bereitstellungsmodell, bei dem Anwendungen von einem Anbieter gehostet und den Kunden über das Internet zur Verfügung gestellt werden.",
+      "Beispiele hierfür sind webbasierte E-Mail-Dienste, Office-Anwendungen (Google Docs, Microsoft 365) oder CRM-Systeme.",
+      "Die Wartung, Updates und der Betrieb der Software liegen vollständig beim Anbieter."
+    ],
+    "correct": "Ein Software-Bereitstellungsmodell, bei dem Anwendungen von einem Anbieter gehostet und den Kunden über das Internet zur Verfügung gestellt werden."
+  },
+  {
+    "question": "Welche Aussagen zu SFTP (Secure File Transfer Protocol) sind korrekt?",
+    "options": [
+      "Es ist ein eigenständiges Protokoll, das auf FTP aufbaut und eine TLS-Schicht hinzufügt (wie bei FTPS).",
+      "Es ist ein Protokoll zur sicheren Dateiübertragung, das als Subsystem von SSH (Secure Shell) läuft.",
+      "Die gesamte Kommunikation, einschließlich Authentifizierung und Datenübertragung, ist verschlüsselt.",
+      "Es bietet eine sichere Alternative zum unsicheren FTP."
+    ],
+    "correct": "Es ist ein Protokoll zur sicheren Dateiübertragung, das als Subsystem von SSH (Secure Shell) läuft."
+  },
+  {
+    "question": "Was ermöglicht SSH (Secure Shell)?",
+    "options": [
+      "Einen verschlüsselten Fernzugriff auf die Kommandozeile eines Systems.",
+      "Eine sichere Übertragung von Dateien (mittels SFTP).",
+      "Den unverschlüsselten Zugriff auf einen Webserver.",
+      "Das sichere Tunneln von anderen Protokollen."
+    ],
+    "correct": "Einen verschlüsselten Fernzugriff auf die Kommandozeile eines Systems."
+  },
+  {
+    "question": "Welche Aufgabe hat ein SIEM (Security Information and Event Management) System?",
+    "options": [
+      "Es sammelt und analysiert Logdaten und Ereignisse von verschiedenen Systemen (Server, Firewalls, etc.) an einem zentralen Ort.",
+      "Es dient ausschließlich dazu, Viren auf Endgeräten zu entfernen.",
+      "Es hilft dabei, Sicherheitsvorfälle, Bedrohungen und anomales Verhalten durch die Korrelation von Ereignissen zu erkennen.",
+      "Es ist ein Werkzeug für das proaktive Sicherheitsmonitoring und die forensische Analyse."
+    ],
+    "correct": "Es sammelt und analysiert Logdaten und Ereignisse von verschiedenen Systemen (Server, Firewalls, etc.) an einem zentralen Ort."
+  },
+  {
+    "question": "Welchen Zweck erfüllt SLAAC (Stateless Address Autoconfiguration) bei IPv6?",
+    "options": [
+      "Es ermöglicht einem IPv6-Gerät, sich selbst eine global eindeutige Adresse zu konfigurieren, ohne auf einen DHCP-Server angewiesen zu sein.",
+      "Es kombiniert dazu ein vom Router bekannt gegebenes Netzwerkpräfix mit der Interface-ID des Geräts (die oft aus der MAC-Adresse abgeleitet wird).",
+      "Es ist ein Mechanismus, der ausschließlich in IPv4-Netzwerken zum Einsatz kommt.",
+      "Es ist ein Verfahren für die zustandslose Autokonfiguration."
+    ],
+    "correct": "Es ermöglicht einem IPv6-Gerät, sich selbst eine global eindeutige Adresse zu konfigurieren, ohne auf einen DHCP-Server angewiesen zu sein."
+  },
+  {
+    "question": "Wofür wird SNMP (Simple Network Management Protocol) eingesetzt?",
+    "options": [
+      "Zur Überwachung des Zustands und der Leistung von Netzwerkgeräten wie Routern, Switches und Servern.",
+      "Es ist ein Protokoll, das nur von Cisco-Geräten unterstützt wird.",
+      "Netzwerkmanagement-Systeme nutzen es, um aktiv Daten von Geräten abzufragen oder von diesen bei bestimmten Ereignissen (Traps) benachrichtigt zu werden.",
+      "Es dient der sicheren Dateiübertragung."
+    ],
+    "correct": "Zur Überwachung des Zustands und der Leistung von Netzwerkgeräten wie Routern, Switches und Servern."
+  },
+  {
+    "question": "Was ist SPAN (Switched Port Analyzer)?",
+    "options": [
+      "Ein Protokoll zur Verhinderung von Netzwerkschleifen.",
+      "Eine Funktion auf einem Netzwerk-Switch, die den gesamten Verkehr eines oder mehrerer Ports auf einen designierten Zielport spiegelt (kopiert).",
+      "Es ist auch als \"Port Mirroring\" bekannt und wird für Netzwerk-Monitoring und -Fehleranalyse verwendet.",
+      "Es dient der Priorisierung von Sprachdaten im Netzwerk."
+    ],
+    "correct": "Eine Funktion auf einem Netzwerk-Switch, die den gesamten Verkehr eines oder mehrerer Ports auf einen designierten Zielport spiegelt (kopiert)."
+  },
+  {
+    "question": "Was ist die SSID (Service Set Identifier)?",
+    "options": [
+      "Das Passwort, das für den Zugriff auf ein WLAN benötigt wird.",
+      "Die physikalische MAC-Adresse des WLAN-Routers.",
+      "Der öffentliche Name eines WLAN-Netzwerks, der bei einer Suche nach verfügbaren Netzwerken angezeigt wird.",
+      "Ein Verschlüsselungsstandard für drahtlose Netzwerke."
+    ],
+    "correct": "Der öffentliche Name eines WLAN-Netzwerks, der bei einer Suche nach verfügbaren Netzwerken angezeigt wird."
+  },
+  {
+    "question": "Was sollte man über SSL (Secure Sockets Layer) wissen?",
+    "options": [
+      "Es ist der aktuelle und sicherste Standard zur Verschlüsselung von Web-Verbindungen.",
+      "Es ist der direkte Vorgänger von TLS (Transport Layer Security) und gilt heute als veraltet und unsicher.",
+      "Aufgrund bekannter Schwachstellen sollte die Verwendung von SSL vermieden werden.",
+      "Es dient zur automatischen Vergabe von IP-Adressen."
+    ],
+    "correct": "Es ist der direkte Vorgänger von TLS (Transport Layer Security) und gilt heute als veraltet und unsicher."
+  },
+  {
+    "question": "Welche Kernaufgabe hat das STP (Spanning Tree Protocol)?",
+    "options": [
+      "Die Beschleunigung des Datenverkehrs durch die Nutzung aller verfügbaren Pfade gleichzeitig.",
+      "Die Vermeidung von Broadcast-Stürmen und logischen Schleifen in einem redundant verkabelten Netzwerk, indem es redundante Links blockiert.",
+      "Es sorgt für einen ausfallsicheren Netzwerkpfad, indem es einen blockierten Link automatisch aktiviert, wenn der primäre Pfad ausfällt.",
+      "Es ist ein Protokoll, das ausschließlich auf Routern läuft."
+    ],
+    "correct": "Die Vermeidung von Broadcast-Stürmen und logischen Schleifen in einem redundant verkabelten Netzwerk, indem es redundante Links blockiert."
+  },
+  {
+    "question": "Was ist TACACS+ (Terminal Access Controller Access-Control System Plus)?",
+    "options": [
+      "Ein Sicherheitsprotokoll, das oft für die zentrale Authentifizierung, Autorisierung und Protokollierung (AAA) des administrativen Zugriffs auf Netzwerkgeräte verwendet wird.",
+      "Im Gegensatz zu RADIUS, das nur das Passwort verschlüsselt, verschlüsselt TACACS+ den gesamten Inhalt des Pakets.",
+      "Es ist ein von Cisco entwickeltes Protokoll.",
+      "Es ist eine Methode zur einfachen Verbindung mit einem WLAN per Knopfdruck."
+    ],
+    "correct": "Ein Sicherheitsprotokoll, das oft für die zentrale Authentifizierung, Autorisierung und Protokollierung (AAA) des administrativen Zugriffs auf Netzwerkgeräte verwendet wird."
+  },
+  {
+    "question": "Was sind die Hauptmerkmale von TCP (Transmission Control Protocol)?",
+    "options": [
+      "Es ist ein verbindungsloses Protokoll, das Daten ohne vorherige Absprache sendet.",
+      "Es ist ein verbindungsorientiertes Protokoll, das eine zuverlässige, reihenfolgenrichtige und fehlergeprüfte Übertragung von Daten sicherstellt.",
+      "Es nutzt einen \"Drei-Wege-Handschlag\" zum Aufbau einer Verbindung, bevor Daten fließen.",
+      "Es eignet sich besonders für Anwendungen, bei denen Datenverlust nicht toleriert werden kann, wie z.B. beim Abrufen einer Webseite oder beim Dateidownload."
+    ],
+    "correct": "Es ist ein verbindungsorientiertes Protokoll, das eine zuverlässige, reihenfolgenrichtige und fehlergeprüfte Übertragung von Daten sicherstellt."
+  },
+  {
+    "question": "Was ist TLS (Transport Layer Security)?",
+    "options": [
+      "Der moderne und sichere Nachfolger von SSL.",
+      "Es ist das Standardprotokoll zur Verschlüsselung der Kommunikation für Dienste wie HTTPS, IMAPS, SMTPS etc.",
+      "Eine veraltete Technik, die heute nicht mehr verwendet wird.",
+      "Es bietet Vertraulichkeit (Verschlüsselung) und Integrität (Schutz vor Manipulation) der Daten."
+    ],
+    "correct": "Der moderne und sichere Nachfolger von SSL."
+  },
+  {
+    "question": "Was bedeutet 2FA (Two-Factor Authentication)?",
+    "options": [
+      "Es bedeutet, dass das Passwort aus zwei verschiedenen Zeichenkategorien bestehen muss.",
+      "Eine Sicherheitsmaßnahme, die zur Anmeldung die Bestätigung der Identität durch zwei voneinander unabhängige Faktoren erfordert.",
+      "Typische Faktoren sind \"Wissen\" (Passwort), \"Besitz\" (Smartphone mit App, Sicherheitstoken) oder \"Sein\" (Fingerabdruck).",
+      "Es erschwert Unbefugten den Zugriff auf ein Konto erheblich, selbst wenn sie das Passwort kennen."
+    ],
+    "correct": "Eine Sicherheitsmaßnahme, die zur Anmeldung die Bestätigung der Identität durch zwei voneinander unabhängige Faktoren erfordert."
+  },
+  {
+    "question": "Welche Eigenschaften hat UDP (User Datagram Protocol)?",
+    "options": [
+      "Es baut eine zuverlässige Verbindung auf, bevor Daten gesendet werden.",
+      "Es ist ein schnelles, verbindungsloses Protokoll, das keine Garantie für die Zustellung, Reihenfolge oder Fehlerfreiheit der Pakete gibt.",
+      "Es wird oft für zeitkritische Anwendungen wie VoIP, Online-Spiele und Videostreaming verwendet, wo Geschwindigkeit wichtiger ist als 100%ige Zuverlässigkeit.",
+      "Es ist die Basis für das DNS-Protokoll."
+    ],
+    "correct": "Es ist ein schnelles, verbindungsloses Protokoll, das keine Garantie für die Zustellung, Reihenfolge oder Fehlerfreiheit der Pakete gibt."
+  },
+  {
+    "question": "Was ermöglicht ein VLAN (Virtual LAN)?",
+    "options": [
+      "Die logische Segmentierung eines physischen Switches in mehrere separate, voneinander isolierte Netzwerke (Broadcast-Domänen).",
+      "Es erhöht die Sicherheit, indem es den Verkehr zwischen verschiedenen Abteilungen oder Gerätetypen trennt.",
+      "Es ist ein physisches Gerät, das man kaufen muss, um Netzwerke zu trennen.",
+      "Es ermöglicht eine flexiblere Netzwerkgestaltung, unabhängig von der physischen Verkabelung."
+    ],
+    "correct": "Die logische Segmentierung eines physischen Switches in mehrere separate, voneinander isolierte Netzwerke (Broadcast-Domänen)."
+  },
+  {
+    "question": "Was ist eine VPC (Virtual Private Cloud)?",
+    "options": [
+      "Ein physisch getrenntes, privates Rechenzentrum für einen einzelnen Kunden.",
+      "Ein logisch isolierter Abschnitt einer Public Cloud (wie AWS oder Azure), in dem ein Kunde seine eigenen virtuellen Netzwerke mit voller Kontrolle über IP-Adressen, Subnetze und Routing betreiben kann.",
+      "Sie bietet die Sicherheit und Isolation eines privaten Netzwerks innerhalb der flexiblen und skalierbaren Umgebung einer Public Cloud.",
+      "Ein anderer Name für ein VPN."
+    ],
+    "correct": "Ein logisch isolierter Abschnitt einer Public Cloud (wie AWS oder Azure), in dem ein Kunde seine eigenen virtuellen Netzwerke mit voller Kontrolle über IP-Adressen, Subnetze und Routing betreiben kann."
+  },
+  {
+    "question": "Was ist der Hauptzweck eines VPN (Virtual Private Network)?",
+    "options": [
+      "Die Erstellung einer sicheren und verschlüsselten Verbindung (\"Tunnel\") über ein öffentliches, unsicheres Netzwerk wie das Internet.",
+      "Es wird verwendet, um die Internetverbindung erheblich zu beschleunigen.",
+      "Es ermöglicht den sicheren Fernzugriff auf Unternehmensressourcen und die Verbindung von Standorten.",
+      "Es kann dazu dienen, die eigene IP-Adresse zu verschleiern und geografische Sperren zu umgehen."
+    ],
+    "correct": "Die Erstellung einer sicheren und verschlüsselten Verbindung (\"Tunnel\") über ein öffentliches, unsicheres Netzwerk wie das Internet."
+  },
+  {
+    "question": "Was versteht man unter VPNaaS (VPN as a Service)?",
+    "options": [
+      "Ein Cloud-Service, der VPN-Funktionalität bereitstellt, ohne dass der Kunde eigene Hardware oder Software verwalten muss.",
+      "Es vereinfacht typischerweise die sichere Anbindung von Nutzern und Standorten an Cloud-Ressourcen.",
+      "Es ist ein Marketingbegriff für ein herkömmliches, selbstverwaltetes VPN.",
+      "Ein anderes Wort für ein SIEM-System."
+    ],
+    "correct": "Ein Cloud-Service, der VPN-Funktionalität bereitstellt, ohne dass der Kunde eigene Hardware oder Software verwalten muss."
+  },
+  {
+    "question": "Was ist VoIP (Voice over IP)?",
+    "options": [
+      "Ein Verschlüsselungsstandard für Sprachnachrichten.",
+      "Die Technologie, die das Übertragen von Sprachkommunikation und Multimedia-Sitzungen über IP-Netzwerke ermöglicht.",
+      "Dienste wie Internettelefonie (z.B. über Skype, Zoom, Teams) basieren auf dieser Technologie.",
+      "Ein Protokoll zum schnellen Herunterladen von Videodateien."
+    ],
+    "correct": "Die Technologie, die das Übertragen von Sprachkommunikation und Multimedia-Sitzungen über IP-Netzwerke ermöglicht."
+  },
+  {
+    "question": "Wofür steht der Begriff Wi-Fi?",
+    "options": [
+      "Es ist der technische Name des IEEE 802.11 Standards.",
+      "Es ist ein Markenname der Wi-Fi Alliance für zertifizierte WLAN-Geräte, die auf den IEEE 802.11 Standards basieren.",
+      "Es bezeichnet umgangssprachlich die Technologie für drahtlose lokale Netzwerke (WLAN).",
+      "Es ist die Abkürzung für \"Wired Fidelity\"."
+    ],
+    "correct": "Es ist ein Markenname der Wi-Fi Alliance für zertifizierte WLAN-Geräte, die auf den IEEE 802.11 Standards basieren."
+  },
+  {
+    "question": "Was zeichnet WPA2 (Wi-Fi Protected Access 2) aus?",
+    "options": [
+      "Es ist der neueste und sicherste WLAN-Verschlüsselungsstandard.",
+      "Es war über viele Jahre der De-facto-Standard für die Absicherung von WLANs.",
+      "Es verwendet den als stark geltenden AES-Verschlüsselungsalgorithmus.",
+      "Sein Nachfolger ist WPA3, der weitere Sicherheitsverbesserungen bietet."
+    ],
+    "correct": "Es war über viele Jahre der De-facto-Standard für die Absicherung von WLANs."
+  },
+  {
+    "question": "Was ist WPS (Wi-Fi Protected Setup)?",
+    "options": [
+      "Die sicherste Methode, um ein Passwort für ein WLAN zu erstellen.",
+      "Ein Standard, der das Verbinden von Geräten mit einem WLAN vereinfachen soll, oft durch Drücken eines Knopfes am Router und am Client-Gerät.",
+      "Insbesondere die PIN-basierte Methode von WPS hat sich als anfällig für Angriffe erwiesen und sollte oft deaktiviert werden.",
+      "Es steht für \"Wi-Fi Primary Security\"."
+    ],
+    "correct": "Ein Standard, der das Verbinden von Geräten mit einem WLAN vereinfachen soll, oft durch Drücken eines Knopfes am Router und am Client-Gerät."
+  }
+]
