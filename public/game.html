@@ -30,7 +30,13 @@
                 <span id="timer"></span>
             </div>
             <h2 id="questionText"></h2>
+            <p id="multipleChoiceInstruction" style="display: none; text-align: center; margin-bottom: 20px; color: #718096; font-style: italic;">
+                Select all correct answers:
+            </p>
             <div id="options" class="options-grid"></div>
+            <button id="submitBtn" class="btn-primary" style="display: none; margin-top: 20px; width: 100%; position: relative; bottom: 0;">
+                Submit Answer
+            </button>
         </div>
 
         <div id="resultsScreen" class="screen" style="display: none;">
@@ -38,6 +44,11 @@
             <div id="resultsContent"></div>
         </div>
     </div>
+
+    <!-- Audio element for the sound effect -->
+    <audio id="timeWarningSound" preload="auto">
+        <source src="sound_moe.mp3" type="audio/mpeg">
+    </audio>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
@@ -55,6 +66,8 @@
         let reconnectInterval;
         let pingInterval;
         let connectionTimeout;
+        let questionTimer;
+        let timeWarningPlayed = false;
 
         // Screens
         const joinScreen = document.getElementById('joinScreen');
@@ -75,6 +88,10 @@
         const resultsTitle = document.getElementById('resultsTitle');
         const resultsContent = document.getElementById('resultsContent');
         const gameTopicSpan = document.getElementById('gameTopic');
+        const multipleChoiceInstruction = document.getElementById('multipleChoiceInstruction');
+        const submitBtn = document.getElementById('submitBtn');
+        const timerDisplay = document.getElementById('timer');
+        const timeWarningSound = document.getElementById('timeWarningSound');
 
         // Restore player name if exists
         if (playerName && !playerId) {
@@ -91,6 +108,9 @@
         playerNameInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') joinGame();
         });
+
+        // Add submit button event listener
+        submitBtn.addEventListener('click', submitMultipleChoice);
 
         function joinGame() {
             const name = playerNameInput.value.trim();
@@ -222,6 +242,33 @@
             }, delay);
         }
 
+        function startQuestionTimer() {
+            clearTimeout(questionTimer);
+            timeWarningPlayed = false;
+            timerDisplay.textContent = '';
+            
+            if (!hasAnswered) {
+                questionTimer = setTimeout(() => {
+                    if (!hasAnswered && gameScreen.style.display === 'block') {
+                        // Play warning sound
+                        try {
+                            timeWarningSound.play().catch(e => {
+                                console.log('Could not play warning sound:', e);
+                            });
+                            timeWarningPlayed = true;
+                        } catch (e) {
+                            console.log('Error playing sound:', e);
+                        }
+                    }
+                }, 25000); // 25 seconds
+            }
+        }
+
+        function clearQuestionTimer() {
+            clearTimeout(questionTimer);
+            timerDisplay.textContent = '';
+        }
+
         function handleMessage(data) {
             switch (data.type) {
                 case 'pong':
@@ -270,15 +317,19 @@
                     break;
                 case 'answerFeedback':
                     handleAnswerFeedback(data);
+                    clearQuestionTimer();
                     break;
                 case 'showCorrectAnswer':
                     showCorrectAnswer(data.correctAnswer);
+                    clearQuestionTimer();
                     break;
                 case 'questionResults':
                     showQuestionResults(data);
+                    clearQuestionTimer();
                     break;
                 case 'gameEnd':
                     showFinalResults(data);
+                    clearQuestionTimer();
                     break;
                 case 'error':
                     alert(data.message);
@@ -320,16 +371,24 @@
             questionNumber.textContent = `Question ${data.questionNumber} of ${data.totalQuestions}`;
             questionText.textContent = data.question;
             
+            // Clear options
             optionsDiv.innerHTML = '';
             
+            // Show/hide multiple choice instruction and submit button
             if (isMultipleChoice) {
-                // Add instruction for multiple choice
-                const instruction = document.createElement('p');
-                instruction.style.cssText = 'text-align: center; margin-bottom: 20px; color: #718096; font-style: italic;';
-                instruction.textContent = 'Select all correct answers:';
-                optionsDiv.appendChild(instruction);
+                multipleChoiceInstruction.style.display = 'block';
+                if (!hasAnswered) {
+                    submitBtn.style.display = 'block';
+                    submitBtn.disabled = false;
+                } else {
+                    submitBtn.style.display = 'none';
+                }
+            } else {
+                multipleChoiceInstruction.style.display = 'none';
+                submitBtn.style.display = 'none';
             }
             
+            // Create option buttons
             data.options.forEach((option, index) => {
                 const button = document.createElement('button');
                 button.className = 'option-btn';
@@ -346,19 +405,15 @@
                 optionsDiv.appendChild(button);
             });
 
-            if (isMultipleChoice && !hasAnswered) {
-                // Add submit button for multiple choice
-                const submitBtn = document.createElement('button');
-                submitBtn.className = 'btn-primary submit-btn';
-                submitBtn.textContent = 'Submit Answer';
-                submitBtn.style.cssText = 'margin-top: 20px; width: 100%;';
-                submitBtn.addEventListener('click', submitMultipleChoice);
-                optionsDiv.appendChild(submitBtn);
+            if (hasAnswered) {
+                const message = document.createElement('p');
+                message.style.cssText = 'text-align: center; margin-top: 20px; color: #718096;';
+                message.textContent = 'You have already answered this question';
+                optionsDiv.appendChild(message);
             }
 
-            if (hasAnswered) {
-                optionsDiv.innerHTML += '<p style="text-align: center; margin-top: 20px; color: #718096;">You have already answered this question</p>';
-            }
+            // Start timer for warning sound
+            startQuestionTimer();
         }
 
         function toggleAnswer(answer, button) {
@@ -382,11 +437,13 @@
             }
             
             hasAnswered = true;
+            clearQuestionTimer();
             
             // Disable all buttons including submit
-            document.querySelectorAll('.option-btn, .submit-btn').forEach(btn => {
+            document.querySelectorAll('.option-btn').forEach(btn => {
                 btn.disabled = true;
             });
+            submitBtn.disabled = true;
             
             // Send array of selected answers
             ws.send(JSON.stringify({ 
@@ -399,6 +456,7 @@
             if (hasAnswered || !ws || ws.readyState !== WebSocket.OPEN) return;
             
             hasAnswered = true;
+            clearQuestionTimer();
             
             // Disable all buttons
             document.querySelectorAll('.option-btn').forEach(btn => {
@@ -505,6 +563,7 @@
             }
             clearInterval(pingInterval);
             clearInterval(reconnectInterval);
+            clearQuestionTimer();
         });
 
         // Handle page visibility changes
