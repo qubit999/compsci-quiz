@@ -49,7 +49,7 @@
                 topics.forEach(topic => {
                     const option = document.createElement('option');
                     option.value = topic.id;
-                    option.textContent = `${topic.name} (${topic.questionCount} questions)`;
+                    option.textContent = `${topic.name} ${topic.isMultipleChoice ? '(Multiple Choice)' : ''} (${topic.questionCount} questions)`;
                     topicSelect.appendChild(option);
                 });
                 
