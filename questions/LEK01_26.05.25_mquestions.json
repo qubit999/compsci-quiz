@@ -1,0 +1,411 @@
+[
+  {
+    "question": "Welche der folgenden Aufgaben erfüllt ein DNS-Server?",
+    "options": [
+      "Speicherung von E-Mails",
+      "Zuordnung von IP-Adressen zu Domainnamen",
+      "Schutz vor DDoS-Angriffen",
+      "Übersetzung von Hostnamen in IP-Adressen"
+    ],
+    "correct": [
+      "Zuordnung von IP-Adressen zu Domainnamen",
+      "Übersetzung von Hostnamen in IP-Adressen"
+    ]
+  },
+  {
+    "question": "Wofür wird ein TXT-Record verwendet?",
+    "options": [
+      "Zur Weiterleitung von Domains",
+      "Für SPF-Einträge",
+      "Zum Speichern von IP-Adressen",
+      "Für verifizierende Textinformationen"
+    ],
+    "correct": ["Für SPF-Einträge", "Für verifizierende Textinformationen"]
+  },
+  {
+    "question": "Welche Aussagen zu Public DNS Services sind korrekt?",
+    "options": [
+      "Google DNS: 8.8.8.8",
+      "Cloudflare DNS: 1.1.1.1",
+      "Unterstützen kein DNSSEC",
+      "Sind kostenlos nutzbar"
+    ],
+    "correct": [
+      "Google DNS: 8.8.8.8",
+      "Cloudflare DNS: 1.1.1.1",
+      "Sind kostenlos nutzbar"
+    ]
+  },
+  {
+    "question": "Was ist ein autoritativer DNS-Server?",
+    "options": [
+      "Er leitet Anfragen immer weiter",
+      "Er führt nur Caching durch",
+      "Er speichert die originale Zonen-Datei",
+      "Er gibt eine endgültige Antwort"
+    ],
+    "correct": ["Er speichert die originale Zonen-Datei", "Er gibt eine endgültige Antwort"]
+  },
+  {
+    "question": "Welche Aussagen zur Zonen-Datei sind richtig?",
+    "options": [
+      "Ist nur bei Reverse-Lookup notwendig",
+      "Wird auf autoritativen Servern gespeichert",
+      "Enthält alle DNS-Einträge einer Zone",
+      "Wird regelmäßig aktualisiert"
+    ],
+    "correct": [
+      "Wird auf autoritativen Servern gespeichert",
+      "Enthält alle DNS-Einträge einer Zone",
+      "Wird regelmäßig aktualisiert"
+    ]
+  },
+  {
+    "question": "Welche Ports nutzt DNS?",
+    "options": ["Port 80", "Port 53 UDP", "Port 943", "Port 53 TCP"],
+    "correct": ["Port 53 UDP", "Port 53 TCP"]
+  },
+  {
+    "question": "Wie viele Root-Server (Instanzen) gibt es weltweit ungefähr?",
+    "options": ["Genau 13", "26", "Mehr als 1000", "Ungefähr 10"],
+    "correct": ["Mehr als 1000"]
+  },
+  {
+    "question": "Welche Informationen enthält ein SOA-Record?",
+    "options": [
+      "TTL der Zone",
+      "SPF-Regeln",
+      "Kontakt-E-Mail-Adresse",
+      "Seriennummer der Zone"
+    ],
+    "correct": ["TTL der Zone", "Kontakt-E-Mail-Adresse", "Seriennummer der Zone"]
+  },
+  {
+    "question": "Welche Aussage zu A-Records ist korrekt?",
+    "options": [
+      "Sie sind für E-Mail-Zustellung zuständig",
+      "Sie enthalten einen Textwert",
+      "Sie ordnen eine IPv4-Adresse einem Hostnamen zu",
+      "Sie verweisen auf eine IPv6-Adresse"
+    ],
+    "correct": ["Sie ordnen eine IPv4-Adresse einem Hostnamen zu"]
+  },
+  {
+    "question": "Welche Merkmale hat eine Reverse-DNS-Zone?",
+    "options": [
+      "Funktioniert nur mit IPv6",
+      "Beginnt meist mit in-addr.arpa",
+      "Nutzt PTR-Einträge",
+      "Übersetzt IP zu Hostnamen"
+    ],
+    "correct": [
+      "Beginnt meist mit in-addr.arpa",
+      "Nutzt PTR-Einträge",
+      "Übersetzt IP zu Hostnamen"
+    ]
+  },
+  {
+    "question": "Welche Merkmale treffen auf DNS over HTTPS (DoH) zu?",
+    "options": [
+      "Nutzt UDP",
+      "Verwendet Port 443",
+      "Erhöht die Privatsphäre",
+      "Verschlüsselte DNS-Anfragen"
+    ],
+    "correct": [
+      "Verwendet Port 443",
+      "Erhöht die Privatsphäre",
+      "Verschlüsselte DNS-Anfragen"
+    ]
+  },
+  {
+    "question": "Welche Antwortformate kann ein DNS-Server liefern?",
+    "options": [
+      "NXDOMAIN",
+      "Non-Authoritative Answer",
+      "HTTP 404",
+      "Authoritative Answer"
+    ],
+    "correct": ["NXDOMAIN", "Non-Authoritative Answer", "Authoritative Answer"]
+  },
+  {
+    "question": "Was beschreibt eine Forward-Zone?",
+    "options": [
+      "Eine DNS-Zone mit Domain-zu-IP-Zuordnungen",
+      "Eine Zonenart für Mailserver",
+      "Das Gegenteil einer Reverse-Zone",
+      "Eine DNS-Zone zur IPv6-Kompression"
+    ],
+    "correct": [
+      "Eine DNS-Zone mit Domain-zu-IP-Zuordnungen",
+      "Das Gegenteil einer Reverse-Zone"
+    ]
+  },
+  {
+    "question": "Welche DNS-Rolle erfüllt ein Cache-Only Server?",
+    "options": [
+      "Enthält Zonen-Dateien",
+      "Fragt andere DNS-Server ab",
+      "Speichert nur Antworten temporär",
+      "Gibt keine autoritativen Antworten"
+    ],
+    "correct": ["Fragt andere DNS-Server ab", "Speichert nur Antworten temporär"]
+  },
+  {
+    "question": "Was beschreibt ein PTR-Record?",
+    "options": [
+      "Zeigt auf einen DNS-Server",
+      "Übersetzt IP-Adressen in Hostnamen",
+      "Wird im Caching eingesetzt",
+      "Wird für Reverse-DNS verwendet"
+    ],
+    "correct": [
+      "Übersetzt IP-Adressen in Hostnamen",
+      "Wird für Reverse-DNS verwendet"
+    ]
+  },
+  {
+    "question": "Welche Ziele verfolgt DNS Load Balancing?",
+    "options": [
+      "DNS-Spoofing vermeiden",
+      "Verteilung von Traffic",
+      "Erhöhte Ausfallsicherheit",
+      "Performance-Optimierung"
+    ],
+    "correct": [
+      "Verteilung von Traffic",
+      "Erhöhte Ausfallsicherheit",
+      "Performance-Optimierung"
+    ]
+  },
+  {
+    "question": "Welche Aussagen treffen auf IPv6 DNS-Records zu?",
+    "options": [
+      "Sie werden nicht von jedem DNS-Server unterstützt",
+      "Sie speichern 128-Bit-Adressen",
+      "Sie sind identisch zu A-Records",
+      "Sie heißen AAAA-Records"
+    ],
+    "correct": [
+      "Sie werden nicht von jedem DNS-Server unterstützt",
+      "Sie speichern 128-Bit-Adressen",
+      "Sie heißen AAAA-Records"
+    ]
+  },
+  {
+    "question": "Welche DNS-Einträge gibt es?",
+    "options": ["TXT-Record", "MX-Record", "FTP-Record", "A-Record"],
+    "correct": ["TXT-Record", "MX-Record", "A-Record"]
+  },
+  {
+    "question": "Welche Bedrohungen existieren im Zusammenhang mit DNS?",
+    "options": [
+      "DNS-Spoofing",
+      "NAT-Tunneling",
+      "Cache Poisoning",
+      "Phishing über gefälschte Einträge"
+    ],
+    "correct": [
+      "DNS-Spoofing",
+      "Cache Poisoning",
+      "Phishing über gefälschte Einträge"
+    ]
+  },
+  {
+    "question": "Was ist ein Wildcard-DNS-Eintrag?",
+    "options": [
+      "*.example.com",
+      "Kann IP-Adressen dynamisch vergeben",
+      "Wird nur bei E-Mail genutzt",
+      "Gilt für alle Subdomains"
+    ],
+    "correct": ["*.example.com", "Gilt für alle Subdomains"]
+  },
+  {
+    "question": "Welche Vorteile bietet DNS-Tunneling Angreifern?",
+    "options": [
+      "Schnelle DNS-Auflösung",
+      "Versteckter Datenkanal",
+      "Umgehung von Sicherheitsmechanismen",
+      "Datenübertragung durch Firewalls"
+    ],
+    "correct": [
+      "Versteckter Datenkanal",
+      "Umgehung von Sicherheitsmechanismen",
+      "Datenübertragung durch Firewalls"
+    ]
+  },
+  {
+    "question": "Was ist DNSSEC?",
+    "options": [
+      "Verhindert IP-Spoofing",
+      "Eine Erweiterung zur Signatur von DNS-Daten",
+      "Erhöht die Geschwindigkeit",
+      "Dient der Authentizität von Antworten"
+    ],
+    "correct": [
+      "Eine Erweiterung zur Signatur von DNS-Daten",
+      "Dient der Authentizität von Antworten"
+    ]
+  },
+  {
+    "question": "Welche Aufgaben hat ein MX-Record?",
+    "options": [
+      "Zeigt auf einen Aliasnamen",
+      "Leitet E-Mails an den richtigen Mailserver weiter",
+      "Gibt Prioritäten für Mailserver an",
+      "Speichert HTML-Inhalte"
+    ],
+    "correct": [
+      "Leitet E-Mails an den richtigen Mailserver weiter",
+      "Gibt Prioritäten für Mailserver an"
+    ]
+  },
+  {
+    "question": "Wofür steht der Eintrag NS im DNS?",
+    "options": [
+      "Gibt zuständige DNS-Server an",
+      "Name Server",
+      "Enthält IP-Adressen",
+      "Wird bei E-Mails verwendet"
+    ],
+    "correct": ["Gibt zuständige DNS-Server an", "Name Server"]
+  },
+  {
+    "question": "Welche Aussagen zu DNS-Resolvern sind korrekt?",
+    "options": [
+      "Sie stellen Domainzertifikate aus",
+      "Sie führen rekursive Abfragen durch",
+      "Sie nutzen Caches zur Beschleunigung",
+      "Sie leiten direkt an Root-Server weiter"
+    ],
+    "correct": [
+      "Sie führen rekursive Abfragen durch",
+      "Sie nutzen Caches zur Beschleunigung",
+      "Sie leiten direkt an Root-Server weiter"
+    ]
+  },
+  {
+    "question": "Welche Sicherheitsmaßnahmen gegen DNS-Angriffe sind sinnvoll?",
+    "options": [
+      "SMTP-Server blockieren",
+      "Einsatz von DoH",
+      "DNSSEC aktivieren",
+      "Cache-Poisoning verhindern"
+    ],
+    "correct": [
+      "Einsatz von DoH",
+      "DNSSEC aktivieren",
+      "Cache-Poisoning verhindern"
+    ]
+  },
+  {
+    "question": "Welche Servertypen gibt es im DNS-System?",
+    "options": [
+      "Resolver",
+      "SQL-Server",
+      "Top-Level-Domain-Server",
+      "Root-Server"
+    ],
+    "correct": ["Resolver", "Top-Level-Domain-Server", "Root-Server"]
+  },
+  {
+    "question": "Welche Protokolle kommen bei DNS zum Einsatz?",
+    "options": ["TCP", "HTTP", "TLS", "UDP"],
+    "correct": ["TCP", "UDP"]
+  },
+  {
+    "question": "Welche Tools kann man zur DNS-Analyse nutzen?",
+    "options": ["Nslookup", "Traceroute", "Nplookup", "Dig"],
+    "correct": ["Nslookup", "Dig"]
+  },
+  {
+    "question": "Welche DNS-Abfragetypen gibt es?",
+    "options": ["Iterativ", "Asynchron", "Forwarding", "Rekursiv"],
+    "correct": ["Iterativ", "Forwarding", "Rekursiv"]
+  },
+  {
+    "question": "Wozu dient ein DNS-Forwarder?",
+    "options": [
+      "Dient der Lastverteilung",
+      "Beantwortet autoritative Abfragen",
+      "Verbessert die Geschwindigkeit",
+      "Leitet Anfragen an einen anderen Server weiter"
+    ],
+    "correct": [
+      "Verbessert die Geschwindigkeit",
+      "Leitet Anfragen an einen anderen Server weiter"
+    ]
+  },
+  {
+    "question": "Welche Vorteile hat DNS-Caching?",
+    "options": [
+      "Führt zu mehr Bandbreite",
+      "Entlastet lokale Netzwerke",
+      "Reduziert den Traffic zum Root-Server",
+      "Schnellere Antwortzeiten"
+    ],
+    "correct": [
+      "Entlastet lokale Netzwerke",
+      "Reduziert den Traffic zum Root-Server",
+      "Schnellere Antwortzeiten"
+    ]
+  },
+  {
+    "question": "Welche Aussage ist korrekt im Zusammenhang mit TTL bei DNS?",
+    "options": [
+      "TTL ist gleich der Portnummer",
+      "TTL steht für Time to Live",
+      "TTL darf nie unter 86400 Sekunden liegen",
+      "TTL gibt an, wie lange ein DNS-Eintrag im Cache bleibt"
+    ],
+    "correct": [
+      "TTL steht für Time to Live",
+      "TTL gibt an, wie lange ein DNS-Eintrag im Cache bleibt"
+    ]
+  },
+  {
+    "question": "Welche Komponenten nutzt ein DNS-Resolver?",
+    "options": ["TLD-Abfrage", "Forwarder", "Cache", "Backup-Server"],
+    "correct": ["TLD-Abfrage", "Forwarder", "Cache"]
+  },
+  {
+    "question": "Welche Top-Level-Domains gehören zur Gruppe der generischen TLDs?",
+    "options": [".com", ".net", ".de", ".org"],
+    "correct": [".com", ".net", ".org"]
+  },
+  {
+    "question": "Wofür steht die Abkürzung DNS?",
+    "options": [
+      "Distributed Naming Server",
+      "Data Network Service",
+      "Domain Name System",
+      "Domain Numbering System"
+    ],
+    "correct": ["Domain Name System"]
+  },
+  {
+    "question": "Welche Aussagen zu Root-Servern sind korrekt?",
+    "options": [
+      "Sie enthalten keine Domaininformationen",
+      "Es gibt genau 13 Root-Server-Organisationen",
+      "Sie beantworten .com-Domain-Anfragen direkt",
+      "Sie verweisen auf TLD-Server"
+    ],
+    "correct": [
+      "Sie enthalten keine Domaininformationen",
+      "Es gibt genau 13 Root-Server-Organisationen",
+      "Sie verweisen auf TLD-Server"
+    ]
+  },
+  {
+    "question": "Was ist ein CNAME-Record?",
+    "options": [
+      "Enthält die MX-Priorität",
+      "Enthält die TTL-Zeit",
+      "Canonical Name",
+      "Erlaubt Aliasnamen"
+    ],
+    "correct": ["Canonical Name", "Erlaubt Aliasnamen"]
+  }
+]
