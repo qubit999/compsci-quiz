@@ -69,6 +69,10 @@
         let questionTimer;
         let timeWarningPlayed = false;
 
+        // Timer durations
+        const NORMAL_QUESTION_TIMER = 25000; // 25 seconds
+        const MULTIPLE_CHOICE_TIMER = 50000; // 50 seconds
+
         // Screens
         const joinScreen = document.getElementById('joinScreen');
         const lobbyScreen = document.getElementById('lobbyScreen');
@@ -248,6 +252,9 @@
             timerDisplay.textContent = '';
             
             if (!hasAnswered) {
+                // Set timer duration based on question type
+                const timerDuration = isMultipleChoice ? MULTIPLE_CHOICE_TIMER : NORMAL_QUESTION_TIMER;
+                
                 questionTimer = setTimeout(() => {
                     if (!hasAnswered && gameScreen.style.display === 'block') {
                         // Play warning sound
@@ -260,7 +267,7 @@
                             console.log('Error playing sound:', e);
                         }
                     }
-                }, 25000); // 25 seconds
+                }, timerDuration);
             }
         }
 
@@ -412,7 +419,7 @@
                 optionsDiv.appendChild(message);
             }
 
-            // Start timer for warning sound
+            // Start timer for warning sound with appropriate duration
             startQuestionTimer();
         }
 
