@@ -14,18 +14,6 @@ app.use(express.static('public'));
 const questionsPath = path.join(__dirname, 'questions');
 const topics = {};
 
-// Read all question files
-fs.readdirSync(questionsPath).forEach(file => {
-    if (file.endsWith('_questions.json')) {
-        const topicName = file.replace('_questions.json', '');
-        const topicDisplayName = topicName.charAt(0).toUpperCase() + topicName.slice(1).replace('_', ' ');
-        topics[topicName] = {
-            displayName: topicDisplayName,
-            questions: JSON.parse(fs.readFileSync(path.join(questionsPath, file), 'utf8'))
-        };
-    }
-});
-
 // Shuffle array function
 function shuffleArray(array) {
     const shuffled = [...array];
@@ -36,12 +24,31 @@ function shuffleArray(array) {
     return shuffled;
 }
 
+// Check if file is multiple choice
+function isMultipleChoice(filename) {
+    return filename.endsWith('_mquestions.json');
+}
+
+// Read all question files
+fs.readdirSync(questionsPath).forEach(file => {
+    if (file.endsWith('_questions.json') || file.endsWith('_mquestions.json')) {
+        const topicName = file.replace('_questions.json', '').replace('_mquestions.json', '');
+        const topicDisplayName = topicName.charAt(0).toUpperCase() + topicName.slice(1).replace(/_/g, ' ');
+        topics[topicName] = {
+            displayName: topicDisplayName,
+            questions: JSON.parse(fs.readFileSync(path.join(questionsPath, file), 'utf8')),
+            isMultipleChoice: isMultipleChoice(file)
+        };
+    }
+});
+
 // Get available topics
 app.get('/topics', (req, res) => {
     const topicList = Object.keys(topics).map(key => ({
         id: key,
         name: topics[key].displayName,
-        questionCount: topics[key].questions.length
+        questionCount: topics[key].questions.length,
+        isMultipleChoice: topics[key].isMultipleChoice
     }));
     res.json(topicList);
 });
@@ -63,9 +70,12 @@ app.post('/create-game', express.json(), (req, res) => {
     
     // Shuffle the options for each question
     shuffledQuestions.forEach(question => {
-        const correctAnswer = question.correct;
+        // Store the correct answer(s) before shuffling
+        const correctAnswers = Array.isArray(question.correct) ? question.correct : [question.correct];
+        // Shuffle the options
         question.options = shuffleArray(question.options);
-        question.correct = correctAnswer;
+        // Make sure the correct answer reference is still valid
+        question.correct = correctAnswers;
     });
     
     const gameId = uuidv4();
@@ -77,7 +87,8 @@ app.post('/create-game', express.json(), (req, res) => {
         currentQuestion: 0,
         answers: new Map(),
         started: false,
-        scores: new Map()
+        scores: new Map(),
+        isMultipleChoice: topics[topic].isMultipleChoice
     });
     
     res.json({ 
@@ -212,7 +223,8 @@ function handleJoin(game, playerId, playerName, ws) {
         started: game.started,
         topic: topics[game.topic].displayName,
         currentQuestion: game.currentQuestion,
-        totalQuestions: game.questions.length
+        totalQuestions: game.questions.length,
+        isMultipleChoice: game.isMultipleChoice
     }));
 
     // If game is in progress, send current question
@@ -223,7 +235,8 @@ function handleJoin(game, playerId, playerName, ws) {
             questionNumber: game.currentQuestion + 1,
             totalQuestions: game.questions.length,
             question: question.question,
-            options: question.options
+            options: question.options,
+            isMultipleChoice: game.isMultipleChoice
         }));
     }
 
@@ -257,6 +270,7 @@ function handleRejoin(game, playerId, playerName, ws) {
             started: game.started,
             topic: topics[game.topic].displayName,
             currentQuestion: game.currentQuestion,
+            isMultipleChoice: game.isMultipleChoice,
             scores: Array.from(game.scores.entries()).map(([id, score]) => ({
                 playerId: id,
                 playerName: game.players.get(id).name,
@@ -273,6 +287,7 @@ function handleRejoin(game, playerId, playerName, ws) {
                 totalQuestions: game.questions.length,
                 question: question.question,
                 options: question.options,
+                isMultipleChoice: game.isMultipleChoice,
                 alreadyAnswered: game.answers.has(game.currentQuestion) && 
                                 game.answers.get(game.currentQuestion).has(playerId)
             }));
@@ -316,7 +331,19 @@ function handleAnswer(game, playerId, answer) {
 
     // Check if answer is correct
     const currentQuestion = game.questions[game.currentQuestion];
-    if (answer === currentQuestion.correct) {
+    let isCorrect = false;
+    
+    if (game.isMultipleChoice) {
+        // For multiple choice, check if selected answers match correct answers exactly
+        const selectedAnswers = Array.isArray(answer) ? answer.sort() : [answer];
+        const correctAnswers = currentQuestion.correct.sort();
+        isCorrect = JSON.stringify(selectedAnswers) === JSON.stringify(correctAnswers);
+    } else {
+        // For single choice
+        isCorrect = answer === currentQuestion.correct[0];
+    }
+    
+    if (isCorrect) {
         game.scores.set(playerId, game.scores.get(playerId) + 1);
     }
 
@@ -325,9 +352,10 @@ function handleAnswer(game, playerId, answer) {
     if (player && player.ws && player.ws.readyState === WebSocket.OPEN) {
         player.ws.send(JSON.stringify({
             type: 'answerFeedback',
-            correct: answer === currentQuestion.correct,
+            correct: isCorrect,
             selectedAnswer: answer,
-            correctAnswer: currentQuestion.correct
+            correctAnswer: currentQuestion.correct,
+            isMultipleChoice: game.isMultipleChoice
         }));
     }
 
@@ -377,7 +405,8 @@ function sendQuestion(game) {
         questionNumber: game.currentQuestion + 1,
         totalQuestions: game.questions.length,
         question: question.question,
-        options: question.options
+        options: question.options,
+        isMultipleChoice: game.isMultipleChoice
     });
 }
 

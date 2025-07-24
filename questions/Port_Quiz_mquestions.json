@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Welche Aussagen treffen auf Port 20 zu?",
+    "options": ["FTP-Datenkanal", "FTP-Steuerkanal", "Nutzt TCP", "Verschlüsselte Verbindung"],
+    "correct": ["FTP-Datenkanal", "Nutzt TCP"]
+  },
+  {
+    "question": "Wofür wird Port 21 verwendet?",
+    "options": ["FTP-Steuerverbindung", "FTP-Datenübertragung", "Sichere Dateiübertragung", "File Transfer Protocol"],
+    "correct": ["FTP-Steuerverbindung", "File Transfer Protocol"]
+  },
+  {
+    "question": "Welche Dienste oder Eigenschaften sind mit Port 22 verbunden?",
+    "options": ["SSH (Secure Shell)", "Sichere Remote-Verbindung", "SFTP", "Telnet"],
+    "correct": ["SSH (Secure Shell)", "Sichere Remote-Verbindung", "SFTP"]
+  },
+  {
+    "question": "Was kennzeichnet den Dienst auf Port 23?",
+    "options": ["Telnet", "Unverschlüsselter Fernzugriff", "Moderne, sichere Verbindung", "Dateifreigabe"],
+    "correct": ["Telnet", "Unverschlüsselter Fernzugriff"]
+  },
+  {
+    "question": "Welche Funktion hat Port 25?",
+    "options": ["E-Mails abrufen", "Versand von E-Mails", "SMTP", "Verschlüsselte Mail-Kommunikation"],
+    "correct": ["Versand von E-Mails", "SMTP"]
+  },
+  {
+    "question": "Welche Aussagen zu Port 53 sind korrekt?",
+    "options": ["Dient der Namensauflösung", "Nutzt TCP und UDP", "Ist für DHCP zuständig", "Dient der Zeitsynchronisierung"],
+    "correct": ["Dient der Namensauflösung", "Nutzt TCP und UDP"]
+  },
+  {
+    "question": "Welche Eigenschaft hat Port 67?",
+    "options": ["Ist der Client-Port für DHCP", "Nutzt das TCP-Protokoll", "Dient der IP-Adressvergabe", "DHCP-Server-Port"],
+    "correct": ["Dient der IP-Adressvergabe", "DHCP-Server-Port"]
+  },
+  {
+    "question": "Welche Rolle spielt Port 68 im Netzwerk?",
+    "options": ["DHCP-Server", "Empfangs-Port für DHCP-Antworten", "Nutzt das UDP-Protokoll", "Verschlüsselte Adressvergabe"],
+    "correct": ["Empfangs-Port für DHCP-Antworten", "Nutzt das UDP-Protokoll"]
+  },
+  {
+    "question": "Welche der folgenden Begriffe gehören zu Port 80?",
+    "options": ["HTTPS", "Unverschlüsseltes Websurfen", "HTTP", "Sichere Datenübertragung"],
+    "correct": ["Unverschlüsseltes Websurfen", "HTTP"]
+  },
+  {
+    "question": "Was ist die Hauptaufgabe von Port 110?",
+    "options": ["E-Mails versenden", "E-Mails vom Server abrufen", "IMAP", "POP3"],
+    "correct": ["E-Mails vom Server abrufen", "POP3"]
+  },
+  {
+    "question": "Wofür wird Port 123 genutzt?",
+    "options": ["Zeitsynchronisierung", "Network Time Protocol (NTP)", "Netzwerküberwachung", "Nutzt TCP"],
+    "correct": ["Zeitsynchronisierung", "Network Time Protocol (NTP)"]
+  },
+  {
+    "question": "Welcher Dienst läuft standardmäßig auf Port 143?",
+    "options": ["POP3", "SMTP", "IMAP", "Verschlüsselte Mail-Verwaltung"],
+    "correct": ["IMAP"]
+  },
+  {
+    "question": "Welche Funktion hat der Dienst auf Port 161?",
+    "options": ["Netzwerküberwachung", "SNMP", "Nutzt TCP", "Datenbankzugriff"],
+    "correct": ["Netzwerküberwachung", "SNMP"]
+  },
+  {
+    "question": "Was trifft auf Port 443 zu?",
+    "options": ["Verschlüsselter Web-Datenverkehr", "HTTP", "HTTP Secure (HTTPS)", "Nutzt TCP"],
+    "correct": ["Verschlüsselter Web-Datenverkehr", "HTTP Secure (HTTPS)", "Nutzt TCP"]
+  },
+  {
+    "question": "Welche der folgenden Aussagen beschreiben Port 445?",
+    "options": ["Dateifreigaben unter Windows", "SMB / CIFS", "Datenbankdienst", "Nutzt UDP"],
+    "correct": ["Dateifreigaben unter Windows", "SMB / CIFS"]
+  },
+  {
+    "question": "Welche Eigenschaften hat Port 993?",
+    "options": ["IMAPS", "Unverschlüsselte E-Mail-Verbindung", "IMAP über SSL/TLS", "E-Mails abrufen (ohne Server-Synchronisation)"],
+    "correct": ["IMAPS", "IMAP über SSL/TLS"]
+  },
+  {
+    "question": "Was beschreibt den Dienst auf Port 995 korrekt?",
+    "options": ["Unverschlüsselte Version von POP3", "POP3S", "Sicheres Abrufen von E-Mails", "IMAPS"],
+    "correct": ["POP3S", "Sicheres Abrufen von E-Mails"]
+  },
+  {
+    "question": "Welcher Dienst ist typischerweise auf Port 1433 zu finden?",
+    "options": ["MySQL-Datenbank", "Microsoft SQL Server", "MariaDB", "Nutzt UDP"],
+    "correct": ["Microsoft SQL Server"]
+  },
+  {
+    "question": "Was ist mit Port 3306 assoziiert?",
+    "options": ["MySQL-Datenbank", "MariaDB-Datenbank", "Microsoft SQL Server", "Remote Desktop Protocol"],
+    "correct": ["MySQL-Datenbank", "MariaDB-Datenbank"]
+  },
+  {
+    "question": "Wofür wird Port 3389 verwendet?",
+    "options": ["Fernzugang zu Windows-Systemen", "RDP", "Sichere Shell-Verbindung (SSH)", "Dateifreigabe (SMB)"],
+    "correct": ["Fernzugang zu Windows-Systemen", "RDP"]
+  }
+]

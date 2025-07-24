@@ -48,6 +48,8 @@
         let playerId = localStorage.getItem(`playerId_${gameId}`);
         let playerName = localStorage.getItem(`playerName_${gameId}`);
         let hasAnswered = false;
+        let isMultipleChoice = false;
+        let selectedAnswers = new Set();
         let reconnectAttempts = 0;
         let maxReconnectAttempts = 5;
         let reconnectInterval;
@@ -230,6 +232,7 @@
                         playerId = data.playerId;
                         localStorage.setItem(`playerId_${gameId}`, playerId);
                     }
+                    isMultipleChoice = data.isMultipleChoice || false;
                     showLobby(data.players, data.topic);
                     if (isHost) {
                         startBtn.style.display = 'block';
@@ -241,6 +244,7 @@
                     break;
                 case 'rejoined':
                     playerId = data.playerId;
+                    isMultipleChoice = data.isMultipleChoice || false;
                     showConnectionStatus('Reconnected successfully', 'success');
                     if (data.started) {
                         // Restore game state
@@ -310,29 +314,85 @@
             resultsScreen.style.display = 'none';
             gameScreen.style.display = 'block';
             hasAnswered = data.alreadyAnswered || false;
+            selectedAnswers.clear();
+            isMultipleChoice = data.isMultipleChoice || false;
 
             questionNumber.textContent = `Question ${data.questionNumber} of ${data.totalQuestions}`;
             questionText.textContent = data.question;
             
             optionsDiv.innerHTML = '';
+            
+            if (isMultipleChoice) {
+                // Add instruction for multiple choice
+                const instruction = document.createElement('p');
+                instruction.style.cssText = 'text-align: center; margin-bottom: 20px; color: #718096; font-style: italic;';
+                instruction.textContent = 'Select all correct answers:';
+                optionsDiv.appendChild(instruction);
+            }
+            
             data.options.forEach((option, index) => {
                 const button = document.createElement('button');
                 button.className = 'option-btn';
                 button.textContent = option;
                 button.disabled = hasAnswered;
+                
                 if (!hasAnswered) {
-                    button.addEventListener('click', () => {
-                        if (!hasAnswered) {
-                            selectAnswer(option);
-                        }
-                    });
+                    if (isMultipleChoice) {
+                        button.addEventListener('click', () => toggleAnswer(option, button));
+                    } else {
+                        button.addEventListener('click', () => selectAnswer(option));
+                    }
                 }
                 optionsDiv.appendChild(button);
             });
 
+            if (isMultipleChoice && !hasAnswered) {
+                // Add submit button for multiple choice
+                const submitBtn = document.createElement('button');
+                submitBtn.className = 'btn-primary submit-btn';
+                submitBtn.textContent = 'Submit Answer';
+                submitBtn.style.cssText = 'margin-top: 20px; width: 100%;';
+                submitBtn.addEventListener('click', submitMultipleChoice);
+                optionsDiv.appendChild(submitBtn);
+            }
+
             if (hasAnswered) {
                 optionsDiv.innerHTML += '<p style="text-align: center; margin-top: 20px; color: #718096;">You have already answered this question</p>';
             }
+        }
+
+        function toggleAnswer(answer, button) {
+            if (hasAnswered) return;
+            
+            if (selectedAnswers.has(answer)) {
+                selectedAnswers.delete(answer);
+                button.classList.remove('selected');
+            } else {
+                selectedAnswers.add(answer);
+                button.classList.add('selected');
+            }
+        }
+
+        function submitMultipleChoice() {
+            if (hasAnswered || !ws || ws.readyState !== WebSocket.OPEN || selectedAnswers.size === 0) {
+                if (selectedAnswers.size === 0) {
+                    alert('Please select at least one answer');
+                }
+                return;
+            }
+            
+            hasAnswered = true;
+            
+            // Disable all buttons including submit
+            document.querySelectorAll('.option-btn, .submit-btn').forEach(btn => {
+                btn.disabled = true;
+            });
+            
+            // Send array of selected answers
+            ws.send(JSON.stringify({ 
+                type: 'answer', 
+                answer: Array.from(selectedAnswers) 
+            }));
         }
 
         function selectAnswer(answer) {
@@ -356,29 +416,31 @@
         }
 
         function handleAnswerFeedback(data) {
-            // Find and highlight the correct answer in green
+            const correctAnswers = Array.isArray(data.correctAnswer) ? data.correctAnswer : [data.correctAnswer];
+            const selectedAnswers = Array.isArray(data.selectedAnswer) ? data.selectedAnswer : [data.selectedAnswer];
+            
             document.querySelectorAll('.option-btn').forEach(btn => {
-                if (btn.textContent === data.correctAnswer) {
+                const optionText = btn.textContent;
+                
+                // Mark correct answers in green
+                if (correctAnswers.includes(optionText)) {
                     btn.classList.add('correct');
                     btn.classList.remove('selected');
                 }
+                
+                // Mark wrong selected answers in red
+                if (selectedAnswers.includes(optionText) && !correctAnswers.includes(optionText)) {
+                    btn.classList.add('incorrect');
+                    btn.classList.remove('selected');
+                }
             });
-
-            // If the answer was wrong, highlight the selected wrong answer in red
-            if (!data.correct && data.selectedAnswer !== data.correctAnswer) {
-                document.querySelectorAll('.option-btn').forEach(btn => {
-                    if (btn.textContent === data.selectedAnswer) {
-                        btn.classList.add('incorrect');
-                        btn.classList.remove('selected');
-                    }
-                });
-            }
         }
 
         function showCorrectAnswer(correctAnswer) {
-            // Ensure correct answer is highlighted for all players
+            const correctAnswers = Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer];
+            
             document.querySelectorAll('.option-btn').forEach(btn => {
-                if (btn.textContent === correctAnswer && !btn.classList.contains('correct')) {
+                if (correctAnswers.includes(btn.textContent) && !btn.classList.contains('correct')) {
                     btn.classList.add('correct');
                 }
             });
@@ -389,8 +451,12 @@
             resultsScreen.style.display = 'block';
             resultsTitle.textContent = 'Question Results';
             
+            const correctAnswerText = Array.isArray(data.correct) 
+                ? data.correct.join(', ') 
+                : data.correct;
+            
             resultsContent.innerHTML = `
-                <p>Correct answer: <strong>${data.correct}</strong></p>
+                <p>Correct answer${Array.isArray(data.correct) && data.correct.length > 1 ? 's' : ''}: <strong>${correctAnswerText}</strong></p>
                 <h3>Current Scores:</h3>
                 <div class="scores-list">
                     ${data.scores.map(s => `
@@ -402,6 +468,7 @@
                 </div>
             `;
             hasAnswered = false;
+            selectedAnswers.clear();
         }
 
         function showFinalResults(data) {
