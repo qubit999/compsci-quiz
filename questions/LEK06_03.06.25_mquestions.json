@@ -1,0 +1,373 @@
+[
+  {
+    "question": "Welche Aussage zu Dateifreigaben in heterogenen Netzwerken ist korrekt?",
+    "options": [
+      "Dateifreigabe funktioniert nur mit identischen Betriebssystemen",
+      "Samba stellt SMB-Freigaben unter Linux bereit",
+      "Linux kann auf Windows-Freigaben zugreifen",
+      "Nur Windows kann als Server fungieren"
+    ],
+    "correct": [
+      "Samba stellt SMB-Freigaben unter Linux bereit",
+      "Linux kann auf Windows-Freigaben zugreifen"
+    ]
+  },
+  {
+    "question": "Was ermöglicht die Nutzung von UNC-Pfaden?",
+    "options": [
+      "Plattformübergreifenden Zugriff.",
+      "Nur das Drucken",
+      "Direkten Zugriff auf Netzwerkfreigaben",
+      "Die Installation von Software"
+    ],
+    "correct": [
+      "Plattformübergreifenden Zugriff.",
+      "Direkten Zugriff auf Netzwerkfreigaben"
+    ]
+  },
+  {
+    "question": "Welche administrative Freigabe gibt es nach einer Windows-Standardinstallation immer?",
+    "options": [
+      "C$",
+      "USER$",
+      "DATA$",
+      "D$"
+    ],
+    "correct": [
+      "C$"
+    ]
+  },
+  {
+    "question": "Was sind administrative Freigaben unter Windows?",
+    "options": [
+      "Standardmäßig angelegte Freigaben für Systemlaufwerke",
+      "Werden immer vom Benutzer erstellt",
+      "Beispiel: C$",
+      "Nur für Gäste zugänglich"
+    ],
+    "correct": [
+      "Standardmäßig angelegte Freigaben für Systemlaufwerke",
+      "Beispiel: C$"
+    ]
+  },
+  {
+    "question": "Was ist ein Vorteil von Netzwerkfreigaben?",
+    "options": [
+      "Zentraler Zugriff auf Dateien",
+      "Automatische Virenentfernung",
+      "Erleichterte Zusammenarbeit",
+      "Nur lokale Nutzung möglich"
+    ],
+    "correct": [
+      "Zentraler Zugriff auf Dateien",
+      "Erleichterte Zusammenarbeit"
+    ]
+  },
+  {
+    "question": "Was bedeutet Autorisierung?",
+    "options": [
+      "Nur für Gäste relevant",
+      "Steuerung, wer was darf",
+      "Überprüfung der Identität",
+      "Zuweisung von Zugriffsrechten nach der Authentifizierung"
+    ],
+    "correct": [
+      "Steuerung, wer was darf",
+      "Zuweisung von Zugriffsrechten nach der Authentifizierung"
+    ]
+  },
+  {
+    "question": "Was ist ein typischer Anwendungsfall für SMB unter Windows?",
+    "options": [
+      "Dateifreigabe im lokalen Netzwerk",
+      "Druckerfreigabe",
+      "Virenschutz",
+      "Backup in die Cloud"
+    ],
+    "correct": [
+      "Dateifreigabe im lokalen Netzwerk",
+      "Druckerfreigabe"
+    ]
+  },
+  {
+    "question": "Was ist ein Vorteil von Samba in einem gemischten Netzwerk?",
+    "options": [
+      "Ermöglicht Windows- und Linux-Systemen den Austausch von Dateien",
+      "Verhindert Virenbefall",
+      "Erhöht die Internetgeschwindigkeit",
+      "Kann als Printserver für Windows-Rechner dienen"
+    ],
+    "correct": [
+      "Ermöglicht Windows- und Linux-Systemen den Austausch von Dateien",
+      "Kann als Printserver für Windows-Rechner dienen"
+    ]
+  },
+  {
+    "question": "Was ist Samba?",
+    "options": [
+      "Ermöglicht Datei- und Druckdienste für Windows-Rechner",
+      "Ein Virenscanner",
+      "Ein Webserver",
+      "Ein Open-Source-Programmpaket für SMB/CIFS-Dienste"
+    ],
+    "correct": [
+      "Ermöglicht Datei- und Druckdienste für Windows-Rechner",
+      "Ein Open-Source-Programmpaket für SMB/CIFS-Dienste"
+    ]
+  },
+  {
+    "question": "Welche Einstellung ist für die Nutzung von SMB unter Windows wichtig?",
+    "options": [
+      "Vergabe von Freigabeberechtigungen",
+      "Installation von Java",
+      "Aktivierung der Dateifreigabe",
+      "Deaktivierung von IPv6"
+    ],
+    "correct": [
+      "Vergabe von Freigabeberechtigungen",
+      "Aktivierung der Dateifreigabe"
+    ]
+  },
+  {
+    "question": "Was ist ein Vorteil von NTFS-Berechtigungen gegenüber Freigabeberechtigungen?",
+    "options": [
+      "Feingranulare Steuerung",
+      "Sie sind schneller",
+      "Nur für Administratoren sichtbar",
+      "Gilt auch lokal"
+    ],
+    "correct": [
+      "Feingranulare Steuerung",
+      "Gilt auch lokal"
+    ]
+  },
+  {
+    "question": "Was ist ein Unterschied zwischen Freigabeberechtigungen und NTFS-Berechtigungen?",
+    "options": [
+      "NTFS-Berechtigungen gelten lokal und über das Netzwerk",
+      "NTFS-Berechtigungen gelten nur für Drucker",
+      "Freigabeberechtigungen sind immer umfassender",
+      "Freigabeberechtigungen gelten über das Netzwerk"
+    ],
+    "correct": [
+      "NTFS-Berechtigungen gelten lokal und über das Netzwerk",
+      "Freigabeberechtigungen gelten über das Netzwerk"
+    ]
+  },
+  {
+    "question": "Wie kann unter Windows auf eine SMB-Freigabe zugegriffen werden?",
+    "options": [
+      "Nur über die Kommandozeile",
+      "Durch Netzlaufwerk verbinden",
+      "Über den Explorer mit einem UNC-Pfad",
+      "Über die Systemsteuerung"
+    ],
+    "correct": [
+      "Durch Netzlaufwerk verbinden",
+      "Über den Explorer mit einem UNC-Pfad"
+    ]
+  },
+  {
+    "question": "Was ist ein Beispiel für Autorisierung?",
+    "options": [
+      "Ein Benutzer darf auf eine Freigabe zugreifen",
+      "Ein Benutzer meldet sich an",
+      "Die Datei wird kopiert",
+      "Der Computer startet neu"
+    ],
+    "correct": [
+      "Ein Benutzer darf auf eine Freigabe zugreifen"
+    ]
+  },
+  {
+    "question": "Was bedeutet Authentifizierung im Netzwerk?",
+    "options": [
+      "Nur für Administratoren relevant",
+      "Zuweisung von Rechten",
+      "Erfolgt meist durch Benutzername und Passwort",
+      "Überprüfung der Identität eines Benutzers"
+    ],
+    "correct": [
+      "Erfolgt meist durch Benutzername und Passwort",
+      "Überprüfung der Identität eines Benutzers"
+    ]
+  },
+  {
+    "question": "Was ist ein UNC-Pfad?",
+    "options": [
+      "Ein standardisiertes Format für Netzwerkpfade",
+      "Ein Protokoll für E-Mails",
+      "Beginnt mit \\\\Servername\\Freigabename",
+      "Ein USB-Kabel"
+    ],
+    "correct": [
+      "Ein standardisiertes Format für Netzwerkpfade",
+      "Beginnt mit \\\\Servername\\Freigabename"
+    ]
+  },
+  {
+    "question": "Was passiert, wenn ein Benutzer sowohl Freigabe- als auch NTFS-Berechtigungen hat?",
+    "options": [
+      "Nur die Freigabeberechtigung zählt",
+      "Es gilt immer die restriktivere Berechtigung",
+      "Die Berechtigungen werden addiert",
+      "Nur die NTFS-Berechtigung zählt"
+    ],
+    "correct": [
+      "Es gilt immer die restriktivere Berechtigung"
+    ]
+  },
+  {
+    "question": "Wofür steht das Kürzel SMB?",
+    "options": [
+      "Simple Mail Block",
+      "Server Message Block",
+      "Secure Message Block",
+      "Samba Message Block"
+    ],
+    "correct": [
+      "Server Message Block"
+    ]
+  },
+  {
+    "question": "Was sind Freigabeberechtigungen?",
+    "options": [
+      "Druckereinstellungen",
+      "Nur für lokale Benutzer relevant",
+      "Können \"Lesen\", \"Ändern\" oder \"Vollzugriff\" sein",
+      "Rechte, die den Zugriff auf Netzwerkfreigaben steuern"
+    ],
+    "correct": [
+      "Können \"Lesen\", \"Ändern\" oder \"Vollzugriff\" sein",
+      "Rechte, die den Zugriff auf Netzwerkfreigaben steuern"
+    ]
+  },
+  {
+    "question": "Was sind NTFS-Berechtigungen?",
+    "options": [
+      "Für Linux-Dateisysteme relevant",
+      "Steuern Zugriff auf Dateien und Ordner",
+      "Rechte auf Dateisystemebene unter Windows",
+      "Nur für Netzwerkfreigaben"
+    ],
+    "correct": [
+      "Steuern Zugriff auf Dateien und Ordner",
+      "Rechte auf Dateisystemebene unter Windows"
+    ]
+  },
+  {
+    "question": "Wozu dienen administrative Freigaben?",
+    "options": [
+      "Nur zur Anzeige von Bildern",
+      "Zugriff auf Systemverzeichnisse",
+      "Automatische Updates",
+      "Remote-Administration"
+    ],
+    "correct": [
+      "Zugriff auf Systemverzeichnisse",
+      "Remote-Administration"
+    ]
+  },
+  {
+    "question": "Welche der folgenden Pfadangaben ist ein gültiger UNC-Pfad?",
+    "options": [
+      "/mnt/freigabe",
+      "\\\\Server\\Freigabe",
+      "\\\\192.168.1.10\\Daten"
+    ],
+    "correct": [
+      "\\\\Server\\Freigabe",
+      "\\\\192.168.1.10\\Daten"
+    ]
+  },
+  {
+    "question": "Welche Rolle spielen Gruppen bei der Autorisierung?",
+    "options": [
+      "Sie sind nur für Farben zuständig",
+      "Gruppen sind nur für Administratoren sichtbar",
+      "Erleichtern die Verwaltung von Berechtigungen",
+      "Gruppen können Rechte für mehrere Benutzer bündeln"
+    ],
+    "correct": [
+      "Erleichtern die Verwaltung von Berechtigungen",
+      "Gruppen können Rechte für mehrere Benutzer bündeln"
+    ]
+  },
+  {
+    "question": "Welche Datei ist zentral für die Samba-Konfiguration?",
+    "options": [
+      "/etc/samba/smb.conf",
+      "/etc/hosts",
+      "/etc/passwd",
+      "/usr/bin/samba"
+    ],
+    "correct": [
+      "/etc/samba/smb.conf"
+    ]
+  },
+  {
+    "question": "Was passiert, wenn ein Benutzer keine NTFS-Berechtigung hat, aber Freigabeberechtigung besitzt?",
+    "options": [
+      "Der Zugriff wird verweigert",
+      "Der Zugriff ist möglich",
+      "Die restriktivste Berechtigung gilt",
+      "Es gibt eine Fehlermeldung"
+    ],
+    "correct": [
+      "Der Zugriff wird verweigert",
+      "Die restriktivste Berechtigung gilt"
+    ]
+  },
+  {
+    "question": "Wie kann man die Samba-Dienste unter Linux neu starten?",
+    "options": [
+      "sudo restart samba",
+      "sudo systemctl restart smbd",
+      "sudo samba restart",
+      "sudo systemctl restart samba"
+    ],
+    "correct": [
+      "sudo systemctl restart smbd"
+    ]
+  },
+  {
+    "question": "Was ist eine typische Schwachstelle bei der Authentifizierung?",
+    "options": [
+      "Falsche Bildschirmauflösung",
+      "Unverschlüsselte Übertragung",
+      "Zu viele Monitore",
+      "Schwache Passwörter"
+    ],
+    "correct": [
+      "Unverschlüsselte Übertragung",
+      "Schwache Passwörter"
+    ]
+  },
+  {
+    "question": "Wer hat Zugriff auf administrative Freigaben?",
+    "options": [
+      "Gäste",
+      "Mitglieder der Gruppe \"Administratoren\"",
+      "Nur Administratoren",
+      "Jeder Benutzer"
+    ],
+    "correct": [
+      "Mitglieder der Gruppe \"Administratoren\"",
+      "Nur Administratoren"
+    ]
+  },
+  {
+    "question": "Welche Protokolle werden typischerweise für die Dateifreigabe in heterogenen Netzwerken verwendet?",
+    "options": [
+      "FTP",
+      "NFS",
+      "SMB/CIFS",
+      "HTTP"
+    ],
+    "correct": [
+      "FTP",
+      "NFS",
+      "SMB/CIFS"
+    ]
+  }
+]
