@@ -1,0 +1,642 @@
+[
+  {
+    "question": "Wie wird die Leistung bei VPNs verbessert?",
+    "options": [
+      "Durch Auswahl näherer Server.",
+      "Durch Verwendung älterer Protokolle.",
+      "Durch Protokolle wie WireGuard.",
+      "Durch deaktivierte Verschlüsselung."
+    ],
+    "correct": [
+      "Durch Protokolle wie WireGuard."
+    ]
+  },
+  {
+    "question": "Was ist ein VPN?",
+    "options": [
+      "Eine Art Reverse Proxy.",
+      "Ein verschlüsselter Tunnel für Daten.",
+      "Eine sichere Verbindung über ein unsicheres Netzwerk.",
+      "Eine unverschlüsselte Verbindung."
+    ],
+    "correct": [
+      "Ein verschlüsselter Tunnel für Daten.",
+      "Eine sichere Verbindung über ein unsicheres Netzwerk."
+    ]
+  },
+  {
+    "question": "Welche Aussage beschreibt ein VPN-Tunnel korrekt?",
+    "options": [
+      "Er kapselt Daten für den sicheren Transport.",
+      "Er sendet Daten unverschlüsselt.",
+      "Er ermöglicht anonymes Browsen ohne Verschlüsselung.",
+      "Er verhindert das Abfangen durch Dritte."
+    ],
+    "correct": [
+      "Er kapselt Daten für den sicheren Transport."
+    ]
+  },
+  {
+    "question": "Was ist ein Nachteil von kostenlosen VPNs?",
+    "options": [
+      "Sie können Werbung einblenden.",
+      "Sie speichern möglicherweise Nutzerdaten.",
+      "Sie bieten die gleiche Sicherheit wie Premium-Dienste.",
+      "Sie sind oft langsamer."
+    ],
+    "correct": [
+      "Sie können Werbung einblenden.",
+      "Sie speichern möglicherweise Nutzerdaten.",
+      "Sie sind oft langsamer."
+    ]
+  },
+  {
+    "question": "Was ist ein Vorteil eines Caching Proxys?",
+    "options": [
+      "Er überträgt keine Daten.",
+      "Reduzierung des Datenverkehrs.",
+      "Schnellere Antwortzeiten.",
+      "Er verhindert jegliche Verbindung ins Internet."
+    ],
+    "correct": [
+      "Reduzierung des Datenverkehrs.",
+      "Schnellere Antwortzeiten."
+    ]
+  },
+  {
+    "question": "Wie kann ein VPN Zensur umgehen?",
+    "options": [
+      "Durch Datenminimierung.",
+      "Durch Umleitung über Server in anderen Ländern.",
+      "Durch direkte Verbindung mit dem Provider.",
+      "Indem blockierte Seiten verschlüsselt aufgerufen werden."
+    ],
+    "correct": [
+      "Durch Umleitung über Server in anderen Ländern."
+    ]
+  },
+  {
+    "question": "Warum ist die Wahl eines vertrauenswürdigen VPN-Anbieters wichtig?",
+    "options": [
+      "Damit mehr Bandbreite entsteht.",
+      "Weil Daten missbraucht oder verkauft werden könnten.",
+      "Weil er den gesamten Datenverkehr sehen kann.",
+      "Damit Werbung eingeblendet wird."
+    ],
+    "correct": [
+      "Weil Daten missbraucht oder verkauft werden könnten.",
+      "Weil er den gesamten Datenverkehr sehen kann."
+    ]
+  },
+  {
+    "question": "Was bedeutet Load Balancing bei Proxys?",
+    "options": [
+      "Verteilung von Anfragen auf mehrere Server.",
+      "Speicherung aller Daten lokal.",
+      "Manuelles Routing.",
+      "Priorisierung von Werbung."
+    ],
+    "correct": [
+      "Verteilung von Anfragen auf mehrere Server."
+    ]
+  },
+  {
+    "question": "Wie funktioniert ein Anonymisierungsdienst wie Tor?",
+    "options": [
+      "Nutzung nur in Unternehmen.",
+      "Werbung wird geschaltet.",
+      "Mehrere Weiterleitungen über verschlüsselte Knoten.",
+      "Routing über dezentrale Server."
+    ],
+    "correct": [
+      "Mehrere Weiterleitungen über verschlüsselte Knoten.",
+      "Routing über dezentrale Server."
+    ]
+  },
+  {
+    "question": "Was ist die Hauptfunktion eines Proxy-Servers?",
+    "options": [
+      "Er kann Anfragen weiterleiten und maskieren.",
+      "Er vermittelt zwischen Client und Server.",
+      "Er ersetzt den Server.",
+      "Er speichert niemals Daten."
+    ],
+    "correct": [
+      "Er kann Anfragen weiterleiten und maskieren.",
+      "Er vermittelt zwischen Client und Server."
+    ]
+  },
+  {
+    "question": "Wozu dient ein VPN im Homeoffice?",
+    "options": [
+      "Übertragung von Faxen.",
+      "Sicherer Zugriff auf Unternehmensdaten.",
+      "Vermeidung ungeschützter Verbindungen.",
+      "Musikstreaming."
+    ],
+    "correct": [
+      "Sicherer Zugriff auf Unternehmensdaten.",
+      "Vermeidung ungeschützter Verbindungen."
+    ]
+  },
+  {
+    "question": "Welche Funktion bietet ein VPN?",
+    "options": [
+      "Verschlüsselung des Datenverkehrs.",
+      "Offenes Senden von Daten.",
+      "Reduzierung von VPN-Sicherheit.",
+      "Maskierung der IP-Adresse."
+    ],
+    "correct": [
+      "Verschlüsselung des Datenverkehrs.",
+      "Maskierung der IP-Adresse."
+    ]
+  },
+  {
+    "question": "Was ist ein Vorteil von OpenVPN?",
+    "options": [
+      "Nur für Windows geeignet.",
+      "Unterstützt verschiedene Verschlüsselungsstandards.",
+      "Keine Verschlüsselung möglich.",
+      "Open Source und anpassbar."
+    ],
+    "correct": [
+      "Unterstützt verschiedene Verschlüsselungsstandards.",
+      "Open Source und anpassbar."
+    ]
+  },
+  {
+    "question": "Wann sollte ein Unternehmen ein Site-to-Site VPN nutzen?",
+    "options": [
+      "Beim Aufbau eines Proxy-Servers.",
+      "Zur Verbindung von Niederlassungen.",
+      "Für einzelne Homeoffice-Arbeitsplätze.",
+      "Beim Drucken von Dokumenten."
+    ],
+    "correct": [
+      "Zur Verbindung von Niederlassungen."
+    ]
+  },
+  {
+    "question": "Welche Risiken bestehen bei Proxy-Servern?",
+    "options": [
+      "Hackerangriffe bei schlechter Konfiguration.",
+      "Verbesserung der Internetgeschwindigkeit.",
+      "Blockade bei Ausfall des Proxy.",
+      "Geschwindigkeitseinbußen."
+    ],
+    "correct": [
+      "Hackerangriffe bei schlechter Konfiguration.",
+      "Blockade bei Ausfall des Proxy.",
+      "Geschwindigkeitseinbußen."
+    ]
+  },
+  {
+    "question": "Wie kann ein Proxy zur Sicherheit beitragen?",
+    "options": [
+      "Durch die Anzeige von Passwörtern.",
+      "Durch Verbergen der Client-IP.",
+      "Durch offene Datenweitergabe.",
+      "Durch Blockieren bösartiger Anfragen."
+    ],
+    "correct": [
+      "Durch Verbergen der Client-IP.",
+      "Durch Blockieren bösartiger Anfragen."
+    ]
+  },
+  {
+    "question": "Welche Aussage über einen Anonymous Proxy ist korrekt?",
+    "options": [
+      "Er gibt minimale Informationen weiter.",
+      "Er zeigt die IP-Adresse offen an.",
+      "Er verschleiert die IP-Adresse.",
+      "Er dient nur zum Datenbackup."
+    ],
+    "correct": [
+      "Er gibt minimale Informationen weiter.",
+      "Er verschleiert die IP-Adresse."
+    ]
+  },
+  {
+    "question": "Welche Vorteile bieten Proxy-Server?",
+    "options": [
+      "Monitoring des Traffics.",
+      "Content-Filtering.",
+      "Direkter Zugriff auf interne Ressourcen.",
+      "Anonymität."
+    ],
+    "correct": [
+      "Monitoring des Traffics.",
+      "Content-Filtering.",
+      "Anonymität."
+    ]
+  },
+  {
+    "question": "Wann ist ein Proxy nicht geeignet?",
+    "options": [
+      "Für verschlüsselte Kommunikation.",
+      "Beim Filtern von Inhalten.",
+      "Beim Caching von Webseiten.",
+      "Beim Umgehen von Geoblocking."
+    ],
+    "correct": [
+      "Für verschlüsselte Kommunikation."
+    ]
+  },
+  {
+    "question": "Wann ist ein VPN besonders nützlich?",
+    "options": [
+      "Beim Telefonieren über Festnetz.",
+      "Bei Nutzung öffentlicher Netzwerke.",
+      "Beim Zugriff auf Firmenressourcen von außen.",
+      "Beim Arbeiten ohne Internet."
+    ],
+    "correct": [
+      "Bei Nutzung öffentlicher Netzwerke.",
+      "Beim Zugriff auf Firmenressourcen von außen."
+    ]
+  },
+  {
+    "question": "Warum nutzen Unternehmen VPNs?",
+    "options": [
+      "Zur Übertragung von Fernsehprogrammen.",
+      "Um Werbung zu versenden.",
+      "Um sichere Verbindungen für entfernte Mitarbeiter zu schaffen.",
+      "Zur Verbindung mehrerer Firmenstandorte."
+    ],
+    "correct": [
+      "Um sichere Verbindungen für entfernte Mitarbeiter zu schaffen.",
+      "Zur Verbindung mehrerer Firmenstandorte."
+    ]
+  },
+  {
+    "question": "Welche Funktion hat ein Proxy bei der Identitätsmaskierung?",
+    "options": [
+      "Er speichert keine IP-Adressen.",
+      "Er übermittelt Anfragen im eigenen Namen.",
+      "Er verbirgt die IP-Adresse des Clients.",
+      "Er zeigt die IP-Adresse offen an."
+    ],
+    "correct": [
+      "Er übermittelt Anfragen im eigenen Namen.",
+      "Er verbirgt die IP-Adresse des Clients."
+    ]
+  },
+  {
+    "question": "Was sollte ein guter VPN-Dienst bieten?",
+    "options": [
+      "Keine Protokollierung.",
+      "Werbung und Tracking.",
+      "Starke Verschlüsselung.",
+      "Langsame Verbindung."
+    ],
+    "correct": [
+      "Keine Protokollierung.",
+      "Starke Verschlüsselung."
+    ]
+  },
+  {
+    "question": "Warum ist VPN kein Allheilmittel?",
+    "options": [
+      "Es ersetzt Antivirensoftware.",
+      "Der Anbieter könnte Daten speichern.",
+      "Es verschlüsselt E-Mails automatisch.",
+      "Es kann nicht vor Malware schützen."
+    ],
+    "correct": [
+      "Es kann nicht vor Malware schützen."
+    ]
+  },
+  {
+    "question": "Welche VPN-Protokolle gelten als besonders sicher?",
+    "options": [
+      "HTTP",
+      "IPsec",
+      "PPTP",
+      "OpenVPN"
+    ],
+    "correct": [
+      "IPsec",
+      "OpenVPN"
+    ]
+  },
+  {
+    "question": "Was beschreibt ein Remote Access VPN am besten?",
+    "options": [
+      "Nutzung über Satellitenkommunikation.",
+      "Verbindung von zwei Netzwerken.",
+      "Zugriff von einem Benutzer auf ein privates Netzwerk über das Internet.",
+      "Funktion wie ein Webserver."
+    ],
+    "correct": [
+      "Zugriff von einem Benutzer auf ein privates Netzwerk über das Internet."
+    ]
+  },
+  {
+    "question": "Welche Aussage über einen Forward Proxy ist korrekt?",
+    "options": [
+      "Er arbeitet immer transparent.",
+      "Er versteckt die IP-Adresse des Clients.",
+      "Er verhindert den Zugriff auf interne Netzwerke.",
+      "Er stellt Verbindungen im Namen des Clients her."
+    ],
+    "correct": [
+      "Er versteckt die IP-Adresse des Clients.",
+      "Er stellt Verbindungen im Namen des Clients her."
+    ]
+  },
+  {
+    "question": "Welcher Proxy bietet den höchsten Anonymitätsgrad?",
+    "options": [
+      "Reverse Proxy",
+      "Transparent Proxy",
+      "High Anonymity Proxy (Elite Proxy)",
+      "Anonymous Proxy"
+    ],
+    "correct": [
+      "High Anonymity Proxy (Elite Proxy)"
+    ]
+  },
+  {
+    "question": "Wie kann ein VPN die Privatsphäre erhöhen?",
+    "options": [
+      "Werbung einblenden.",
+      "Tracking durch Websites erschweren.",
+      "Virenschutz deaktivieren.",
+      "IP-Adresse verbergen."
+    ],
+    "correct": [
+      "IP-Adresse verbergen."
+    ]
+  },
+  {
+    "question": "Wofür kann ein Proxy nicht verwendet werden?",
+    "options": [
+      "Zugangskontrolle.",
+      "Verbesserung der Performance durch Caching.",
+      "Erstellung eines WLAN-Netzes.",
+      "Umgehen von Geoblocking."
+    ],
+    "correct": [
+      "Erstellung eines WLAN-Netzes."
+    ]
+  },
+  {
+    "question": "Was trifft auf einen Reverse Proxy zu?",
+    "options": [
+      "Er ist identisch mit einem Forward Proxy.",
+      "Er kann die Sicherheit erhöhen.",
+      "Er steht zwischen externen Clients und internen Servern.",
+      "Er dient nie zur Lastverteilung."
+    ],
+    "correct": [
+      "Er kann die Sicherheit erhöhen.",
+      "Er steht zwischen externen Clients und internen Servern."
+    ]
+  },
+  {
+    "question": "Wann wird ein Site-to-Site VPN verwendet?",
+    "options": [
+      "Nur für mobile Endgeräte.",
+      "Für einzelne Benutzer.",
+      "Wenn mehrere Standorte verbunden werden sollen.",
+      "Für die Verbindung ganzer Netzwerke."
+    ],
+    "correct": [
+      "Wenn mehrere Standorte verbunden werden sollen.",
+      "Für die Verbindung ganzer Netzwerke."
+    ]
+  },
+  {
+    "question": "Welche Aufgaben hat ein Reverse Proxy?",
+    "options": [
+      "Lastverteilung.",
+      "Verschlüsselung und Sicherheit.",
+      "Anzeigen von Werbung.",
+      "Speichern von Cookies."
+    ],
+    "correct": [
+      "Lastverteilung.",
+      "Verschlüsselung und Sicherheit."
+    ]
+  },
+  {
+    "question": "Welcher Nachteil kann bei VPNs auftreten?",
+    "options": [
+      "Geschwindigkeitseinbußen.",
+      "Komplexe Einrichtung.",
+      "Kostenpflichtige Dienste.",
+      "Schutz vor Tracking."
+    ],
+    "correct": [
+      "Geschwindigkeitseinbußen.",
+      "Komplexe Einrichtung.",
+      "Kostenpflichtige Dienste."
+    ]
+  },
+  {
+    "question": "Welche Aufgaben hat ein Web-Proxy?",
+    "options": [
+      "Kontrolle und Überwachung des Internetzugangs.",
+      "Aufbau von WLAN-Netzen.",
+      "Filterung von Inhalten.",
+      "Direkter Serverzugriff."
+    ],
+    "correct": [
+      "Kontrolle und Überwachung des Internetzugangs.",
+      "Filterung von Inhalten."
+    ]
+  },
+  {
+    "question": "Welche Technik nutzt Tor zur Anonymität?",
+    "options": [
+      "Routing über zufällige Server.",
+      "Nur einen Forward Proxy.",
+      "Direkten Zugriff auf alle Webseiten.",
+      "Mehrere verschachtelte Proxy-Server."
+    ],
+    "correct": [
+      "Routing über zufällige Server.",
+      "Mehrere verschachtelte Proxy-Server."
+    ]
+  },
+  {
+    "question": "Was macht ein Kill Switch in einem VPN?",
+    "options": [
+      "Erhöht die Download-Geschwindigkeit.",
+      "Trennt die Verbindung bei VPN-Ausfall.",
+      "Verhindert ungeschützte Datenübertragung.",
+      "Sendet Daten unverschlüsselt."
+    ],
+    "correct": [
+      "Trennt die Verbindung bei VPN-Ausfall.",
+      "Verhindert ungeschützte Datenübertragung."
+    ]
+  },
+  {
+    "question": "Was ist ein Nachteil von schlecht konfigurierten Proxys?",
+    "options": [
+      "Schnellere Verbindung.",
+      "Stärkerer Datenschutz.",
+      "Sicherheitslücken für Angreifer.",
+      "Ungewollte Datenoffenlegung."
+    ],
+    "correct": [
+      "Sicherheitslücken für Angreifer.",
+      "Ungewollte Datenoffenlegung."
+    ]
+  },
+  {
+    "question": "Was ist beim VPN-Wechsel zwischen WLAN und mobilen Netzen wichtig?",
+    "options": [
+      "Kein Wechsel möglich.",
+      "Stabile Protokolle wie IKEv2.",
+      "VPN muss neu gestartet werden.",
+      "Internet wird getrennt."
+    ],
+    "correct": [
+      "Stabile Protokolle wie IKEv2."
+    ]
+  },
+  {
+    "question": "Was ist ein DNS-Leak im Kontext von VPNs?",
+    "options": [
+      "Ein Feature zur Beschleunigung der Verbindung.",
+      "Wenn Passwörter geleakt werden.",
+      "Ein Sicherheitsrisiko für die Anonymität.",
+      "Wenn DNS-Anfragen nicht durch den VPN-Tunnel laufen."
+    ],
+    "correct": [
+      "Wenn DNS-Anfragen nicht durch den VPN-Tunnel laufen."
+    ]
+  },
+  {
+    "question": "Warum nutzen Schulen Web-Proxys?",
+    "options": [
+      "Zur Performance-Messung.",
+      "Zur Zugriffskontrolle.",
+      "Zur Softwareentwicklung.",
+      "Zur Inhaltsfilterung."
+    ],
+    "correct": [
+      "Zur Inhaltsfilterung."
+    ]
+  },
+  {
+    "question": "Welche Dienste profitieren von einem Caching Proxy?",
+    "options": [
+      "Online-Banking.",
+      "Statische Inhalte wie Bilder.",
+      "Echtzeit-Videochats.",
+      "Webseiten mit hohem Traffic."
+    ],
+    "correct": [
+      "Statische Inhalte wie Bilder.",
+      "Webseiten mit hohem Traffic."
+    ]
+  },
+  {
+    "question": "Welche Aussage über MPLS VPN ist korrekt?",
+    "options": [
+      "Es verwendet keine Infrastruktur.",
+      "Es ist für kleine Heimnetzwerke gedacht.",
+      "Es bietet keine Skalierbarkeit.",
+      "Es basiert auf Multiprotocol Label Switching."
+    ],
+    "correct": [
+      "Es basiert auf Multiprotocol Label Switching."
+    ]
+  },
+  {
+    "question": "Was ist bei der VPN-Nutzung in restriktiven Ländern zu beachten?",
+    "options": [
+      "VPNs könnten illegal sein.",
+      "Sanktionen bei Verstoß möglich.",
+      "Nur vertrauenswürdige Dienste nutzen.",
+      "VPNs funktionieren dort schneller."
+    ],
+    "correct": [
+      "VPNs könnten illegal sein.",
+      "Sanktionen bei Verstoß möglich.",
+      "Nur vertrauenswürdige Dienste nutzen."
+    ]
+  },
+  {
+    "question": "Wofür steht WireGuard?",
+    "options": [
+      "Moderne, performante VPN-Technologie.",
+      "Hohe Sicherheit bei geringem Overhead.",
+      "Protokoll für Webbrowser.",
+      "Nur für Firmen nutzbar."
+    ],
+    "correct": [
+      "Moderne, performante VPN-Technologie.",
+      "Hohe Sicherheit bei geringem Overhead."
+    ]
+  },
+  {
+    "question": "Welche Daten sollten durch ein VPN verschlüsselt werden?",
+    "options": [
+      "Werbung.",
+      "E-Mails und Passwörter.",
+      "Finanzdaten.",
+      "Webseiten-Impressum."
+    ],
+    "correct": [
+      "E-Mails und Passwörter.",
+      "Finanzdaten."
+    ]
+  },
+  {
+    "question": "Wozu dient ein VPN bei öffentlichen WLANs?",
+    "options": [
+      "Erlaubt offene Übertragung.",
+      "Deaktiviert Firewalls.",
+      "Schutz vor Abhören.",
+      "Verschlüsselung des Traffics."
+    ],
+    "correct": [
+      "Schutz vor Abhören.",
+      "Verschlüsselung des Traffics."
+    ]
+  },
+  {
+    "question": "Was ist eine Eigenschaft von Client-to-Site VPN?",
+    "options": [
+      "Zugriff auf private Netzwerke.",
+      "Verbindung nur im lokalen Netzwerk.",
+      "Nutzung spezieller Client-Software.",
+      "Keine Authentifizierung notwendig."
+    ],
+    "correct": [
+      "Zugriff auf private Netzwerke.",
+      "Nutzung spezieller Client-Software."
+    ]
+  },
+  {
+    "question": "Welche Inhalte können mit VPN umgangen werden?",
+    "options": [
+      "Geografisch beschränkte Inhalte.",
+      "Interne Sicherheitsprotokolle.",
+      "Webseiten ohne Impressum.",
+      "Streaming-Dienste mit Regionssperre."
+    ],
+    "correct": [
+      "Geografisch beschränkte Inhalte.",
+      "Streaming-Dienste mit Regionssperre."
+    ]
+  },
+  {
+    "question": "Was kann ein VPN vor allem im Ausland?",
+    "options": [
+      "Zugriff auf lokale Drucker.",
+      "Internetgeschwindigkeit reduzieren.",
+      "Geosperren umgehen.",
+      "Privatsphäre erhöhen."
+    ],
+    "correct": [
+      "Geosperren umgehen.",
+      "Privatsphäre erhöhen."
+    ]
+  }
+]
