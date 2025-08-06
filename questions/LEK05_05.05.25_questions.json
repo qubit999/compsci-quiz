@@ -1,0 +1,350 @@
+[
+    {
+        "question": "Was ist ein Hauptunterschied zwischen statischem und dynamischem Routing?",
+        "options": [
+            "Dynamisches Routing ist sicherer als statisches Routing",
+            "Statisches Routing wird nur in großen Unternehmensnetzwerken verwendet, dynamisches Routing in kleinen",
+            "Bei statischem Routing werden Routing-Informationen manuell konfiguriert, bei dynamischem Routing lernt der Router Routen automatisch",
+            "Statisches Routing ermöglicht die automatische Anpassung an Netzwerkausfälle, dynamisches Routing nicht"
+        ],
+        "correct": [
+            "Bei statischem Routing werden Routing-Informationen manuell konfiguriert, bei dynamischem Routing lernt der Router Routen automatisch"
+        ]
+    },
+    {
+        "question": "Welches Fenster in Windows ermöglicht die Verwaltung von lokalen Benutzerkonten und Gruppen?",
+        "options": [
+            "Der Task-Manager",
+            "Computerverwaltung",
+            "Systeminformationen",
+            "Windows Update"
+        ],
+        "correct": [
+            "Computerverwaltung"
+        ]
+    },
+    {
+        "question": "Was besagt das Prinzip der minimalen Rechte (Least Privilege)?",
+        "options": [
+            "Kritische Aufgaben müssen von mindestens zwei Personen durchgeführt werden",
+            "Benutzer und Prozesse sollen nur die unbedingt notwendigen Rechte für ihre Aufgaben erhalten",
+            "Zugriffsrechte müssen mindestens einmal pro Tag überprüft werden",
+            "Alle Benutzer erhalten standardmäßig Administratorrechte"
+        ],
+        "correct": [
+            "Benutzer und Prozesse sollen nur die unbedingt notwendigen Rechte für ihre Aufgaben erhalten"
+        ]
+    },
+    {
+        "question": "Was ist der grundlegende Zweck von Zugriffsrechten in der Informatik?",
+        "options": [
+            "Die Hardwareleistung eines Computers zu optimieren",
+            "Die Anzahl der gleichzeitig ausführbaren Programme zu begrenzen",
+            "Den Zugang zu Dateien, Verzeichnissen und Programmen zu steuern",
+            "Die Farbe der Benutzeroberfläche festzulegen"
+        ],
+        "correct": [
+            "Den Zugang zu Dateien, Verzeichnissen und Programmen zu steuern"
+        ]
+    },
+    {
+        "question": "Was versteht man unter Subnetting?",
+        "options": [
+            "Das Aufteilen eines großen Netzwerks in kleinere, überschaubare Teilnetzwerke",
+            "Das Zusammenfassen mehrerer kleiner Netzwerke zu einem großen",
+            "Den Prozess der Zuweisung einer öffentlichen IP-Adresse zu einem privaten Netzwerk",
+            "Die Methode zur Verschlüsselung des Datenverkehrs innerhalb eines Netzwerks"
+        ],
+        "correct": [
+            "Das Aufteilen eines großen Netzwerks in kleinere, überschaubare Teilnetzwerke"
+        ]
+    },
+    {
+        "question": "Das Hinzufügen redundanter Links und die Nutzung dynamischer Routing-Protokolle kann die Verfügbarkeit erhöhen, indem sie...?",
+        "options": [
+            "Den gesamten Datenverkehr automatisch verschlüsseln",
+            "Bei Ausfall eines Links automatisch einen alternativen Pfad wählen",
+            "Die Bandbreite der Internetverbindung erhöhen",
+            "Den Zugriff auf sensible Daten blockieren"
+        ],
+        "correct": [
+            "Bei Ausfall eines Links automatisch einen alternativen Pfad wählen"
+        ]
+    },
+    {
+        "question": "Welches Zugriffskontrollmodell beschreibt eine Methode, bei der der Besitzer eines Objekts die Rechte für andere Benutzer festlegen kann?",
+        "options": [
+            "Access Control List (ACL)",
+            "Role-Based Access Control (RBAC)",
+            "Mandatory Access Control (MAC)",
+            "Discretionary Access Control (DAC)"
+        ],
+        "correct": [
+            "Discretionary Access Control (DAC)"
+        ]
+    },
+    {
+        "question": "Welcher Cisco Router-Befehl wird verwendet, um die Routing-Tabelle auf dem Gerät anzuzeigen?",
+        "options": [
+            "route print",
+            "show ip route",
+            "show running-config",
+            "show ip interface brief"
+        ],
+        "correct": [
+            "show ip route"
+        ]
+    },
+    {
+        "question": "Für welche Art von Netzwerken ist das Routing Information Protocol (RIP) geeignet?",
+        "options": [
+            "Netzwerke mit sehr hohen Sicherheitsanforderungen",
+            "Sehr große Netzwerke mit komplexen Strukturen",
+            "Kleine bis mittelgroße Netzwerke",
+            "Netzwerke, die ausschließlich über drahtlose Verbindungen verfügen"
+        ],
+        "correct": [
+            "Kleine bis mittelgroße Netzwerke"
+        ]
+    },
+    {
+        "question": "Was bedeutet es, wenn auf einem PC eine 'statische IP-Konfiguration' verwendet wird?",
+        "options": [
+            "Die IP-Adresse wird automatisch von einem DHCP-Server bezogen",
+            "Die IP-Adresse, Subnetzmaske und das Gateway werden manuell konfiguriert",
+            "Der PC kann nur mit anderen Geräten im selben Subnetz kommunizieren",
+            "Die IP-Adresse wird bei jedem Neustart zufällig zugewiesen"
+        ],
+        "correct": [
+            "Die IP-Adresse, Subnetzmaske und das Gateway werden manuell konfiguriert"
+        ]
+    },
+    {
+        "question": "Welcher Cisco Router-Befehl zeigt den Zustand der Schnittstellen und deren konfigurierte IP-Adressen an?",
+        "options": [
+            "show ip interface brief",
+            "traceroute",
+            "show ip route",
+            "ipconfig /all"
+        ],
+        "correct": [
+            "show ip interface brief"
+        ]
+    },
+    {
+        "question": "Welches Prinzip der Zugriffskontrolle wird durch die Aufteilung kritischer Aufgaben auf mehrere Personen abgedeckt?",
+        "options": [
+            "Prinzip der minimalen Rechte",
+            "Prinzip der Verantwortlichkeit",
+            "Need-to-know-Prinzip",
+            "Trennung von Aufgaben"
+        ],
+        "correct": [
+            "Trennung von Aufgaben"
+        ]
+    },
+    {
+        "question": "Was besagt das Need-to-know-Prinzip?",
+        "options": [
+            "Administratoren müssen jederzeit wissen, wer auf welche Daten zugreift",
+            "Jeder Mitarbeiter muss über alle Sicherheitsvorfälle informiert werden",
+            "Benutzer müssen wissen, wie sie Zugriffsrechte korrekt konfigurieren",
+            "Ein Benutzer erhält nur dann Zugriff auf Informationen, wenn er sie wirklich zur Erledigung seiner Arbeit benötigt"
+        ],
+        "correct": [
+            "Ein Benutzer erhält nur dann Zugriff auf Informationen, wenn er sie wirklich zur Erledigung seiner Arbeit benötigt"
+        ]
+    },
+    {
+        "question": "Kann ein Benutzer, der nicht der Besitzer oder ein Administrator ist, standardmäßig die Zugriffsrechte für eine Datei in Windows ändern?",
+        "options": [
+            "Ja, wenn er Teil der Gruppe 'Jeder' ist",
+            "Nein, nur der Besitzer oder ein Administrator kann dies",
+            "Ja, aber nur, wenn die Datei freigegeben ist",
+            "Ja, immer"
+        ],
+        "correct": [
+            "Nein, nur der Besitzer oder ein Administrator kann dies"
+        ]
+    },
+    {
+        "question": "Welches Zugriffskontrollmodell ist am restriktivsten, da Zugriffsrechte zentral von einer Autorität bestimmt werden und Benutzer keine Änderungen vornehmen können?",
+        "options": [
+            "Access Control List (ACL)",
+            "Discretionary Access Control (DAC)",
+            "Role-Based Access Control (RBAC)",
+            "Mandatory Access Control (MAC)"
+        ],
+        "correct": [
+            "Mandatory Access Control (MAC)"
+        ]
+    },
+    {
+        "question": "Wie wird eine statische Route typischerweise in der Ausgabe des Cisco-Befehls show ip route gekennzeichnet?",
+        "options": [
+            "Mit einem 'R'",
+            "Mit einem 'S'",
+            "Mit einem 'O'",
+            "Mit einem 'D'"
+        ],
+        "correct": [
+            "Mit einem 'S'"
+        ]
+    },
+    {
+        "question": "Was ist die primäre Aufgabe eines Routers in einem Netzwerk?",
+        "options": [
+            "Die automatische Vergabe von IP-Adressen an Endgeräte",
+            "Das Bereitstellen von Speicherplatz für Dateifreigaben",
+            "Das Verwalten von Benutzerkonten und Berechtigungen",
+            "Das Weiterleiten von Datenpaketen zwischen unterschiedlichen Netzwerken"
+        ],
+        "correct": [
+            "Das Weiterleiten von Datenpaketen zwischen unterschiedlichen Netzwerken"
+        ]
+    },
+    {
+        "question": "Was ist mit 'Berechtigungen für eine Ressource erteilen oder verweigern' gemeint?",
+        "options": [
+            "Entscheiden, welche Programme auf einem Computer installiert werden dürfen",
+            "Bestimmen, wer das Gerät physisch nutzen darf",
+            "Kontrolle darüber, wann ein Computer heruntergefahren werden darf",
+            "Festlegen, wer eine bestimmte Datei, einen Ordner oder ein Programm öffnen, ändern oder ausführen darf"
+        ],
+        "correct": [
+            "Festlegen, wer eine bestimmte Datei, einen Ordner oder ein Programm öffnen, ändern oder ausführen darf"
+        ]
+    },
+    {
+        "question": "Welches Zugriffskontrollmodell ordnet Benutzern Rechte basierend auf ihrer Funktion oder Rolle innerhalb einer Organisation zu?",
+        "options": [
+            "Mandatory Access Control (MAC)",
+            "Discretionary Access Control (DAC)",
+            "Role-Based Access Control (RBAC)",
+            "Access Control List (ACL)"
+        ],
+        "correct": [
+            "Role-Based Access Control (RBAC)"
+        ]
+    },
+    {
+        "question": "Was ist eine mögliche Gefahr, wenn in einer Firma alle Mitarbeiter vollen Zugriff auf alle Ordner im Netzwerk haben?",
+        "options": [
+            "Langsamere Dateizugriffe",
+            "Probleme bei der Netzwerkdruckerkonfiguration",
+            "Unbefugter Zugriff auf sensible oder vertrauliche Daten",
+            "Überlastung des Netzwerks"
+        ],
+        "correct": [
+            "Unbefugter Zugriff auf sensible oder vertrauliche Daten"
+        ]
+    },
+    {
+        "question": "Was ist der Unterschied zwischen Authentifizierung und Autorisierung?",
+        "options": [
+            "Authentifizierung prüft 'Wer bist du?', Autorisierung prüft 'Was darfst du?'.",
+            "Authentifizierung ist ein einmaliger Prozess, Autorisierung ein kontinuierlicher",
+            "Authentifizierung bezieht sich auf Dateien, Autorisierung auf Netzwerke",
+            "Authentifizierung prüft 'Was darfst du?', Autorisierung prüft 'Wer bist du?'."
+        ],
+        "correct": [
+            "Authentifizierung prüft 'Wer bist du?', Autorisierung prüft 'Was darfst du?'."
+        ]
+    },
+    {
+        "question": "Was ist eine Access Control List (ACL)?",
+        "options": [
+            "Eine Tabelle, die mit Objekten verbunden ist und festlegt, wer darauf zugreifen darf und welche Vorgänge erlaubt sind",
+            "Ein Tool zur automatischen Dateiverschlüsselung",
+            "Ein Protokoll zur Überwachung der Netzwerkaktivität",
+            "Eine Liste aller verfügbaren Benutzerkonten in einem System"
+        ],
+        "correct": [
+            "Eine Tabelle, die mit Objekten verbunden ist und festlegt, wer darauf zugreifen darf und welche Vorgänge erlaubt sind"
+        ]
+    },
+    {
+        "question": "Sie sollen die Zugriffsrechte für einen freigegebenen Ordner in Windows konfigurieren. Wo finden Sie die entsprechenden Einstellungen?",
+        "options": [
+            "In den Netzwerkeinstellungen des PCs",
+            "Im Windows-Sicherheitscenter",
+            "Über den Befehl 'net share' in der Kommandozeile",
+            "In den Eigenschaften des Ordners unter der Registerkarte 'Freigabe' und/oder 'Sicherheit'"
+        ],
+        "correct": [
+            "In den Eigenschaften des Ordners unter der Registerkarte 'Freigabe' und/oder 'Sicherheit'"
+        ]
+    },
+    {
+        "question": "Welchen Vorteil bietet dynamisches Routing gegenüber statischem Routing?",
+        "options": [
+            "Es ist einfacher zu verstehen und zu implementieren",
+            "Es ermöglicht eine schnellere Datenübertragung im lokalen Netzwerk",
+            "Es erfordert keine Konfiguration durch den Administrator",
+            "Es passt sich automatisch an Veränderungen im Netzwerk an, wie z.B. Ausfälle oder neue Verbindungen"
+        ],
+        "correct": [
+            "Es passt sich automatisch an Veränderungen im Netzwerk an, wie z.B. Ausfälle oder neue Verbindungen"
+        ]
+    },
+    {
+        "question": "Sie haben die IP-Adresse 192.168.1.10 mit der Subnetzmaske 255.255.255.0. Wie lautet die CIDR-Notation für dieses Subnetz?",
+        "options": [
+            "192.168.1.10/8",
+            "192.168.1.10/16",
+            "192.168.1.10/24",
+            "192.168.1.10/32"
+        ],
+        "correct": [
+            "192.168.1.10/24"
+        ]
+    },
+    {
+        "question": "Was passiert standardmäßig mit den Zugriffsrechten auf Unterordner und Dateien in Windows?",
+        "options": [
+            "Sie erhalten zufällige Zugriffsrechte",
+            "Sie haben immer Vollzugriff, unabhängig von den übergeordneten Ordnern",
+            "Sie erhalten keine Zugriffsrechte und müssen explizit konfiguriert werden",
+            "Sie übernehmen (erben) standardmäßig die Rechte des übergeordneten Ordners"
+        ],
+        "correct": [
+            "Sie übernehmen (erben) standardmäßig die Rechte des übergeordneten Ordners"
+        ]
+    },
+    {
+        "question": "Was ermöglicht CIDR (Classless Inter-Domain Routing) bezüglich der Subnetzmasken?",
+        "options": [
+            "Die vollständige Abschaffung von Subnetzmasken",
+            "Eine flexiblere Angabe der Subnetzmaske durch ein Suffix, z.B. /24",
+            "Die Verwendung fester Subnetzmasken der Klassen A, B oder C",
+            "Die automatische Berechnung der optimalen Subnetzmaske durch den Router"
+        ],
+        "correct": [
+            "Eine flexiblere Angabe der Subnetzmaske durch ein Suffix, z.B. /24"
+        ]
+    },
+    {
+        "question": "Welcher Windows-Befehl wird verwendet, um den Pfad (die Stationen) zu einem Zielhost nachzuverfolgen?",
+        "options": [
+            "ipconfig",
+            "route print",
+            "tracert",
+            "traceroute"
+        ],
+        "correct": [
+            "tracert"
+        ]
+    },
+    {
+        "question": "Was versteht man im Netzwerkumfeld unter einem Gateway?",
+        "options": [
+            "Ein Protokoll zur Verschlüsselung von Netzwerkkommunikation",
+            "Einen zentralen Server zur Authentifizierung von Benutzern",
+            "Eine Komponente, die Netzwerke miteinander verbindet, oft als Zugang zum Internet",
+            "Ein Gerät zur Überwachung des Energieverbrauchs im Netzwerk"
+        ],
+        "correct": [
+            "Eine Komponente, die Netzwerke miteinander verbindet, oft als Zugang zum Internet"
+        ]
+    }
+]

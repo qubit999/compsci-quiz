@@ -1,0 +1,282 @@
+[
+  {
+    "question": "Welches Kabel hat den höchsten Datendurchsatz?",
+    "options": ["HDMI", "Koaxial", "Twisted Pair", "Glasfaser"],
+    "correct": ["Glasfaser"]
+  },
+  {
+    "question": "Welches Kabel ist am störungssichersten?",
+    "options": ["Koaxial", "Twisted Pair", "Kupfer", "Glasfaser"],
+    "correct": ["Glasfaser", "Koaxial", "Twisted Pair"]
+  },
+  {
+    "question": "Welcher Netzwerktyp verbindet Städte?",
+    "options": ["PAN", "WAN", "LAN", "MAN"],
+    "correct": ["MAN", "WAN"]
+  },
+  {
+    "question": "Welche Aussage über das OSI-Modell ist korrekt?",
+    "options": [
+      "Es standardisiert Netzwerkkommunikation.",
+      "Es wird ausschließlich von Apple verwendet.",
+      "Es ersetzt das TCP/IP-Modell.",
+      "Es hat 5 Schichten."
+    ],
+    "correct": ["Es standardisiert Netzwerkkommunikation."]
+  },
+  {
+    "question": "Welches Kabel wird für DSL verwendet?",
+    "options": ["Glasfaser", "RJ45", "Koaxial", "RJ11"],
+    "correct": ["RJ11"]
+  },
+  {
+    "question": "Welche Adresse ist eine private IPv4-Adresse?",
+    "options": ["10.0.0.1", "172.32.0.1", "192.0.2.1", "8.8.8.8"],
+    "correct": ["10.0.0.1"]
+  },
+  {
+    "question": "Welche Schicht ist für die Datenflusskontrolle zuständig?",
+    "options": [
+      "Anwendungsschicht",
+      "Sitzungsschicht",
+      "Transportschicht",
+      "Darstellungsschicht"
+    ],
+    "correct": ["Transportschicht"]
+  },
+  {
+    "question": "Wie nennt man ein Netzwerk innerhalb eines Gebäudes?",
+    "options": ["WAN", "MAN", "CAN", "LAN"],
+    "correct": ["LAN", "CAN"]
+  },
+  {
+    "question": "Welcher Steckertyp wird meist für Ethernet verwendet?",
+    "options": ["RJ45", "USB", "BNC", "RJ11"],
+    "correct": ["RJ45"]
+  },
+  {
+    "question": "Ein Unternehmensnetzwerk über mehrere Standorte ist...?",
+    "options": ["WAN", "PAN", "LAN", "MAN"],
+    "correct": ["WAN"]
+  },
+  {
+    "question": "Auf welcher Schicht des OSI-Modells arbeitet ein Switch hauptsächlich?",
+    "options": [
+      "Transportschicht",
+      "Anwendungsschicht",
+      "Netzwerkschicht",
+      "Sicherungsschicht"
+    ],
+    "correct": ["Sicherungsschicht"]
+  },
+  {
+    "question": "Ein BNC-Stecker wird typischerweise mit ... verwendet?",
+    "options": ["Koaxial", "HDMI", "Twisted Pair", "Glasfaser"],
+    "correct": ["Koaxial"]
+  },
+  {
+    "question": "Was ist ein PAN?",
+    "options": [
+      "Professionelles Netzwerk",
+      "Paket-Netzwerk",
+      "Persönliches Netzwerk (Personal Area Network)",
+      "Öffentliches Netzwerk (Public Access Network)"
+    ],
+    "correct": ["Persönliches Netzwerk (Personal Area Network)"]
+  },
+  {
+    "question": "Welches Kabel hat eine Kupferader und eine Abschirmung?",
+    "options": ["Glasfaserkabel", "Twisted Pair", "HDMI", "Koaxialkabel"],
+    "correct": ["Koaxialkabel", "Twisted Pair"]
+  },
+  {
+    "question": "Was ist ein typisches Beispiel für ein WAN?",
+    "options": ["Intranet", "Bluetooth", "Das Internet", "WLAN"],
+    "correct": ["Das Internet"]
+  },
+  {
+    "question": "Ein Netzwerk mit Reichweite von wenigen Metern ist...?",
+    "options": ["MAN", "PAN", "WAN", "LAN"],
+    "correct": ["PAN"]
+  },
+  {
+    "question": "Wie viele Hosts sind in einem /24-Netz möglich?",
+    "options": ["128", "255", "254", "256"],
+    "correct": ["254"]
+  },
+  {
+    "question": "Was bedeutet „LAN“?",
+    "options": [
+      "Large Area Network",
+      "Long Access Network",
+      "Local Area Network",
+      "Local Access Node"
+    ],
+    "correct": ["Local Area Network"]
+  },
+  {
+    "question": "Welches Kabel hat verdrillte Adernpaare?",
+    "options": ["Twisted Pair", "Glasfaserkabel", "Koaxialkabel", "HDMI"],
+    "correct": ["Twisted Pair"]
+  },
+  {
+    "question": "Wofür steht NAT?",
+    "options": [
+      "Network Address Translation",
+      "Network Area Table",
+      "New Access Technology",
+      "Node Access Transport"
+    ],
+    "correct": ["Network Address Translation"]
+  },
+  {
+    "question": "Was ist eine gültige IPv4-Adresse?",
+    "options": ["256.1.1.1", "192.168.300.1", "192.168.0.1", "2001:0db8:85a3::8a2e"],
+    "correct": ["192.168.0.1"]
+  },
+  {
+    "question": "Ein Heimnetzwerk ist typischerweise ein...?",
+    "options": ["MAN", "WAN", "LAN", "GAN"],
+    "correct": ["LAN"]
+  },
+  {
+    "question": "Was ist die Funktion von DHCP?",
+    "options": [
+      "DNS-Auflösung",
+      "Manuelle IP-Zuweisung",
+      "Verschlüsselung",
+      "Automatische IP-Zuweisung"
+    ],
+    "correct": ["Automatische IP-Zuweisung"]
+  },
+  {
+    "question": "Wie viele Bits hat eine IPv4-Adresse?",
+    "options": ["64", "32", "16", "128"],
+    "correct": ["32"]
+  },
+  {
+    "question": "Welche Adresse gehört zur Klasse C?",
+    "options": ["10.0.0.1", "172.16.0.1", "192.168.1.1", "224.0.0.1"],
+    "correct": ["192.168.1.1"]
+  },
+  {
+    "question": "Was ist die Broadcast-Adresse von 192.168.1.0/24?",
+    "options": ["192.168.1.0", "192.168.1.255", "192.168.1.1", "192.168.0.255"],
+    "correct": ["192.168.1.255"]
+  },
+  {
+    "question": "Cat-6-Kabel gehören zu welchem Kabeltyp?",
+    "options": ["Koaxial", "Glasfaser", "Twisted Pair", "HDMI"],
+    "correct": ["Twisted Pair"]
+  },
+  {
+    "question": "Welche Schicht ist für das Routing zuständig?",
+    "options": [
+      "Anwendungsschicht",
+      "Netzwerkschicht",
+      "Darstellungsschicht",
+      "Sitzungsschicht"
+    ],
+    "correct": ["Netzwerkschicht"]
+  },
+  {
+    "question": "Auf welcher Schicht wird eine TCP-Verbindung aufgebaut?",
+    "options": [
+      "Anwendungsschicht",
+      "Netzwerkschicht",
+      "Sicherungsschicht",
+      "Transportschicht"
+    ],
+    "correct": ["Transportschicht"]
+  },
+  {
+    "question": "Was ist ein Vorteil von Glasfaserkabeln?",
+    "options": [
+      "Einfach zu verlegen",
+      "Günstiger Preis",
+      "Kein Datenverlust",
+      "Hohe Übertragungsrate"
+    ],
+    "correct": ["Hohe Übertragungsrate"]
+  },
+  {
+    "question": "Die MAC-Adresse wird auf welcher OSI-Schicht verwendet?",
+    "options": [
+      "Transportschicht",
+      "Anwendungsschicht",
+      "Netzwerkschicht",
+      "Sicherungsschicht"
+    ],
+    "correct": ["Sicherungsschicht"]
+  },
+  {
+    "question": "Welche Schicht definiert IP-Adressen?",
+    "options": [
+      "Transportschicht",
+      "Anwendungsschicht",
+      "Sitzungsschicht",
+      "Netzwerkschicht"
+    ],
+    "correct": ["Netzwerkschicht"]
+  },
+  {
+    "question": "Welche OSI-Schicht ist für die Verschlüsselung zuständig?",
+    "options": [
+      "Darstellungsschicht",
+      "Sitzungsschicht",
+      "Anwendungsschicht",
+      "Netzwerkschicht"
+    ],
+    "correct": ["Darstellungsschicht", "Anwendungsschicht"]
+  },
+  {
+    "question": "Welcher Bereich ist für APIPA reserviert?",
+    "options": ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "169.254.0.0/16"],
+    "correct": ["169.254.0.0/16"]
+  },
+  {
+    "question": "WLAN gehört zu welchem Netzwerktyp?",
+    "options": ["MAN", "WAN", "PAN", "LAN"],
+    "correct": ["LAN"]
+  },
+  {
+    "question": "TCP gehört zur ...?",
+    "options": [
+      "Netzwerkschicht",
+      "Sicherungsschicht",
+      "Transportschicht",
+      "Anwendungsschicht"
+    ],
+    "correct": ["Transportschicht"]
+  },
+  {
+    "question": "Was bedeutet die Subnetzmaske 255.255.255.0?",
+    "options": ["/24", "/32", "/8", "/16"],
+    "correct": ["/24"]
+  },
+  {
+    "question": "Welcher Netzwerktyp ist am größten?",
+    "options": ["WAN", "PAN", "MAN", "LAN"],
+    "correct": ["WAN"]
+  },
+  {
+    "question": "Welche Schicht stellt Dienste für den Benutzer bereit?",
+    "options": [
+      "Netzwerkschicht",
+      "Transportschicht",
+      "Sicherungsschicht",
+      "Anwendungsschicht"
+    ],
+    "correct": ["Anwendungsschicht"]
+  },
+  {
+    "question": "Wofür steht „UTP“?",
+    "options": [
+      "Unterirdisches Twisted Pair",
+      "Ultra Twisted Pair",
+      "Universal Twisted Pair",
+      "Unshielded Twisted Pair"
+    ],
+    "correct": ["Unshielded Twisted Pair"]
+  }
+]

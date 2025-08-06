@@ -1,0 +1,567 @@
+[
+  {
+    "question": "Was sind häufige Probleme bei der lokalen Druckerinstallation?",
+    "options": [
+      "Treiber sind inkompatibel oder veraltet",
+      "Der Drucker wird vom System nicht erkannt",
+      "Falsche Kabelverbindung oder Port-Überlastung",
+      "Überhitzung des Druckers während der Einrichtung"
+    ],
+    "correct": [
+      "Treiber sind inkompatibel oder veraltet",
+      "Der Drucker wird vom System nicht erkannt",
+      "Falsche Kabelverbindung oder Port-Überlastung"
+    ]
+  },
+  {
+    "question": "Wo sollten bei der manuellen Treiberinstallation die aktuellsten Treiber heruntergeladen werden?",
+    "options": [
+      "Von der offiziellen Herstellerseite des Druckers",
+      "Über den Windows Update-Dienst",
+      "Aus dem Geräte-Manager",
+      "Von inoffiziellen Treiber-Sammel-Websites"
+    ],
+    "correct": [
+      "Von der offiziellen Herstellerseite des Druckers",
+      "Über den Windows Update-Dienst"
+    ]
+  },
+  {
+    "question": "Welche Vorteile bieten drahtlose Verbindungen für Drucker und Scanner?",
+    "options": [
+      "Flexible Aufstellung des Geräts",
+      "Ermöglicht die Nutzung durch mehrere Benutzer ohne Umstecken",
+      "Reduziert Kabelsalat",
+      "Bietet prinzipiell eine höhere Sicherheit als kabelgebundene Verbindungen"
+    ],
+    "correct": [
+      "Flexible Aufstellung des Geräts",
+      "Ermöglicht die Nutzung durch mehrere Benutzer ohne Umstecken",
+      "Reduziert Kabelsalat"
+    ]
+  },
+  {
+    "question": "Welche Aussagen treffen auf den IPv4-Adressraum zu?",
+    "options": [
+      "Er basiert auf 32-Bit-Adressen",
+      "Er ermöglicht ca. 4,3 Milliarden Adressen",
+      "Er wird aufgrund von Adressknappheit durch IPv6 abgelöst",
+      "Er umfasst 128-Bit-Adressen"
+    ],
+    "correct": [
+      "Er basiert auf 32-Bit-Adressen",
+      "Er ermöglicht ca. 4,3 Milliarden Adressen",
+      "Er wird aufgrund von Adressknappheit durch IPv6 abgelöst"
+    ]
+  },
+  {
+    "question": "Was bedeutet das $-Symbol am Ende einer Freigabe in einem UNC-Pfad (z.B. \\\\Server\\C$)?",
+    "options": [
+      "Die Freigabe ist versteckt",
+      "Die Freigabe ist für administrative Zwecke gedacht",
+      "Die Freigabe wird beim Durchsuchen des Netzwerks nicht angezeigt",
+      "Die Freigabe ist grundsätzlich nur lesbar"
+    ],
+    "correct": [
+      "Die Freigabe ist versteckt",
+      "Die Freigabe ist für administrative Zwecke gedacht",
+      "Die Freigabe wird beim Durchsuchen des Netzwerks nicht angezeigt"
+    ]
+  },
+  {
+    "question": "Wo können die effektiven NTFS-Rechte für einen Benutzer unter Windows eingesehen werden?",
+    "options": [
+      "In den erweiterten Sicherheitseinstellungen eines Ordners oder einer Datei",
+      "Im Reiter 'Sicherheit' und dann unter 'Erweitert'",
+      "Über den Tab 'Effektiver Zugriff' bzw. 'Effektive Berechtigungen'",
+      "In der allgemeinen Systemsteuerung unter 'Benutzerkonten'"
+    ],
+    "correct": [
+      "In den erweiterten Sicherheitseinstellungen eines Ordners oder einer Datei",
+      "Im Reiter 'Sicherheit' und dann unter 'Erweitert'",
+      "Über den Tab 'Effektiver Zugriff' bzw. 'Effektive Berechtigungen'"
+    ]
+  },
+  {
+    "question": "Warum kann die Anzahl der gleichzeitigen Benutzer bei Windows-Freigaben eingeschränkt werden?",
+    "options": [
+      "Aus Lizenzierungsgründen bei Client-Betriebssystemen",
+      "Aus Sicherheitsgründen, um die Angriffsfläche zu verringern",
+      "Zur Steuerung der Netzwerklast und Performance",
+      "Um die Dateisynchronisation zu beschleunigen"
+    ],
+    "correct": [
+      "Aus Lizenzierungsgründen bei Client-Betriebssystemen",
+      "Aus Sicherheitsgründen, um die Angriffsfläche zu verringern",
+      "Zur Steuerung der Netzwerklast und Performance"
+    ]
+  },
+  {
+    "question": "Welcher Begriff wird oft synonym für den veralteten Dialekt SMB 1.0 verwendet?",
+    "options": [
+      "CIFS (Common Internet File System)",
+      "NFS (Network File System)",
+      "WebDAV",
+      "AFP (Apple Filing Protocol)"
+    ],
+    "correct": [
+      "CIFS (Common Internet File System)"
+    ]
+  },
+  {
+    "question": "In welcher Schicht des OSI-Modells arbeitet das SMB-Protokoll hauptsächlich?",
+    "options": [
+      "Schicht 7 (Anwendungsschicht)",
+      "Schicht 5 (Sitzungsschicht)",
+      "Schicht 6 (Darstellungsschicht)",
+      "Schicht 4 (Transportschicht)"
+    ],
+    "correct": [
+      "Schicht 7 (Anwendungsschicht)"
+    ]
+  },
+  {
+    "question": "Warum wird SMB 1.0 heute als hohes Sicherheitsrisiko eingestuft?",
+    "options": [
+      "Aufgrund seiner Anfälligkeit für kritische Sicherheitslücken wie EternalBlue",
+      "Weil es Ransomware wie WannaCry die Verbreitung ermöglichte",
+      "Es bietet standardmäßig keine oder nur unzureichende Verschlüsselung",
+      "Wegen seiner schlechten Performance im Vergleich zu modernen Versionen"
+    ],
+    "correct": [
+      "Aufgrund seiner Anfälligkeit für kritische Sicherheitslücken wie EternalBlue",
+      "Weil es Ransomware wie WannaCry die Verbreitung ermöglichte",
+      "Es bietet standardmäßig keine oder nur unzureichende Verschlüsselung"
+    ]
+  },
+  {
+    "question": "Welcher Begriff beschreibt ein Netzwerkdateisystem, das den Zugriff auf entfernte Dateien so ermöglicht, als wären sie lokal?",
+    "options": [
+      "Netzlaufwerk",
+      "Freigegebener Ordner",
+      "Cloud-Speicher",
+      "Virtuelles Laufwerk"
+    ],
+    "correct": [
+      "Netzlaufwerk",
+      "Freigegebener Ordner"
+    ]
+  },
+  {
+    "question": "Welche Aussagen treffen auf IPv6-Adressen zu?",
+    "options": [
+      "Sie haben eine Länge von 128 Bit",
+      "Sie lösen das Problem der Adressknappheit von IPv4",
+      "Sie werden hexadezimal notiert und durch Doppelpunkte getrennt",
+      "Sie umfassen 64 Bit"
+    ],
+    "correct": [
+      "Sie haben eine Länge von 128 Bit",
+      "Sie lösen das Problem der Adressknappheit von IPv4",
+      "Sie werden hexadezimal notiert und durch Doppelpunkte getrennt"
+    ]
+  },
+  {
+    "question": "Was sind die Vorteile von Netzlaufwerken in einer Organisation?",
+    "options": [
+      "Zentraler Speicherort erleichtert die Zusammenarbeit",
+      "Vereinfachte Datensicherung durch zentrale Ablage",
+      "Einheitliche Datenbasis für alle zugriffsberechtigten Benutzer",
+      "Erhöhte Datensicherheit, da Daten nicht nur lokal liegen"
+    ],
+    "correct": [
+      "Zentraler Speicherort erleichtert die Zusammenarbeit",
+      "Vereinfachte Datensicherung durch zentrale Ablage",
+      "Einheitliche Datenbasis für alle zugriffsberechtigten Benutzer",
+      "Erhöhte Datensicherheit, da Daten nicht nur lokal liegen"
+    ]
+  },
+  {
+    "question": "Was sind Vorteile des Client-Server-Modells beim Drucken?",
+    "options": [
+      "Zentrale Verwaltung von Druckaufträgen und -warteschlangen",
+      "Zentrale Treiberverteilung und -verwaltung",
+      "Ermöglicht die einfache Freigabe eines Druckers für viele Clients",
+      "Treiber müssen nur auf dem Server, nicht auf jedem Client installiert werden"
+    ],
+    "correct": [
+      "Zentrale Verwaltung von Druckaufträgen und -warteschlangen",
+      "Zentrale Treiberverteilung und -verwaltung",
+      "Ermöglicht die einfache Freigabe eines Druckers für viele Clients",
+      "Treiber müssen nur auf dem Server, nicht auf jedem Client installiert werden"
+    ]
+  },
+  {
+    "question": "Welche Verfahren ermöglichen den parallelen Betrieb von IPv4 und IPv6 in einem Netzwerk?",
+    "options": [
+      "Dual-Stack-Betrieb",
+      "Tunneling-Protokolle (z.B. Teredo, 6to4)",
+      "Übersetzungsmechanismen wie NAT64/DNS64",
+      "Automatische Adressübersetzung (NAT)"
+    ],
+    "correct": [
+      "Dual-Stack-Betrieb",
+      "Tunneling-Protokolle (z.B. Teredo, 6to4)",
+      "Übersetzungsmechanismen wie NAT64/DNS64"
+    ]
+  },
+  {
+    "question": "Was sind die Hauptgründe für die Einführung von IPv6?",
+    "options": [
+      "Die globale Knappheit der verfügbaren IPv4-Adressen",
+      "Vereinfachter Header zur Effizienzsteigerung im Routing",
+      "Integrierte Unterstützung für zustandslose Autokonfiguration (SLAAC)",
+      "Bessere Unterstützung für Quality of Service (QoS) und Sicherheit (IPsec)"
+    ],
+    "correct": [
+      "Die globale Knappheit der verfügbaren IPv4-Adressen",
+      "Vereinfachter Header zur Effizienzsteigerung im Routing",
+      "Integrierte Unterstützung für zustandslose Autokonfiguration (SLAAC)",
+      "Bessere Unterstützung für Quality of Service (QoS) und Sicherheit (IPsec)"
+    ]
+  },
+  {
+    "question": "Wie kann eine lange IPv6-Adresse korrekt verkürzt werden?",
+    "options": [
+      "Führende Nullen innerhalb eines 16-Bit-Blocks dürfen weggelassen werden",
+      "Eine einmalige Sequenz von Null-Blöcken kann durch '::' ersetzt werden",
+      "Die Adresse 'fe80:0000:0000:0000:0204:76ff:fe33:1020' wird zu 'fe80::204:76ff:fe33:1020'",
+      "End-Nullen dürfen immer mit '...' abgekürzt werden"
+    ],
+    "correct": [
+      "Führende Nullen innerhalb eines 16-Bit-Blocks dürfen weggelassen werden",
+      "Eine einmalige Sequenz von Null-Blöcken kann durch '::' ersetzt werden",
+      "Die Adresse 'fe80:0000:0000:0000:0204:76ff:fe33:1020' wird zu 'fe80::204:76ff:fe33:1020'"
+    ]
+  },
+  {
+    "question": "Wie werden die effektiven Rechte eines Benutzers auf eine Ressource bestimmt, wenn Freigabe- und NTFS-Berechtigungen kombiniert werden?",
+    "options": [
+      "Die restriktivste (niedrigste) Berechtigungsstufe setzt sich durch",
+      "Der Zugriff ist nur möglich, wenn er sowohl auf Freigabe- als auch auf NTFS-Ebene erlaubt ist",
+      "Wenn die Freigabe 'Lesen' und NTFS 'Vollzugriff' erlaubt, hat der Benutzer nur 'Lesen'",
+      "Die NTFS-Berechtigung setzt sich immer vollständig durch"
+    ],
+    "correct": [
+      "Die restriktivste (niedrigste) Berechtigungsstufe setzt sich durch",
+      "Der Zugriff ist nur möglich, wenn er sowohl auf Freigabe- als auch auf NTFS-Ebene erlaubt ist",
+      "Wenn die Freigabe 'Lesen' und NTFS 'Vollzugriff' erlaubt, hat der Benutzer nur 'Lesen'"
+    ]
+  },
+  {
+    "question": "Welche Anschlussmethoden sind für moderne Drucker und Scanner gängig?",
+    "options": [
+      "USB (Universal Serial Bus)",
+      "Netzwerkanschluss (Ethernet/LAN)",
+      "WLAN (Wireless LAN)",
+      "Serielle Schnittstelle (COM-Port)"
+    ],
+    "correct": [
+      "USB (Universal Serial Bus)",
+      "Netzwerkanschluss (Ethernet/LAN)",
+      "WLAN (Wireless LAN)"
+    ]
+  },
+  {
+    "question": "Was sind typische Sicherheitsrisiken bei der Freigabe von Druckern im Netzwerk?",
+    "options": [
+      "Ungeschützte Administrationsoberflächen mit Standardpasswörtern",
+      "Unverschlüsselte Übertragung von sensiblen Druckaufträgen",
+      "Veraltete Firmware mit bekannten Sicherheitslücken",
+      "Möglichkeit des unbefugten Zugriffs auf zwischengespeicherte Dokumente"
+    ],
+    "correct": [
+      "Ungeschützte Administrationsoberflächen mit Standardpasswörtern",
+      "Unverschlüsselte Übertragung von sensiblen Druckaufträgen",
+      "Veraltete Firmware mit bekannten Sicherheitslücken",
+      "Möglichkeit des unbefugten Zugriffs auf zwischengespeicherte Dokumente"
+    ]
+  },
+  {
+    "question": "Wie lässt sich die Architektur eines Druckernetzwerks in seine Hauptkomponenten gliedern?",
+    "options": [
+      "Druckclients (Computer, die Aufträge senden)",
+      "Druckserver (zentraler Verwaltungsrechner)",
+      "Drucker/Scanner (die physischen Geräte)",
+      "Druckprotokolle (z.B. IPP, LPD)"
+    ],
+    "correct": [
+      "Druckclients (Computer, die Aufträge senden)",
+      "Druckserver (zentraler Verwaltungsrechner)",
+      "Drucker/Scanner (die physischen Geräte)",
+      "Druckprotokolle (z.B. IPP, LPD)"
+    ]
+  },
+  {
+    "question": "Was sind empfohlene Best Practices zur Absicherung von Druckerfreigaben?",
+    "options": [
+      "Aktivierung von Verschlüsselung (z.B. TLS für IPP, IPPS)",
+      "Regelmäßige Installation von Firmware-Updates",
+      "Änderung von Standard-Admin-Passwörtern",
+      "Deaktivierung nicht benötigter Protokolle und Dienste"
+    ],
+    "correct": [
+      "Aktivierung von Verschlüsselung (z.B. TLS für IPP, IPPS)",
+      "Regelmäßige Installation von Firmware-Updates",
+      "Änderung von Standard-Admin-Passwörtern",
+      "Deaktivierung nicht benötigter Protokolle und Dienste"
+    ]
+  },
+  {
+    "question": "Welche Protokollfamilie verwendet Windows primär für Netzwerkdateifreigaben?",
+    "options": [
+      "SMB (Server Message Block)",
+      "CIFS (Common Internet File System)",
+      "FTP (File Transfer Protocol)",
+      "NFS (Network File System)"
+    ],
+    "correct": [
+      "SMB (Server Message Block)",
+      "CIFS (Common Internet File System)"
+    ]
+  },
+  {
+    "question": "Was sind Merkmale des IPv6-Headers im Vergleich zum IPv4-Header?",
+    "options": [
+      "Er hat eine feste Größe (40 Bytes), was die Verarbeitung beschleunigt",
+      "Optionale Informationen werden in 'Extension Headers' ausgelagert",
+      "Er hat weniger Felder als der IPv4-Header",
+      "Er enthält immer die MAC-Adresse des Ziels"
+    ],
+    "correct": [
+      "Er hat eine feste Größe (40 Bytes), was die Verarbeitung beschleunigt",
+      "Optionale Informationen werden in 'Extension Headers' ausgelagert",
+      "Er hat weniger Felder als der IPv4-Header"
+    ]
+  },
+  {
+    "question": "Welches Protokoll wird zur Überwachung und Fernsteuerung von Netzwerkgeräten wie Druckern verwendet?",
+    "options": [
+      "SNMP (Simple Network Management Protocol)",
+      "IPP (Internet Printing Protocol)",
+      "SMB (Server Message Block)",
+      "LPD (Line Printer Daemon protocol)"
+    ],
+    "correct": [
+      "SNMP (Simple Network Management Protocol)"
+    ]
+  },
+  {
+    "question": "Für welche Art von Netzwerk sind Windows-Freigaben typischerweise konzipiert?",
+    "options": [
+      "LAN (Local Area Network)",
+      "Heim- und Firmennetzwerke",
+      "VPN (Virtual Private Network)",
+      "WAN (Wide Area Network)"
+    ],
+    "correct": [
+      "LAN (Local Area Network)",
+      "Heim- und Firmennetzwerke",
+      "VPN (Virtual Private Network)"
+    ]
+  },
+  {
+    "question": "Welche Autokonfigurationsmethoden sind typisch für IPv6?",
+    "options": [
+      "SLAAC (Stateless Address Autoconfiguration)",
+      "DHCPv6 (Stateful oder Stateless)",
+      "Manuelle Konfiguration",
+      "ARP (Address Resolution Protocol)"
+    ],
+    "correct": [
+      "SLAAC (Stateless Address Autoconfiguration)",
+      "DHCPv6 (Stateful oder Stateless)",
+      "Manuelle Konfiguration"
+    ]
+  },
+  {
+    "question": "Welches Protokoll, ursprünglich für Unix-Systeme entwickelt, wird für das Drucken im Netzwerk auf Port 515 genutzt?",
+    "options": [
+      "LPD/LPR (Line Printer Daemon/Line Printer Remote)",
+      "IPP (Internet Printing Protocol)",
+      "SMB/CIFS",
+      "SNMP (Simple Network Management Protocol)"
+    ],
+    "correct": [
+      "LPD/LPR (Line Printer Daemon/Line Printer Remote)"
+    ]
+  },
+  {
+    "question": "Was ermöglicht das SMB-Protokoll neben der reinen Dateifreigabe?",
+    "options": [
+      "Druckdienste (Drucken über das Netzwerk)",
+      "Interprozesskommunikation (Named Pipes)",
+      "Benachrichtigung bei Dateiänderungen",
+      "Authentifizierung und Autorisierung von Zugriffen"
+    ],
+    "correct": [
+      "Druckdienste (Drucken über das Netzwerk)",
+      "Interprozesskommunikation (Named Pipes)",
+      "Benachrichtigung bei Dateiänderungen",
+      "Authentifizierung und Autorisierung von Zugriffen"
+    ]
+  },
+  {
+    "question": "Wie werden Netzlaufwerke typischerweise adressiert, um auf freigegebene Ressourcen zuzugreifen?",
+    "options": [
+      "Mittels UNC-Pfaden (z.B. \\\\Server\\Freigabe)",
+      "Durch Zuweisung eines Laufwerksbuchstabens (z.B. Z:)",
+      "Direkt über die IP-Adresse des Servers im UNC-Format (z.B. \\\\192.168.1.10\\Freigabe)",
+      "Über den DNS-Hostnamen"
+    ],
+    "correct": [
+      "Mittels UNC-Pfaden (z.B. \\\\Server\\Freigabe)",
+      "Durch Zuweisung eines Laufwerksbuchstabens (z.B. Z:)",
+      "Direkt über die IP-Adresse des Servers im UNC-Format (z.B. \\\\192.168.1.10\\Freigabe)",
+      "Über den DNS-Hostnamen"
+    ]
+  },
+  {
+    "question": "Welches moderne Druckprotokoll basiert auf HTTP/1.1 und nutzt standardmäßig Port 631?",
+    "options": [
+      "IPP (Internet Printing Protocol)",
+      "IPPS (IPP über TLS/SSL)",
+      "SMB/CIFS",
+      "RAW/Port 9100"
+    ],
+    "correct": [
+      "IPP (Internet Printing Protocol)",
+      "IPPS (IPP über TLS/SSL)"
+    ]
+  },
+  {
+    "question": "Was ist ein potenzieller Nachteil der automatischen Treiberinstallation durch Windows (Plug and Play)?",
+    "options": [
+      "Es wird möglicherweise nur ein Basistreiber ohne herstellerspezifische Zusatzfunktionen installiert",
+      "Der installierte Treiber könnte veraltet sein",
+      "Es kann zu Kompatibilitätsproblemen kommen",
+      "Der Drucker wird oft gar nicht erkannt"
+    ],
+    "correct": [
+      "Es wird möglicherweise nur ein Basistreiber ohne herstellerspezifische Zusatzfunktionen installiert",
+      "Der installierte Treiber könnte veraltet sein",
+      "Es kann zu Kompatibilitätsproblemen kommen"
+    ]
+  },
+  {
+    "question": "Wie erkennen moderne Windows-Versionen viele USB-Drucker automatisch beim Anschließen?",
+    "options": [
+      "Über den Plug & Play Mechanismus",
+      "Durch automatische Suche nach passenden Treibern im Windows Update-Katalog",
+      "Via USB-Deskriptoren, die das Gerät identifizieren",
+      "Durch manuelle Eingabe der Seriennummer"
+    ],
+    "correct": [
+      "Über den Plug & Play Mechanismus",
+      "Durch automatische Suche nach passenden Treibern im Windows Update-Katalog",
+      "Via USB-Deskriptoren, die das Gerät identifizieren"
+    ]
+  },
+  {
+    "question": "Was ist eine etablierte Best Practice bei der Konfiguration von Freigabe- und NTFS-Berechtigungen?",
+    "options": [
+      "Freigabeberechtigungen relativ offen halten (z.B. 'Jeder: Ändern')",
+      "Die eigentliche, detaillierte Zugriffskontrolle über die NTFS-Berechtigungen steuern",
+      "Das 'Principal of Least Privilege' (Prinzip der geringsten Rechte) anwenden",
+      "Nur eine der beiden Berechtigungsebenen (Freigabe oder NTFS) zu nutzen"
+    ],
+    "correct": [
+      "Freigabeberechtigungen relativ offen halten (z.B. 'Jeder: Ändern')",
+      "Die eigentliche, detaillierte Zugriffskontrolle über die NTFS-Berechtigungen steuern",
+      "Das 'Principal of Least Privilege' (Prinzip der geringsten Rechte) anwenden"
+    ]
+  },
+  {
+    "question": "Welche der folgenden Berechtigungen gibt es auf der Freigabeebene unter Windows?",
+    "options": [
+      "Lesen",
+      "Ändern",
+      "Vollzugriff",
+      "Schreiben"
+    ],
+    "correct": [
+      "Lesen",
+      "Ändern",
+      "Vollzugriff"
+    ]
+  },
+  {
+    "question": "Was passiert automatisch mit den Unterordnern und Dateien, wenn ein Ordner unter Windows freigegeben wird?",
+    "options": [
+      "Sie erben die Freigabeeinstellungen des übergeordneten Ordners",
+      "Sie sind über die Freigabe ebenfalls erreichbar",
+      "Ihr Zugriff wird weiterhin durch ihre individuellen NTFS-Berechtigungen geregelt",
+      "Sie müssen alle einzeln freigegeben werden"
+    ],
+    "correct": [
+      "Sie erben die Freigabeeinstellungen des übergeordneten Ordners",
+      "Sie sind über die Freigabe ebenfalls erreichbar",
+      "Ihr Zugriff wird weiterhin durch ihre individuellen NTFS-Berechtigungen geregelt"
+    ]
+  },
+  {
+    "question": "Was passiert, wenn eine offline verfügbare Datei sowohl lokal als auch auf der Netzwerkfreigabe geändert wurde?",
+    "options": [
+      "Das System meldet einen Synchronisierungskonflikt",
+      "Der Benutzer wird aufgefordert, den Konflikt manuell zu lösen",
+      "Windows bietet an, beide Versionen zu behalten oder eine zu überschreiben",
+      "Die Netzwerkversion überschreibt immer automatisch die lokale Version"
+    ],
+    "correct": [
+      "Das System meldet einen Synchronisierungskonflikt",
+      "Der Benutzer wird aufgefordert, den Konflikt manuell zu lösen",
+      "Windows bietet an, beide Versionen zu behalten oder eine zu überschreiben"
+    ]
+  },
+  {
+    "question": "Welcher moderne USB-Steckertyp ist symmetrisch (beidseitig einsteckbar) und unterstützt hohe Datenraten?",
+    "options": [
+      "Typ-C",
+      "Typ-A",
+      "Typ-B",
+      "Micro-B"
+    ],
+    "correct": [
+      "Typ-C"
+    ]
+  },
+  {
+    "question": "Welcher Begriff beschreibt die Software-Technologie, die Text aus gescannten Bildern erkennt und in bearbeitbare Form umwandelt?",
+    "options": [
+      "OCR (Optical Character Recognition)",
+      "DMS (Dokumentenmanagementsystem)",
+      "Workflow-Integration",
+      "Barcode-Erfassung"
+    ],
+    "correct": [
+      "OCR (Optical Character Recognition)"
+    ]
+  },
+  {
+    "question": "Was ermöglicht die Funktion 'Offlinedateien' bei Netzlaufwerken?",
+    "options": [
+      "Den Zugriff auf Dateien auch ohne aktive Netzwerkverbindung",
+      "Die lokale Synchronisation einer Kopie der Netzwerkdateien",
+      "Das Bearbeiten von Dateien, die bei der nächsten Verbindung synchronisiert werden",
+      "Den gleichzeitigen Zugriff mehrerer Benutzer auf die Freigabe"
+    ],
+    "correct": [
+      "Den Zugriff auf Dateien auch ohne aktive Netzwerkverbindung",
+      "Die lokale Synchronisation einer Kopie der Netzwerkdateien",
+      "Das Bearbeiten von Dateien, die bei der nächsten Verbindung synchronisiert werden"
+    ]
+  },
+  {
+    "question": "Wie viele Bits umfasst eine IPv4-Adresse?",
+    "options": [
+      "32 Bit",
+      "4 Byte",
+      "128 Bit",
+      "64 Bit"
+    ],
+    "correct": [
+      "32 Bit",
+      "4 Byte"
+    ]
+  }
+]
